@@ -14,23 +14,52 @@ def domain_from_url(url):
 def fuzzy_match(a, b, threshold=85):
     return fuzz.token_sort_ratio(a, b) >= threshold
 
+HANDLE_KEYS = ("github", "twitter", "linkedin")
+
+def _linked(a, b):
+    # two raw signals belong to the same person if they share ANY identifier
+    if a.get("email") and a.get("email") == b.get("email"):
+        return True
+    da, db = domain_from_url(a.get("website") or ""), domain_from_url(b.get("website") or "")
+    if da and da == db:
+        return True
+    for h in HANDLE_KEYS:
+        if a.get(h) and a.get(h) == b.get(h):
+            return True
+    na, nb = normalize_name(a.get("name") or ""), normalize_name(b.get("name") or "")
+    # fuzzy name is the weakest link: distinct people can share a name
+    return bool(na and nb and fuzzy_match(na, nb))
+
 def resolve_identity(candidates):
     """
     candidates: list of dicts with keys: name, github, twitter, linkedin, email, website
-    returns canonical record with confidence
+    returns canonical records with merged handles and the raw signals as evidence
     """
-    # naive merge: group by exact email, then website domain, then fuzzy name
+    # union-find over pairwise links; O(n^2) is fine at hackathon scale
+    parent = list(range(len(candidates)))
+
+    def find(i):
+        while parent[i] != i:
+            parent[i] = parent[parent[i]]
+            i = parent[i]
+        return i
+
+    for i in range(len(candidates)):
+        for j in range(i + 1, len(candidates)):
+            if _linked(candidates[i], candidates[j]):
+                parent[find(i)] = find(j)
+
     groups = {}
-    for c in candidates:
-        key = c.get("email") or domain_from_url(c.get("website") or "") or normalize_name(c.get("name") or "")
-        groups.setdefault(key, []).append(c)
-    # merge groups with fuzzy name similarity
+    for i, c in enumerate(candidates):
+        groups.setdefault(find(i), []).append(c)
+
     merged = []
-    for k, group in groups.items():
-        merged_record = {"names": list({g.get("name") for g in group}), "handles": {}, "evidence": group}
+    for group in groups.values():
+        record = {"names": sorted({g.get("name") for g in group if g.get("name")}),
+                  "handles": {}, "evidence": group}
         for g in group:
-            if g.get("github"): merged_record["handles"]["github"] = g.get("github")
-            if g.get("twitter"): merged_record["handles"]["twitter"] = g.get("twitter")
-            if g.get("linkedin"): merged_record["handles"]["linkedin"] = g.get("linkedin")
-        merged.append(merged_record)
+            for h in HANDLE_KEYS:
+                if g.get(h):
+                    record["handles"][h] = g[h]
+        merged.append(record)
     return merged

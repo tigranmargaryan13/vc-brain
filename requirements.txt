@@ -1,0 +1,5 @@
+requests
+rapidfuzz
+pyyaml
+psycopg2-binary
+python-dotenv
