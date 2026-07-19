@@ -1,0 +1,2556 @@
+[
+ {
+  "id": "ph_ninghu",
+  "name": "Ning Hu",
+  "email": "ninghu@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_ninghu_p1",
+    "name": "ZooData",
+    "sector": "Dev Tools",
+    "stage": "Unknown",
+    "oneLiner": "Founder & CEO @ ZooClaw"
+   }
+  ],
+  "scores": {
+   "founder": 89,
+   "founderTrend": "up",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 3 products on Product Hunt (ZooData, ZooClaw, Gensmo).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@ninghu",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "2 launches in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@ninghu",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "1283 organic upvotes earned across launches (latest: 544).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@ninghu",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Co-founder / co-maker present on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/zoodata",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "64 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/zoodata",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Developer Tools, Artificial Intelligence, E-Commerce.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/zoodata",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Team of 3 on recent launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@ninghu",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@ninghu",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@ninghu",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_kyle_dong",
+  "name": "Kyle Dong",
+  "email": "kyle_dong@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_kyle_dong_p1",
+    "name": "ZooData",
+    "sector": "Dev Tools",
+    "stage": "Unknown",
+    "oneLiner": "everything is well"
+   }
+  ],
+  "scores": {
+   "founder": 65,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 1 product on Product Hunt (ZooData).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@kyle_dong",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "1 launch in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@kyle_dong",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "544 organic upvotes earned across launches (latest: 544).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@kyle_dong",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Co-founder / co-maker present on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/zoodata",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "64 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/zoodata",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Developer Tools, Artificial Intelligence, E-Commerce.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/zoodata",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Team of 3 on recent launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@kyle_dong",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@kyle_dong",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@kyle_dong",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_david_srp",
+  "name": "David L",
+  "email": "david_srp@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_david_srp_p1",
+    "name": "ZooData",
+    "sector": "Dev Tools",
+    "stage": "Unknown",
+    "oneLiner": "Launched ZooData on Product Hunt."
+   }
+  ],
+  "scores": {
+   "founder": 65,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 1 product on Product Hunt (ZooData).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@david_srp",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "1 launch in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@david_srp",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "544 organic upvotes earned across launches (latest: 544).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@david_srp",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Co-founder / co-maker present on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/zoodata",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "64 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/zoodata",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Developer Tools, Artificial Intelligence, E-Commerce.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/zoodata",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Team of 3 on recent launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@david_srp",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@david_srp",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@david_srp",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_stanislav_kirdey",
+  "name": "Stanislav Kirdey",
+  "email": "stanislav_kirdey@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_stanislav_kirdey_p1",
+    "name": "Clark",
+    "sector": "SaaS",
+    "stage": "Unknown",
+    "oneLiner": "Founder of Clark - clarkchat.com"
+   }
+  ],
+  "scores": {
+   "founder": 59,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 1 product on Product Hunt (Clark).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@stanislav_kirdey",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "1 launch in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@stanislav_kirdey",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "441 organic upvotes earned across launches (latest: 441).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@stanislav_kirdey",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "55 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/clark-agent",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Productivity, Developer Tools, Artificial Intelligence.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/clark-agent",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/company/clark-labs-inc",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@stanislav_kirdey",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@stanislav_kirdey",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_gapostolov",
+  "name": "George Apostolov",
+  "email": "gapostolov@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_gapostolov_p1",
+    "name": "LiveDemo",
+    "sector": "SaaS",
+    "stage": "Unknown",
+    "oneLiner": "LiveDemo.ai👈👌"
+   }
+  ],
+  "scores": {
+   "founder": 86,
+   "founderTrend": "up",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 8 products on Product Hunt (LiveDemo, LiveDemo, LiveDemo).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@gapostolov",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "2 launches in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@gapostolov",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "873 organic upvotes earned across launches (latest: 279).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@gapostolov",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "45 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/livedemo",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Sales, SaaS, Developer Tools.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/livedemo",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Live product website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://livedemo.live",
+    "sourceLabel": "Website"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@gapostolov",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@gapostolov",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_anukarop",
+  "name": "Anukar",
+  "email": "anukarop@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_anukarop_p1",
+    "name": "Mirage",
+    "sector": "SaaS",
+    "stage": "Unknown",
+    "oneLiner": "Just a Developer."
+   }
+  ],
+  "scores": {
+   "founder": 75,
+   "founderTrend": "up",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 2 products on Product Hunt (Mirage, Youtube Custom Playback).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@anukarop",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "2 launches in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@anukarop",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "377 organic upvotes earned across launches (latest: 205).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@anukarop",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "41 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/mirage-15",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Marketing, SaaS, Developer Tools.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/mirage-15",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@anukarop",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@anukarop",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_xueyanzhang",
+  "name": "XUEYANZ",
+  "email": "xueyanzhang@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_xueyanzhang_p1",
+    "name": "OpenMarkdown",
+    "sector": "SaaS",
+    "stage": "Unknown",
+    "oneLiner": "OpenMarkdown.dev | OpenTikz.org"
+   }
+  ],
+  "scores": {
+   "founder": 35,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 1 product on Product Hunt (OpenMarkdown).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@xueyanzhang",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "1 launch in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@xueyanzhang",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "179 organic upvotes earned across launches (latest: 179).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@xueyanzhang",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "52 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/openmarkdown",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Productivity, Notes, Developer Tools.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/openmarkdown",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "VC Brain pipeline read their GitHub code: capability score 32.8 (90% band 21–45).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/OpenMarkdown-dev",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@xueyanzhang",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@xueyanzhang",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_manuarora",
+  "name": "Manu Arora",
+  "email": "manuarora@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_manuarora_p1",
+    "name": "Acebuilder",
+    "sector": "SaaS",
+    "stage": "Unknown",
+    "oneLiner": "Senior Software Engineer | Indie Hacker"
+   }
+  ],
+  "scores": {
+   "founder": 65,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 11 products on Product Hunt (Acebuilder, Aceternity UI Pro, Awesome Framer Motion Components).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@manuarora",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "1 launch in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@manuarora",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "1198 organic upvotes earned across launches (latest: 140).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@manuarora",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "9 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/acebuilder",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Design Tools, Tech.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/acebuilder",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Live product website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.manuarora.in",
+    "sourceLabel": "Website"
+   },
+   {
+    "text": "VC Brain pipeline read their GitHub code: capability score 64.7 (90% band 58–71).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/manuarora700",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@manuarora",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@manuarora",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_xpaczka",
+  "name": "Michał Paczyński",
+  "email": "xpaczka@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_xpaczka_p1",
+    "name": "Mainichi",
+    "sector": "Consumer",
+    "stage": "Unknown",
+    "oneLiner": "Japanese apps failed me, built Mainichi."
+   }
+  ],
+  "scores": {
+   "founder": 54,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 1 product on Product Hunt (Mainichi).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@xpaczka",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "1 launch in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@xpaczka",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "131 organic upvotes earned across launches (latest: 131).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@xpaczka",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "28 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/mainichi-2",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: iOS, Education, Languages.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/mainichi-2",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@xpaczka",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@xpaczka",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_metehan_sipahi",
+  "name": "Metehan Sipahi",
+  "email": "metehan_sipahi@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_metehan_sipahi_p1",
+    "name": "WX",
+    "sector": "Consumer",
+    "stage": "Unknown",
+    "oneLiner": "Scrap Brain Audio"
+   }
+  ],
+  "scores": {
+   "founder": 54,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 1 product on Product Hunt (WX ).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@metehan_sipahi",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "1 launch in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@metehan_sipahi",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "125 organic upvotes earned across launches (latest: 125).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@metehan_sipahi",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "13 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/wx",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Music, Spotify, Electronic Music.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/wx",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@metehan_sipahi",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@metehan_sipahi",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_paulmurnane",
+  "name": "Paul Murnane",
+  "email": "paulmurnane@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_paulmurnane_p1",
+    "name": "DocuSmart AI",
+    "sector": "AI/ML",
+    "stage": "Unknown",
+    "oneLiner": "Founder, building DocuSmart AI."
+   }
+  ],
+  "scores": {
+   "founder": 54,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 1 product on Product Hunt (DocuSmart AI ).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@paulmurnane",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "1 launch in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@paulmurnane",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "117 organic upvotes earned across launches (latest: 117).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@paulmurnane",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "8 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/docusmart-ai",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Artificial Intelligence, Business Intelligence, YC Application.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/docusmart-ai",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@paulmurnane",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@paulmurnane",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph__redacted_",
+  "name": "[REDACTED]",
+  "email": "_redacted_@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph__redacted__p1",
+    "name": "Unabyss for Claude",
+    "sector": "SaaS",
+    "stage": "Unknown",
+    "oneLiner": "Launched Unabyss for Claude on Product Hunt."
+   }
+  ],
+  "scores": {
+   "founder": 46,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "Co-founder / co-maker present on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/unabyss",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "122 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/unabyss",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Productivity, Artificial Intelligence.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/unabyss",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Team of 4 on recent launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "[REDACTED]",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "[REDACTED]",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "[REDACTED]",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_philip_kubinski",
+  "name": "Philip Kubinski",
+  "email": "philip_kubinski@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_philip_kubinski_p1",
+    "name": "Unabyss for Claude",
+    "sector": "SaaS",
+    "stage": "Unknown",
+    "oneLiner": "co-founder @ Unabyss"
+   }
+  ],
+  "scores": {
+   "founder": 84,
+   "founderTrend": "up",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 2 products on Product Hunt (Unabyss for Claude, Unabyss).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@philip_kubinski",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "2 launches in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@philip_kubinski",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "1400 organic upvotes earned across launches (latest: 589).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@philip_kubinski",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Co-founder / co-maker present on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/unabyss",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "122 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/unabyss",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Productivity, Artificial Intelligence.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/unabyss",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Team of 4 on recent launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@philip_kubinski",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@philip_kubinski",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@philip_kubinski",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_kuzmovych",
+  "name": "Maksym Kuzmovych",
+  "email": "kuzmovych@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_kuzmovych_p1",
+    "name": "Pebbles Ai",
+    "sector": "SaaS",
+    "stage": "Unknown",
+    "oneLiner": "Head of Engineering at Pebbles Ai"
+   }
+  ],
+  "scores": {
+   "founder": 65,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 1 product on Product Hunt (Pebbles Ai).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@kuzmovych",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "1 launch in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@kuzmovych",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "428 organic upvotes earned across launches (latest: 428).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@kuzmovych",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Co-founder / co-maker present on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/pebbles-ai",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "102 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/pebbles-ai",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Sales, Email Marketing, Artificial Intelligence.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/pebbles-ai",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Team of 4 on recent launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@kuzmovych",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@kuzmovych",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@kuzmovych",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_crystal_j",
+  "name": "Crystal J",
+  "email": "crystal_j@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_crystal_j_p1",
+    "name": "Kimi K3",
+    "sector": "Dev Tools",
+    "stage": "Unknown",
+    "oneLiner": "Kimi Staff"
+   }
+  ],
+  "scores": {
+   "founder": 92,
+   "founderTrend": "up",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 11 products on Product Hunt (Kimi K3, Kimi K2.7 Code, Kimi Work).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@crystal_j",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "8 launches in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@crystal_j",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "2634 organic upvotes earned across launches (latest: 437).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@crystal_j",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Co-founder / co-maker present on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/kimi-ai-assistant",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "13 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/kimi-ai-assistant",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Open Source, Artificial Intelligence, Development.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/kimi-ai-assistant",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Team of 2 on recent launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@crystal_j",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@crystal_j",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@crystal_j",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_masaki_iino",
+  "name": "Masaki Iino",
+  "email": "masaki_iino@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_masaki_iino_p1",
+    "name": "Pocket Screen",
+    "sector": "SaaS",
+    "stage": "Unknown",
+    "oneLiner": "Toybird Labs"
+   }
+  ],
+  "scores": {
+   "founder": 76,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 4 products on Product Hunt (Pocket Screen, DropReady Media, Pointer Cue).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@masaki_iino",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "1 launch in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@masaki_iino",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "261 organic upvotes earned across launches (latest: 241).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@masaki_iino",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "52 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/toybird-labs",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Mac, Productivity, Menu Bar Apps.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/toybird-labs",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@masaki_iino",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@masaki_iino",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_james_ketteringham",
+  "name": "James Ketteringham",
+  "email": "james_ketteringham@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_james_ketteringham_p1",
+    "name": "Timely",
+    "sector": "AI/ML",
+    "stage": "Unknown",
+    "oneLiner": "Building things that interest me."
+   }
+  ],
+  "scores": {
+   "founder": 57,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 1 product on Product Hunt (Timely).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@james_ketteringham",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "1 launch in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@james_ketteringham",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "195 organic upvotes earned across launches (latest: 195).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@james_ketteringham",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "45 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/timely-9",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Email, Productivity, Calendar.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/timely-9",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@james_ketteringham",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@james_ketteringham",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_kris_lachance",
+  "name": "Kristofer Lachance",
+  "email": "kris_lachance@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_kris_lachance_p1",
+    "name": "Basedash Suggestions",
+    "sector": "AI/ML",
+    "stage": "Unknown",
+    "oneLiner": "Building Basedash"
+   }
+  ],
+  "scores": {
+   "founder": 91,
+   "founderTrend": "up",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 21 products on Product Hunt (Basedash Suggestions, Basedash SCIM, Basedash Actions).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@kris_lachance",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "17 launches in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@kris_lachance",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "3240 organic upvotes earned across launches (latest: 153).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@kris_lachance",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Co-founder / co-maker present on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/basedash",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "24 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/basedash",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Artificial Intelligence, Data & Analytics, Business Intelligence.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/basedash",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Team of 3 on recent launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@kris_lachance",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Live product website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.joinskillful.com/",
+    "sourceLabel": "Website"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@kris_lachance",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@kris_lachance",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_ghostscientist",
+  "name": "Dakota Kim",
+  "email": "ghostscientist@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_ghostscientist_p1",
+    "name": "Scribble Party",
+    "sector": "SaaS",
+    "stage": "Unknown",
+    "oneLiner": "Founding Engineer, MadWatch LLC"
+   }
+  ],
+  "scores": {
+   "founder": 55,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 1 product on Product Hunt (Scribble Party).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@ghostscientist",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "1 launch in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@ghostscientist",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "151 organic upvotes earned across launches (latest: 151).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@ghostscientist",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "12 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/scribble-party",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Productivity, Education, GitHub.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/scribble-party",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@ghostscientist",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@ghostscientist",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_zhonglin_liu",
+  "name": "Zhonglin Liu",
+  "email": "zhonglin_liu@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_zhonglin_liu_p1",
+    "name": "Aye",
+    "sector": "SaaS",
+    "stage": "Unknown",
+    "oneLiner": "Indie maker building apps"
+   }
+  ],
+  "scores": {
+   "founder": 55,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 1 product on Product Hunt (Aye).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@zhonglin_liu",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "1 launch in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@zhonglin_liu",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "153 organic upvotes earned across launches (latest: 153).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@zhonglin_liu",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "26 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/aye-browser",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Productivity, Artificial Intelligence.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/aye-browser",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Live product website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://okaapps.com",
+    "sourceLabel": "Website"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@zhonglin_liu",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@zhonglin_liu",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_yahia_bakour3",
+  "name": "Yahia Bakour",
+  "email": "yahia_bakour3@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_yahia_bakour3_p1",
+    "name": "Yapper Leaderboard",
+    "sector": "Consumer",
+    "stage": "Unknown",
+    "oneLiner": "Launched Yapper Leaderboard on Product Hunt."
+   }
+  ],
+  "scores": {
+   "founder": 93,
+   "founderTrend": "up",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 22 products on Product Hunt (Yapper Leaderboard, Branda, Context.dev).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@yahia_bakour3",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "7 launches in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@yahia_bakour3",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "3809 organic upvotes earned across launches (latest: 150).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@yahia_bakour3",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Co-founder / co-maker present on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/yapper-leaderboard",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "18 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/yapper-leaderboard",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: Twitter, Social Media, Analytics.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/yapper-leaderboard",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Team of 2 on recent launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@yahia_bakour3",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@yahia_bakour3",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@yahia_bakour3",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_pixycad",
+  "name": "Andrea Sartori",
+  "email": "pixycad@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_pixycad_p1",
+    "name": "PixyCAD",
+    "sector": "SaaS",
+    "stage": "Unknown",
+    "oneLiner": "PixyCAD Co-founder and marketing guru."
+   }
+  ],
+  "scores": {
+   "founder": 54,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 1 product on Product Hunt ( PixyCAD ).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@pixycad",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "1 launch in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@pixycad",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "137 organic upvotes earned across launches (latest: 137).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@pixycad",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "14 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/pixycad-3d-solid-modelling",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: 3D Printer, Maker Tools, 3D Modeling.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/pixycad-3d-solid-modelling",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@pixycad",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@pixycad",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "ph_jiwei_yuan",
+  "name": "Jiwei Yuan",
+  "email": "jiwei_yuan@ph.example",
+  "location": "Unknown",
+  "projects": [
+   {
+    "id": "ph_jiwei_yuan_p1",
+    "name": "Paradigm",
+    "sector": "Consumer",
+    "stage": "Unknown",
+    "oneLiner": "Builder @ Paradigm.study"
+   }
+  ],
+  "scores": {
+   "founder": 69,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Shipped 1 product on Product Hunt (Paradigm).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@jiwei_yuan",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "1 launch in the last 12 months.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@jiwei_yuan",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "784 organic upvotes earned across launches (latest: 784).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@jiwei_yuan",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Co-founder / co-maker present on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/paradigm-3",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "130 community comments engaged on launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/paradigm-3",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Domain focus: User Experience, Education, Career.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/paradigm-3",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Team of 9 on recent launches.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@jiwei_yuan",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/company/paradigmstudy",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Location / professional background",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@jiwei_yuan",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Revenue / traction beyond Product Hunt",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/@jiwei_yuan",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "luma_ayaan_naveed_malik",
+  "name": "Ayaan Naveed Malik",
+  "email": "ayaan_naveed_malik@luma.example",
+  "location": "New York",
+  "projects": [
+   {
+    "id": "luma_ayaan_naveed_malik_p1",
+    "name": "Undisclosed venture",
+    "sector": "Unknown",
+    "stage": "Unknown",
+    "oneLiner": "stanford university alum! building a frontier AI Lab to solve robotics —> AMI Labs"
+   }
+  ],
+  "scores": {
+   "founder": 42,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://luma.com/x73vahde",
+    "sourceLabel": "Luma"
+   },
+   {
+    "text": "Public bio: stanford university alum! building a frontier AI Lab to solve robotics —> AMI Labs",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/user/usr-7ljBD259ZmkUwD7",
+    "sourceLabel": "Luma profile"
+   },
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/in/ayaannaveedmalik",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Shipped products / building history",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/x73vahde",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current venture details",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/x73vahde",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "luma_eve_halimi",
+  "name": "Eve Halimi",
+  "email": "eve_halimi@luma.example",
+  "location": "New York",
+  "projects": [
+   {
+    "id": "luma_eve_halimi_p1",
+    "name": "Undisclosed venture",
+    "sector": "Unknown",
+    "stage": "Unknown",
+    "oneLiner": "Co-Founder of Alinea"
+   }
+  ],
+  "scores": {
+   "founder": 42,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://luma.com/x73vahde",
+    "sourceLabel": "Luma"
+   },
+   {
+    "text": "Public bio: Co-Founder of Alinea",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/user/usr-DyKwYGl4UDFYkEh",
+    "sourceLabel": "Luma profile"
+   },
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/in/eve-halimi",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Shipped products / building history",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/x73vahde",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current venture details",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/x73vahde",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "luma_david_roeske",
+  "name": "David Roeske",
+  "email": "david_roeske@luma.example",
+  "location": "New York",
+  "projects": [
+   {
+    "id": "luma_david_roeske_p1",
+    "name": "Undisclosed venture",
+    "sector": "Unknown",
+    "stage": "Unknown",
+    "oneLiner": "VP of Finance at Contra"
+   }
+  ],
+  "scores": {
+   "founder": 42,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://luma.com/n1w191tg",
+    "sourceLabel": "Luma"
+   },
+   {
+    "text": "Public bio: VP of Finance at Contra",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/user/usr-qzGcm1xYzoH55ve",
+    "sourceLabel": "Luma profile"
+   },
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/in/davidroeske",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Shipped products / building history",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/n1w191tg",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current venture details",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/n1w191tg",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "luma_christopher_a_butler",
+  "name": "Christopher A Butler",
+  "email": "christopher_a_butler@luma.example",
+  "location": "New York",
+  "projects": [
+   {
+    "id": "luma_christopher_a_butler_p1",
+    "name": "Undisclosed venture",
+    "sector": "Unknown",
+    "stage": "Unknown",
+    "oneLiner": "Director @ PwC Startup Solutions, leveraging the firm’s deep network, audit, tax, M&A, and IPO capabilities…"
+   }
+  ],
+  "scores": {
+   "founder": 42,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://luma.com/n1w191tg",
+    "sourceLabel": "Luma"
+   },
+   {
+    "text": "Public bio: Director @ PwC Startup Solutions, leveraging the firm’s deep network, audit, tax, M&A, and IPO capabilities…",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/user/usr-s0q4T8Af7vaN71G",
+    "sourceLabel": "Luma profile"
+   },
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/in/christopher-a-butler",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Shipped products / building history",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/n1w191tg",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current venture details",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/n1w191tg",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "luma_kathryn_kushner",
+  "name": "Kathryn Kushner",
+  "email": "kathryn_kushner@luma.example",
+  "location": "New York",
+  "projects": [
+   {
+    "id": "luma_kathryn_kushner_p1",
+    "name": "Undisclosed venture",
+    "sector": "Unknown",
+    "stage": "Unknown",
+    "oneLiner": "Fundraising & Strategic Communication Advisor, Former US DOJ"
+   }
+  ],
+  "scores": {
+   "founder": 42,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://luma.com/cxpei3z0",
+    "sourceLabel": "Luma"
+   },
+   {
+    "text": "Public bio: Fundraising & Strategic Communication Advisor, Former US DOJ",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/user/usr-26kMrWwIaHw3CDZ",
+    "sourceLabel": "Luma profile"
+   },
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/in/kathryn-kushner-67135937",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Shipped products / building history",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/cxpei3z0",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current venture details",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/cxpei3z0",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "luma_liang_song",
+  "name": "Liang Song",
+  "email": "liang_song@luma.example",
+  "location": "New York",
+  "projects": [
+   {
+    "id": "luma_liang_song_p1",
+    "name": "Undisclosed venture",
+    "sector": "Unknown",
+    "stage": "Unknown",
+    "oneLiner": "Building real-time experience database for AI"
+   }
+  ],
+  "scores": {
+   "founder": 42,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://luma.com/cxpei3z0",
+    "sourceLabel": "Luma"
+   },
+   {
+    "text": "Public bio: Building real-time experience database for AI",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/user/usr-E11MXot55c4dZwB",
+    "sourceLabel": "Luma profile"
+   },
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/in/tianliangsong",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Shipped products / building history",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/cxpei3z0",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current venture details",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/cxpei3z0",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "luma_arslan_ihsan",
+  "name": "Arslan Ihsan",
+  "email": "arslan_ihsan@luma.example",
+  "location": "New York",
+  "projects": [
+   {
+    "id": "luma_arslan_ihsan_p1",
+    "name": "Undisclosed venture",
+    "sector": "Unknown",
+    "stage": "Unknown",
+    "oneLiner": "Build that matters | Helping Startups to IPO | Founder | Keynote Speaker | Advisor | Networker"
+   }
+  ],
+  "scores": {
+   "founder": 42,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://luma.com/cxpei3z0",
+    "sourceLabel": "Luma"
+   },
+   {
+    "text": "Public bio: Build that matters | Helping Startups to IPO | Founder | Keynote Speaker | Advisor | Networker",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/user/usr-r9CwsAD7wJeCr2J",
+    "sourceLabel": "Luma profile"
+   },
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/in/arslanhaktic",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Shipped products / building history",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/cxpei3z0",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current venture details",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/cxpei3z0",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "luma_lyssa_leigh_jackson",
+  "name": "Lyssa Leigh Jackson",
+  "email": "lyssa_leigh_jackson@luma.example",
+  "location": "New York",
+  "projects": [
+   {
+    "id": "luma_lyssa_leigh_jackson_p1",
+    "name": "Undisclosed venture",
+    "sector": "Unknown",
+    "stage": "Unknown",
+    "oneLiner": "Building programs at LinkedIn. Creator Educator. Be Brand You Podcast"
+   }
+  ],
+  "scores": {
+   "founder": 42,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://luma.com/jvh06n7u",
+    "sourceLabel": "Luma"
+   },
+   {
+    "text": "Public bio: Building programs at LinkedIn. Creator Educator. Be Brand You Podcast",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/user/usr-pQzXwmOPlBTqljK",
+    "sourceLabel": "Luma profile"
+   },
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/in/lyssaleighjackson",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Shipped products / building history",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/jvh06n7u",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current venture details",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/jvh06n7u",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "luma_jordan_bronstein",
+  "name": "Jordan Bronstein",
+  "email": "jordan_bronstein@luma.example",
+  "location": "New York",
+  "projects": [
+   {
+    "id": "luma_jordan_bronstein_p1",
+    "name": "Undisclosed venture",
+    "sector": "Unknown",
+    "stage": "Unknown",
+    "oneLiner": "Consultant @ Sequoia One"
+   }
+  ],
+  "scores": {
+   "founder": 42,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://luma.com/3tfefikz",
+    "sourceLabel": "Luma"
+   },
+   {
+    "text": "Public bio: Consultant @ Sequoia One",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/user/usr-AoMNhyePmQJzI6J",
+    "sourceLabel": "Luma profile"
+   },
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/in/jordanbronstein",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Shipped products / building history",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/3tfefikz",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current venture details",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/3tfefikz",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "luma_ramadan_a",
+  "name": "Ramadan A. || 爱民总",
+  "email": "ramadan_a@luma.example",
+  "location": "New York",
+  "projects": [
+   {
+    "id": "luma_ramadan_a_p1",
+    "name": "Undisclosed venture",
+    "sector": "Unknown",
+    "stage": "Unknown",
+    "oneLiner": "Winning is a team sport and I am here to contribute to the ecosystem… Web 3 forever…or at least until we ha…"
+   }
+  ],
+  "scores": {
+   "founder": 42,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://luma.com/3tfefikz",
+    "sourceLabel": "Luma"
+   },
+   {
+    "text": "Public bio: Winning is a team sport and I am here to contribute to the ecosystem… Web 3 forever…or at least until we ha…",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/user/usr-XtRUn9aeJ080ONj",
+    "sourceLabel": "Luma profile"
+   },
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/in/ramadanameen",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Shipped products / building history",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/3tfefikz",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current venture details",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://luma.com/3tfefikz",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ }
+]
