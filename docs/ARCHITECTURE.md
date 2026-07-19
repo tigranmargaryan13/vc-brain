@@ -50,12 +50,11 @@ This doc is the contract that keeps them consistent — read it before adding co
 
 | Piece | State |
 |---|---|
-| `services/fetchers/{github,hn}` , `resolver` | ✅ implemented |
-| `services/fetchers/{producthunt}` , `fetcher_worker` | ⛔ empty stub |
-| `services/scoring/{scoring.py,rules.yaml}` | ⛔ empty — **superseded by `sourcing/founder_score.py`**; either delete or express its logic as `rules.yaml` |
-| `db/migrations/0001_init.sql` | ⛔ empty — target schema not yet written |
-| `services/resolver/heuristics.py` | ⛔ empty placeholder (impl lives in `resolver.py`; nothing imports `heuristics`) |
-| `sourcing/*` (score, screen, thesis, memo, reference_class, memory, pipeline) | ✅ implemented, tested |
+| `services/fetchers/{github,hn}` , `services/resolver/resolver.py` | ✅ implemented |
+| `services/scoring/`, `services/fetchers/{producthunt_fetcher,fetcher_worker}`, `services/resolver/heuristics.py` | 🗑️ removed — empty stubs superseded by `sourcing/` (scoring) and `sourcing/retrievers/` (collection) |
+| `db/` (`init_db.py` + empty `0001_init.sql`) | ⛔ unused — the store is JSONL (`data/`); the SQL layer is a documented target. Kept pending a team decision. |
+| `sourcing/*` (score, native_score, screen, thesis, memo, reference_class, identity, memory, export, bridge) | ✅ implemented, tested |
+| `backend/` (FastAPI) + `frontend/` (UI wired to it) | ✅ implemented |
 
 ## Open items to keep consistency
 
