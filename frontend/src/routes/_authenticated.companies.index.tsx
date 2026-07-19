@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Plus, Building2 } from "lucide-react";
 import { toast } from "sonner";
 
-export const Route = createFileRoute("/_authenticated/companies")({
+export const Route = createFileRoute("/_authenticated/companies/")({
   component: CompaniesPage,
 });
 

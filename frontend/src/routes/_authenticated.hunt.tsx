@@ -55,6 +55,7 @@ type ExtraState = {
 };
 
 const STATE_KEY = "vcbrain.huntState";
+const STATE_VERSION = 2;
 type View = "all" | "saved" | "matched";
 type Tab = "inbound" | "outbound";
 
@@ -111,18 +112,22 @@ function HuntPage() {
       const raw = sessionStorage.getItem(STATE_KEY);
       if (raw) {
         const s = JSON.parse(raw);
-        setTab(s.tab ?? "inbound");
-        setQ(s.q ?? ""); setSector(s.sector ?? "all"); setStage(s.stage ?? "all"); setLoc(s.loc ?? "all"); setView(s.view ?? "all");
-        setFounderMin(s.founderMin ?? 0);
-        setExtras(s.extras ?? {});
-        setVisibleExtras(s.visibleExtras ?? []);
-        setTimeout(() => window.scrollTo(0, s.scroll ?? 0), 50);
+        if (s && s.v === STATE_VERSION) {
+          setTab(s.tab ?? "inbound");
+          setQ(s.q ?? ""); setSector(s.sector ?? "all"); setStage(s.stage ?? "all"); setLoc(s.loc ?? "all"); setView(s.view ?? "all");
+          setFounderMin(s.founderMin ?? 0);
+          setExtras(s.extras ?? {});
+          setVisibleExtras(s.visibleExtras ?? []);
+          setTimeout(() => window.scrollTo(0, s.scroll ?? 0), 50);
+        } else {
+          sessionStorage.removeItem(STATE_KEY);
+        }
       }
-    } catch {}
+    } catch { sessionStorage.removeItem(STATE_KEY); }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
-    sessionStorage.setItem(STATE_KEY, JSON.stringify({ tab, q, sector, stage, loc, view, founderMin, extras, visibleExtras, scroll: window.scrollY }));
+    sessionStorage.setItem(STATE_KEY, JSON.stringify({ v: STATE_VERSION, tab, q, sector, stage, loc, view, founderMin, extras, visibleExtras, scroll: window.scrollY }));
   }, [tab, q, sector, stage, loc, view, founderMin, extras, visibleExtras]);
 
   async function refresh() {
@@ -152,8 +157,8 @@ function HuntPage() {
   useEffect(() => { void refresh(); /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, [effQ, effSector, effStage, effLoc, view]);
 
   // Client-side filtering by tab + extras + founderMin + parsed traits/keywords
-  const filtered = useMemo(() => {
-    let list = results.filter((f) => (f.track ?? "outbound") === tab);
+  const applyFilters = useMemo(() => (whichTab: Tab) => {
+    let list = results.filter((f) => (f.track ?? "outbound") === whichTab);
     if (founderMin > 0) list = list.filter((f) => f.scores.founder >= founderMin);
     if (extras.market) list = list.filter((f) => f.scores.market === extras.market);
     if (extras.fit) list = list.filter((f) => f.scores.fit === extras.fit);
@@ -174,10 +179,16 @@ function HuntPage() {
       const need = new Set(extras.skills.map((s) => s.toLowerCase()));
       list = list.filter((f) => (f.skills ?? []).some((s) => need.has(s.toLowerCase())));
     }
-    // Parsed NL constraints (traits/keywords + reassert overrides against results)
     list = applyParsedQuery(list, activeParsed);
     return list;
-  }, [results, tab, founderMin, extras, activeParsed]);
+  }, [results, founderMin, extras, activeParsed]);
+
+  const filtered = useMemo(() => applyFilters(tab), [applyFilters, tab]);
+  const otherTab: Tab = tab === "inbound" ? "outbound" : "inbound";
+  const otherCount = useMemo(
+    () => (filtered.length === 0 ? applyFilters(otherTab).length : 0),
+    [filtered.length, applyFilters, otherTab],
+  );
 
 
   const allSkills = useMemo(() => {
@@ -386,6 +397,16 @@ function HuntPage() {
             {view === "saved" ? "You haven't saved any founders yet. Save a card to keep it here."
               : view === "matched" ? "No founders match your thesis yet. Try widening your criteria."
               : `No ${tab} founders match your filters.`}
+            {view !== "saved" && view !== "matched" && otherCount > 0 ? (
+              <div className="mt-3">
+                <button
+                  onClick={() => setTab(otherTab)}
+                  className="text-sm text-brand hover:underline"
+                >
+                  {otherCount} {otherCount === 1 ? "match" : "matches"} in {otherTab} — switch tab
+                </button>
+              </div>
+            ) : null}
           </div>
         ) : (
           <div className="grid gap-4 md:grid-cols-2">

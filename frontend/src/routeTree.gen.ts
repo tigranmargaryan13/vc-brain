@@ -19,7 +19,7 @@ import { Route as AuthenticatedProfileRouteImport } from './routes/_authenticate
 import { Route as AuthenticatedHuntRouteImport } from './routes/_authenticated.hunt'
 import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated.dashboard'
 import { Route as AuthenticatedCriteriaRouteImport } from './routes/_authenticated.criteria'
-import { Route as AuthenticatedCompaniesRouteImport } from './routes/_authenticated.companies'
+import { Route as AuthenticatedCompaniesIndexRouteImport } from './routes/_authenticated.companies.index'
 import { Route as AuthenticatedFounderIdRouteImport } from './routes/_authenticated.founder.$id'
 import { Route as AuthenticatedCompaniesIdRouteImport } from './routes/_authenticated.companies.$id'
 
@@ -72,11 +72,12 @@ const AuthenticatedCriteriaRoute = AuthenticatedCriteriaRouteImport.update({
   path: '/criteria',
   getParentRoute: () => AuthenticatedRoute,
 } as any)
-const AuthenticatedCompaniesRoute = AuthenticatedCompaniesRouteImport.update({
-  id: '/companies',
-  path: '/companies',
-  getParentRoute: () => AuthenticatedRoute,
-} as any)
+const AuthenticatedCompaniesIndexRoute =
+  AuthenticatedCompaniesIndexRouteImport.update({
+    id: '/companies/',
+    path: '/companies/',
+    getParentRoute: () => AuthenticatedRoute,
+  } as any)
 const AuthenticatedFounderIdRoute = AuthenticatedFounderIdRouteImport.update({
   id: '/founder/$id',
   path: '/founder/$id',
@@ -84,16 +85,15 @@ const AuthenticatedFounderIdRoute = AuthenticatedFounderIdRouteImport.update({
 } as any)
 const AuthenticatedCompaniesIdRoute =
   AuthenticatedCompaniesIdRouteImport.update({
-    id: '/$id',
-    path: '/$id',
-    getParentRoute: () => AuthenticatedCompaniesRoute,
+    id: '/companies/$id',
+    path: '/companies/$id',
+    getParentRoute: () => AuthenticatedRoute,
   } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/login': typeof LoginRoute
   '/signup': typeof SignupRoute
-  '/companies': typeof AuthenticatedCompaniesRouteWithChildren
   '/criteria': typeof AuthenticatedCriteriaRoute
   '/dashboard': typeof AuthenticatedDashboardRoute
   '/hunt': typeof AuthenticatedHuntRoute
@@ -102,12 +102,12 @@ export interface FileRoutesByFullPath {
   '/thesis': typeof AuthenticatedThesisRoute
   '/companies/$id': typeof AuthenticatedCompaniesIdRoute
   '/founder/$id': typeof AuthenticatedFounderIdRoute
+  '/companies/': typeof AuthenticatedCompaniesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/login': typeof LoginRoute
   '/signup': typeof SignupRoute
-  '/companies': typeof AuthenticatedCompaniesRouteWithChildren
   '/criteria': typeof AuthenticatedCriteriaRoute
   '/dashboard': typeof AuthenticatedDashboardRoute
   '/hunt': typeof AuthenticatedHuntRoute
@@ -116,6 +116,7 @@ export interface FileRoutesByTo {
   '/thesis': typeof AuthenticatedThesisRoute
   '/companies/$id': typeof AuthenticatedCompaniesIdRoute
   '/founder/$id': typeof AuthenticatedFounderIdRoute
+  '/companies': typeof AuthenticatedCompaniesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -123,7 +124,6 @@ export interface FileRoutesById {
   '/_authenticated': typeof AuthenticatedRouteWithChildren
   '/login': typeof LoginRoute
   '/signup': typeof SignupRoute
-  '/_authenticated/companies': typeof AuthenticatedCompaniesRouteWithChildren
   '/_authenticated/criteria': typeof AuthenticatedCriteriaRoute
   '/_authenticated/dashboard': typeof AuthenticatedDashboardRoute
   '/_authenticated/hunt': typeof AuthenticatedHuntRoute
@@ -132,6 +132,7 @@ export interface FileRoutesById {
   '/_authenticated/thesis': typeof AuthenticatedThesisRoute
   '/_authenticated/companies/$id': typeof AuthenticatedCompaniesIdRoute
   '/_authenticated/founder/$id': typeof AuthenticatedFounderIdRoute
+  '/_authenticated/companies/': typeof AuthenticatedCompaniesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -139,7 +140,6 @@ export interface FileRouteTypes {
     | '/'
     | '/login'
     | '/signup'
-    | '/companies'
     | '/criteria'
     | '/dashboard'
     | '/hunt'
@@ -148,12 +148,12 @@ export interface FileRouteTypes {
     | '/thesis'
     | '/companies/$id'
     | '/founder/$id'
+    | '/companies/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/login'
     | '/signup'
-    | '/companies'
     | '/criteria'
     | '/dashboard'
     | '/hunt'
@@ -162,13 +162,13 @@ export interface FileRouteTypes {
     | '/thesis'
     | '/companies/$id'
     | '/founder/$id'
+    | '/companies'
   id:
     | '__root__'
     | '/'
     | '/_authenticated'
     | '/login'
     | '/signup'
-    | '/_authenticated/companies'
     | '/_authenticated/criteria'
     | '/_authenticated/dashboard'
     | '/_authenticated/hunt'
@@ -177,6 +177,7 @@ export interface FileRouteTypes {
     | '/_authenticated/thesis'
     | '/_authenticated/companies/$id'
     | '/_authenticated/founder/$id'
+    | '/_authenticated/companies/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -258,11 +259,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedCriteriaRouteImport
       parentRoute: typeof AuthenticatedRoute
     }
-    '/_authenticated/companies': {
-      id: '/_authenticated/companies'
+    '/_authenticated/companies/': {
+      id: '/_authenticated/companies/'
       path: '/companies'
-      fullPath: '/companies'
-      preLoaderRoute: typeof AuthenticatedCompaniesRouteImport
+      fullPath: '/companies/'
+      preLoaderRoute: typeof AuthenticatedCompaniesIndexRouteImport
       parentRoute: typeof AuthenticatedRoute
     }
     '/_authenticated/founder/$id': {
@@ -274,48 +275,36 @@ declare module '@tanstack/react-router' {
     }
     '/_authenticated/companies/$id': {
       id: '/_authenticated/companies/$id'
-      path: '/$id'
+      path: '/companies/$id'
       fullPath: '/companies/$id'
       preLoaderRoute: typeof AuthenticatedCompaniesIdRouteImport
-      parentRoute: typeof AuthenticatedCompaniesRoute
+      parentRoute: typeof AuthenticatedRoute
     }
   }
 }
 
-interface AuthenticatedCompaniesRouteChildren {
-  AuthenticatedCompaniesIdRoute: typeof AuthenticatedCompaniesIdRoute
-}
-
-const AuthenticatedCompaniesRouteChildren: AuthenticatedCompaniesRouteChildren =
-  {
-    AuthenticatedCompaniesIdRoute: AuthenticatedCompaniesIdRoute,
-  }
-
-const AuthenticatedCompaniesRouteWithChildren =
-  AuthenticatedCompaniesRoute._addFileChildren(
-    AuthenticatedCompaniesRouteChildren,
-  )
-
 interface AuthenticatedRouteChildren {
-  AuthenticatedCompaniesRoute: typeof AuthenticatedCompaniesRouteWithChildren
   AuthenticatedCriteriaRoute: typeof AuthenticatedCriteriaRoute
   AuthenticatedDashboardRoute: typeof AuthenticatedDashboardRoute
   AuthenticatedHuntRoute: typeof AuthenticatedHuntRoute
   AuthenticatedProfileRoute: typeof AuthenticatedProfileRoute
   AuthenticatedSettingsRoute: typeof AuthenticatedSettingsRoute
   AuthenticatedThesisRoute: typeof AuthenticatedThesisRoute
+  AuthenticatedCompaniesIdRoute: typeof AuthenticatedCompaniesIdRoute
   AuthenticatedFounderIdRoute: typeof AuthenticatedFounderIdRoute
+  AuthenticatedCompaniesIndexRoute: typeof AuthenticatedCompaniesIndexRoute
 }
 
 const AuthenticatedRouteChildren: AuthenticatedRouteChildren = {
-  AuthenticatedCompaniesRoute: AuthenticatedCompaniesRouteWithChildren,
   AuthenticatedCriteriaRoute: AuthenticatedCriteriaRoute,
   AuthenticatedDashboardRoute: AuthenticatedDashboardRoute,
   AuthenticatedHuntRoute: AuthenticatedHuntRoute,
   AuthenticatedProfileRoute: AuthenticatedProfileRoute,
   AuthenticatedSettingsRoute: AuthenticatedSettingsRoute,
   AuthenticatedThesisRoute: AuthenticatedThesisRoute,
+  AuthenticatedCompaniesIdRoute: AuthenticatedCompaniesIdRoute,
   AuthenticatedFounderIdRoute: AuthenticatedFounderIdRoute,
+  AuthenticatedCompaniesIndexRoute: AuthenticatedCompaniesIndexRoute,
 }
 
 const AuthenticatedRouteWithChildren = AuthenticatedRoute._addFileChildren(
