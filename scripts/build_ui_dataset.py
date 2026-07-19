@@ -291,6 +291,7 @@ def main():
 
         rec = {
             "id": f"src_{uid}",
+            "track": "outbound",
             "name": name,
             "email": f"{uid}@vcbrain.example",
             "location": location,
@@ -451,6 +452,7 @@ def main():
                        if (row.get(k) or "").strip())
         out.append({
             "id": f"acad_{uid}",
+            "track": "outbound",
             "name": name,
             "email": f"{uid}@vcbrain.example",
             "location": rng.choice(CITIES),
@@ -591,6 +593,7 @@ def main():
 
         out.append({
             "id": f"arxiv_{uid}",
+            "track": "outbound",
             "name": name,
             "email": f"{uid}@vcbrain.example",
             "location": "Unknown",
@@ -622,6 +625,138 @@ def main():
                 "band": a_band,
             },
             "coldStart": True,
+            "evidence": E,
+        })
+
+    # ---- INBOUND track: applications with pitch decks (vc_brain_applier_decks.csv).
+    # Policy for this channel: NO random fills — missing fields stay empty. Deck is
+    # the mandatory application artifact. Scores = SCORING.md aggregate over what
+    # little is known (applying is a strong Intent signal; the rest awaits screening).
+    ROUND_STAGE = {"angel": "Pre-seed", "angel/early": "Pre-seed", "incubation": "Pre-seed",
+                   "seed": "Seed", "series a": "Series A", "series b": "Series B"}
+    try:
+        inbound_rows = [r for r in csv.DictReader(open(f"{REPO}/vc_brain_applier_decks.csv"))
+                        if (r.get("company") or "").strip()]
+    except FileNotFoundError:
+        inbound_rows = []
+    for row in inbound_rows:
+        company = row["company"].strip()
+        uid = re.sub(r"[^a-z0-9_]+", "_", company.lower()).strip("_")
+        if not uid or f"inb_{uid}" in used:
+            continue
+        used.add(f"inb_{uid}")
+        founders_list = [x.strip() for x in (row.get("founders") or "").split(",") if x.strip()]
+        lead = founders_list[0] if founders_list else company
+        cofounders = founders_list[1:]
+
+        loc_raw = (row.get("location") or "").strip()
+        if "HQ" in loc_raw:
+            loc_raw = loc_raw.split("HQ", 1)[1]
+        location = loc_raw.split(",")[0].replace(";", "").strip() or ""
+
+        biz = (row.get("business_model") or "").strip()
+        msize = (row.get("market_size") or "").strip()
+        msize = "" if msize.startswith("[extract") else msize
+        factors = (row.get("key_factors") or "").strip()
+        raised = (row.get("amount_raised") or "").strip()
+        rnd = (row.get("round") or "").strip()
+        site = (row.get("website") or "").strip()
+        site_url = site if site.startswith("http") else (f"https://{site}" if site else "")
+        pdf = (row.get("deck_pdf_url") or "").strip()
+        embed = (row.get("deck_embed_url") or "").strip()
+
+        # amount raised in $M for the Traction signal (rough parse)
+        m = re.search(r"\$?([\d.]+)\s*([KM])", raised.upper())
+        raised_m = (float(m.group(1)) / (1000 if m.group(2) == "K" else 1)) if m else 0.0
+
+        dims = [
+            dim("Capability", 0, 0.0),
+            dim("Skills", 0, 0.0),
+            dim("Trajectory", 0, 0.0),
+            dim("Ceiling", 60 if msize else 0, 0.25 if msize else 0.0),
+            dim("Intent", 85, 0.7),  # they applied — the strongest intent signal
+            dim("Provenance", 0, 0.0),
+            dim("Traction", min(100, round(raised_m * 8)), 0.3 if raised_m else 0.0),
+        ]
+        i_score, i_conf, i_band = aggregate_dims(dims)
+
+        E = []
+        def iev(text, trust, state, url, label):
+            E.append({"text": text, "trust": trust, "state": state,
+                      "sourceUrl": url or site_url or "https://vc-brain.lovable.app",
+                      "sourceLabel": label})
+        iev(f"Applied inbound with a pitch deck ({rnd or 'round undisclosed'}).",
+            "High", "corroborated", embed or pdf, "Application")
+        if biz:
+            iev(f"Business model (self-reported): {biz}", "Medium", "uncorroborated",
+                embed or pdf, "Pitch deck")
+        if msize:
+            iev(f"Market sizing (from deck, unverified): {msize[:140]}", "Low",
+                "uncorroborated", embed or pdf, "Pitch deck")
+        if raised:
+            iev(f"Raised {raised} ({rnd}).", "Medium", "corroborated", site_url, "Public sources")
+        if factors:
+            iev(f"Key factors: {factors[:150]}", "Medium", "uncorroborated",
+                embed or pdf, "Pitch deck")
+        if site_url:
+            iev("Live website.", "Medium", "corroborated", site_url, "Website")
+
+        links = []
+        if site_url:
+            links.append({"label": "Website", "url": site_url})
+        if pdf:
+            links.append({"label": "Deck (PDF)", "url": pdf})
+        if embed:
+            links.append({"label": "Deck", "url": embed})
+        in_fields = [founders_list, row.get("industry"), biz, rnd, raised, location,
+                     site, msize, factors, pdf or embed]
+        deck = {}
+        if pdf:
+            deck["pdfUrl"] = pdf
+        if embed:
+            deck["embedUrl"] = embed
+        if (row.get("deck_notes") or "").strip():
+            deck["notes"] = row["deck_notes"].strip()
+
+        out.append({
+            "id": f"inb_{uid}",
+            "track": "inbound",
+            "name": lead,
+            "email": f"inb_{uid}@vcbrain.example",
+            "location": location,
+            "completeness": round(sum(1 for x in in_fields if x) / len(in_fields) * 100),
+            "bio": (f"{lead.split()[0]} applied to VC Brain with {company}."
+                    + (f" Co-founders: {', '.join(cofounders)}." if cofounders else "")),
+            "skills": [],
+            "contact": {"email": f"inb_{uid}@vcbrain.example",
+                        **({"website": site_url} if site_url else {})},
+            "details": {"source": "Inbound application",
+                        **({"industry": row.get("industry").strip()} if (row.get("industry") or "").strip() else {}),
+                        **({"links": links} if links else {})},
+            "dimensions": dims,
+            "deck": deck,
+            "projects": [{
+                "id": f"inb_{uid}_p1",
+                "name": company,
+                "sector": map_sector(row.get("industry"), None, rng_for(company)),
+                "stage": ROUND_STAGE.get(rnd.lower(), "Unknown"),
+                "oneLiner": biz[:110] if biz else f"{company} — inbound application.",
+                "description": " ".join(x for x in [
+                    biz + "." if biz and not biz.endswith(".") else biz,
+                    f"Market: {msize}." if msize else "",
+                    f"Raised {raised} ({rnd})." if raised else "",
+                ] if x).strip(),
+            }],
+            "scores": {
+                "founder": i_score,
+                "founderTrend": "flat",
+                "market": "Neutral",
+                "marketTrend": "flat",
+                "fit": "Pivot potential",
+                "fitTrend": "flat",
+                "confidence": i_conf,
+                "band": i_band,
+            },
             "evidence": E,
         })
 

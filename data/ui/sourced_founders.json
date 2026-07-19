@@ -1,6 +1,1386 @@
 [
  {
+  "id": "inb_uber",
+  "track": "inbound",
+  "name": "Garrett Camp",
+  "email": "inb_uber@vcbrain.example",
+  "location": "San Francisco",
+  "completeness": 100,
+  "bio": "Garrett applied to VC Brain with Uber. Co-founders: Travis Kalanick.",
+  "skills": [],
+  "contact": {
+   "email": "inb_uber@vcbrain.example",
+   "website": "https://uber.com"
+  },
+  "details": {
+   "source": "Inbound application",
+   "industry": "Transportation, Technology",
+   "links": [
+    {
+     "label": "Website",
+     "url": "https://uber.com"
+    },
+    {
+     "label": "Deck",
+     "url": "https://embed.slidebean.com/97aeb1d08ab"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 60,
+    "coverage": 0.25,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 85,
+    "coverage": 0.7,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 10,
+    "coverage": 0.3,
+    "weight": 1.0
+   }
+  ],
+  "deck": {
+   "embedUrl": "https://embed.slidebean.com/97aeb1d08ab",
+   "notes": "Original deck shared by co-founder Garrett Camp via Medium; also hosted on Axios (axios.com/read-the-original-uber-pitch-deck-1513305016...)"
+  },
+  "projects": [
+   {
+    "id": "inb_uber_p1",
+    "name": "Uber",
+    "sector": "Dev Tools",
+    "stage": "Seed",
+    "oneLiner": "On-demand premium car service; later ride-sharing + delivery",
+    "description": "On-demand premium car service; later ride-sharing + delivery. Market: ~$1.3B market projection (SF+NY expansion, best/realistic/worst cases in deck). Raised ~$1.3M (sources vary: $200K–$1.25M) (Seed)."
+   }
+  ],
+  "scores": {
+   "founder": 64,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.47,
+   "band": [
+    45.3,
+    82.6
+   ]
+  },
+  "evidence": [
+   {
+    "text": "Applied inbound with a pitch deck (Seed).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://embed.slidebean.com/97aeb1d08ab",
+    "sourceLabel": "Application"
+   },
+   {
+    "text": "Business model (self-reported): On-demand premium car service; later ride-sharing + delivery",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/97aeb1d08ab",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Market sizing (from deck, unverified): ~$1.3B market projection (SF+NY expansion, best/realistic/worst cases in deck)",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/97aeb1d08ab",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Raised ~$1.3M (sources vary: $200K–$1.25M) (Seed).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://uber.com",
+    "sourceLabel": "Public sources"
+   },
+   {
+    "text": "Key factors: 25-slide deck; framed against NetJets analogy; 1-click hailing + optimized dispatch; predicted ride-sharing and cheaper cars (Prius) early",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/97aeb1d08ab",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Live website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://uber.com",
+    "sourceLabel": "Website"
+   }
+  ]
+ },
+ {
+  "id": "inb_airbnb",
+  "track": "inbound",
+  "name": "Brian Chesky",
+  "email": "inb_airbnb@vcbrain.example",
+  "location": "San Francisco",
+  "completeness": 100,
+  "bio": "Brian applied to VC Brain with Airbnb. Co-founders: Joe Gebbia, Nathan Blecharczyk.",
+  "skills": [],
+  "contact": {
+   "email": "inb_airbnb@vcbrain.example",
+   "website": "https://airbnb.com"
+  },
+  "details": {
+   "source": "Inbound application",
+   "industry": "Travel, Hospitality, Technology",
+   "links": [
+    {
+     "label": "Website",
+     "url": "https://airbnb.com"
+    },
+    {
+     "label": "Deck (PDF)",
+     "url": "https://sites.ced.ncsu.edu/design-and-pitch/wp-content/uploads/sites/13/2020/05/Pitch-Example-Air-BnB-PDF.pdf"
+    },
+    {
+     "label": "Deck",
+     "url": "https://embed.slidebean.com/59f7a29da8d"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 60,
+    "coverage": 0.25,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 85,
+    "coverage": 0.7,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 4,
+    "coverage": 0.3,
+    "weight": 1.0
+   }
+  ],
+  "deck": {
+   "pdfUrl": "https://sites.ced.ncsu.edu/design-and-pitch/wp-content/uploads/sites/13/2020/05/Pitch-Example-Air-BnB-PDF.pdf",
+   "embedUrl": "https://embed.slidebean.com/59f7a29da8d",
+   "notes": "Direct PDF confirmed (NC State edu host) + Slidebean embed"
+  },
+  "projects": [
+   {
+    "id": "inb_airbnb_p1",
+    "name": "Airbnb",
+    "sector": "Consumer",
+    "stage": "Pre-seed",
+    "oneLiner": "Online marketplace for lodging; 10% commission on bookings",
+    "description": "Online marketplace for lodging; 10% commission on bookings. Market: TAM 1.9B+ trips booked worldwide; SAM 532M budget & online trips; SOM 10.6M (from deck). Raised $500K (Angel)."
+   }
+  ],
+  "scores": {
+   "founder": 63,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.47,
+   "band": [
+    44.2,
+    81.4
+   ]
+  },
+  "evidence": [
+   {
+    "text": "Applied inbound with a pitch deck (Angel).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://embed.slidebean.com/59f7a29da8d",
+    "sourceLabel": "Application"
+   },
+   {
+    "text": "Business model (self-reported): Online marketplace for lodging; 10% commission on bookings",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/59f7a29da8d",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Market sizing (from deck, unverified): TAM 1.9B+ trips booked worldwide; SAM 532M budget & online trips; SOM 10.6M (from deck)",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/59f7a29da8d",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Raised $500K (Angel).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://airbnb.com",
+    "sourceLabel": "Public sources"
+   },
+   {
+    "text": "Key factors: Craigslist dual-posting growth hack; event-driven adoption (conferences); marketplace with clear take-rate; famously clean 10-slide structure",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/59f7a29da8d",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Live website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://airbnb.com",
+    "sourceLabel": "Website"
+   }
+  ]
+ },
+ {
+  "id": "inb_tinder",
+  "track": "inbound",
+  "name": "Sean Rad",
+  "email": "inb_tinder@vcbrain.example",
+  "location": "West Hollywood",
+  "completeness": 90,
+  "bio": "Sean applied to VC Brain with Tinder. Co-founders: Justin Mateen, Jonathan Badeen.",
+  "skills": [],
+  "contact": {
+   "email": "inb_tinder@vcbrain.example",
+   "website": "https://tinder.com"
+  },
+  "details": {
+   "source": "Inbound application",
+   "industry": "Social Media, Dating",
+   "links": [
+    {
+     "label": "Website",
+     "url": "https://tinder.com"
+    },
+    {
+     "label": "Deck",
+     "url": "https://embed.slidebean.com/BgEWlFjWQV"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 85,
+    "coverage": 0.7,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 100,
+    "coverage": 0.3,
+    "weight": 1.0
+   }
+  ],
+  "deck": {
+   "embedUrl": "https://embed.slidebean.com/BgEWlFjWQV",
+   "notes": "Slidebean embed"
+  },
+  "projects": [
+   {
+    "id": "inb_tinder_p1",
+    "name": "Tinder",
+    "sector": "Consumer",
+    "stage": "Pre-seed",
+    "oneLiner": "Subscriptions (Tinder+/Gold) + ad revenue",
+    "description": "Subscriptions (Tinder+/Gold) + ad revenue. Raised ~$50M total funding (Incubation)."
+   }
+  ],
+  "scores": {
+   "founder": 89,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.41,
+   "band": [
+    68.2,
+    100.0
+   ]
+  },
+  "evidence": [
+   {
+    "text": "Applied inbound with a pitch deck (Incubation).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://embed.slidebean.com/BgEWlFjWQV",
+    "sourceLabel": "Application"
+   },
+   {
+    "text": "Business model (self-reported): Subscriptions (Tinder+/Gold) + ad revenue",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/BgEWlFjWQV",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Raised ~$50M total funding (Incubation).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://tinder.com",
+    "sourceLabel": "Public sources"
+   },
+   {
+    "text": "Key factors: Built in IAC Hatch Labs incubator (2012); double-opt-in matching mechanic as core wedge; viral campus growth",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/BgEWlFjWQV",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Live website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://tinder.com",
+    "sourceLabel": "Website"
+   }
+  ]
+ },
+ {
+  "id": "inb_sololearn",
+  "track": "inbound",
+  "name": "Yeva Hyusyan",
+  "email": "inb_sololearn@vcbrain.example",
+  "location": "San Francisco",
+  "completeness": 90,
+  "bio": "Yeva applied to VC Brain with Sololearn. Co-founders: Davit Kocharyan.",
+  "skills": [],
+  "contact": {
+   "email": "inb_sololearn@vcbrain.example",
+   "website": "https://sololearn.com"
+  },
+  "details": {
+   "source": "Inbound application",
+   "industry": "Ed-tech, Mobile Learning",
+   "links": [
+    {
+     "label": "Website",
+     "url": "https://sololearn.com"
+    },
+    {
+     "label": "Deck",
+     "url": "https://embed.slidebean.com/xsa6w0xrwv"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 85,
+    "coverage": 0.7,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 100,
+    "coverage": 0.3,
+    "weight": 1.0
+   }
+  ],
+  "deck": {
+   "embedUrl": "https://embed.slidebean.com/xsa6w0xrwv",
+   "notes": "Slidebean embed"
+  },
+  "projects": [
+   {
+    "id": "inb_sololearn_p1",
+    "name": "Sololearn",
+    "sector": "Dev Tools",
+    "stage": "Series B",
+    "oneLiner": "Freemium coding education; SaaS + partnerships",
+    "description": "Freemium coding education; SaaS + partnerships. Raised $24M (Series B)."
+   }
+  ],
+  "scores": {
+   "founder": 89,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.41,
+   "band": [
+    68.2,
+    100.0
+   ]
+  },
+  "evidence": [
+   {
+    "text": "Applied inbound with a pitch deck (Series B).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://embed.slidebean.com/xsa6w0xrwv",
+    "sourceLabel": "Application"
+   },
+   {
+    "text": "Business model (self-reported): Freemium coding education; SaaS + partnerships",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/xsa6w0xrwv",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Raised $24M (Series B).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://sololearn.com",
+    "sourceLabel": "Public sources"
+   },
+   {
+    "text": "Key factors: Armenia-founded edtech; interactive + peer-to-peer learning; large mobile learner base as core traction",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/xsa6w0xrwv",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Live website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://sololearn.com",
+    "sourceLabel": "Website"
+   }
+  ]
+ },
+ {
+  "id": "inb_copy_ai",
+  "track": "inbound",
+  "name": "Paul Yacoubian",
+  "email": "inb_copy_ai@vcbrain.example",
+  "location": "Memphis",
+  "completeness": 90,
+  "bio": "Paul applied to VC Brain with Copy.ai. Co-founders: Chris Lu.",
+  "skills": [],
+  "contact": {
+   "email": "inb_copy_ai@vcbrain.example",
+   "website": "https://copy.ai"
+  },
+  "details": {
+   "source": "Inbound application",
+   "industry": "AI, Copywriting, SaaS",
+   "links": [
+    {
+     "label": "Website",
+     "url": "https://copy.ai"
+    },
+    {
+     "label": "Deck",
+     "url": "https://embed.slidebean.com/h03fpmp377"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 85,
+    "coverage": 0.7,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 88,
+    "coverage": 0.3,
+    "weight": 1.0
+   }
+  ],
+  "deck": {
+   "embedUrl": "https://embed.slidebean.com/h03fpmp377",
+   "notes": "Slidebean embed"
+  },
+  "projects": [
+   {
+    "id": "inb_copy_ai_p1",
+    "name": "Copy.ai",
+    "sector": "AI/ML",
+    "stage": "Series A",
+    "oneLiner": "AI writing assistant; SaaS subscription",
+    "description": "AI writing assistant; SaaS subscription. Raised $11M (Series A)."
+   }
+  ],
+  "scores": {
+   "founder": 86,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.41,
+   "band": [
+    65.1,
+    100.0
+   ]
+  },
+  "evidence": [
+   {
+    "text": "Applied inbound with a pitch deck (Series A).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://embed.slidebean.com/h03fpmp377",
+    "sourceLabel": "Application"
+   },
+   {
+    "text": "Business model (self-reported): AI writing assistant; SaaS subscription",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/h03fpmp377",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Raised $11M (Series A).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://copy.ai",
+    "sourceLabel": "Public sources"
+   },
+   {
+    "text": "Key factors: Raised from Wing, Sequoia, Tiger Global; early GPT-3 wrapper that found strong PMF fast; AI-native GTM",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/h03fpmp377",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Live website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://copy.ai",
+    "sourceLabel": "Website"
+   }
+  ]
+ },
+ {
+  "id": "inb_linkedin",
+  "track": "inbound",
+  "name": "Reid Hoffman",
+  "email": "inb_linkedin@vcbrain.example",
+  "location": "Sunnyvale",
+  "completeness": 90,
+  "bio": "Reid applied to VC Brain with LinkedIn.",
+  "skills": [],
+  "contact": {
+   "email": "inb_linkedin@vcbrain.example",
+   "website": "https://linkedin.com"
+  },
+  "details": {
+   "source": "Inbound application",
+   "industry": "Social Media, Networking, Technology",
+   "links": [
+    {
+     "label": "Website",
+     "url": "https://linkedin.com"
+    },
+    {
+     "label": "Deck",
+     "url": "https://embed.slidebean.com/J5FjZkJHXb"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 85,
+    "coverage": 0.7,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 80,
+    "coverage": 0.3,
+    "weight": 1.0
+   }
+  ],
+  "deck": {
+   "embedUrl": "https://embed.slidebean.com/J5FjZkJHXb",
+   "notes": "Slidebean embed; Hoffman's annotated Series B deck is widely published (reidhoffman.org)"
+  },
+  "projects": [
+   {
+    "id": "inb_linkedin_p1",
+    "name": "LinkedIn",
+    "sector": "Consumer",
+    "stage": "Series B",
+    "oneLiner": "Professional networking; subscriptions + hiring + ads",
+    "description": "Professional networking; subscriptions + hiring + ads. Raised $10M (Series B)."
+   }
+  ],
+  "scores": {
+   "founder": 84,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.41,
+   "band": [
+    63.0,
+    100.0
+   ]
+  },
+  "evidence": [
+   {
+    "text": "Applied inbound with a pitch deck (Series B).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://embed.slidebean.com/J5FjZkJHXb",
+    "sourceLabel": "Application"
+   },
+   {
+    "text": "Business model (self-reported): Professional networking; subscriptions + hiring + ads",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/J5FjZkJHXb",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Raised $10M (Series B).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://linkedin.com",
+    "sourceLabel": "Public sources"
+   },
+   {
+    "text": "Key factors: Reid Hoffman publicly released this Series B deck with annotations; network-effects thesis; \"first mover in professional identity\"",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/J5FjZkJHXb",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Live website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://linkedin.com",
+    "sourceLabel": "Website"
+   }
+  ]
+ },
+ {
+  "id": "inb_youtube",
+  "track": "inbound",
+  "name": "Chad Hurley",
+  "email": "inb_youtube@vcbrain.example",
+  "location": "San Bruno",
+  "completeness": 90,
+  "bio": "Chad applied to VC Brain with YouTube. Co-founders: Steve Chen, Jawed Karim.",
+  "skills": [],
+  "contact": {
+   "email": "inb_youtube@vcbrain.example",
+   "website": "https://youtube.com"
+  },
+  "details": {
+   "source": "Inbound application",
+   "industry": "Video Streaming, Internet",
+   "links": [
+    {
+     "label": "Website",
+     "url": "https://youtube.com"
+    },
+    {
+     "label": "Deck",
+     "url": "https://embed.slidebean.com/F9BkiAkCSg"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 85,
+    "coverage": 0.7,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 28,
+    "coverage": 0.3,
+    "weight": 1.0
+   }
+  ],
+  "deck": {
+   "embedUrl": "https://embed.slidebean.com/F9BkiAkCSg",
+   "notes": "Slidebean embed; original pitched to Sequoia Capital 2005"
+  },
+  "projects": [
+   {
+    "id": "inb_youtube_p1",
+    "name": "YouTube",
+    "sector": "Fintech",
+    "stage": "Series A",
+    "oneLiner": "Ad revenue and subscriptions",
+    "description": "Ad revenue and subscriptions. Raised $3.5M (Series A)."
+   }
+  ],
+  "scores": {
+   "founder": 70,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.41,
+   "band": [
+    49.3,
+    90.7
+   ]
+  },
+  "evidence": [
+   {
+    "text": "Applied inbound with a pitch deck (Series A).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://embed.slidebean.com/F9BkiAkCSg",
+    "sourceLabel": "Application"
+   },
+   {
+    "text": "Business model (self-reported): Ad revenue and subscriptions",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/F9BkiAkCSg",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Raised $3.5M (Series A).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://youtube.com",
+    "sourceLabel": "Public sources"
+   },
+   {
+    "text": "Key factors: Raised from Sequoia at <10K users; simple ~10-slide deck; early user-generated-content thesis",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/F9BkiAkCSg",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Live website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://youtube.com",
+    "sourceLabel": "Website"
+   }
+  ]
+ },
+ {
+  "id": "inb_doordash",
+  "track": "inbound",
+  "name": "Tony Xu",
+  "email": "inb_doordash@vcbrain.example",
+  "location": "San Francisco",
+  "completeness": 90,
+  "bio": "Tony applied to VC Brain with DoorDash. Co-founders: Stanley Tang, Andy Fang, Evan Moore.",
+  "skills": [],
+  "contact": {
+   "email": "inb_doordash@vcbrain.example",
+   "website": "https://doordash.com"
+  },
+  "details": {
+   "source": "Inbound application",
+   "industry": "Food Delivery, Technology",
+   "links": [
+    {
+     "label": "Website",
+     "url": "https://doordash.com"
+    },
+    {
+     "label": "Deck",
+     "url": "https://embed.slidebean.com/rd4q4s99sq"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 85,
+    "coverage": 0.7,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 19,
+    "coverage": 0.3,
+    "weight": 1.0
+   }
+  ],
+  "deck": {
+   "embedUrl": "https://embed.slidebean.com/rd4q4s99sq",
+   "notes": "Slidebean embed"
+  },
+  "projects": [
+   {
+    "id": "inb_doordash_p1",
+    "name": "DoorDash",
+    "sector": "Climate",
+    "stage": "Seed",
+    "oneLiner": "On-demand food delivery; commissions + fees",
+    "description": "On-demand food delivery; commissions + fees. Raised $2.4M (Seed)."
+   }
+  ],
+  "scores": {
+   "founder": 68,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.41,
+   "band": [
+    46.9,
+    88.3
+   ]
+  },
+  "evidence": [
+   {
+    "text": "Applied inbound with a pitch deck (Seed).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://embed.slidebean.com/rd4q4s99sq",
+    "sourceLabel": "Application"
+   },
+   {
+    "text": "Business model (self-reported): On-demand food delivery; commissions + fees",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/rd4q4s99sq",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Raised $2.4M (Seed).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doordash.com",
+    "sourceLabel": "Public sources"
+   },
+   {
+    "text": "Key factors: Traction-led pitch; strong early delivery volume numbers used as core proof; logistics/marketplace model",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/rd4q4s99sq",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Live website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doordash.com",
+    "sourceLabel": "Website"
+   }
+  ]
+ },
+ {
+  "id": "inb_facebook",
+  "track": "inbound",
+  "name": "Mark Zuckerberg",
+  "email": "inb_facebook@vcbrain.example",
+  "location": "Menlo Park",
+  "completeness": 90,
+  "bio": "Mark applied to VC Brain with Facebook.",
+  "skills": [],
+  "contact": {
+   "email": "inb_facebook@vcbrain.example",
+   "website": "https://facebook.com"
+  },
+  "details": {
+   "source": "Inbound application",
+   "industry": "Social Media, Technology",
+   "links": [
+    {
+     "label": "Website",
+     "url": "https://facebook.com"
+    },
+    {
+     "label": "Deck",
+     "url": "https://embed.slidebean.com/hr6GUfXhCt"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 85,
+    "coverage": 0.7,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 4,
+    "coverage": 0.3,
+    "weight": 1.0
+   }
+  ],
+  "deck": {
+   "embedUrl": "https://embed.slidebean.com/hr6GUfXhCt",
+   "notes": "Slidebean embed; original was an Online Marketing Services media kit"
+  },
+  "projects": [
+   {
+    "id": "inb_facebook_p1",
+    "name": "Facebook",
+    "sector": "Consumer",
+    "stage": "Pre-seed",
+    "oneLiner": "Social networking + advertising platform",
+    "description": "Social networking + advertising platform. Raised ~$500K (Thiel angel) (Angel/early)."
+   }
+  ],
+  "scores": {
+   "founder": 64,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.41,
+   "band": [
+    43.0,
+    84.4
+   ]
+  },
+  "evidence": [
+   {
+    "text": "Applied inbound with a pitch deck (Angel/early).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://embed.slidebean.com/hr6GUfXhCt",
+    "sourceLabel": "Application"
+   },
+   {
+    "text": "Business model (self-reported): Social networking + advertising platform",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/hr6GUfXhCt",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Raised ~$500K (Thiel angel) (Angel/early).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://facebook.com",
+    "sourceLabel": "Public sources"
+   },
+   {
+    "text": "Key factors: Original was a media/ad kit; bet on engagement + growth metrics rather than revenue; strong early retention story",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/hr6GUfXhCt",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Live website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://facebook.com",
+    "sourceLabel": "Website"
+   }
+  ]
+ },
+ {
+  "id": "inb_buffer",
+  "track": "inbound",
+  "name": "Joel Gascoigne",
+  "email": "inb_buffer@vcbrain.example",
+  "location": "San Francisco",
+  "completeness": 90,
+  "bio": "Joel applied to VC Brain with Buffer. Co-founders: Leo Widrich.",
+  "skills": [],
+  "contact": {
+   "email": "inb_buffer@vcbrain.example",
+   "website": "https://buffer.com"
+  },
+  "details": {
+   "source": "Inbound application",
+   "industry": "Social Media, Technology",
+   "links": [
+    {
+     "label": "Website",
+     "url": "https://buffer.com"
+    },
+    {
+     "label": "Deck",
+     "url": "https://embed.slidebean.com/Qf0fiR04bi"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 85,
+    "coverage": 0.7,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 4,
+    "coverage": 0.3,
+    "weight": 1.0
+   }
+  ],
+  "deck": {
+   "embedUrl": "https://embed.slidebean.com/Qf0fiR04bi",
+   "notes": "Slidebean embed; Joel Gascoigne open-sourced the real deck on his blog"
+  },
+  "projects": [
+   {
+    "id": "inb_buffer_p1",
+    "name": "Buffer",
+    "sector": "Consumer",
+    "stage": "Seed",
+    "oneLiner": "Social media scheduling; SaaS subscription",
+    "description": "Social media scheduling; SaaS subscription. Raised $500K (Seed)."
+   }
+  ],
+  "scores": {
+   "founder": 64,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.41,
+   "band": [
+    43.0,
+    84.4
+   ]
+  },
+  "evidence": [
+   {
+    "text": "Applied inbound with a pitch deck (Seed).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://embed.slidebean.com/Qf0fiR04bi",
+    "sourceLabel": "Application"
+   },
+   {
+    "text": "Business model (self-reported): Social media scheduling; SaaS subscription",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/Qf0fiR04bi",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Raised $500K (Seed).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://buffer.com",
+    "sourceLabel": "Public sources"
+   },
+   {
+    "text": "Key factors: Founder openly published the exact deck used to raise $500K; traction slide cited by founders as the decisive one",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://embed.slidebean.com/Qf0fiR04bi",
+    "sourceLabel": "Pitch deck"
+   },
+   {
+    "text": "Live website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://buffer.com",
+    "sourceLabel": "Website"
+   }
+  ]
+ },
+ {
   "id": "src_stanislav_kirdey",
+  "track": "outbound",
   "name": "Stanislav Kirdey",
   "email": "stanislav_kirdey@vcbrain.example",
   "location": "Mexico City",
@@ -180,6 +1560,7 @@
  },
  {
   "id": "src_gapostolov",
+  "track": "outbound",
   "name": "George Apostolov",
   "email": "gapostolov@vcbrain.example",
   "location": "San Francisco",
@@ -348,6 +1729,7 @@
  },
  {
   "id": "acad_qinghonglin",
+  "track": "outbound",
   "name": "Kevin Qinghong Lin",
   "email": "qinghonglin@vcbrain.example",
   "location": "Lisbon",
@@ -504,6 +1886,7 @@
  },
  {
   "id": "acad_gracebrigham",
+  "track": "outbound",
   "name": "Natalie Grace Brigham",
   "email": "gracebrigham@vcbrain.example",
   "location": "Mexico City",
@@ -660,6 +2043,7 @@
  },
  {
   "id": "acad_mvmalyi",
+  "track": "outbound",
   "name": "Max Malyi",
   "email": "mvmalyi@vcbrain.example",
   "location": "Mexico City",
@@ -815,6 +2199,7 @@
  },
  {
   "id": "acad_itregear",
+  "track": "outbound",
   "name": "Ivan Tregear",
   "email": "itregear@vcbrain.example",
   "location": "Lagos",
@@ -963,6 +2348,7 @@
  },
  {
   "id": "src_crystal_j",
+  "track": "outbound",
   "name": "Crystal J",
   "email": "crystal_j@vcbrain.example",
   "location": "Lisbon",
@@ -1119,6 +2505,7 @@
  },
  {
   "id": "src_maxmusing",
+  "track": "outbound",
   "name": "Max Musing",
   "email": "maxmusing@vcbrain.example",
   "location": "Toronto",
@@ -1272,6 +2659,7 @@
  },
  {
   "id": "src_manuarora",
+  "track": "outbound",
   "name": "Manu Arora",
   "email": "manuarora@vcbrain.example",
   "location": "Remote",
@@ -1442,6 +2830,7 @@
  },
  {
   "id": "acad_haoyu_zhao",
+  "track": "outbound",
   "name": "Haoyu Zhao",
   "email": "haoyu_zhao@vcbrain.example",
   "location": "Amsterdam",
@@ -1586,6 +2975,7 @@
  },
  {
   "id": "acad_yushi_huang",
+  "track": "outbound",
   "name": "Yushi Huang",
   "email": "yushi_huang@vcbrain.example",
   "location": "San Francisco",
@@ -1731,6 +3121,7 @@
  },
  {
   "id": "acad_sangmin_lee",
+  "track": "outbound",
   "name": "Sangmin Lee",
   "email": "sangmin_lee@vcbrain.example",
   "location": "Lisbon",
@@ -1876,6 +3267,7 @@
  },
  {
   "id": "acad_jinghao_zhang",
+  "track": "outbound",
   "name": "Jinghao Zhang",
   "email": "jinghao_zhang@vcbrain.example",
   "location": "Nairobi",
@@ -2020,6 +3412,7 @@
  },
  {
   "id": "acad_al_zadid_sultan_bin_habib",
+  "track": "outbound",
   "name": "Al Zadid Sultan Bin Habib",
   "email": "al_zadid_sultan_bin_habib@vcbrain.example",
   "location": "Nairobi",
@@ -2165,6 +3558,7 @@
  },
  {
   "id": "acad_varshith_roy_kotla",
+  "track": "outbound",
   "name": "Varshith Roy Kotla",
   "email": "varshith_roy_kotla@vcbrain.example",
   "location": "Paris",
@@ -2302,6 +3696,7 @@
  },
  {
   "id": "acad_ayan_pendharkar",
+  "track": "outbound",
   "name": "Ayan Pendharkar",
   "email": "ayan_pendharkar@vcbrain.example",
   "location": "Lisbon",
@@ -2439,6 +3834,7 @@
  },
  {
   "id": "acad_hiranya_garbha_kumar",
+  "track": "outbound",
   "name": "Hiranya Garbha Kumar",
   "email": "hiranya_garbha_kumar@vcbrain.example",
   "location": "Lagos",
@@ -2584,6 +3980,7 @@
  },
  {
   "id": "src_ninghu",
+  "track": "outbound",
   "name": "Ning Hu",
   "email": "ninghu@vcbrain.example",
   "location": "Lisbon",
@@ -2732,6 +4129,7 @@
  },
  {
   "id": "src_philip_kubinski",
+  "track": "outbound",
   "name": "Philip Kubinski",
   "email": "philip_kubinski@vcbrain.example",
   "location": "Nairobi",
@@ -2880,6 +4278,7 @@
  },
  {
   "id": "src_kris_lachance",
+  "track": "outbound",
   "name": "Kristofer Lachance",
   "email": "kris_lachance@vcbrain.example",
   "location": "Tokyo",
@@ -3039,6 +4438,7 @@
  },
  {
   "id": "src_benln",
+  "track": "outbound",
   "name": "Ben Lang",
   "email": "benln@vcbrain.example",
   "location": "New York",
@@ -3181,6 +4581,7 @@
  },
  {
   "id": "src_nikhilrado",
+  "track": "outbound",
   "name": "Nikhil Radosevich",
   "email": "nikhilrado@vcbrain.example",
   "location": "New York",
@@ -3311,6 +4712,7 @@
  },
  {
   "id": "acad_tarek_ali",
+  "track": "outbound",
   "name": "Tarek Ali",
   "email": "tarek_ali@vcbrain.example",
   "location": "Lagos",
@@ -3443,6 +4845,7 @@
  },
  {
   "id": "acad_funing_ma",
+  "track": "outbound",
   "name": "Funing Ma",
   "email": "funing_ma@vcbrain.example",
   "location": "Mexico City",
@@ -3575,6 +4978,7 @@
  },
  {
   "id": "acad_yueen_ma",
+  "track": "outbound",
   "name": "Yueen Ma",
   "email": "yueen_ma@vcbrain.example",
   "location": "Tokyo",
@@ -3707,6 +5111,7 @@
  },
  {
   "id": "acad_yizheng_huang",
+  "track": "outbound",
   "name": "Yizheng Huang",
   "email": "yizheng_huang@vcbrain.example",
   "location": "Amsterdam",
@@ -3839,6 +5244,7 @@
  },
  {
   "id": "acad_yang_liu",
+  "track": "outbound",
   "name": "Yang Liu",
   "email": "yang_liu@vcbrain.example",
   "location": "London",
@@ -3971,6 +5377,7 @@
  },
  {
   "id": "acad_freddy_jackson_brown",
+  "track": "outbound",
   "name": "Freddy Jackson Brown",
   "email": "freddy_jackson_brown@vcbrain.example",
   "location": "Lagos",
@@ -4103,6 +5510,7 @@
  },
  {
   "id": "acad_hyunwoo_kim",
+  "track": "outbound",
   "name": "Hyunwoo Kim",
   "email": "hyunwoo_kim@vcbrain.example",
   "location": "Paris",
@@ -4235,6 +5643,7 @@
  },
  {
   "id": "acad_h_lan",
+  "track": "outbound",
   "name": "H Lan",
   "email": "h_lan@vcbrain.example",
   "location": "Paris",
@@ -4367,6 +5776,7 @@
  },
  {
   "id": "acad_jingkang_liang",
+  "track": "outbound",
   "name": "Jingkang Liang",
   "email": "jingkang_liang@vcbrain.example",
   "location": "Lagos",
@@ -4499,6 +5909,7 @@
  },
  {
   "id": "acad_samuel_rothfarb",
+  "track": "outbound",
   "name": "Samuel Rothfarb",
   "email": "samuel_rothfarb@vcbrain.example",
   "location": "Mexico City",
@@ -4631,6 +6042,7 @@
  },
  {
   "id": "acad_shicheng_xu",
+  "track": "outbound",
   "name": "Shicheng Xu",
   "email": "shicheng_xu@vcbrain.example",
   "location": "San Francisco",
@@ -4763,6 +6175,7 @@
  },
  {
   "id": "acad_insaf_kraidia",
+  "track": "outbound",
   "name": "Insaf Kraidia",
   "email": "insaf_kraidia@vcbrain.example",
   "location": "London",
@@ -4895,6 +6308,7 @@
  },
  {
   "id": "src_paulmurnane",
+  "track": "outbound",
   "name": "Paul Murnane",
   "email": "paulmurnane@vcbrain.example",
   "location": "Berlin",
@@ -5053,6 +6467,7 @@
  },
  {
   "id": "src_yahia_bakour3",
+  "track": "outbound",
   "name": "Yahia Bakour",
   "email": "yahia_bakour3@vcbrain.example",
   "location": "Lisbon",
@@ -5200,6 +6615,7 @@
  },
  {
   "id": "src_rohanrecommends",
+  "track": "outbound",
   "name": "Rohan Chaubey",
   "email": "rohanrecommends@vcbrain.example",
   "location": "Lisbon",
@@ -5331,6 +6747,7 @@
  },
  {
   "id": "src_istiakahmad",
+  "track": "outbound",
   "name": "ISTIAK AHMAD",
   "email": "istiakahmad@vcbrain.example",
   "location": "Amsterdam",
@@ -5461,6 +6878,7 @@
  },
  {
   "id": "src_masaki_iino",
+  "track": "outbound",
   "name": "Masaki Iino",
   "email": "masaki_iino@vcbrain.example",
   "location": "Nairobi",
@@ -5608,6 +7026,7 @@
  },
  {
   "id": "src_pixycad",
+  "track": "outbound",
   "name": "Andrea Sartori",
   "email": "pixycad@vcbrain.example",
   "location": "Lagos",
@@ -5755,6 +7174,7 @@
  },
  {
   "id": "src_byalexai",
+  "track": "outbound",
   "name": "Aleksandar Blazhev",
   "email": "byalexai@vcbrain.example",
   "location": "Lisbon",
@@ -5874,6 +7294,7 @@
  },
  {
   "id": "src_justin2025",
+  "track": "outbound",
   "name": "Justin Jincaid",
   "email": "justin2025@vcbrain.example",
   "location": "Amsterdam",
@@ -5993,6 +7414,7 @@
  },
  {
   "id": "acad_qi_he",
+  "track": "outbound",
   "name": "Qi He",
   "email": "qi_he@vcbrain.example",
   "location": "London",
@@ -6118,6 +7540,7 @@
  },
  {
   "id": "acad_sergio_cruzes",
+  "track": "outbound",
   "name": "Sergio Cruzes",
   "email": "sergio_cruzes@vcbrain.example",
   "location": "Lisbon",
@@ -6243,6 +7666,7 @@
  },
  {
   "id": "src_fatima_ashraf",
+  "track": "outbound",
   "name": "Fatima Ashraf",
   "email": "fatima_ashraf@vcbrain.example",
   "location": "New York",
@@ -6359,6 +7783,7 @@
  },
  {
   "id": "src_julie_zhu",
+  "track": "outbound",
   "name": "Julie Zhu",
   "email": "julie_zhu@vcbrain.example",
   "location": "New York",
@@ -6475,6 +7900,7 @@
  },
  {
   "id": "acad_sudipta_chowdhury",
+  "track": "outbound",
   "name": "Sudipta Chowdhury",
   "email": "sudipta_chowdhury@vcbrain.example",
   "location": "Paris",
@@ -6598,6 +8024,7 @@
  },
  {
   "id": "acad_f_a_alijoyo",
+  "track": "outbound",
   "name": "F. A. Alijoyo",
   "email": "f_a_alijoyo@vcbrain.example",
   "location": "Lisbon",
@@ -6721,6 +8148,7 @@
  },
  {
   "id": "acad_rajesh_paul",
+  "track": "outbound",
   "name": "Rajesh Paul",
   "email": "rajesh_paul@vcbrain.example",
   "location": "Nairobi",
@@ -6844,6 +8272,7 @@
  },
  {
   "id": "acad_uman_ahmed_mohammed",
+  "track": "outbound",
   "name": "Uman Ahmed Mohammed",
   "email": "uman_ahmed_mohammed@vcbrain.example",
   "location": "Mexico City",
@@ -6967,6 +8396,7 @@
  },
  {
   "id": "acad_victor_frimpong",
+  "track": "outbound",
   "name": "Victor Frimpong",
   "email": "victor_frimpong@vcbrain.example",
   "location": "San Francisco",
@@ -7090,6 +8520,7 @@
  },
  {
   "id": "acad_r_adepu",
+  "track": "outbound",
   "name": "R. Adepu",
   "email": "r_adepu@vcbrain.example",
   "location": "Paris",
@@ -7213,6 +8644,7 @@
  },
  {
   "id": "acad_paulo_carvao",
+  "track": "outbound",
   "name": "Paulo Carvao",
   "email": "paulo_carvao@vcbrain.example",
   "location": "Paris",
@@ -7336,6 +8768,7 @@
  },
  {
   "id": "acad_vipindas_aravindakshan",
+  "track": "outbound",
   "name": "Vipindas Aravindakshan",
   "email": "vipindas_aravindakshan@vcbrain.example",
   "location": "Lagos",
@@ -7452,6 +8885,7 @@
  },
  {
   "id": "acad_misbah_zulfiqar",
+  "track": "outbound",
   "name": "Misbah Zulfiqar",
   "email": "misbah_zulfiqar@vcbrain.example",
   "location": "Lisbon",
@@ -7568,6 +9002,7 @@
  },
  {
   "id": "acad_jessica_sciammarelli",
+  "track": "outbound",
   "name": "Jessica Sciammarelli",
   "email": "jessica_sciammarelli@vcbrain.example",
   "location": "New York",
@@ -7684,6 +9119,7 @@
  },
  {
   "id": "src_akul_gupta",
+  "track": "outbound",
   "name": "Akul Gupta",
   "email": "akul_gupta@vcbrain.example",
   "location": "Los Angeles",
@@ -7798,6 +9234,7 @@
  },
  {
   "id": "src_mohan_kumar",
+  "track": "outbound",
   "name": "Mohan Kumar",
   "email": "mohan_kumar@vcbrain.example",
   "location": "Los Angeles",
@@ -7914,6 +9351,7 @@
  },
  {
   "id": "src_ayaan_naveed_malik",
+  "track": "outbound",
   "name": "Ayaan Naveed Malik",
   "email": "ayaan_naveed_malik@vcbrain.example",
   "location": "New York",
@@ -8030,6 +9468,7 @@
  },
  {
   "id": "src_sharon_rao",
+  "track": "outbound",
   "name": "Sharon Rao",
   "email": "sharon_rao@vcbrain.example",
   "location": "Toronto",
@@ -8146,6 +9585,7 @@
  },
  {
   "id": "src_angela_mascarenas_the_ai_furnace",
+  "track": "outbound",
   "name": "Angela Mascarenas (The AI Furnace)",
   "email": "angela_mascarenas_the_ai_furnace@vcbrain.example",
   "location": "New York",
@@ -8262,6 +9702,7 @@
  },
  {
   "id": "src_brandon_veiseh",
+  "track": "outbound",
   "name": "Brandon Veiseh",
   "email": "brandon_veiseh@vcbrain.example",
   "location": "Los Angeles",
@@ -8376,6 +9817,7 @@
  },
  {
   "id": "src_arslan_ihsan",
+  "track": "outbound",
   "name": "Arslan Ihsan",
   "email": "arslan_ihsan@vcbrain.example",
   "location": "Los Angeles",
@@ -8490,6 +9932,7 @@
  },
  {
   "id": "src_kelsey_aina",
+  "track": "outbound",
   "name": "Kelsey Aina",
   "email": "kelsey_aina@vcbrain.example",
   "location": "Los Angeles",
@@ -8604,6 +10047,7 @@
  },
  {
   "id": "src_sal_khan",
+  "track": "outbound",
   "name": "Sal Khan",
   "email": "sal_khan@vcbrain.example",
   "location": "New York",
@@ -8718,6 +10162,7 @@
  },
  {
   "id": "src_eve_halimi",
+  "track": "outbound",
   "name": "Eve Halimi",
   "email": "eve_halimi@vcbrain.example",
   "location": "New York",
@@ -8832,6 +10277,7 @@
  },
  {
   "id": "src_gloria_liu",
+  "track": "outbound",
   "name": "Gloria Liu",
   "email": "gloria_liu@vcbrain.example",
   "location": "Vancouver",
