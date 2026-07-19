@@ -6,6 +6,7 @@ resolver, then runs each resolved GitHub identity through the intelligence
 pipeline (score → screen → thesis → memo, via the Memory store).
 
     python -m sourcing.pipeline <github_handle> [<github_handle> ...]
+    python -m sourcing.pipeline --producthunt [path.csv]   # load discovered founders from a dataset
 
 Only THIS module bridges to services/, so it needs the services deps
 (`pip install -r requirements.txt`); the rest of `sourcing/` stays stdlib-only.
@@ -47,22 +48,34 @@ def run(candidates):
 def main(argv=None):
     argv = argv if argv is not None else sys.argv[1:]
     if not argv:
-        print("usage: python -m sourcing.pipeline <github_handle> [<github_handle> ...]",
+        print("usage: python -m sourcing.pipeline <github_handle> ... | --producthunt [path.csv]",
               file=sys.stderr)
         return 2
-    candidates = [{"name": h.lstrip("@"), "github": h.lstrip("@")} for h in argv]
-    people, results = run(candidates)
 
-    print("\n  INGEST → RESOLVE → SCORE  (services/ ingestion feeds sourcing/ intelligence)")
-    print(f"  {len(candidates)} raw signal(s) → {len(people)} resolved person(s)\n")
+    if argv[0] == "--producthunt":
+        from . import sources
+        path = argv[1] if len(argv) > 1 else sources.PRODUCTHUNT_CSV
+        candidates = sources.from_producthunt_csv(path)
+        label = f"ProductHunt enriched dataset ({os.path.basename(path)})"
+    else:
+        candidates = [{"name": h.lstrip("@"), "github": h.lstrip("@")} for h in argv]
+        label = "typed handles"
+
+    people, results = run(candidates)
+    scored = [(p, fs) for p, fs in results if fs]
+
+    print(f"\n  INGEST → RESOLVE → SCORE   (source: {label})")
+    print(f"  {len(candidates)} candidate(s) → {len(people)} resolved person(s) "
+          f"→ {len(scored)} scored via GitHub\n")
     for person, fs in results:
-        gh = person["handles"].get("github", "-")
+        gh = person["handles"].get("github")
         names = ", ".join(person["names"]) or "?"
         if fs:
-            print(f"    @{gh:<16} {names:<22} Founder Score {fs.score:5.1f}   band {fs.band_str()}")
+            print(f"    ✓ @{gh:<18} {names:<22} Founder Score {fs.score:5.1f}   band {fs.band_str()}")
         else:
-            print(f"    @{gh:<16} {names:<22} (no github handle / fetch failed)")
-    print("\n  → scored candidates are now in the Memory funnel: python -m sourcing.store\n")
+            reason = "no GitHub handle" if not gh else "fetch failed"
+            print(f"    · {('@'+gh) if gh else '(—)':<20} {names:<22} skipped ({reason})")
+    print("\n  → scored candidates are in the Memory funnel:  python -m sourcing.store --thesis\n")
     return 0
 
 
