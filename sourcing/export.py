@@ -20,6 +20,7 @@ import sys
 from . import identity
 from . import memory
 from . import memo as memo_mod
+from . import outcome_prior as op_mod
 from . import reference_class as rc_mod
 from . import screening
 from . import thesis as thesis_mod
@@ -78,18 +79,23 @@ def _tags(fs, screen, fit):
 
 
 def build_founder_view(fs, thesis):
-    source_track = "+".join(fs.attributes.get("sources", [])) or "outbound"
+    # source_track is the FUNNEL side (inbound = they applied, outbound = we found them);
+    # data_sources is HOW we scored them (github / producthunt / hackernews / inbound-form).
+    data_sources = fs.attributes.get("sources") or []
+    source_track = fs.attributes.get("source_track") or "outbound"
     signals = memory.latest_signals(fs.handle)
     screen = screening.screen_founder(fs, fs.attributes, persist=False)
     fit = thesis_mod.evaluate(thesis, fs)
     memo = memo_mod.build(fs, screen, signals, fit)
     rc = rc_mod.match(fs.attributes)
+    op = op_mod.try_predict(fs.attributes)               # base-rate lift (None if model not built)
 
     return {
         "handle": fs.handle,
         "name": fs.name,
         "profile_url": fs.profile_url,
         "source_track": source_track,
+        "data_sources": data_sources or ([source_track] if source_track == "inbound" else []),
         "funnel_status": "screened",
         "founder_score": {
             "value": round(fs.score, 1),
@@ -114,6 +120,12 @@ def build_founder_view(fs, thesis):
             "matched_features": rc.matched_features, "resembles_count": rc.resembles_count,
             "caveat": rc.caveat, "kind": "soft prior — never a gate",
         },
+        "outcome_prior": ({
+            "score": op.score, "band": list(op.band), "probability": op.probability,
+            "base_rate": op.base_rate, "confidence": op.confidence,
+            "drivers": op.drivers, "n_winners": op.n_winners, "n_comparison": op.n_comparison,
+            "caveat": op.caveat, "kind": "base-rate lift · soft prior — never a gate",
+        } if op else None),
         "thesis_fit": {
             "verdict": fit.verdict, "fit_score": round(fit.fit_score, 1),
             "quality_used": round(fit.quality_used, 1),
@@ -162,6 +174,7 @@ def build_dataset(thesis=None):
             "scoring_runs": sum(counts.values()),
             "by_verdict": _tally(["thesis_fit", "verdict"]),
             "by_sector": _tally(["sector"]),
+            "by_track": _tally(["source_track"]),   # inbound (applied) vs outbound (we found them)
             "trust_legend": {
                 "High": "observed from a primary source",
                 "Med": "inferred or self-reported",

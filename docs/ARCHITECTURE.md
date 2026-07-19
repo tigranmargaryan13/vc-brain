@@ -53,7 +53,8 @@ This doc is the contract that keeps them consistent — read it before adding co
 | `services/fetchers/{github,hn}` , `services/resolver/resolver.py` | ✅ implemented |
 | `services/scoring/`, `services/fetchers/{producthunt_fetcher,fetcher_worker}`, `services/resolver/heuristics.py` | 🗑️ removed — empty stubs superseded by `sourcing/` (scoring) and `sourcing/retrievers/` (collection) |
 | `db/` (`init_db.py` + empty `0001_init.sql`) | ⛔ unused — the store is JSONL (`data/`); the SQL layer is a documented target. Kept pending a team decision. |
-| `sourcing/*` (score, native_score, screen, thesis, memo, reference_class, identity, memory, export, bridge) | ✅ implemented, tested |
+| `sourcing/*` (score, native_score, inbound, screen, thesis, memo, reference_class, identity, memory, export, bridge, query) | ✅ implemented, tested |
+| `sourcing/query.py` — Multi-Attribute Reasoning (NL compound query → thesis filters → ranked matches; LLM + keyless heuristic) | ✅ implemented, tested · `POST /api/query` |
 | `backend/` (FastAPI) + `frontend/` (UI wired to it) | ✅ implemented |
 
 ## Open items to keep consistency
@@ -62,3 +63,4 @@ This doc is the contract that keeps them consistent — read it before adding co
 - **Resolve the scoring overlap** — `services/scoring/` is empty; `sourcing/founder_score.py` is the real scorer. Pick one home.
 - **Write `0001_init.sql`** to the schema doc (or formally declare JSONL the store of record for the hackathon).
 - **Feed real candidates through the seam** — wire a fetcher (e.g. HN) → resolver → `pipeline.run()` so the funnel fills from discovery, not just typed handles.
+- ✅ **Inbound applications** — `sourcing/inbound.py` + `POST /api/apply` close the Apply→Screen→Converge loop: a founder's onboarding form is scored by the same pipeline and enters the funnel as `source_track=inbound`. Wired from the UI in `frontend/src/lib/api.ts` (`submitApplication`, called from `addCompany`/founder `completeSignUp`).

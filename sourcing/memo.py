@@ -82,6 +82,10 @@ def build(fs, screen, signals, thesis_fit=None):
     activity = signals.get("activity", {})
 
     is_github = bool(repo)                                  # GitHub-sourced vs native (ProductHunt/HN)
+    application = attrs.get("application") or {}
+    # Inbound & self-reported: a founder applied but gave no public code/native signal yet.
+    is_thin_inbound = attrs.get("source_track") == "inbound" and not is_github and not (
+        attrs.get("native_upvotes_career") or attrs.get("native_launches"))
     repo_stars = repo.get("stars", 0)                       # the one named repo
     total_stars = attrs.get("stars") or repo_stars          # summed across own projects
     total_forks = attrs.get("forks") or repo.get("forks", 0)
@@ -101,6 +105,11 @@ def build(fs, screen, signals, thesis_fit=None):
         snap.claims.append(Claim(
             f"{fs.name} — {sector} project ({lead}), {_fmt_int(repo_stars)} GitHub stars.",
             "observed", fs.profile_url))
+    elif is_thin_inbound:
+        company = application.get("company") or fs.name
+        tail = f" building {company}." if company and company != fs.name else "."
+        snap.claims.append(Claim(
+            f"{fs.name} — {sector} founder (inbound application){tail}", "self-reported", fs.profile_url))
     else:
         snap.claims.append(Claim(
             f"{fs.name} — {sector} founder; {launches} {native_src} launch(es), "
@@ -156,7 +165,7 @@ def build(fs, screen, signals, thesis_fit=None):
 
     # --- Problem & product ---
     pp = Section("Problem & product")
-    desc = repo.get("description") or attrs.get("profile_text", "")[:200]
+    desc = repo.get("description") or application.get("one_liner") or attrs.get("profile_text", "")[:200]
     if desc:
         pp.claims.append(Claim(f"Self-described: \"{desc.strip()[:200]}\".", "self-reported", repo.get("url", "")))
         pp.gaps.append("Problem framing is self-reported — not independently verified.")
@@ -173,6 +182,12 @@ def build(fs, screen, signals, thesis_fit=None):
                 f"({activity.get('active_repos_90d', 0)} active repos).", "observed", fs.profile_url))
         if followers:
             tr.claims.append(Claim(f"{_fmt_int(followers)} GitHub followers.", "observed", fs.profile_url))
+    elif is_thin_inbound:
+        website = application.get("website")
+        if website:
+            tr.claims.append(Claim(f"Applicant-provided website: {website}.", "self-reported", website))
+        tr.gaps.append("Fresh inbound application — no verified public traction yet; "
+                       "enrich with a GitHub handle or product link to score on merit.")
     else:
         peak = attrs.get("native_upvotes_peak", 0)
         tr.claims.append(Claim(

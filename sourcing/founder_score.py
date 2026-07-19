@@ -276,6 +276,7 @@ def _attributes(profile):
         "followers": profile.followers,
         "owned_repo_count": len(profile.owned_repos),
         "recent_push_events": profile.recent_push_events,
+        "account_age_days": profile.account_age_days,   # building-tenure proxy (not pedigree)
     }
 
 

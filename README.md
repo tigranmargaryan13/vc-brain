@@ -19,6 +19,7 @@ The core bet: *rank founders by **fit and demonstrated capability**, not fame or
                    (one Founder entity)                          (data contract)
 ```
 
+- **Two-sided funnel:** *outbound* (we discover founders on GitHub/ProductHunt/HN) **and** *inbound* (a founder applies via the onboarding form → `POST /api/apply` → scored by the **same** pipeline, tagged `source_track=inbound`). If they give a GitHub handle we deep-read their code; otherwise the self-reported form scores thin, with an honestly wide confidence band.
 - **Cold-start safe:** absence of a signal *widens the confidence band, never subtracts.* A brilliant repo with no network still scores — with honest uncertainty.
 - **Multi-source, one axis:** GitHub (reads the actual code via LLM), ProductHunt & Hacker News (native signals: launches, organic upvotes, cadence). Same coverage-weighted `FounderScore`; GitHub is one input, not the gate.
 - **Trust, not hallucination:** every memo claim traces to a source with a Trust level; missing data is flagged (`Cap table: not disclosed`), never invented.
@@ -53,7 +54,7 @@ python scripts/smoke_test.py               # verify every API connection (5/5)
 
 | Path | What it is |
 |---|---|
-| `sourcing/` | **Intelligence layer** — `founder_score` (+ `capability`/`ambition`/`idea`), `native_score` (PH/HN), `screening` (3-axis), `thesis`, `memo`, `reference_class`, `identity` (dedup), `export`, `memory` (JSONL store). `analyze`/`store`/`bridge`/`hn_source` are CLIs. |
+| `sourcing/` | **Intelligence layer** — `founder_score` (+ `capability`/`ambition`/`idea`), `native_score` (PH/HN), `inbound` (founder applications → same score), `screening` (3-axis), `thesis`, `memo`, `reference_class`, `identity` (dedup), `export`, `memory` (JSONL store). `analyze`/`store`/`bridge`/`hn_source` are CLIs. |
 | `sourcing/retrievers/`, `sourcing/pipeline/` | **Collection toolkit** — one module per source (github/hn/producthunt/luma/twitter/linkedin/…) + enrichment pipeline. |
 | `services/` | Earlier collection layer (fetchers + resolver). *See consolidation note below.* |
 | `backend/` | **FastAPI** — serves the deduped scored founders to the UI in its `FounderProfile` shape. |

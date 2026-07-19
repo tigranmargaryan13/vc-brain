@@ -26,7 +26,11 @@ from .founder_score import FounderScore, WEIGHTS, _aggregate  # noqa: E402
 
 def _source_of(fs):
     b = (fs.capability_detail or {}).get("backend") or ""
-    return b.split(":")[1] if b.startswith("native:") else "github"
+    if b.startswith("native:"):
+        return b.split(":")[1]
+    if b.startswith("inbound:"):
+        return "inbound-form"   # applied with no public code yet — scored on the form only
+    return "github"             # incl. inbound applicants who gave a GitHub handle (scored via GH)
 
 
 def _merge(fs_list):
