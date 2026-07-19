@@ -1,0 +1,1002 @@
+[
+ {
+  "founder": {
+   "name": "Yushi Huang",
+   "affiliation": null,
+   "github": null,
+   "arxiv_author_search": "http://export.arxiv.org/api/query?search_query=au%3A%22Yushi%20Huang%22"
+  },
+  "paper": {
+   "title": "MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators",
+   "url": "https://arxiv.org/abs/2607.15273v1",
+   "arxiv_id": "2607.15273v1",
+   "published": "2026-07-16",
+   "categories": [
+    "cs.CV",
+    "cs.LG"
+   ],
+   "code_url": "https://github.com/Harahan/MeanFlowNFT"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper on arXiv (recent submission window)",
+    "value": 1,
+    "citation": "https://arxiv.org/abs/2607.15273v1",
+    "evidence": [
+     "MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators"
+    ]
+   },
+   "open_source_release": {
+    "criterion": "open_source_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Code released with the paper — openness/execution signal",
+    "value": true,
+    "citation": "https://arxiv.org/abs/2607.15273v1",
+    "evidence": [
+     "https://github.com/Harahan/MeanFlowNFT"
+    ]
+   },
+   "domain_focus": {
+    "criterion": "domain_focus",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv categories of the seed paper",
+    "value": [
+     "cs.CV",
+     "cs.LG"
+    ],
+    "citation": "https://arxiv.org/abs/2607.15273v1",
+    "evidence": null
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count on seed paper (small team = founder-shaped work)",
+    "value": 5,
+    "citation": "https://arxiv.org/abs/2607.15273v1",
+    "evidence": [
+     "Xiangxin Zhou",
+     "Jun Zhang",
+     "Liefeng Bo"
+    ]
+   },
+   "publication_cadence_12mo": {
+    "criterion": "publication_cadence_12mo",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv author-name search: papers in the last 12 months (name-collision caveat applies)",
+    "value": 16,
+    "citation": "http://export.arxiv.org/api/query?search_query=au%3A%22Yushi%20Huang%22",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "founder": {
+   "name": "Haoyu Zhao",
+   "affiliation": null,
+   "github": null,
+   "arxiv_author_search": "http://export.arxiv.org/api/query?search_query=au%3A%22Haoyu%20Zhao%22"
+  },
+  "paper": {
+   "title": "RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation",
+   "url": "https://arxiv.org/abs/2607.06559v1",
+   "arxiv_id": "2607.06559v1",
+   "published": "2026-07-07",
+   "categories": [
+    "cs.RO"
+   ],
+   "code_url": "https://github.com/alibaba-damo-academy/RynnWorld-4D"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper on arXiv (recent submission window)",
+    "value": 1,
+    "citation": "https://arxiv.org/abs/2607.06559v1",
+    "evidence": [
+     "RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation"
+    ]
+   },
+   "open_source_release": {
+    "criterion": "open_source_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Code released with the paper — openness/execution signal",
+    "value": true,
+    "citation": "https://arxiv.org/abs/2607.06559v1",
+    "evidence": [
+     "https://github.com/alibaba-damo-academy/RynnWorld-4D"
+    ]
+   },
+   "domain_focus": {
+    "criterion": "domain_focus",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv categories of the seed paper",
+    "value": [
+     "cs.RO"
+    ],
+    "citation": "https://arxiv.org/abs/2607.06559v1",
+    "evidence": null
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count on seed paper (small team = founder-shaped work)",
+    "value": 6,
+    "citation": "https://arxiv.org/abs/2607.06559v1",
+    "evidence": [
+     "Xingyue Zhao",
+     "Siteng Huang",
+     "Xin Li"
+    ]
+   },
+   "publication_cadence_12mo": {
+    "criterion": "publication_cadence_12mo",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv author-name search: papers in the last 12 months (name-collision caveat applies)",
+    "value": 30,
+    "citation": "http://export.arxiv.org/api/query?search_query=au%3A%22Haoyu%20Zhao%22",
+    "evidence": null
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Semantic Scholar citation count for the seed paper (influential: 0)",
+    "value": 0,
+    "citation": "https://www.semanticscholar.org/arxiv/2607.06559",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "founder": {
+   "name": "Varshith Roy Kotla",
+   "affiliation": null,
+   "github": null,
+   "arxiv_author_search": "http://export.arxiv.org/api/query?search_query=au%3A%22Varshith%20Roy%20Kotla%22"
+  },
+  "paper": {
+   "title": "Weighted Conformal Prediction for Lab-to-Track Thermal Transfer in EV Motorsport Powertrains",
+   "url": "https://arxiv.org/abs/2607.02722v1",
+   "arxiv_id": "2607.02722v1",
+   "published": "2026-07-02",
+   "categories": [
+    "cs.LG"
+   ],
+   "code_url": "https://github.com/nearpot/Weighted-Conformal-Thermal-Transfer"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper on arXiv (recent submission window)",
+    "value": 1,
+    "citation": "https://arxiv.org/abs/2607.02722v1",
+    "evidence": [
+     "Weighted Conformal Prediction for Lab-to-Track Thermal Transfer in EV Motorsport Powertrains"
+    ]
+   },
+   "open_source_release": {
+    "criterion": "open_source_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Code released with the paper — openness/execution signal",
+    "value": true,
+    "citation": "https://arxiv.org/abs/2607.02722v1",
+    "evidence": [
+     "https://github.com/nearpot/Weighted-Conformal-Thermal-Transfer"
+    ]
+   },
+   "domain_focus": {
+    "criterion": "domain_focus",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv categories of the seed paper",
+    "value": [
+     "cs.LG"
+    ],
+    "citation": "https://arxiv.org/abs/2607.02722v1",
+    "evidence": null
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count on seed paper (small team = founder-shaped work)",
+    "value": 1,
+    "citation": "https://arxiv.org/abs/2607.02722v1",
+    "evidence": null
+   },
+   "publication_cadence_12mo": {
+    "criterion": "publication_cadence_12mo",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv author-name search: papers in the last 12 months (name-collision caveat applies)",
+    "value": 3,
+    "citation": "http://export.arxiv.org/api/query?search_query=au%3A%22Varshith%20Roy%20Kotla%22",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "founder": {
+   "name": "Natalie Grace Brigham",
+   "affiliation": null,
+   "github": "GraceBrigham",
+   "arxiv_author_search": "http://export.arxiv.org/api/query?search_query=au%3A%22Natalie%20Grace%20Brigham%22"
+  },
+  "paper": {
+   "title": "Janus: a Playground for User-Involved Agentic Permission Management",
+   "url": "https://arxiv.org/abs/2607.01510v1",
+   "arxiv_id": "2607.01510v1",
+   "published": "2026-07-01",
+   "categories": [
+    "cs.AI",
+    "cs.CR"
+   ],
+   "code_url": "https://github.com/GraceBrigham/Janus"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper on arXiv (recent submission window)",
+    "value": 1,
+    "citation": "https://arxiv.org/abs/2607.01510v1",
+    "evidence": [
+     "Janus: a Playground for User-Involved Agentic Permission Management"
+    ]
+   },
+   "open_source_release": {
+    "criterion": "open_source_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Code released with the paper — openness/execution signal",
+    "value": true,
+    "citation": "https://arxiv.org/abs/2607.01510v1",
+    "evidence": [
+     "https://github.com/GraceBrigham/Janus"
+    ]
+   },
+   "domain_focus": {
+    "criterion": "domain_focus",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv categories of the seed paper",
+    "value": [
+     "cs.AI",
+     "cs.CR"
+    ],
+    "citation": "https://arxiv.org/abs/2607.01510v1",
+    "evidence": null
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count on seed paper (small team = founder-shaped work)",
+    "value": 4,
+    "citation": "https://arxiv.org/abs/2607.01510v1",
+    "evidence": [
+     "Eugene Bagdasarian",
+     "Tadayoshi Kohno",
+     "Franziska Roesner"
+    ]
+   },
+   "publication_cadence_12mo": {
+    "criterion": "publication_cadence_12mo",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv author-name search: papers in the last 12 months (name-collision caveat applies)",
+    "value": 2,
+    "citation": "http://export.arxiv.org/api/query?search_query=au%3A%22Natalie%20Grace%20Brigham%22",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "founder": {
+   "name": "Ayan Pendharkar",
+   "affiliation": null,
+   "github": null,
+   "arxiv_author_search": "http://export.arxiv.org/api/query?search_query=au%3A%22Ayan%20Pendharkar%22"
+  },
+  "paper": {
+   "title": "Predictive Objectives Discard Exogenous Control-Relevant Features: A Controlled Mechanistic Study",
+   "url": "https://arxiv.org/abs/2606.30068v1",
+   "arxiv_id": "2606.30068v1",
+   "published": "2026-06-29",
+   "categories": [
+    "cs.LG"
+   ],
+   "code_url": "https://github.com/bushesarebetter/jepa_research_project"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper on arXiv (recent submission window)",
+    "value": 1,
+    "citation": "https://arxiv.org/abs/2606.30068v1",
+    "evidence": [
+     "Predictive Objectives Discard Exogenous Control-Relevant Features: A Controlled Mechanistic Study"
+    ]
+   },
+   "open_source_release": {
+    "criterion": "open_source_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Code released with the paper — openness/execution signal",
+    "value": true,
+    "citation": "https://arxiv.org/abs/2606.30068v1",
+    "evidence": [
+     "https://github.com/bushesarebetter/jepa_research_project"
+    ]
+   },
+   "domain_focus": {
+    "criterion": "domain_focus",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv categories of the seed paper",
+    "value": [
+     "cs.LG"
+    ],
+    "citation": "https://arxiv.org/abs/2606.30068v1",
+    "evidence": null
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count on seed paper (small team = founder-shaped work)",
+    "value": 1,
+    "citation": "https://arxiv.org/abs/2606.30068v1",
+    "evidence": null
+   },
+   "publication_cadence_12mo": {
+    "criterion": "publication_cadence_12mo",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv author-name search: papers in the last 12 months (name-collision caveat applies)",
+    "value": 3,
+    "citation": "http://export.arxiv.org/api/query?search_query=au%3A%22Ayan%20Pendharkar%22",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "founder": {
+   "name": "Hiranya Garbha Kumar",
+   "affiliation": null,
+   "github": null,
+   "arxiv_author_search": "http://export.arxiv.org/api/query?search_query=au%3A%22Hiranya%20Garbha%20Kumar%22"
+  },
+  "paper": {
+   "title": "CAOA -- Completion-Assisted Object-CAD Alignment",
+   "url": "https://arxiv.org/abs/2606.18429v2",
+   "arxiv_id": "2606.18429v2",
+   "published": "2026-06-16",
+   "categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "code_url": "https://github.com/MinhasKamal/CAOA"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper on arXiv (recent submission window)",
+    "value": 1,
+    "citation": "https://arxiv.org/abs/2606.18429v2",
+    "evidence": [
+     "CAOA -- Completion-Assisted Object-CAD Alignment"
+    ]
+   },
+   "open_source_release": {
+    "criterion": "open_source_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Code released with the paper — openness/execution signal",
+    "value": true,
+    "citation": "https://arxiv.org/abs/2606.18429v2",
+    "evidence": [
+     "https://github.com/MinhasKamal/CAOA"
+    ]
+   },
+   "domain_focus": {
+    "criterion": "domain_focus",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv categories of the seed paper",
+    "value": [
+     "cs.CV",
+     "cs.AI",
+     "cs.LG"
+    ],
+    "citation": "https://arxiv.org/abs/2606.18429v2",
+    "evidence": null
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count on seed paper (small team = founder-shaped work)",
+    "value": 3,
+    "citation": "https://arxiv.org/abs/2606.18429v2",
+    "evidence": [
+     "Minhas Kamal",
+     "Balakrishnan Prabhakaran"
+    ]
+   },
+   "publication_cadence_12mo": {
+    "criterion": "publication_cadence_12mo",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv author-name search: papers in the last 12 months (name-collision caveat applies)",
+    "value": 2,
+    "citation": "http://export.arxiv.org/api/query?search_query=au%3A%22Hiranya%20Garbha%20Kumar%22",
+    "evidence": null
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Semantic Scholar citation count for the seed paper (influential: 0)",
+    "value": 0,
+    "citation": "https://www.semanticscholar.org/arxiv/2606.18429",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "founder": {
+   "name": "Sangmin Lee",
+   "affiliation": null,
+   "github": null,
+   "arxiv_author_search": "http://export.arxiv.org/api/query?search_query=au%3A%22Sangmin%20Lee%22"
+  },
+  "paper": {
+   "title": "UR-BERT: Scaling Text Encoders for Massively Multilingual TTS Through Universal Romanization and Speech Token Prediction",
+   "url": "https://arxiv.org/abs/2606.11681v2",
+   "arxiv_id": "2606.11681v2",
+   "published": "2026-06-10",
+   "categories": [
+    "cs.CL",
+    "cs.SD"
+   ],
+   "code_url": "https://github.com/sanghyang00/ur-bert"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper on arXiv (recent submission window)",
+    "value": 1,
+    "citation": "https://arxiv.org/abs/2606.11681v2",
+    "evidence": [
+     "UR-BERT: Scaling Text Encoders for Massively Multilingual TTS Through Universal Romanization and Speech Token Prediction"
+    ]
+   },
+   "open_source_release": {
+    "criterion": "open_source_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Code released with the paper — openness/execution signal",
+    "value": true,
+    "citation": "https://arxiv.org/abs/2606.11681v2",
+    "evidence": [
+     "https://github.com/sanghyang00/ur-bert"
+    ]
+   },
+   "domain_focus": {
+    "criterion": "domain_focus",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv categories of the seed paper",
+    "value": [
+     "cs.CL",
+     "cs.SD"
+    ],
+    "citation": "https://arxiv.org/abs/2606.11681v2",
+    "evidence": null
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count on seed paper (small team = founder-shaped work)",
+    "value": 4,
+    "citation": "https://arxiv.org/abs/2606.11681v2",
+    "evidence": [
+     "Eekgyun Ahn",
+     "Woongjib Choi",
+     "Hong-Goo Kang"
+    ]
+   },
+   "publication_cadence_12mo": {
+    "criterion": "publication_cadence_12mo",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv author-name search: papers in the last 12 months (name-collision caveat applies)",
+    "value": 16,
+    "citation": "http://export.arxiv.org/api/query?search_query=au%3A%22Sangmin%20Lee%22",
+    "evidence": null
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Semantic Scholar citation count for the seed paper (influential: 0)",
+    "value": 0,
+    "citation": "https://www.semanticscholar.org/arxiv/2606.11681",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "founder": {
+   "name": "Kevin Qinghong Lin",
+   "affiliation": null,
+   "github": "QinghongLin",
+   "arxiv_author_search": "http://export.arxiv.org/api/query?search_query=au%3A%22Kevin%20Qinghong%20Lin%22"
+  },
+  "paper": {
+   "title": "Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories",
+   "url": "https://arxiv.org/abs/2606.11176v1",
+   "arxiv_id": "2606.11176v1",
+   "published": "2026-06-09",
+   "categories": [
+    "cs.CV",
+    "cs.CL",
+    "cs.CY",
+    "cs.HC"
+   ],
+   "code_url": "https://github.com/QinghongLin/data2story-skill"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper on arXiv (recent submission window)",
+    "value": 1,
+    "citation": "https://arxiv.org/abs/2606.11176v1",
+    "evidence": [
+     "Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories"
+    ]
+   },
+   "open_source_release": {
+    "criterion": "open_source_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Code released with the paper — openness/execution signal",
+    "value": true,
+    "citation": "https://arxiv.org/abs/2606.11176v1",
+    "evidence": [
+     "https://github.com/QinghongLin/data2story-skill"
+    ]
+   },
+   "domain_focus": {
+    "criterion": "domain_focus",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv categories of the seed paper",
+    "value": [
+     "cs.CV",
+     "cs.CL",
+     "cs.CY",
+     "cs.HC"
+    ],
+    "citation": "https://arxiv.org/abs/2606.11176v1",
+    "evidence": null
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count on seed paper (small team = founder-shaped work)",
+    "value": 6,
+    "citation": "https://arxiv.org/abs/2606.11176v1",
+    "evidence": [
+     "Batu EI",
+     "Yuhong Shi",
+     "Pan Lu"
+    ]
+   },
+   "publication_cadence_12mo": {
+    "criterion": "publication_cadence_12mo",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv author-name search: papers in the last 12 months (name-collision caveat applies)",
+    "value": 25,
+    "citation": "http://export.arxiv.org/api/query?search_query=au%3A%22Kevin%20Qinghong%20Lin%22",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "founder": {
+   "name": "Al Zadid Sultan Bin Habib",
+   "affiliation": null,
+   "github": null,
+   "arxiv_author_search": "http://export.arxiv.org/api/query?search_query=au%3A%22Al%20Zadid%20Sultan%20Bin%20Habib%22"
+  },
+  "paper": {
+   "title": "GOTabPFN: From Feature Ordering to Compact Tokenization for Tabular Foundation Models on High-Dimensional Data",
+   "url": "https://arxiv.org/abs/2606.05441v2",
+   "arxiv_id": "2606.05441v2",
+   "published": "2026-06-03",
+   "categories": [
+    "cs.LG",
+    "cs.AI",
+    "stat.ML"
+   ],
+   "code_url": "https://github.com/zadid6pretam/GOTabPFN"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper on arXiv (recent submission window)",
+    "value": 1,
+    "citation": "https://arxiv.org/abs/2606.05441v2",
+    "evidence": [
+     "GOTabPFN: From Feature Ordering to Compact Tokenization for Tabular Foundation Models on High-Dimensional Data"
+    ]
+   },
+   "open_source_release": {
+    "criterion": "open_source_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Code released with the paper — openness/execution signal",
+    "value": true,
+    "citation": "https://arxiv.org/abs/2606.05441v2",
+    "evidence": [
+     "https://github.com/zadid6pretam/GOTabPFN"
+    ]
+   },
+   "domain_focus": {
+    "criterion": "domain_focus",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv categories of the seed paper",
+    "value": [
+     "cs.LG",
+     "cs.AI",
+     "stat.ML"
+    ],
+    "citation": "https://arxiv.org/abs/2606.05441v2",
+    "evidence": null
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count on seed paper (small team = founder-shaped work)",
+    "value": 5,
+    "citation": "https://arxiv.org/abs/2606.05441v2",
+    "evidence": [
+     "Md Younus Ahamed",
+     "Prashnna Kumar Gyawali",
+     "Gianfranco Doretto"
+    ]
+   },
+   "publication_cadence_12mo": {
+    "criterion": "publication_cadence_12mo",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv author-name search: papers in the last 12 months (name-collision caveat applies)",
+    "value": 4,
+    "citation": "http://export.arxiv.org/api/query?search_query=au%3A%22Al%20Zadid%20Sultan%20Bin%20Habib%22",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "founder": {
+   "name": "Max Malyi",
+   "affiliation": null,
+   "github": "mvmalyi",
+   "arxiv_author_search": "http://export.arxiv.org/api/query?search_query=au%3A%22Max%20Malyi%22"
+  },
+  "paper": {
+   "title": "Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Semantic Extraction of Reliability Intelligence",
+   "url": "https://arxiv.org/abs/2605.31281v1",
+   "arxiv_id": "2605.31281v1",
+   "published": "2026-05-29",
+   "categories": [
+    "cs.CL"
+   ],
+   "code_url": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper on arXiv (recent submission window)",
+    "value": 1,
+    "citation": "https://arxiv.org/abs/2605.31281v1",
+    "evidence": [
+     "Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Semantic Extraction of Reliability Intelligence"
+    ]
+   },
+   "open_source_release": {
+    "criterion": "open_source_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Code released with the paper — openness/execution signal",
+    "value": true,
+    "citation": "https://arxiv.org/abs/2605.31281v1",
+    "evidence": [
+     "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling"
+    ]
+   },
+   "domain_focus": {
+    "criterion": "domain_focus",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv categories of the seed paper",
+    "value": [
+     "cs.CL"
+    ],
+    "citation": "https://arxiv.org/abs/2605.31281v1",
+    "evidence": null
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count on seed paper (small team = founder-shaped work)",
+    "value": 4,
+    "citation": "https://arxiv.org/abs/2605.31281v1",
+    "evidence": [
+     "Jonathan Shek",
+     "Alasdair McDonald",
+     "Andre Biscaya"
+    ]
+   },
+   "publication_cadence_12mo": {
+    "criterion": "publication_cadence_12mo",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv author-name search: papers in the last 12 months (name-collision caveat applies)",
+    "value": 4,
+    "citation": "http://export.arxiv.org/api/query?search_query=au%3A%22Max%20Malyi%22",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "founder": {
+   "name": "Jinghao Zhang",
+   "affiliation": null,
+   "github": null,
+   "arxiv_author_search": "http://export.arxiv.org/api/query?search_query=au%3A%22Jinghao%20Zhang%22"
+  },
+  "paper": {
+   "title": "Not only where, But when: Temporal Scheduling for RLVR",
+   "url": "https://arxiv.org/abs/2605.25381v1",
+   "arxiv_id": "2605.25381v1",
+   "published": "2026-05-25",
+   "categories": [
+    "cs.LG"
+   ],
+   "code_url": "https://github.com/Jinghaoleven/RLVR-Schedule"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper on arXiv (recent submission window)",
+    "value": 1,
+    "citation": "https://arxiv.org/abs/2605.25381v1",
+    "evidence": [
+     "Not only where, But when: Temporal Scheduling for RLVR"
+    ]
+   },
+   "open_source_release": {
+    "criterion": "open_source_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Code released with the paper — openness/execution signal",
+    "value": true,
+    "citation": "https://arxiv.org/abs/2605.25381v1",
+    "evidence": [
+     "https://github.com/Jinghaoleven/RLVR-Schedule"
+    ]
+   },
+   "domain_focus": {
+    "criterion": "domain_focus",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv categories of the seed paper",
+    "value": [
+     "cs.LG"
+    ],
+    "citation": "https://arxiv.org/abs/2605.25381v1",
+    "evidence": null
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count on seed paper (small team = founder-shaped work)",
+    "value": 4,
+    "citation": "https://arxiv.org/abs/2605.25381v1",
+    "evidence": [
+     "Ruilin Li",
+     "Feng Zhao",
+     "Jiaqi Wang"
+    ]
+   },
+   "publication_cadence_12mo": {
+    "criterion": "publication_cadence_12mo",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv author-name search: papers in the last 12 months (name-collision caveat applies)",
+    "value": 19,
+    "citation": "http://export.arxiv.org/api/query?search_query=au%3A%22Jinghao%20Zhang%22",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "founder": {
+   "name": "Ivan Tregear",
+   "affiliation": null,
+   "github": "ITregear",
+   "arxiv_author_search": "http://export.arxiv.org/api/query?search_query=au%3A%22Ivan%20Tregear%22"
+  },
+  "paper": {
+   "title": "Investigating the Effect of a Series Elastic Actuation Retrofit to Black-Box Actuators",
+   "url": "https://arxiv.org/abs/2605.24127v1",
+   "arxiv_id": "2605.24127v1",
+   "published": "2026-05-22",
+   "categories": [
+    "cs.RO"
+   ],
+   "code_url": "https://github.com/ITregear/SeriesElasticActuation-FYP"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper on arXiv (recent submission window)",
+    "value": 1,
+    "citation": "https://arxiv.org/abs/2605.24127v1",
+    "evidence": [
+     "Investigating the Effect of a Series Elastic Actuation Retrofit to Black-Box Actuators"
+    ]
+   },
+   "open_source_release": {
+    "criterion": "open_source_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Code released with the paper — openness/execution signal",
+    "value": true,
+    "citation": "https://arxiv.org/abs/2605.24127v1",
+    "evidence": [
+     "https://github.com/ITregear/SeriesElasticActuation-FYP"
+    ]
+   },
+   "domain_focus": {
+    "criterion": "domain_focus",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv categories of the seed paper",
+    "value": [
+     "cs.RO"
+    ],
+    "citation": "https://arxiv.org/abs/2605.24127v1",
+    "evidence": null
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count on seed paper (small team = founder-shaped work)",
+    "value": 3,
+    "citation": "https://arxiv.org/abs/2605.24127v1",
+    "evidence": [
+     "Ayhan Aktas",
+     "Ferdinando Rodriguez y Baena"
+    ]
+   },
+   "publication_cadence_12mo": {
+    "criterion": "publication_cadence_12mo",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "arXiv author-name search: papers in the last 12 months (name-collision caveat applies)",
+    "value": 1,
+    "citation": "http://export.arxiv.org/api/query?search_query=au%3A%22Ivan%20Tregear%22",
+    "evidence": null
+   }
+  }
+ }
+]
