@@ -1,203 +1,37 @@
 [
  {
-  "id": "src_maxmusing",
-  "name": "Max Musing",
-  "email": "maxmusing@vcbrain.example",
-  "location": "Toronto",
-  "projects": [
-   {
-    "id": "src_maxmusing_p1",
-    "name": "Basedash Suggestions",
-    "sector": "AI/ML",
-    "stage": "Seed",
-    "oneLiner": "Your AI data analyst, now with ideas of its own."
-   }
-  ],
-  "scores": {
-   "founder": 69,
-   "founderTrend": "flat",
-   "market": "Neutral",
-   "marketTrend": "flat",
-   "fit": "Pivot potential",
-   "fitTrend": "down"
-  },
-  "evidence": [
-   {
-    "text": "153 upvotes on the latest Product Hunt launch (2026-07-17).",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/basedash",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "24 community comments on the launch.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/basedash",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "Public GitHub profile.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/MaxMusing",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "Public LinkedIn profile.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.linkedin.com/company/basedash",
-    "sourceLabel": "LinkedIn"
-   },
-   {
-    "text": "Live product website.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.basedash.com",
-    "sourceLabel": "Website"
-   }
-  ]
- },
- {
-  "id": "src_ninghu",
-  "name": "Ning Hu",
-  "email": "ninghu@vcbrain.example",
-  "location": "Lisbon",
-  "projects": [
-   {
-    "id": "src_ninghu_p1",
-    "name": "ZooData",
-    "sector": "Dev Tools",
-    "stage": "Seed",
-    "oneLiner": "The data layer for AI agents"
-   }
-  ],
-  "scores": {
-   "founder": 90,
-   "founderTrend": "flat",
-   "market": "Bullish",
-   "marketTrend": "flat",
-   "fit": "At risk",
-   "fitTrend": "down"
-  },
-  "evidence": [
-   {
-    "text": "VC Brain pipeline Founder Score 89.5 (90% band 81–98), confidence 0.77.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@ninghu",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Capability: shipped 3 product(s): ZooData, ZooClaw, Gensmo — https://www.producthunt.com/@ninghu",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@ninghu",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Trajectory: 2 launch(es) in the last 12 months — https://www.producthunt.com/@ninghu",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@ninghu",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "541 upvotes on the latest Product Hunt launch (2026-07-18).",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/zoodata",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "63 community comments on the launch.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/zoodata",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "Product description: ZooData turns any URL into agent-ready JSON, so AI agents can work with structured data instead of raw HTML or bloated m",
-    "trust": "Medium",
-    "state": "uncorroborated",
-    "sourceUrl": "https://www.producthunt.com/products/zoodata",
-    "sourceLabel": "Product Hunt"
-   }
-  ]
- },
- {
-  "id": "src_philip_kubinski",
-  "name": "Philip Kubinski",
-  "email": "philip_kubinski@vcbrain.example",
-  "location": "Nairobi",
-  "projects": [
-   {
-    "id": "src_philip_kubinski_p1",
-    "name": "Unabyss for Claude",
-    "sector": "SaaS",
-    "stage": "Pre-seed",
-    "oneLiner": "Shared memory across all apps and LLMs. In Claude"
-   }
-  ],
-  "scores": {
-   "founder": 81,
-   "founderTrend": "flat",
-   "market": "Bullish",
-   "marketTrend": "flat",
-   "fit": "At risk",
-   "fitTrend": "flat"
-  },
-  "evidence": [
-   {
-    "text": "VC Brain pipeline Founder Score 81.0 (90% band 73–89), confidence 0.77.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@philip_kubinski",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Capability: shipped 2 product(s): Unabyss for Claude, Unabyss — https://www.producthunt.com/@philip_kubinski",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@philip_kubinski",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Trajectory: 2 launch(es) in the last 12 months — https://www.producthunt.com/@philip_kubinski",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@philip_kubinski",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "589 upvotes on the latest Product Hunt launch (2026-07-17).",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/unabyss",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "122 community comments on the launch.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/unabyss",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "Product description: Claude doesn't know what happens in GPT. Neither one really knows who you are or what your company does. Now they can. U",
-    "trust": "Medium",
-    "state": "uncorroborated",
-    "sourceUrl": "https://www.producthunt.com/products/unabyss",
-    "sourceLabel": "Product Hunt"
-   }
-  ]
- },
- {
   "id": "src_stanislav_kirdey",
   "name": "Stanislav Kirdey",
   "email": "stanislav_kirdey@vcbrain.example",
   "location": "Mexico City",
+  "completeness": 87,
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-18",
+   "upvotes": 437,
+   "comments": 52,
+   "hnPoints": 353,
+   "domainAgeDays": 136,
+   "industry": "Productivity; Developer Tools; Artificial Intelligence",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@stanislav_kirdey"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/clark-agent"
+    },
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/company/clark-labs-inc"
+    },
+    {
+     "label": "Website",
+     "url": "https://clarkchat.com"
+    }
+   ]
+  },
   "projects": [
    {
     "id": "src_stanislav_kirdey_p1",
@@ -282,500 +116,34 @@
   ]
  },
  {
-  "id": "src_paulmurnane",
-  "name": "Paul Murnane",
-  "email": "paulmurnane@vcbrain.example",
-  "location": "Berlin",
-  "projects": [
-   {
-    "id": "src_paulmurnane_p1",
-    "name": "DocuSmart AI",
-    "sector": "AI/ML",
-    "stage": "Series A",
-    "oneLiner": "Turning fragmented knowledge into one simple system"
-   }
-  ],
-  "scores": {
-   "founder": 41,
-   "founderTrend": "flat",
-   "market": "Bullish",
-   "marketTrend": "flat",
-   "fit": "At risk",
-   "fitTrend": "flat"
-  },
-  "evidence": [
-   {
-    "text": "VC Brain pipeline Founder Score 41.2 (90% band 30–52), confidence 0.69.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@paulmurnane",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Capability: shipped 1 product(s): DocuSmart AI  — https://www.producthunt.com/@paulmurnane",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@paulmurnane",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Trajectory: 1 launch(es) in the last 12 months — https://www.producthunt.com/@paulmurnane",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@paulmurnane",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "117 upvotes on the latest Product Hunt launch (2026-07-18).",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/docusmart-ai",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "8 community comments on the launch.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/docusmart-ai",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "Public GitHub profile.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/paulmurnane",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "Product description: DocuSmart AI lets you search all your internal documents using plain English — across Google Drive, SharePoint, Dropbox ",
-    "trust": "Medium",
-    "state": "uncorroborated",
-    "sourceUrl": "https://www.producthunt.com/products/docusmart-ai",
-    "sourceLabel": "Product Hunt"
-   }
-  ]
- },
- {
-  "id": "src_pixycad",
-  "name": "Andrea Sartori",
-  "email": "pixycad@vcbrain.example",
-  "location": "Lagos",
-  "projects": [
-   {
-    "id": "src_pixycad_p1",
-    "name": "PixyCAD",
-    "sector": "Deep Tech",
-    "stage": "Series A",
-    "oneLiner": "Fast & precise 3D CAD built natively for iPad and Mac"
-   }
-  ],
-  "scores": {
-   "founder": 43,
-   "founderTrend": "flat",
-   "market": "Neutral",
-   "marketTrend": "flat",
-   "fit": "At risk",
-   "fitTrend": "flat"
-  },
-  "evidence": [
-   {
-    "text": "VC Brain pipeline Founder Score 42.9 (90% band 32–54), confidence 0.69.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@pixycad",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Capability: shipped 1 product(s):  PixyCAD  — https://www.producthunt.com/@pixycad",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@pixycad",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Trajectory: 1 launch(es) in the last 12 months — https://www.producthunt.com/@pixycad",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@pixycad",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "137 upvotes on the latest Product Hunt launch (2026-07-17).",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/pixycad-3d-solid-modelling",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "14 community comments on the launch.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/pixycad-3d-solid-modelling",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "Product description: PixyCAD is a native 3D CAD app for Mac and iPad, built for makers, designers and 3D-printing enthusiasts who want profes",
-    "trust": "Medium",
-    "state": "uncorroborated",
-    "sourceUrl": "https://www.producthunt.com/products/pixycad-3d-solid-modelling",
-    "sourceLabel": "Product Hunt"
-   }
-  ]
- },
- {
-  "id": "src_yahia_bakour3",
-  "name": "Yahia Bakour",
-  "email": "yahia_bakour3@vcbrain.example",
-  "location": "Lisbon",
-  "projects": [
-   {
-    "id": "src_yahia_bakour3_p1",
-    "name": "Yapper Leaderboard",
-    "sector": "Consumer",
-    "stage": "Pre-seed",
-    "oneLiner": "See the biggest startup yappers on X/Twitter"
-   }
-  ],
-  "scores": {
-   "founder": 98,
-   "founderTrend": "flat",
-   "market": "Bullish",
-   "marketTrend": "flat",
-   "fit": "At risk",
-   "fitTrend": "flat"
-  },
-  "evidence": [
-   {
-    "text": "VC Brain pipeline Founder Score 97.6 (90% band 90–100), confidence 0.77.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@yahia_bakour3",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Capability: shipped 22 product(s): Yapper Leaderboard, Branda, Context.dev, Free AI SEO Auditor — https://www.producthunt.com/@yahia_bakour3",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@yahia_bakour3",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Trajectory: 7 launch(es) in the last 12 months — https://www.producthunt.com/@yahia_bakour3",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@yahia_bakour3",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "150 upvotes on the latest Product Hunt launch (2026-07-17).",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/yapper-leaderboard",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "18 community comments on the launch.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/yapper-leaderboard",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "Product description: The Yapper Leaderboard ranks Twitter/X's startups and users by how much they yap. The startups with the most impressions",
-    "trust": "Medium",
-    "state": "uncorroborated",
-    "sourceUrl": "https://www.producthunt.com/products/yapper-leaderboard",
-    "sourceLabel": "Product Hunt"
-   }
-  ]
- },
- {
-  "id": "src_benln",
-  "name": "Ben Lang",
-  "email": "benln@vcbrain.example",
-  "location": "Berlin",
-  "projects": [
-   {
-    "id": "src_benln_p1",
-    "name": "Clark",
-    "sector": "SaaS",
-    "stage": "Pre-seed",
-    "oneLiner": "An AI coworker with its own cloud computer"
-   }
-  ],
-  "scores": {
-   "founder": 69,
-   "founderTrend": "flat",
-   "market": "Neutral",
-   "marketTrend": "down",
-   "fit": "Pivot potential",
-   "fitTrend": "up"
-  },
-  "evidence": [
-   {
-    "text": "437 upvotes on the latest Product Hunt launch (2026-07-18).",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/clark-agent",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "52 community comments on the launch.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/clark-agent",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "Public LinkedIn profile.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "http://linkedin.com/in/benmlang",
-    "sourceLabel": "LinkedIn"
-   },
-   {
-    "text": "Live product website.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "http://www.benlang.me",
-    "sourceLabel": "Website"
-   }
-  ]
- },
- {
-  "id": "src_kris_lachance",
-  "name": "Kristofer Lachance",
-  "email": "kris_lachance@vcbrain.example",
-  "location": "Tokyo",
-  "projects": [
-   {
-    "id": "src_kris_lachance_p1",
-    "name": "Basedash Suggestions",
-    "sector": "AI/ML",
-    "stage": "Seed",
-    "oneLiner": "Your AI data analyst, now with ideas of its own."
-   }
-  ],
-  "scores": {
-   "founder": 98,
-   "founderTrend": "flat",
-   "market": "Bullish",
-   "marketTrend": "flat",
-   "fit": "At risk",
-   "fitTrend": "flat"
-  },
-  "evidence": [
-   {
-    "text": "VC Brain pipeline Founder Score 97.6 (90% band 90–100), confidence 0.77.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@kris_lachance",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Capability: shipped 21 product(s): Basedash Suggestions, Basedash SCIM, Basedash Actions, Basedash for Excel — https://www.producthunt.com/@kris_lachance",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@kris_lachance",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Trajectory: 17 launch(es) in the last 12 months — https://www.producthunt.com/@kris_lachance",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@kris_lachance",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "153 upvotes on the latest Product Hunt launch (2026-07-17).",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/basedash",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "24 community comments on the launch.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/basedash",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "Live product website.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.joinskillful.com/",
-    "sourceLabel": "Website"
-   },
-   {
-    "text": "Product description: Basedash now suggests the analysis before you ask. It studies your connected data, your past chats, and the dashboards y",
-    "trust": "Medium",
-    "state": "uncorroborated",
-    "sourceUrl": "https://www.producthunt.com/products/basedash",
-    "sourceLabel": "Product Hunt"
-   }
-  ]
- },
- {
-  "id": "src_manuarora",
-  "name": "Manu Arora",
-  "email": "manuarora@vcbrain.example",
-  "location": "Remote",
-  "projects": [
-   {
-    "id": "src_manuarora_p1",
-    "name": "Acebuilder",
-    "sector": "SaaS",
-    "stage": "Pre-seed",
-    "oneLiner": "Build landing pages with Aceternity UI"
-   }
-  ],
-  "scores": {
-   "founder": 88,
-   "founderTrend": "flat",
-   "market": "Bullish",
-   "marketTrend": "flat",
-   "fit": "Pivot potential",
-   "fitTrend": "flat"
-  },
-  "evidence": [
-   {
-    "text": "VC Brain pipeline Founder Score 87.8 (90% band 80–96), confidence 0.77.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@manuarora",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Capability: shipped 11 product(s): Acebuilder, Aceternity UI Pro, Awesome Framer Motion Components, Devpro — https://www.producthunt.com/@manuarora",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@manuarora",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Trajectory: 1 launch(es) in the last 12 months — https://www.producthunt.com/@manuarora",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@manuarora",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "140 upvotes on the latest Product Hunt launch (2026-07-18).",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/acebuilder",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "9 community comments on the launch.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/acebuilder",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "Public GitHub profile.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/manuarora700",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "Live product website.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.manuarora.in",
-    "sourceLabel": "Website"
-   },
-   {
-    "text": "Product description: Acebuilder is an AI website builder from the team behind Aceternity UI. Instead of generating generic layouts from scrat",
-    "trust": "Medium",
-    "state": "uncorroborated",
-    "sourceUrl": "https://www.producthunt.com/products/acebuilder",
-    "sourceLabel": "Product Hunt"
-   }
-  ]
- },
- {
-  "id": "src_crystal_j",
-  "name": "Crystal J",
-  "email": "crystal_j@vcbrain.example",
-  "location": "Lisbon",
-  "projects": [
-   {
-    "id": "src_crystal_j_p1",
-    "name": "Kimi K3",
-    "sector": "Dev Tools",
-    "stage": "Pre-seed",
-    "oneLiner": "The world's first open 3T-class model"
-   }
-  ],
-  "scores": {
-   "founder": 98,
-   "founderTrend": "flat",
-   "market": "Bullish",
-   "marketTrend": "flat",
-   "fit": "At risk",
-   "fitTrend": "flat"
-  },
-  "evidence": [
-   {
-    "text": "VC Brain pipeline Founder Score 97.6 (90% band 90–100), confidence 0.77.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@crystal_j",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Capability: shipped 11 product(s): Kimi K3, Kimi K2.7 Code, Kimi Work, Kimi WebBridge — https://www.producthunt.com/@crystal_j",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@crystal_j",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Trajectory: 8 launch(es) in the last 12 months — https://www.producthunt.com/@crystal_j",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@crystal_j",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "436 upvotes on the latest Product Hunt launch (2026-07-17).",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/kimi-ai-assistant",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "13 community comments on the launch.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/kimi-ai-assistant",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "2063 points on Hacker News.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://news.ycombinator.com",
-    "sourceLabel": "Hacker News"
-   },
-   {
-    "text": "Product description: Kimi K3 is the world's first open 3T-class model — frontier performance across coding, knowledge work, and reasoning, wi",
-    "trust": "Medium",
-    "state": "uncorroborated",
-    "sourceUrl": "https://www.producthunt.com/products/kimi-ai-assistant",
-    "sourceLabel": "Product Hunt"
-   }
-  ]
- },
- {
   "id": "src_gapostolov",
   "name": "George Apostolov",
   "email": "gapostolov@vcbrain.example",
   "location": "San Francisco",
+  "completeness": 80,
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-18",
+   "upvotes": 277,
+   "comments": 44,
+   "hnPoints": 3,
+   "domainAgeDays": 1040,
+   "industry": "Sales; SaaS; Developer Tools; GitHub",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@gapostolov"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/livedemo"
+    },
+    {
+     "label": "Website",
+     "url": "https://livedemo.live"
+    }
+   ]
+  },
   "projects": [
    {
     "id": "src_gapostolov_p1",
@@ -853,60 +221,141 @@
   ]
  },
  {
-  "id": "src_byalexai",
-  "name": "Aleksandar Blazhev",
-  "email": "byalexai@vcbrain.example",
-  "location": "Paris",
+  "id": "src_crystal_j",
+  "name": "Crystal J",
+  "email": "crystal_j@vcbrain.example",
+  "location": "Lisbon",
+  "completeness": 73,
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-17",
+   "upvotes": 436,
+   "comments": 13,
+   "hnPoints": 2063,
+   "domainAgeDays": 10952,
+   "industry": "Open Source; Artificial Intelligence; Development",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@crystal_j"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/kimi-ai-assistant"
+    }
+   ]
+  },
   "projects": [
    {
-    "id": "src_byalexai_p1",
-    "name": "LiveDemo",
-    "sector": "SaaS",
+    "id": "src_crystal_j_p1",
+    "name": "Kimi K3",
+    "sector": "Dev Tools",
     "stage": "Pre-seed",
-    "oneLiner": "Open-source alternative to Storylane, Navattic, and Arcade"
+    "oneLiner": "The world's first open 3T-class model"
    }
   ],
   "scores": {
-   "founder": 48,
+   "founder": 98,
    "founderTrend": "flat",
    "market": "Bullish",
-   "marketTrend": "up",
-   "fit": "Pivot potential",
-   "fitTrend": "down"
+   "marketTrend": "flat",
+   "fit": "At risk",
+   "fitTrend": "flat"
   },
   "evidence": [
    {
-    "text": "277 upvotes on the latest Product Hunt launch (2026-07-18).",
+    "text": "VC Brain pipeline Founder Score 97.6 (90% band 90–100), confidence 0.77.",
     "trust": "High",
     "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/livedemo",
+    "sourceUrl": "https://www.producthunt.com/@crystal_j",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Capability: shipped 11 product(s): Kimi K3, Kimi K2.7 Code, Kimi Work, Kimi WebBridge — https://www.producthunt.com/@crystal_j",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@crystal_j",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Trajectory: 8 launch(es) in the last 12 months — https://www.producthunt.com/@crystal_j",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@crystal_j",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "436 upvotes on the latest Product Hunt launch (2026-07-17).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/kimi-ai-assistant",
     "sourceLabel": "Product Hunt"
    },
    {
-    "text": "44 community comments on the launch.",
+    "text": "13 community comments on the launch.",
     "trust": "Medium",
     "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/livedemo",
+    "sourceUrl": "https://www.producthunt.com/products/kimi-ai-assistant",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "2063 points on Hacker News.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://news.ycombinator.com",
+    "sourceLabel": "Hacker News"
+   },
+   {
+    "text": "Product description: Kimi K3 is the world's first open 3T-class model — frontier performance across coding, knowledge work, and reasoning, wi",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/products/kimi-ai-assistant",
     "sourceLabel": "Product Hunt"
    }
   ]
  },
  {
-  "id": "src_justin2025",
-  "name": "Justin Jincaid",
-  "email": "justin2025@vcbrain.example",
-  "location": "Lisbon",
+  "id": "src_manuarora",
+  "name": "Manu Arora",
+  "email": "manuarora@vcbrain.example",
+  "location": "Remote",
+  "completeness": 73,
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-18",
+   "upvotes": 140,
+   "comments": 9,
+   "industry": "Design Tools; Tech",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@manuarora"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/acebuilder"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/manuarora700"
+    },
+    {
+     "label": "Website",
+     "url": "https://www.manuarora.in"
+    }
+   ]
+  },
   "projects": [
    {
-    "id": "src_justin2025_p1",
-    "name": "Paradigm",
-    "sector": "Dev Tools",
+    "id": "src_manuarora_p1",
+    "name": "Acebuilder",
+    "sector": "SaaS",
     "stage": "Pre-seed",
-    "oneLiner": "The data layer for AI agents"
+    "oneLiner": "Build landing pages with Aceternity UI"
    }
   ],
   "scores": {
-   "founder": 70,
+   "founder": 88,
    "founderTrend": "flat",
    "market": "Bullish",
    "marketTrend": "flat",
@@ -914,6 +363,217 @@
    "fitTrend": "flat"
   },
   "evidence": [
+   {
+    "text": "VC Brain pipeline Founder Score 87.8 (90% band 80–96), confidence 0.77.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@manuarora",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Capability: shipped 11 product(s): Acebuilder, Aceternity UI Pro, Awesome Framer Motion Components, Devpro — https://www.producthunt.com/@manuarora",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@manuarora",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Trajectory: 1 launch(es) in the last 12 months — https://www.producthunt.com/@manuarora",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@manuarora",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "140 upvotes on the latest Product Hunt launch (2026-07-18).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/acebuilder",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "9 community comments on the launch.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/acebuilder",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Public GitHub profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/manuarora700",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "Live product website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.manuarora.in",
+    "sourceLabel": "Website"
+   },
+   {
+    "text": "Product description: Acebuilder is an AI website builder from the team behind Aceternity UI. Instead of generating generic layouts from scrat",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/products/acebuilder",
+    "sourceLabel": "Product Hunt"
+   }
+  ]
+ },
+ {
+  "id": "src_maxmusing",
+  "name": "Max Musing",
+  "email": "maxmusing@vcbrain.example",
+  "location": "Toronto",
+  "completeness": 73,
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-17",
+   "upvotes": 153,
+   "comments": 24,
+   "industry": "Artificial Intelligence; Data & Analytics; Business Intelligence",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@maxmusing"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/basedash"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/MaxMusing"
+    },
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/company/basedash"
+    },
+    {
+     "label": "Website",
+     "url": "https://www.basedash.com"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "src_maxmusing_p1",
+    "name": "Basedash Suggestions",
+    "sector": "AI/ML",
+    "stage": "Seed",
+    "oneLiner": "Your AI data analyst, now with ideas of its own."
+   }
+  ],
+  "scores": {
+   "founder": 69,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "down"
+  },
+  "evidence": [
+   {
+    "text": "153 upvotes on the latest Product Hunt launch (2026-07-17).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/basedash",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "24 community comments on the launch.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/basedash",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Public GitHub profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/MaxMusing",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/company/basedash",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Live product website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.basedash.com",
+    "sourceLabel": "Website"
+   }
+  ]
+ },
+ {
+  "id": "src_ninghu",
+  "name": "Ning Hu",
+  "email": "ninghu@vcbrain.example",
+  "location": "Lisbon",
+  "completeness": 67,
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-18",
+   "upvotes": 541,
+   "comments": 63,
+   "domainAgeDays": 38,
+   "industry": "Developer Tools; Artificial Intelligence; E-Commerce",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@ninghu"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/zoodata"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "src_ninghu_p1",
+    "name": "ZooData",
+    "sector": "Dev Tools",
+    "stage": "Seed",
+    "oneLiner": "The data layer for AI agents"
+   }
+  ],
+  "scores": {
+   "founder": 90,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "At risk",
+   "fitTrend": "down"
+  },
+  "evidence": [
+   {
+    "text": "VC Brain pipeline Founder Score 89.5 (90% band 81–98), confidence 0.77.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@ninghu",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Capability: shipped 3 product(s): ZooData, ZooClaw, Gensmo — https://www.producthunt.com/@ninghu",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@ninghu",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Trajectory: 2 launch(es) in the last 12 months — https://www.producthunt.com/@ninghu",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@ninghu",
+    "sourceLabel": "VC Brain pipeline"
+   },
    {
     "text": "541 upvotes on the latest Product Hunt launch (2026-07-18).",
     "trust": "High",
@@ -927,6 +587,903 @@
     "state": "corroborated",
     "sourceUrl": "https://www.producthunt.com/products/zoodata",
     "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Product description: ZooData turns any URL into agent-ready JSON, so AI agents can work with structured data instead of raw HTML or bloated m",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/products/zoodata",
+    "sourceLabel": "Product Hunt"
+   }
+  ]
+ },
+ {
+  "id": "src_philip_kubinski",
+  "name": "Philip Kubinski",
+  "email": "philip_kubinski@vcbrain.example",
+  "location": "Nairobi",
+  "completeness": 67,
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-17",
+   "upvotes": 589,
+   "comments": 122,
+   "domainAgeDays": 132,
+   "industry": "Productivity; Artificial Intelligence",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@philip_kubinski"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/unabyss"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "src_philip_kubinski_p1",
+    "name": "Unabyss for Claude",
+    "sector": "SaaS",
+    "stage": "Pre-seed",
+    "oneLiner": "Shared memory across all apps and LLMs. In Claude"
+   }
+  ],
+  "scores": {
+   "founder": 81,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "At risk",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "VC Brain pipeline Founder Score 81.0 (90% band 73–89), confidence 0.77.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@philip_kubinski",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Capability: shipped 2 product(s): Unabyss for Claude, Unabyss — https://www.producthunt.com/@philip_kubinski",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@philip_kubinski",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Trajectory: 2 launch(es) in the last 12 months — https://www.producthunt.com/@philip_kubinski",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@philip_kubinski",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "589 upvotes on the latest Product Hunt launch (2026-07-17).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/unabyss",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "122 community comments on the launch.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/unabyss",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Product description: Claude doesn't know what happens in GPT. Neither one really knows who you are or what your company does. Now they can. U",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/products/unabyss",
+    "sourceLabel": "Product Hunt"
+   }
+  ]
+ },
+ {
+  "id": "arxiv_kevin_qinghong_lin",
+  "name": "Kevin Qinghong Lin",
+  "email": "kevin_qinghong_lin@vcbrain.example",
+  "location": "Unknown",
+  "completeness": 67,
+  "details": {
+   "source": "arXiv",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2606.11176v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/QinghongLin/data2story-skill"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/QinghongLin"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "arxiv_kevin_qinghong_lin_p1",
+    "name": "data2story-skill",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories"
+   }
+  ],
+  "scores": {
+   "founder": 61,
+   "founderTrend": "up",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper (2026-06-09): Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.11176v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Code released with the paper — openness/execution signal.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/QinghongLin/data2story-skill",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "25 arXiv papers in the last 12 months (author-name search; name collisions possible).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Kevin%20Qinghong%20Lin%22",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Small-team paper: 6 authors.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.11176v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Public GitHub profile (repo owner matches author name).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/QinghongLin",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "Commercialization / company status",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.11176v1",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current role / location",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.11176v1",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "arxiv_max_malyi",
+  "name": "Max Malyi",
+  "email": "max_malyi@vcbrain.example",
+  "location": "Unknown",
+  "completeness": 67,
+  "details": {
+   "source": "arXiv",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2605.31281v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/mvmalyi"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "arxiv_max_malyi_p1",
+    "name": "llm-driven-wind-turbine-maintenance-log-labelling",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Semantic Ex…"
+   }
+  ],
+  "scores": {
+   "founder": 57,
+   "founderTrend": "up",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper (2026-05-29): Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Sema",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Code released with the paper — openness/execution signal.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "4 arXiv papers in the last 12 months (author-name search; name collisions possible).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Max%20Malyi%22",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Small-team paper: 4 authors.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Public GitHub profile (repo owner matches author name).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/mvmalyi",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "Commercialization / company status",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current role / location",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "arxiv_natalie_grace_brigham",
+  "name": "Natalie Grace Brigham",
+  "email": "natalie_grace_brigham@vcbrain.example",
+  "location": "Unknown",
+  "completeness": 67,
+  "details": {
+   "source": "arXiv",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2607.01510v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/GraceBrigham/Janus"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/GraceBrigham"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "arxiv_natalie_grace_brigham_p1",
+    "name": "Janus",
+    "sector": "Cybersecurity",
+    "stage": "Pre-seed",
+    "oneLiner": "Janus: a Playground for User-Involved Agentic Permission Management"
+   }
+  ],
+  "scores": {
+   "founder": 53,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper (2026-07-01): Janus: a Playground for User-Involved Agentic Permission Management",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.01510v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Code released with the paper — openness/execution signal.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/GraceBrigham/Janus",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "2 arXiv papers in the last 12 months (author-name search; name collisions possible).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Natalie%20Grace%20Brigham%22",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Small-team paper: 4 authors.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.01510v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Public GitHub profile (repo owner matches author name).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/GraceBrigham",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "Commercialization / company status",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.01510v1",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current role / location",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.01510v1",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "arxiv_ivan_tregear",
+  "name": "Ivan Tregear",
+  "email": "ivan_tregear@vcbrain.example",
+  "location": "Unknown",
+  "completeness": 67,
+  "details": {
+   "source": "arXiv",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2605.24127v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/ITregear/SeriesElasticActuation-FYP"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/ITregear"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "arxiv_ivan_tregear_p1",
+    "name": "SeriesElasticActuation-FYP",
+    "sector": "Deep Tech",
+    "stage": "Pre-seed",
+    "oneLiner": "Investigating the Effect of a Series Elastic Actuation Retrofit to Black-Box Actuators"
+   }
+  ],
+  "scores": {
+   "founder": 51,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper (2026-05-22): Investigating the Effect of a Series Elastic Actuation Retrofit to Black-Box Actuators",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.24127v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Code released with the paper — openness/execution signal.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/ITregear/SeriesElasticActuation-FYP",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "1 arXiv paper in the last 12 months (author-name search; name collisions possible).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Ivan%20Tregear%22",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Small-team paper: 3 authors.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.24127v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Public GitHub profile (repo owner matches author name).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/ITregear",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "Commercialization / company status",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.24127v1",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current role / location",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.24127v1",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "src_kris_lachance",
+  "name": "Kristofer Lachance",
+  "email": "kris_lachance@vcbrain.example",
+  "location": "Tokyo",
+  "completeness": 60,
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-17",
+   "upvotes": 153,
+   "comments": 24,
+   "industry": "Artificial Intelligence; Data & Analytics; Business Intelligence",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@kris_lachance"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/basedash"
+    },
+    {
+     "label": "Website",
+     "url": "https://www.joinskillful.com/"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "src_kris_lachance_p1",
+    "name": "Basedash Suggestions",
+    "sector": "AI/ML",
+    "stage": "Seed",
+    "oneLiner": "Your AI data analyst, now with ideas of its own."
+   }
+  ],
+  "scores": {
+   "founder": 98,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "At risk",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "VC Brain pipeline Founder Score 97.6 (90% band 90–100), confidence 0.77.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@kris_lachance",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Capability: shipped 21 product(s): Basedash Suggestions, Basedash SCIM, Basedash Actions, Basedash for Excel — https://www.producthunt.com/@kris_lachance",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@kris_lachance",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Trajectory: 17 launch(es) in the last 12 months — https://www.producthunt.com/@kris_lachance",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@kris_lachance",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "153 upvotes on the latest Product Hunt launch (2026-07-17).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/basedash",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "24 community comments on the launch.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/basedash",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Live product website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.joinskillful.com/",
+    "sourceLabel": "Website"
+   },
+   {
+    "text": "Product description: Basedash now suggests the analysis before you ask. It studies your connected data, your past chats, and the dashboards y",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/products/basedash",
+    "sourceLabel": "Product Hunt"
+   }
+  ]
+ },
+ {
+  "id": "src_benln",
+  "name": "Ben Lang",
+  "email": "benln@vcbrain.example",
+  "location": "Berlin",
+  "completeness": 60,
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-18",
+   "upvotes": 437,
+   "comments": 52,
+   "industry": "Productivity; Developer Tools; Artificial Intelligence",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@benln"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/clark-agent"
+    },
+    {
+     "label": "LinkedIn",
+     "url": "http://linkedin.com/in/benmlang"
+    },
+    {
+     "label": "Website",
+     "url": "http://www.benlang.me"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "src_benln_p1",
+    "name": "Clark",
+    "sector": "SaaS",
+    "stage": "Pre-seed",
+    "oneLiner": "An AI coworker with its own cloud computer"
+   }
+  ],
+  "scores": {
+   "founder": 69,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "down",
+   "fit": "Pivot potential",
+   "fitTrend": "up"
+  },
+  "evidence": [
+   {
+    "text": "437 upvotes on the latest Product Hunt launch (2026-07-18).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/clark-agent",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "52 community comments on the launch.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/clark-agent",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "http://linkedin.com/in/benmlang",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Live product website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "http://www.benlang.me",
+    "sourceLabel": "Website"
+   }
+  ]
+ },
+ {
+  "id": "src_nikhilrado",
+  "name": "Nikhil Radosevich",
+  "email": "nikhilrado@vcbrain.example",
+  "location": "New York",
+  "completeness": 60,
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-17",
+   "upvotes": 150,
+   "comments": 18,
+   "industry": "Twitter; Social Media; Analytics",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@nikhilrado"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/yapper-leaderboard"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/nikhilrado"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "src_nikhilrado_p1",
+    "name": "Yapper Leaderboard",
+    "sector": "Consumer",
+    "stage": "Series A",
+    "oneLiner": "See the biggest startup yappers on X/Twitter"
+   }
+  ],
+  "scores": {
+   "founder": 51,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "At risk",
+   "fitTrend": "down"
+  },
+  "evidence": [
+   {
+    "text": "150 upvotes on the latest Product Hunt launch (2026-07-17).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/yapper-leaderboard",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "18 community comments on the launch.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/yapper-leaderboard",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Public GitHub profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/nikhilrado",
+    "sourceLabel": "GitHub"
+   }
+  ]
+ },
+ {
+  "id": "src_paulmurnane",
+  "name": "Paul Murnane",
+  "email": "paulmurnane@vcbrain.example",
+  "location": "Berlin",
+  "completeness": 60,
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-18",
+   "upvotes": 117,
+   "comments": 8,
+   "industry": "Artificial Intelligence; Business Intelligence; YC Application",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@paulmurnane"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/docusmart-ai"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/paulmurnane"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "src_paulmurnane_p1",
+    "name": "DocuSmart AI",
+    "sector": "AI/ML",
+    "stage": "Series A",
+    "oneLiner": "Turning fragmented knowledge into one simple system"
+   }
+  ],
+  "scores": {
+   "founder": 41,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "At risk",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "VC Brain pipeline Founder Score 41.2 (90% band 30–52), confidence 0.69.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@paulmurnane",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Capability: shipped 1 product(s): DocuSmart AI  — https://www.producthunt.com/@paulmurnane",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@paulmurnane",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Trajectory: 1 launch(es) in the last 12 months — https://www.producthunt.com/@paulmurnane",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@paulmurnane",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "117 upvotes on the latest Product Hunt launch (2026-07-18).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/docusmart-ai",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "8 community comments on the launch.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/docusmart-ai",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Public GitHub profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/paulmurnane",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "Product description: DocuSmart AI lets you search all your internal documents using plain English — across Google Drive, SharePoint, Dropbox ",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/products/docusmart-ai",
+    "sourceLabel": "Product Hunt"
+   }
+  ]
+ },
+ {
+  "id": "src_yahia_bakour3",
+  "name": "Yahia Bakour",
+  "email": "yahia_bakour3@vcbrain.example",
+  "location": "Lisbon",
+  "completeness": 53,
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-17",
+   "upvotes": 150,
+   "comments": 18,
+   "industry": "Twitter; Social Media; Analytics",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@yahia_bakour3"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/yapper-leaderboard"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "src_yahia_bakour3_p1",
+    "name": "Yapper Leaderboard",
+    "sector": "Consumer",
+    "stage": "Pre-seed",
+    "oneLiner": "See the biggest startup yappers on X/Twitter"
+   }
+  ],
+  "scores": {
+   "founder": 98,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "At risk",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "VC Brain pipeline Founder Score 97.6 (90% band 90–100), confidence 0.77.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@yahia_bakour3",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Capability: shipped 22 product(s): Yapper Leaderboard, Branda, Context.dev, Free AI SEO Auditor — https://www.producthunt.com/@yahia_bakour3",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@yahia_bakour3",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Trajectory: 7 launch(es) in the last 12 months — https://www.producthunt.com/@yahia_bakour3",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@yahia_bakour3",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "150 upvotes on the latest Product Hunt launch (2026-07-17).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/yapper-leaderboard",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "18 community comments on the launch.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/yapper-leaderboard",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Product description: The Yapper Leaderboard ranks Twitter/X's startups and users by how much they yap. The startups with the most impressions",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/products/yapper-leaderboard",
+    "sourceLabel": "Product Hunt"
    }
   ]
  },
@@ -935,6 +1492,28 @@
   "name": "Rohan Chaubey",
   "email": "rohanrecommends@vcbrain.example",
   "location": "New York",
+  "completeness": 53,
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-17",
+   "upvotes": 589,
+   "comments": 122,
+   "industry": "Productivity; Artificial Intelligence",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@rohanrecommends"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/unabyss"
+    },
+    {
+     "label": "Website",
+     "url": "https://chat.whatsapp.com/Js82is4nb4p3AsZi0tbjSQ"
+    }
+   ]
+  },
   "projects": [
    {
     "id": "src_rohanrecommends_p1",
@@ -981,6 +1560,28 @@
   "name": "ISTIAK AHMAD",
   "email": "istiakahmad@vcbrain.example",
   "location": "Tokyo",
+  "completeness": 53,
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-17",
+   "upvotes": 428,
+   "comments": 102,
+   "industry": "Sales; Email Marketing; Artificial Intelligence",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@istiakahmad"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/pebbles-ai"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/istiakahmad"
+    }
+   ]
+  },
   "projects": [
    {
     "id": "src_istiakahmad_p1",
@@ -1027,6 +1628,24 @@
   "name": "Masaki Iino",
   "email": "masaki_iino@vcbrain.example",
   "location": "Nairobi",
+  "completeness": 53,
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-17",
+   "upvotes": 241,
+   "comments": 52,
+   "industry": "Mac; Productivity; Menu Bar Apps",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@masaki_iino"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/toybird-labs"
+    }
+   ]
+  },
   "projects": [
    {
     "id": "src_masaki_iino_p1",
@@ -1090,314 +1709,873 @@
   ]
  },
  {
-  "id": "src_nikhilrado",
-  "name": "Nikhil Radosevich",
-  "email": "nikhilrado@vcbrain.example",
-  "location": "New York",
+  "id": "src_pixycad",
+  "name": "Andrea Sartori",
+  "email": "pixycad@vcbrain.example",
+  "location": "Lagos",
+  "completeness": 53,
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-17",
+   "upvotes": 137,
+   "comments": 14,
+   "industry": "3D Printer; Maker Tools; 3D Modeling",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@pixycad"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/pixycad-3d-solid-modelling"
+    }
+   ]
+  },
   "projects": [
    {
-    "id": "src_nikhilrado_p1",
-    "name": "Yapper Leaderboard",
-    "sector": "Consumer",
+    "id": "src_pixycad_p1",
+    "name": "PixyCAD",
+    "sector": "Deep Tech",
     "stage": "Series A",
-    "oneLiner": "See the biggest startup yappers on X/Twitter"
+    "oneLiner": "Fast & precise 3D CAD built natively for iPad and Mac"
    }
   ],
   "scores": {
-   "founder": 51,
+   "founder": 43,
    "founderTrend": "flat",
    "market": "Neutral",
    "marketTrend": "flat",
-   "fit": "At risk",
-   "fitTrend": "down"
-  },
-  "evidence": [
-   {
-    "text": "150 upvotes on the latest Product Hunt launch (2026-07-17).",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/yapper-leaderboard",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "18 community comments on the launch.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/yapper-leaderboard",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "Public GitHub profile.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/nikhilrado",
-    "sourceLabel": "GitHub"
-   }
-  ]
- },
- {
-  "id": "src_akul_gupta",
-  "name": "Akul Gupta",
-  "email": "akul_gupta@vcbrain.example",
-  "location": "Los Angeles",
-  "projects": [
-   {
-    "id": "src_akul_gupta_p1",
-    "name": "MindFort",
-    "sector": "Biotech",
-    "stage": "Series A",
-    "oneLiner": "CTO & Co-founder @ MindFort"
-   }
-  ],
-  "scores": {
-   "founder": 73,
-   "founderTrend": "flat",
-   "market": "Bear",
-   "marketTrend": "down",
    "fit": "At risk",
    "fitTrend": "flat"
   },
   "evidence": [
    {
-    "text": "Public LinkedIn profile.",
-    "trust": "Medium",
+    "text": "VC Brain pipeline Founder Score 42.9 (90% band 32–54), confidence 0.69.",
+    "trust": "High",
     "state": "corroborated",
-    "sourceUrl": "https://www.linkedin.com/in/akulguptax",
-    "sourceLabel": "LinkedIn"
+    "sourceUrl": "https://www.producthunt.com/@pixycad",
+    "sourceLabel": "VC Brain pipeline"
    },
    {
-    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "text": "Capability: shipped 1 product(s):  PixyCAD  — https://www.producthunt.com/@pixycad",
     "trust": "Medium",
     "state": "corroborated",
-    "sourceUrl": "https://luma.com/user/usr-8IiPGNnVB83udoF",
-    "sourceLabel": "Luma"
+    "sourceUrl": "https://www.producthunt.com/@pixycad",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Trajectory: 1 launch(es) in the last 12 months — https://www.producthunt.com/@pixycad",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/@pixycad",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "137 upvotes on the latest Product Hunt launch (2026-07-17).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/pixycad-3d-solid-modelling",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "14 community comments on the launch.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/pixycad-3d-solid-modelling",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Product description: PixyCAD is a native 3D CAD app for Mac and iPad, built for makers, designers and 3D-printing enthusiasts who want profes",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/products/pixycad-3d-solid-modelling",
+    "sourceLabel": "Product Hunt"
    }
   ]
  },
  {
-  "id": "src_angela_mascarenas_the_ai_furnace",
-  "name": "Angela Mascarenas (The AI Furnace)",
-  "email": "angela_mascarenas_the_ai_furnace@vcbrain.example",
-  "location": "New York",
+  "id": "arxiv_yushi_huang",
+  "name": "Yushi Huang",
+  "email": "yushi_huang@vcbrain.example",
+  "location": "Unknown",
+  "completeness": 50,
+  "details": {
+   "source": "arXiv",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2607.15273v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/Harahan/MeanFlowNFT"
+    }
+   ]
+  },
   "projects": [
    {
-    "id": "src_angela_mascarenas_the_ai_furnace_p1",
-    "name": "Angela's venture",
+    "id": "arxiv_yushi_huang_p1",
+    "name": "MeanFlowNFT",
     "sector": "AI/ML",
-    "stage": "Series A",
-    "oneLiner": "AI Founder + Community Builder"
+    "stage": "Pre-seed",
+    "oneLiner": "MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators"
    }
   ],
   "scores": {
-   "founder": 62,
+   "founder": 61,
+   "founderTrend": "up",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper (2026-07-16): MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.15273v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Code released with the paper — openness/execution signal.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/Harahan/MeanFlowNFT",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "16 arXiv papers in the last 12 months (author-name search; name collisions possible).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Yushi%20Huang%22",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Small-team paper: 5 authors.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.15273v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Commercialization / company status",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.15273v1",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current role / location",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.15273v1",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "arxiv_haoyu_zhao",
+  "name": "Haoyu Zhao",
+  "email": "haoyu_zhao@vcbrain.example",
+  "location": "Unknown",
+  "completeness": 50,
+  "details": {
+   "source": "arXiv",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2607.06559v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/alibaba-damo-academy/RynnWorld-4D"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "arxiv_haoyu_zhao_p1",
+    "name": "RynnWorld-4D",
+    "sector": "Deep Tech",
+    "stage": "Pre-seed",
+    "oneLiner": "RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation"
+   }
+  ],
+  "scores": {
+   "founder": 61,
+   "founderTrend": "up",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper (2026-07-07): RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.06559v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Code released with the paper — openness/execution signal.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/alibaba-damo-academy/RynnWorld-4D",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "30 arXiv papers in the last 12 months (author-name search; name collisions possible).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Haoyu%20Zhao%22",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Small-team paper: 6 authors.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.06559v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Commercialization / company status",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.06559v1",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current role / location",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.06559v1",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "arxiv_sangmin_lee",
+  "name": "Sangmin Lee",
+  "email": "sangmin_lee@vcbrain.example",
+  "location": "Unknown",
+  "completeness": 50,
+  "details": {
+   "source": "arXiv",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2606.11681v2"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/sanghyang00/ur-bert"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "arxiv_sangmin_lee_p1",
+    "name": "ur-bert",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "UR-BERT: Scaling Text Encoders for Massively Multilingual TTS Through Universal Romanization and Speech Tok…"
+   }
+  ],
+  "scores": {
+   "founder": 61,
+   "founderTrend": "up",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper (2026-06-10): UR-BERT: Scaling Text Encoders for Massively Multilingual TTS Through Universal Romanization and Spe",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.11681v2",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Code released with the paper — openness/execution signal.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/sanghyang00/ur-bert",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "16 arXiv papers in the last 12 months (author-name search; name collisions possible).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Sangmin%20Lee%22",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Small-team paper: 4 authors.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.11681v2",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Commercialization / company status",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.11681v2",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current role / location",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.11681v2",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "arxiv_jinghao_zhang",
+  "name": "Jinghao Zhang",
+  "email": "jinghao_zhang@vcbrain.example",
+  "location": "Unknown",
+  "completeness": 50,
+  "details": {
+   "source": "arXiv",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2605.25381v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/Jinghaoleven/RLVR-Schedule"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "arxiv_jinghao_zhang_p1",
+    "name": "RLVR-Schedule",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Not only where, But when: Temporal Scheduling for RLVR"
+   }
+  ],
+  "scores": {
+   "founder": 61,
+   "founderTrend": "up",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper (2026-05-25): Not only where, But when: Temporal Scheduling for RLVR",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.25381v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Code released with the paper — openness/execution signal.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/Jinghaoleven/RLVR-Schedule",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "19 arXiv papers in the last 12 months (author-name search; name collisions possible).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Jinghao%20Zhang%22",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Small-team paper: 4 authors.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.25381v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Commercialization / company status",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.25381v1",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current role / location",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.25381v1",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "arxiv_al_zadid_sultan_bin_habib",
+  "name": "Al Zadid Sultan Bin Habib",
+  "email": "al_zadid_sultan_bin_habib@vcbrain.example",
+  "location": "Unknown",
+  "completeness": 50,
+  "details": {
+   "source": "arXiv",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2606.05441v2"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/zadid6pretam/GOTabPFN"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "arxiv_al_zadid_sultan_bin_habib_p1",
+    "name": "GOTabPFN",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "GOTabPFN: From Feature Ordering to Compact Tokenization for Tabular Foundation Models on High-Dimensional Data"
+   }
+  ],
+  "scores": {
+   "founder": 57,
+   "founderTrend": "up",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper (2026-06-03): GOTabPFN: From Feature Ordering to Compact Tokenization for Tabular Foundation Models on High-Dimens",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.05441v2",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Code released with the paper — openness/execution signal.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/zadid6pretam/GOTabPFN",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "4 arXiv papers in the last 12 months (author-name search; name collisions possible).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Al%20Zadid%20Sultan%20Bin%20Habib%22",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Small-team paper: 5 authors.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.05441v2",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Commercialization / company status",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.05441v2",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current role / location",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.05441v2",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "arxiv_varshith_roy_kotla",
+  "name": "Varshith Roy Kotla",
+  "email": "varshith_roy_kotla@vcbrain.example",
+  "location": "Unknown",
+  "completeness": 50,
+  "details": {
+   "source": "arXiv",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2607.02722v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/nearpot/Weighted-Conformal-Thermal-Transfer"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "arxiv_varshith_roy_kotla_p1",
+    "name": "Weighted-Conformal-Thermal-Transfer",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Weighted Conformal Prediction for Lab-to-Track Thermal Transfer in EV Motorsport Powertrains"
+   }
+  ],
+  "scores": {
+   "founder": 55,
+   "founderTrend": "up",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper (2026-07-02): Weighted Conformal Prediction for Lab-to-Track Thermal Transfer in EV Motorsport Powertrains",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.02722v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Code released with the paper — openness/execution signal.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/nearpot/Weighted-Conformal-Thermal-Transfer",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "3 arXiv papers in the last 12 months (author-name search; name collisions possible).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Varshith%20Roy%20Kotla%22",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Small-team paper: 1 author.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.02722v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Commercialization / company status",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.02722v1",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current role / location",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.02722v1",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "arxiv_ayan_pendharkar",
+  "name": "Ayan Pendharkar",
+  "email": "ayan_pendharkar@vcbrain.example",
+  "location": "Unknown",
+  "completeness": 50,
+  "details": {
+   "source": "arXiv",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2606.30068v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/bushesarebetter/jepa_research_project"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "arxiv_ayan_pendharkar_p1",
+    "name": "jepa_research_project",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Predictive Objectives Discard Exogenous Control-Relevant Features: A Controlled Mechanistic Study"
+   }
+  ],
+  "scores": {
+   "founder": 55,
+   "founderTrend": "up",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper (2026-06-29): Predictive Objectives Discard Exogenous Control-Relevant Features: A Controlled Mechanistic Study",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.30068v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Code released with the paper — openness/execution signal.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/bushesarebetter/jepa_research_project",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "3 arXiv papers in the last 12 months (author-name search; name collisions possible).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Ayan%20Pendharkar%22",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Small-team paper: 1 author.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.30068v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Commercialization / company status",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.30068v1",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current role / location",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.30068v1",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "arxiv_hiranya_garbha_kumar",
+  "name": "Hiranya Garbha Kumar",
+  "email": "hiranya_garbha_kumar@vcbrain.example",
+  "location": "Unknown",
+  "completeness": 50,
+  "details": {
+   "source": "arXiv",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2606.18429v2"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/MinhasKamal/CAOA"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "arxiv_hiranya_garbha_kumar_p1",
+    "name": "CAOA",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "CAOA -- Completion-Assisted Object-CAD Alignment"
+   }
+  ],
+  "scores": {
+   "founder": 53,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper (2026-06-16): CAOA -- Completion-Assisted Object-CAD Alignment",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.18429v2",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Code released with the paper — openness/execution signal.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/MinhasKamal/CAOA",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "2 arXiv papers in the last 12 months (author-name search; name collisions possible).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Hiranya%20Garbha%20Kumar%22",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Small-team paper: 3 authors.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.18429v2",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Commercialization / company status",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.18429v2",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   },
+   {
+    "text": "Current role / location",
+    "trust": "Low",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.18429v2",
+    "sourceLabel": "Unknown",
+    "unknown": true
+   }
+  ]
+ },
+ {
+  "id": "src_justin2025",
+  "name": "Justin Jincaid",
+  "email": "justin2025@vcbrain.example",
+  "location": "Lisbon",
+  "completeness": 47,
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-18",
+   "upvotes": 541,
+   "comments": 63,
+   "industry": "Developer Tools; Artificial Intelligence; E-Commerce",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@justin2025"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/zoodata"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "src_justin2025_p1",
+    "name": "Paradigm",
+    "sector": "Dev Tools",
+    "stage": "Pre-seed",
+    "oneLiner": "The data layer for AI agents"
+   }
+  ],
+  "scores": {
+   "founder": 70,
    "founderTrend": "flat",
    "market": "Bullish",
    "marketTrend": "flat",
-   "fit": "At risk",
-   "fitTrend": "up"
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
   },
   "evidence": [
    {
-    "text": "Public LinkedIn profile.",
-    "trust": "Medium",
+    "text": "541 upvotes on the latest Product Hunt launch (2026-07-18).",
+    "trust": "High",
     "state": "corroborated",
-    "sourceUrl": "https://www.linkedin.com/in/angela-mascarenas-7698132b",
-    "sourceLabel": "LinkedIn"
+    "sourceUrl": "https://www.producthunt.com/products/zoodata",
+    "sourceLabel": "Product Hunt"
    },
    {
-    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "text": "63 community comments on the launch.",
     "trust": "Medium",
     "state": "corroborated",
-    "sourceUrl": "https://luma.com/user/usr-x2ibqxQgFH6yg1Z",
-    "sourceLabel": "Luma"
+    "sourceUrl": "https://www.producthunt.com/products/zoodata",
+    "sourceLabel": "Product Hunt"
    }
   ]
  },
  {
-  "id": "src_arslan_ihsan",
-  "name": "Arslan Ihsan",
-  "email": "arslan_ihsan@vcbrain.example",
-  "location": "Los Angeles",
+  "id": "src_byalexai",
+  "name": "Aleksandar Blazhev",
+  "email": "byalexai@vcbrain.example",
+  "location": "Paris",
+  "completeness": 47,
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-18",
+   "upvotes": 277,
+   "comments": 44,
+   "industry": "Sales; SaaS; Developer Tools; GitHub",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@byalexai"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/livedemo"
+    }
+   ]
+  },
   "projects": [
    {
-    "id": "src_arslan_ihsan_p1",
-    "name": "Arslan's venture",
-    "sector": "Climate",
-    "stage": "Seed",
-    "oneLiner": "Build that matters | Helping Startups to IPO | Founder | Keynote Speaker | Advisor | Networker"
+    "id": "src_byalexai_p1",
+    "name": "LiveDemo",
+    "sector": "SaaS",
+    "stage": "Pre-seed",
+    "oneLiner": "Open-source alternative to Storylane, Navattic, and Arcade"
    }
   ],
   "scores": {
-   "founder": 67,
+   "founder": 48,
    "founderTrend": "flat",
-   "market": "Bear",
-   "marketTrend": "down",
+   "market": "Bullish",
+   "marketTrend": "up",
    "fit": "Pivot potential",
    "fitTrend": "down"
   },
   "evidence": [
    {
-    "text": "Public LinkedIn profile.",
-    "trust": "Medium",
+    "text": "277 upvotes on the latest Product Hunt launch (2026-07-18).",
+    "trust": "High",
     "state": "corroborated",
-    "sourceUrl": "https://www.linkedin.com/in/arslanhaktic",
-    "sourceLabel": "LinkedIn"
+    "sourceUrl": "https://www.producthunt.com/products/livedemo",
+    "sourceLabel": "Product Hunt"
    },
    {
-    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "text": "44 community comments on the launch.",
     "trust": "Medium",
     "state": "corroborated",
-    "sourceUrl": "https://luma.com/user/usr-r9CwsAD7wJeCr2J",
-    "sourceLabel": "Luma"
-   }
-  ]
- },
- {
-  "id": "src_brandon_veiseh",
-  "name": "Brandon Veiseh",
-  "email": "brandon_veiseh@vcbrain.example",
-  "location": "Los Angeles",
-  "projects": [
-   {
-    "id": "src_brandon_veiseh_p1",
-    "name": "MindFort",
-    "sector": "Biotech",
-    "stage": "Series A",
-    "oneLiner": "CEO & Co-founder @ MindFort"
-   }
-  ],
-  "scores": {
-   "founder": 59,
-   "founderTrend": "flat",
-   "market": "Neutral",
-   "marketTrend": "down",
-   "fit": "Survives as-is",
-   "fitTrend": "down"
-  },
-  "evidence": [
-   {
-    "text": "Public LinkedIn profile.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.linkedin.com/in/brandon-veiseh",
-    "sourceLabel": "LinkedIn"
-   },
-   {
-    "text": "Attended a curated NYC founders dinner (invite-based).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://luma.com/user/usr-r7vp8RCRwxHXQNY",
-    "sourceLabel": "Luma"
-   }
-  ]
- },
- {
-  "id": "src_eve_halimi",
-  "name": "Eve Halimi",
-  "email": "eve_halimi@vcbrain.example",
-  "location": "New York",
-  "projects": [
-   {
-    "id": "src_eve_halimi_p1",
-    "name": "Eve's venture",
-    "sector": "Climate",
-    "stage": "Series A",
-    "oneLiner": "Co-Founder of Alinea"
-   }
-  ],
-  "scores": {
-   "founder": 61,
-   "founderTrend": "flat",
-   "market": "Neutral",
-   "marketTrend": "flat",
-   "fit": "Survives as-is",
-   "fitTrend": "up"
-  },
-  "evidence": [
-   {
-    "text": "Public LinkedIn profile.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.linkedin.com/in/eve-halimi",
-    "sourceLabel": "LinkedIn"
-   },
-   {
-    "text": "Attended a curated NYC founders dinner (invite-based).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://luma.com/user/usr-DyKwYGl4UDFYkEh",
-    "sourceLabel": "Luma"
-   }
-  ]
- },
- {
-  "id": "src_fatima_ashraf",
-  "name": "Fatima Ashraf",
-  "email": "fatima_ashraf@vcbrain.example",
-  "location": "New York",
-  "projects": [
-   {
-    "id": "src_fatima_ashraf_p1",
-    "name": "CouWed",
-    "sector": "AI/ML",
-    "stage": "Pre-seed",
-    "oneLiner": "Designer, technologist, and founder of CouWed. My work blends immersive media, AI, and interactive design t…"
-   }
-  ],
-  "scores": {
-   "founder": 52,
-   "founderTrend": "flat",
-   "market": "Neutral",
-   "marketTrend": "up",
-   "fit": "Survives as-is",
-   "fitTrend": "up"
-  },
-  "evidence": [
-   {
-    "text": "Public LinkedIn profile.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.linkedin.com/in/fatima-ashraf-52948a214",
-    "sourceLabel": "LinkedIn"
-   },
-   {
-    "text": "Attended a curated NYC founders dinner (invite-based).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://luma.com/user/usr-BGiGBLhBIABxpOt",
-    "sourceLabel": "Luma"
-   }
-  ]
- },
- {
-  "id": "src_gloria_liu",
-  "name": "Gloria Liu",
-  "email": "gloria_liu@vcbrain.example",
-  "location": "Vancouver",
-  "projects": [
-   {
-    "id": "src_gloria_liu_p1",
-    "name": "Odd One In",
-    "sector": "Healthtech",
-    "stage": "Seed",
-    "oneLiner": "investor, co-founder @ Odd One In"
-   }
-  ],
-  "scores": {
-   "founder": 60,
-   "founderTrend": "flat",
-   "market": "Neutral",
-   "marketTrend": "up",
-   "fit": "Survives as-is",
-   "fitTrend": "flat"
-  },
-  "evidence": [
-   {
-    "text": "Attended a curated NYC founders dinner (invite-based).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://luma.com/user/usr-g7IGwzdIYk4qZ4C",
-    "sourceLabel": "Luma"
+    "sourceUrl": "https://www.producthunt.com/products/livedemo",
+    "sourceLabel": "Product Hunt"
    }
   ]
  },
@@ -1406,6 +2584,21 @@
   "name": "Julie Zhu",
   "email": "julie_zhu@vcbrain.example",
   "location": "New York",
+  "completeness": 33,
+  "details": {
+   "source": "NYC founders dinner",
+   "industry": "Design",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://luma.com/user/usr-KJZs89BHF40ySdJ"
+    },
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/in/juzzhu"
+    }
+   ]
+  },
   "projects": [
    {
     "id": "src_julie_zhu_p1",
@@ -1441,40 +2634,55 @@
   ]
  },
  {
-  "id": "src_kelsey_aina",
-  "name": "Kelsey Aina",
-  "email": "kelsey_aina@vcbrain.example",
-  "location": "Los Angeles",
+  "id": "src_fatima_ashraf",
+  "name": "Fatima Ashraf",
+  "email": "fatima_ashraf@vcbrain.example",
+  "location": "New York",
+  "completeness": 33,
+  "details": {
+   "source": "NYC founders dinner",
+   "industry": "AI/ML; Health; Design",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://luma.com/user/usr-BGiGBLhBIABxpOt"
+    },
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/in/fatima-ashraf-52948a214"
+    }
+   ]
+  },
   "projects": [
    {
-    "id": "src_kelsey_aina_p1",
-    "name": "Kelsey's venture",
-    "sector": "Fintech",
-    "stage": "Seed",
-    "oneLiner": "Head of Partnerships at Anrok, Former HubSpot, Former Founder."
+    "id": "src_fatima_ashraf_p1",
+    "name": "CouWed",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Designer, technologist, and founder of CouWed. My work blends immersive media, AI, and interactive design t…"
    }
   ],
   "scores": {
-   "founder": 53,
-   "founderTrend": "up",
-   "market": "Bullish",
-   "marketTrend": "flat",
-   "fit": "Pivot potential",
-   "fitTrend": "flat"
+   "founder": 52,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "up",
+   "fit": "Survives as-is",
+   "fitTrend": "up"
   },
   "evidence": [
    {
     "text": "Public LinkedIn profile.",
     "trust": "Medium",
     "state": "corroborated",
-    "sourceUrl": "https://www.linkedin.com/in/kelseyaina",
+    "sourceUrl": "https://www.linkedin.com/in/fatima-ashraf-52948a214",
     "sourceLabel": "LinkedIn"
    },
    {
     "text": "Attended a curated NYC founders dinner (invite-based).",
     "trust": "Medium",
     "state": "corroborated",
-    "sourceUrl": "https://luma.com/user/usr-f4PlLyQJkHwI5EO",
+    "sourceUrl": "https://luma.com/user/usr-BGiGBLhBIABxpOt",
     "sourceLabel": "Luma"
    }
   ]
@@ -1484,6 +2692,21 @@
   "name": "Mohan Kumar",
   "email": "mohan_kumar@vcbrain.example",
   "location": "Los Angeles",
+  "completeness": 27,
+  "details": {
+   "source": "NYC founders dinner",
+   "industry": "AI/ML; Security",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://luma.com/user/usr-jkk6HgYiSPzCcZS"
+    },
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/in/vimokumar"
+    }
+   ]
+  },
   "projects": [
    {
     "id": "src_mohan_kumar_p1",
@@ -1519,24 +2742,92 @@
   ]
  },
  {
-  "id": "src_sal_khan",
-  "name": "Sal Khan",
-  "email": "sal_khan@vcbrain.example",
-  "location": "New York",
+  "id": "src_akul_gupta",
+  "name": "Akul Gupta",
+  "email": "akul_gupta@vcbrain.example",
+  "location": "Los Angeles",
+  "completeness": 27,
+  "details": {
+   "source": "NYC founders dinner",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://luma.com/user/usr-8IiPGNnVB83udoF"
+    },
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/in/akulguptax"
+    }
+   ]
+  },
   "projects": [
    {
-    "id": "src_sal_khan_p1",
-    "name": "Sal's venture",
-    "sector": "Dev Tools",
+    "id": "src_akul_gupta_p1",
+    "name": "MindFort",
+    "sector": "Biotech",
     "stage": "Series A",
-    "oneLiner": "Founder & Creative Director"
+    "oneLiner": "CTO & Co-founder @ MindFort"
    }
   ],
   "scores": {
-   "founder": 55,
-   "founderTrend": "down",
-   "market": "Neutral",
-   "marketTrend": "up",
+   "founder": 73,
+   "founderTrend": "flat",
+   "market": "Bear",
+   "marketTrend": "down",
+   "fit": "At risk",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/in/akulguptax",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://luma.com/user/usr-8IiPGNnVB83udoF",
+    "sourceLabel": "Luma"
+   }
+  ]
+ },
+ {
+  "id": "src_ayaan_naveed_malik",
+  "name": "Ayaan Naveed Malik",
+  "email": "ayaan_naveed_malik@vcbrain.example",
+  "location": "New York",
+  "completeness": 27,
+  "details": {
+   "source": "NYC founders dinner",
+   "industry": "AI/ML; Robotics",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://luma.com/user/usr-7ljBD259ZmkUwD7"
+    },
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/in/ayaannaveedmalik"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "src_ayaan_naveed_malik_p1",
+    "name": "Ayaan's venture",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "stanford university alum! building a frontier AI Lab to solve robotics —> AMI Labs"
+   }
+  ],
+  "scores": {
+   "founder": 72,
+   "founderTrend": "up",
+   "market": "Bear",
+   "marketTrend": "flat",
    "fit": "Pivot potential",
    "fitTrend": "flat"
   },
@@ -1545,14 +2836,68 @@
     "text": "Public LinkedIn profile.",
     "trust": "Medium",
     "state": "corroborated",
-    "sourceUrl": "https://www.linkedin.com/in/SalKhvn",
+    "sourceUrl": "https://www.linkedin.com/in/ayaannaveedmalik",
     "sourceLabel": "LinkedIn"
    },
    {
     "text": "Attended a curated NYC founders dinner (invite-based).",
     "trust": "Medium",
     "state": "corroborated",
-    "sourceUrl": "https://luma.com/user/usr-D5jHjnSWExZbzKc",
+    "sourceUrl": "https://luma.com/user/usr-7ljBD259ZmkUwD7",
+    "sourceLabel": "Luma"
+   }
+  ]
+ },
+ {
+  "id": "src_angela_mascarenas_the_ai_furnace",
+  "name": "Angela Mascarenas (The AI Furnace)",
+  "email": "angela_mascarenas_the_ai_furnace@vcbrain.example",
+  "location": "New York",
+  "completeness": 27,
+  "details": {
+   "source": "NYC founders dinner",
+   "industry": "AI/ML",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://luma.com/user/usr-x2ibqxQgFH6yg1Z"
+    },
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/in/angela-mascarenas-7698132b"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "src_angela_mascarenas_the_ai_furnace_p1",
+    "name": "Angela's venture",
+    "sector": "AI/ML",
+    "stage": "Series A",
+    "oneLiner": "AI Founder + Community Builder"
+   }
+  ],
+  "scores": {
+   "founder": 62,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "At risk",
+   "fitTrend": "up"
+  },
+  "evidence": [
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/in/angela-mascarenas-7698132b",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://luma.com/user/usr-x2ibqxQgFH6yg1Z",
     "sourceLabel": "Luma"
    }
   ]
@@ -1562,6 +2907,21 @@
   "name": "Sharon Rao",
   "email": "sharon_rao@vcbrain.example",
   "location": "Toronto",
+  "completeness": 27,
+  "details": {
+   "source": "NYC founders dinner",
+   "industry": "Health",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://luma.com/user/usr-ikJNfn2OxvPr7GO"
+    },
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/in/sharonrao"
+    }
+   ]
+  },
   "projects": [
    {
     "id": "src_sharon_rao_p1",
@@ -1597,23 +2957,291 @@
   ]
  },
  {
-  "id": "src_ayaan_naveed_malik",
-  "name": "Ayaan Naveed Malik",
-  "email": "ayaan_naveed_malik@vcbrain.example",
-  "location": "New York",
+  "id": "src_brandon_veiseh",
+  "name": "Brandon Veiseh",
+  "email": "brandon_veiseh@vcbrain.example",
+  "location": "Los Angeles",
+  "completeness": 27,
+  "details": {
+   "source": "NYC founders dinner",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://luma.com/user/usr-r7vp8RCRwxHXQNY"
+    },
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/in/brandon-veiseh"
+    }
+   ]
+  },
   "projects": [
    {
-    "id": "src_ayaan_naveed_malik_p1",
-    "name": "Ayaan's venture",
-    "sector": "AI/ML",
-    "stage": "Pre-seed",
-    "oneLiner": "stanford university alum! building a frontier AI Lab to solve robotics —> AMI Labs"
+    "id": "src_brandon_veiseh_p1",
+    "name": "MindFort",
+    "sector": "Biotech",
+    "stage": "Series A",
+    "oneLiner": "CEO & Co-founder @ MindFort"
    }
   ],
   "scores": {
-   "founder": 72,
-   "founderTrend": "up",
+   "founder": 59,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "down",
+   "fit": "Survives as-is",
+   "fitTrend": "down"
+  },
+  "evidence": [
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/in/brandon-veiseh",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://luma.com/user/usr-r7vp8RCRwxHXQNY",
+    "sourceLabel": "Luma"
+   }
+  ]
+ },
+ {
+  "id": "src_arslan_ihsan",
+  "name": "Arslan Ihsan",
+  "email": "arslan_ihsan@vcbrain.example",
+  "location": "Los Angeles",
+  "completeness": 20,
+  "details": {
+   "source": "NYC founders dinner",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://luma.com/user/usr-r9CwsAD7wJeCr2J"
+    },
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/in/arslanhaktic"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "src_arslan_ihsan_p1",
+    "name": "Arslan's venture",
+    "sector": "Climate",
+    "stage": "Seed",
+    "oneLiner": "Build that matters | Helping Startups to IPO | Founder | Keynote Speaker | Advisor | Networker"
+   }
+  ],
+  "scores": {
+   "founder": 67,
+   "founderTrend": "flat",
    "market": "Bear",
+   "marketTrend": "down",
+   "fit": "Pivot potential",
+   "fitTrend": "down"
+  },
+  "evidence": [
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/in/arslanhaktic",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://luma.com/user/usr-r9CwsAD7wJeCr2J",
+    "sourceLabel": "Luma"
+   }
+  ]
+ },
+ {
+  "id": "src_eve_halimi",
+  "name": "Eve Halimi",
+  "email": "eve_halimi@vcbrain.example",
+  "location": "New York",
+  "completeness": 20,
+  "details": {
+   "source": "NYC founders dinner",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://luma.com/user/usr-DyKwYGl4UDFYkEh"
+    },
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/in/eve-halimi"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "src_eve_halimi_p1",
+    "name": "Eve's venture",
+    "sector": "Climate",
+    "stage": "Series A",
+    "oneLiner": "Co-Founder of Alinea"
+   }
+  ],
+  "scores": {
+   "founder": 61,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Survives as-is",
+   "fitTrend": "up"
+  },
+  "evidence": [
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/in/eve-halimi",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://luma.com/user/usr-DyKwYGl4UDFYkEh",
+    "sourceLabel": "Luma"
+   }
+  ]
+ },
+ {
+  "id": "src_gloria_liu",
+  "name": "Gloria Liu",
+  "email": "gloria_liu@vcbrain.example",
+  "location": "Vancouver",
+  "completeness": 20,
+  "details": {
+   "source": "NYC founders dinner",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://luma.com/user/usr-g7IGwzdIYk4qZ4C"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "src_gloria_liu_p1",
+    "name": "Odd One In",
+    "sector": "Healthtech",
+    "stage": "Seed",
+    "oneLiner": "investor, co-founder @ Odd One In"
+   }
+  ],
+  "scores": {
+   "founder": 60,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "up",
+   "fit": "Survives as-is",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://luma.com/user/usr-g7IGwzdIYk4qZ4C",
+    "sourceLabel": "Luma"
+   }
+  ]
+ },
+ {
+  "id": "src_sal_khan",
+  "name": "Sal Khan",
+  "email": "sal_khan@vcbrain.example",
+  "location": "New York",
+  "completeness": 20,
+  "details": {
+   "source": "NYC founders dinner",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://luma.com/user/usr-D5jHjnSWExZbzKc"
+    },
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/in/SalKhvn"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "src_sal_khan_p1",
+    "name": "Sal's venture",
+    "sector": "Dev Tools",
+    "stage": "Series A",
+    "oneLiner": "Founder & Creative Director"
+   }
+  ],
+  "scores": {
+   "founder": 55,
+   "founderTrend": "down",
+   "market": "Neutral",
+   "marketTrend": "up",
+   "fit": "Pivot potential",
+   "fitTrend": "flat"
+  },
+  "evidence": [
+   {
+    "text": "Public LinkedIn profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.linkedin.com/in/SalKhvn",
+    "sourceLabel": "LinkedIn"
+   },
+   {
+    "text": "Attended a curated NYC founders dinner (invite-based).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://luma.com/user/usr-D5jHjnSWExZbzKc",
+    "sourceLabel": "Luma"
+   }
+  ]
+ },
+ {
+  "id": "src_kelsey_aina",
+  "name": "Kelsey Aina",
+  "email": "kelsey_aina@vcbrain.example",
+  "location": "Los Angeles",
+  "completeness": 20,
+  "details": {
+   "source": "NYC founders dinner",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://luma.com/user/usr-f4PlLyQJkHwI5EO"
+    },
+    {
+     "label": "LinkedIn",
+     "url": "https://www.linkedin.com/in/kelseyaina"
+    }
+   ]
+  },
+  "projects": [
+   {
+    "id": "src_kelsey_aina_p1",
+    "name": "Kelsey's venture",
+    "sector": "Fintech",
+    "stage": "Seed",
+    "oneLiner": "Head of Partnerships at Anrok, Former HubSpot, Former Founder."
+   }
+  ],
+  "scores": {
+   "founder": 53,
+   "founderTrend": "up",
+   "market": "Bullish",
    "marketTrend": "flat",
    "fit": "Pivot potential",
    "fitTrend": "flat"
@@ -1623,14 +3251,14 @@
     "text": "Public LinkedIn profile.",
     "trust": "Medium",
     "state": "corroborated",
-    "sourceUrl": "https://www.linkedin.com/in/ayaannaveedmalik",
+    "sourceUrl": "https://www.linkedin.com/in/kelseyaina",
     "sourceLabel": "LinkedIn"
    },
    {
     "text": "Attended a curated NYC founders dinner (invite-based).",
     "trust": "Medium",
     "state": "corroborated",
-    "sourceUrl": "https://luma.com/user/usr-7ljBD259ZmkUwD7",
+    "sourceUrl": "https://luma.com/user/usr-f4PlLyQJkHwI5EO",
     "sourceLabel": "Luma"
    }
   ]

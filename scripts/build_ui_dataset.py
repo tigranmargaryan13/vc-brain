@@ -12,7 +12,7 @@ every card renders complete — per team decision for the demo (2026-07-19).
 Run:  python3 scripts/build_ui_dataset.py
 (it auto-runs `python -m sourcing.export` to refresh pipeline joins)
 """
-import csv, hashlib, json, os, random, re, subprocess, sys, tempfile
+import csv, hashlib, json, math, os, random, re, subprocess, sys, tempfile
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CSV = os.path.join(REPO, "founder_product_info.csv")
@@ -178,11 +178,48 @@ def main():
 
         contradictions = (fv or {}).get("memo", {}).get("contradictions") or []
 
+        # --- completeness: share of CSV fields actually filled (drives UI ordering) ---
+        COMPLETENESS_FIELDS = ["product_company", "product_overview", "description",
+                               "industry", "upvotes", "comments", "launched",
+                               "domain_age_days", "fresh_domain", "hn_points",
+                               "location", "github_username", "linkedin", "website",
+                               "product_url"]
+        filled = sum(1 for k in COMPLETENESS_FIELDS if (row.get(k) or "").strip())
+        completeness = round(filled / len(COMPLETENESS_FIELDS) * 100)
+
+        # --- details: every real CSV field, passed through for the profile page ---
+        details = {"source": "NYC founders dinner" if row.get("source") == "dinner"
+                   else "Product Hunt"}
+        if (row.get("launched") or "").strip():
+            details["launched"] = row["launched"].strip()
+        for csv_k, det_k in (("upvotes", "upvotes"), ("comments", "comments"),
+                             ("hn_points", "hnPoints"), ("domain_age_days", "domainAgeDays")):
+            v = (row.get(csv_k) or "").strip()
+            if v.isdigit():
+                details[det_k] = int(v)
+        if (row.get("fresh_domain") or "").strip().lower() in ("true", "1", "yes"):
+            details["freshDomain"] = True
+        if (row.get("industry") or "").strip():
+            details["industry"] = row["industry"].strip()
+        links = []
+        for label, url in (("Product Hunt", row.get("profile_url")),
+                           ("Launch", row.get("product_url")),
+                           ("GitHub", row.get("github_url")),
+                           ("LinkedIn", row.get("linkedin")),
+                           ("Website", row.get("website"))):
+            u = (url or "").strip()
+            if u.startswith("http"):
+                links.append({"label": label, "url": u})
+        if links:
+            details["links"] = links
+
         rec = {
             "id": f"src_{uid}",
             "name": name,
             "email": f"{uid}@vcbrain.example",
             "location": norm_location(row.get("location"), rng),
+            "completeness": completeness,
+            "details": details,
             "projects": [{
                 "id": f"src_{uid}_p1",
                 "name": product,
@@ -203,6 +240,126 @@ def main():
         if contradictions:
             rec["hasContradiction"] = True
         out.append(rec)
+
+    # ---- arXiv — academic-paper channel (pre-founding researchers, cold-start) ----
+    # Signals from scripts/fetch_arxiv_founders.py (same criterion contract as the
+    # ProductHunt signals). Real citable facts only — no seeded fills; stage is
+    # "Pre-seed" by definition of the channel, unknowns are flagged, not invented.
+    try:
+        arxiv_rows = json.load(open(f"{REPO}/arxiv_founder_signals.json"))
+    except FileNotFoundError:
+        arxiv_rows = []
+    for arec in arxiv_rows:
+        fo, pa, sig = arec["founder"], arec.get("paper") or {}, arec.get("signals") or {}
+        name = (fo.get("name") or "").strip()
+        if not name:
+            continue
+        uid = re.sub(r"[^a-z0-9_]+", "_", name.lower()).strip("_")
+        if not uid or uid in used:
+            continue
+        used.add(uid)
+
+        def aval(key):
+            s = sig.get(key) or {}
+            return s.get("value"), s.get("citation")
+
+        abs_url = pa.get("url") or "https://arxiv.org"
+        code_url = pa.get("code_url")
+        cadence, cad_cit = aval("publication_cadence_12mo")
+        cites, cites_cit = aval("earned_attention_citations")
+        coauthors, coa_cit = aval("coauthor_network")
+        aff, aff_cit = aval("industry_affiliation")
+        cadence = int(cadence or 0)
+        coauthors = int(coauthors or 0)
+
+        # positive-only additive heuristic (cold-start rule: absence adds nothing)
+        score = 35 + 6 + (8 if code_url else 0) + min(cadence * 2, 12)
+        if cites is not None:
+            score += min(int(math.log10(int(cites) + 1) * 6), 12)
+        if aff:
+            score += 4
+        score = max(35, min(score, 95))
+
+        title = pa.get("title") or "Untitled paper"
+        one = title if len(title) <= 110 else title[:107].rstrip() + "…"
+        cats = " ".join(pa.get("categories") or []).lower()
+        sector = ("Deep Tech" if "cs.ro" in cats else
+                  "Cybersecurity" if "cs.cr" in cats else
+                  "Biotech" if "q-bio" in cats else "AI/ML")
+        project = (code_url.rstrip("/").rsplit("/", 1)[-1] if code_url
+                   else f"arXiv:{pa.get('arxiv_id')}")
+
+        E = []
+        def aev(text, trust, state, url, label, unknown=False):
+            item = {"text": text, "trust": trust, "state": state,
+                    "sourceUrl": url, "sourceLabel": label}
+            if unknown:
+                item["unknown"] = True
+            E.append(item)
+
+        aev(f"First-author paper ({pa.get('published')}): {title[:100]}",
+            "High", "corroborated", abs_url, "arXiv")
+        if code_url:
+            aev("Code released with the paper — openness/execution signal.",
+                "High", "corroborated", code_url, "GitHub")
+        if cadence:
+            aev(f"{cadence} arXiv paper{'s' if cadence != 1 else ''} in the last 12 months "
+                "(author-name search; name collisions possible).",
+                "Medium", "corroborated", cad_cit or abs_url, "arXiv")
+        if cites:
+            aev(f"{int(cites)} citations on Semantic Scholar.", "High", "corroborated",
+                cites_cit or abs_url, "Semantic Scholar")
+        if coauthors:
+            aev(f"Small-team paper: {coauthors} author{'s' if coauthors != 1 else ''}.",
+                "Medium", "corroborated", coa_cit or abs_url, "arXiv")
+        if aff:
+            aev(f"Industry affiliation: {aff}.", "Medium", "corroborated",
+                aff_cit or abs_url, "arXiv")
+        if fo.get("github"):
+            aev("Public GitHub profile (repo owner matches author name).", "Medium",
+                "corroborated", f"https://github.com/{fo['github']}", "GitHub")
+        aev("Commercialization / company status", "Low", "uncorroborated",
+            abs_url, "Unknown", unknown=True)
+        aev("Current role / location", "Low", "uncorroborated",
+            abs_url, "Unknown", unknown=True)
+
+        a_fields = [pa.get("title"), code_url, cites, coauthors, aff, fo.get("github")]
+        a_details = {"source": "arXiv"}
+        a_links = [{"label": "arXiv", "url": abs_url}]
+        if code_url:
+            a_links.append({"label": "Code", "url": code_url})
+        if fo.get("github"):
+            a_links.append({"label": "GitHub", "url": f"https://github.com/{fo['github']}"})
+        a_details["links"] = a_links
+
+        out.append({
+            "id": f"arxiv_{uid}",
+            "name": name,
+            "email": f"{uid}@vcbrain.example",
+            "location": "Unknown",
+            "completeness": round(sum(1 for x in a_fields if x) / len(a_fields) * 100),
+            "details": a_details,
+            "projects": [{
+                "id": f"arxiv_{uid}_p1",
+                "name": project,
+                "sector": sector,
+                "stage": "Pre-seed",
+                "oneLiner": one,
+            }],
+            "scores": {
+                "founder": score,
+                "founderTrend": "up" if cadence >= 3 else "flat",
+                "market": "Neutral",
+                "marketTrend": "flat",
+                "fit": "Pivot potential",
+                "fitTrend": "flat",
+            },
+            "coldStart": True,
+            "evidence": E,
+        })
+
+    # most-complete profiles first; founder score breaks ties
+    out.sort(key=lambda r: (-(r.get("completeness") or 0), -r["scores"]["founder"]))
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w") as f:
