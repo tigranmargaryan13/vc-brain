@@ -1451,6 +1451,12 @@
     "weight": 0.8
    },
    {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
     "name": "Intent",
     "value": 0,
     "coverage": 0.0,
@@ -1461,12 +1467,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.5
    }
   ],
   "projects": [
@@ -1627,6 +1627,12 @@
     "weight": 0.8
    },
    {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
     "name": "Intent",
     "value": 0,
     "coverage": 0.0,
@@ -1637,12 +1643,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.5
    }
   ],
   "projects": [
@@ -2410,6 +2410,12 @@
     "weight": 0.8
    },
    {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
     "name": "Intent",
     "value": 0,
     "coverage": 0.0,
@@ -2420,12 +2426,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.5
    }
   ],
   "projects": [
@@ -2728,6 +2728,12 @@
     "weight": 1.0
    },
    {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
     "name": "Intent",
     "value": 0,
     "coverage": 0.0,
@@ -2738,12 +2744,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.5
    }
   ],
   "projects": [
@@ -4041,6 +4041,12 @@
     "weight": 0.8
    },
    {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
     "name": "Intent",
     "value": 0,
     "coverage": 0.0,
@@ -4051,12 +4057,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.5
    }
   ],
   "projects": [
@@ -4190,6 +4190,12 @@
     "weight": 0.8
    },
    {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
     "name": "Intent",
     "value": 0,
     "coverage": 0.0,
@@ -4200,12 +4206,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.5
    }
   ],
   "projects": [
@@ -4343,6 +4343,12 @@
     "weight": 0.8
    },
    {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
     "name": "Intent",
     "value": 0,
     "coverage": 0.0,
@@ -4353,12 +4359,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.5
    }
   ],
   "projects": [
@@ -6372,6 +6372,12 @@
     "weight": 0.8
    },
    {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
     "name": "Intent",
     "value": 0,
     "coverage": 0.0,
@@ -6382,12 +6388,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.5
    }
   ],
   "projects": [
@@ -6527,6 +6527,12 @@
     "weight": 0.8
    },
    {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
     "name": "Intent",
     "value": 0,
     "coverage": 0.0,
@@ -6537,12 +6543,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.5
    }
   ],
   "projects": [
@@ -6938,6 +6938,12 @@
     "weight": 0.8
    },
    {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
     "name": "Intent",
     "value": 0,
     "coverage": 0.0,
@@ -6948,12 +6954,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.5
    }
   ],
   "projects": [
@@ -7086,6 +7086,12 @@
     "weight": 0.8
    },
    {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
     "name": "Intent",
     "value": 0,
     "coverage": 0.0,
@@ -7096,12 +7102,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.5
    }
   ],
   "projects": [
