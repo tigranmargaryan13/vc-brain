@@ -347,6 +347,593 @@
   ]
  },
  {
+  "id": "acad_qinghonglin",
+  "name": "Kevin Qinghong Lin",
+  "email": "qinghonglin@vcbrain.example",
+  "location": "Lisbon",
+  "completeness": 80,
+  "bio": "Kevin is a researcher building in AI/ML — first-author of \"Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "CS.CV",
+   "CS.CL"
+  ],
+  "contact": {
+   "email": "qinghonglin@vcbrain.example",
+   "website": "https://github.com/QinghongLin/data2story-skill",
+   "linkedin": "https://www.linkedin.com/in/qinghonglin"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2606.11176v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/QinghongLin/data2story-skill"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/QinghongLin"
+    }
+   ],
+   "industry": "cs.CV; cs.CL; cs.CY"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 89,
+    "coverage": 0.5,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 100,
+    "coverage": 1.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 100,
+    "coverage": 1.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 38,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 30,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 100,
+    "coverage": 1.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_qinghonglin_p1",
+    "name": "data2story-skill",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories",
+    "description": "Academic work: Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories. Open-source implementation at https://github.com/QinghongLin/data2story-skill. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 78,
+   "founderTrend": "up",
+   "market": "Bear",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.85,
+   "band": [
+    72.8,
+    83.2
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.11176v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 38/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.11176v1",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Code released with the paper.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/QinghongLin/data2story-skill",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "Repo traction: 145 stars, 19 forks.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/QinghongLin/data2story-skill",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "25 papers in the last 12 months.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.11176v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.11176v1",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_mvmalyi",
+  "name": "Max Malyi",
+  "email": "mvmalyi@vcbrain.example",
+  "location": "Mexico City",
+  "completeness": 80,
+  "bio": "Max is a researcher building in Climate — first-author of \"Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Sema\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "CS.CL"
+  ],
+  "contact": {
+   "email": "mvmalyi@vcbrain.example",
+   "website": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling",
+   "linkedin": "https://www.linkedin.com/in/mvmalyi"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2605.31281v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/mvmalyi"
+    }
+   ],
+   "industry": "cs.CL"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 60,
+    "coverage": 0.5,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 48,
+    "coverage": 0.6,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 42,
+    "coverage": 0.62,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 69,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 20,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 2,
+    "coverage": 0.1,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_mvmalyi_p1",
+    "name": "llm-driven-wind-turbine-maintenance-log-labelling",
+    "sector": "Climate",
+    "stage": "Pre-seed",
+    "oneLiner": "Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Semantic Ex…",
+    "description": "Academic work: Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Semantic Extraction of Reliability Intelligence. Open-source implementation at https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 65,
+   "founderTrend": "flat",
+   "market": "Bear",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.68,
+   "band": [
+    53.8,
+    76.2
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Semantic Extra",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 69/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Code released with the paper.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "Repo traction: 1 stars, 0 forks.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "4 papers in the last 12 months.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: true.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_gracebrigham",
+  "name": "Natalie Grace Brigham",
+  "email": "gracebrigham@vcbrain.example",
+  "location": "Mexico City",
+  "completeness": 80,
+  "bio": "Natalie is a researcher building in Healthtech — first-author of \"Janus: a Playground for User-Involved Agentic Permission Management\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "CS.AI",
+   "CS.CR"
+  ],
+  "contact": {
+   "email": "gracebrigham@vcbrain.example",
+   "website": "https://github.com/GraceBrigham/Janus",
+   "linkedin": "https://www.linkedin.com/in/gracebrigham"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2607.01510v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/GraceBrigham/Janus"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/GraceBrigham"
+    }
+   ],
+   "industry": "cs.AI; cs.CR"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 60,
+    "coverage": 0.5,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 42,
+    "coverage": 0.4,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 36,
+    "coverage": 0.38,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 54,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 20,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 2,
+    "coverage": 0.1,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_gracebrigham_p1",
+    "name": "Janus",
+    "sector": "Healthtech",
+    "stage": "Pre-seed",
+    "oneLiner": "Janus: a Playground for User-Involved Agentic Permission Management",
+    "description": "Academic work: Janus: a Playground for User-Involved Agentic Permission Management. Open-source implementation at https://github.com/GraceBrigham/Janus. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 61,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.64,
+   "band": [
+    48.5,
+    73.5
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Janus: a Playground for User-Involved Agentic Permission Management",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.01510v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 54/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.01510v1",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Code released with the paper.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/GraceBrigham/Janus",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "Repo traction: 1 stars, 0 forks.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/GraceBrigham/Janus",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "2 papers in the last 12 months.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.01510v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.01510v1",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_itregear",
+  "name": "Ivan Tregear",
+  "email": "itregear@vcbrain.example",
+  "location": "Lagos",
+  "completeness": 80,
+  "bio": "Ivan is a researcher building in Deep Tech — first-author of \"Investigating the Effect of a Series Elastic Actuation Retrofit to Black-Box Actuators\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "CS.RO"
+  ],
+  "contact": {
+   "email": "itregear@vcbrain.example",
+   "website": "https://github.com/ITregear/SeriesElasticActuation-FYP",
+   "linkedin": "https://www.linkedin.com/in/itregear"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2605.24127v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/ITregear/SeriesElasticActuation-FYP"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/ITregear"
+    }
+   ],
+   "industry": "cs.RO"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 60,
+    "coverage": 0.5,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 93,
+    "coverage": 1.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 33,
+    "coverage": 0.25,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 49,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 15,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_itregear_p1",
+    "name": "SeriesElasticActuation-FYP",
+    "sector": "Deep Tech",
+    "stage": "Pre-seed",
+    "oneLiner": "Investigating the Effect of a Series Elastic Actuation Retrofit to Black-Box Actuators",
+    "description": "Academic work: Investigating the Effect of a Series Elastic Actuation Retrofit to Black-Box Actuators. Open-source implementation at https://github.com/ITregear/SeriesElasticActuation-FYP. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 54,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.67,
+   "band": [
+    42.6,
+    65.4
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Investigating the Effect of a Series Elastic Actuation Retrofit to Black-Box Actuators",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.24127v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 49/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.24127v1",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Code released with the paper.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/ITregear/SeriesElasticActuation-FYP",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "1 papers in the last 12 months.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.24127v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.24127v1",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
   "id": "src_crystal_j",
   "name": "Crystal J",
   "email": "crystal_j@vcbrain.example",
@@ -503,176 +1090,6 @@
   ]
  },
  {
-  "id": "src_manuarora",
-  "name": "Manu Arora",
-  "email": "manuarora@vcbrain.example",
-  "location": "Remote",
-  "completeness": 73,
-  "bio": "Manu is building Acebuilder — Build landing pages with Aceternity UI Acebuilder is an AI website builder from the team behind Aceternity UI. Instead of generating generic layouts from scratch, it pulls from Ace. Based in Remote. Discovered via Product Hunt launch signals.",
-  "skills": [
-   "Design Tools",
-   "Tech",
-   "LLM orchestration",
-   "Product design",
-   "Growth"
-  ],
-  "contact": {
-   "email": "manuarora@vcbrain.example",
-   "linkedin": "https://www.linkedin.com/in/manuarora",
-   "website": "https://www.manuarora.in"
-  },
-  "details": {
-   "source": "Product Hunt",
-   "launched": "2026-07-18",
-   "upvotes": 140,
-   "comments": 9,
-   "industry": "Design Tools; Tech",
-   "links": [
-    {
-     "label": "Product Hunt",
-     "url": "https://www.producthunt.com/@manuarora"
-    },
-    {
-     "label": "Launch",
-     "url": "https://www.producthunt.com/products/acebuilder"
-    },
-    {
-     "label": "GitHub",
-     "url": "https://github.com/manuarora700"
-    },
-    {
-     "label": "Website",
-     "url": "https://www.manuarora.in"
-    }
-   ]
-  },
-  "dimensions": [
-   {
-    "name": "Capability",
-    "value": 100,
-    "coverage": 0.6,
-    "weight": 1.3
-   },
-   {
-    "name": "Trajectory",
-    "value": 70,
-    "coverage": 0.6,
-    "weight": 1.0
-   },
-   {
-    "name": "Traction",
-    "value": 99,
-    "coverage": 1.0,
-    "weight": 1.0
-   },
-   {
-    "name": "Provenance",
-    "value": 55,
-    "coverage": 0.4,
-    "weight": 0.8
-   },
-   {
-    "name": "Skills",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.2
-   }
-  ],
-  "projects": [
-   {
-    "id": "src_manuarora_p1",
-    "name": "Acebuilder",
-    "sector": "SaaS",
-    "stage": "Series A",
-    "oneLiner": "Build landing pages with Aceternity UI",
-    "description": "Build landing pages with Aceternity UI Acebuilder is an AI website builder from the team behind Aceternity UI. Instead of generating generic layouts from scratch, it pulls from Aceternity's actual Pro template and component library — you import a full page or a single block, then reshape the copy, layout, and structure by chatting with the agent. Generate images without leaving the chat. Run design \"skills\" on any section to push the agent past generic filler toward sharper layout. Export your code as a zip. You own what you build."
-   }
-  ],
-  "scores": {
-   "founder": 88,
-   "founderTrend": "flat",
-   "market": "Bullish",
-   "marketTrend": "flat",
-   "fit": "Pivot potential",
-   "fitTrend": "flat",
-   "confidence": 0.77,
-   "band": [
-    79.6,
-    95.9
-   ]
-  },
-  "evidence": [
-   {
-    "text": "VC Brain pipeline Founder Score 87.8 (90% band 80–96), confidence 0.77.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@manuarora",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Capability: shipped 11 product(s): Acebuilder, Aceternity UI Pro, Awesome Framer Motion Components, Devpro — https://www.producthunt.com/@manuarora",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@manuarora",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Trajectory: 1 launch(es) in the last 12 months — https://www.producthunt.com/@manuarora",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/@manuarora",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "140 upvotes on the latest Product Hunt launch (2026-07-18).",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/acebuilder",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "9 community comments on the launch.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.producthunt.com/products/acebuilder",
-    "sourceLabel": "Product Hunt"
-   },
-   {
-    "text": "Public GitHub profile.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/manuarora700",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "Live product website.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://www.manuarora.in",
-    "sourceLabel": "Website"
-   },
-   {
-    "text": "Product description: Acebuilder is an AI website builder from the team behind Aceternity UI. Instead of generating generic layouts from scrat",
-    "trust": "Medium",
-    "state": "uncorroborated",
-    "sourceUrl": "https://www.producthunt.com/products/acebuilder",
-    "sourceLabel": "Product Hunt"
-   }
-  ]
- },
- {
   "id": "src_maxmusing",
   "name": "Max Musing",
   "email": "maxmusing@vcbrain.example",
@@ -822,6 +1239,1318 @@
     "state": "corroborated",
     "sourceUrl": "https://www.basedash.com",
     "sourceLabel": "Website"
+   }
+  ]
+ },
+ {
+  "id": "src_manuarora",
+  "name": "Manu Arora",
+  "email": "manuarora@vcbrain.example",
+  "location": "Remote",
+  "completeness": 73,
+  "bio": "Manu is building Acebuilder — Build landing pages with Aceternity UI Acebuilder is an AI website builder from the team behind Aceternity UI. Instead of generating generic layouts from scratch, it pulls from Ace. Based in Remote. Discovered via Product Hunt launch signals.",
+  "skills": [
+   "Design Tools",
+   "Tech",
+   "LLM orchestration",
+   "Product design",
+   "Growth"
+  ],
+  "contact": {
+   "email": "manuarora@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/manuarora",
+   "website": "https://www.manuarora.in"
+  },
+  "details": {
+   "source": "Product Hunt",
+   "launched": "2026-07-18",
+   "upvotes": 140,
+   "comments": 9,
+   "industry": "Design Tools; Tech",
+   "links": [
+    {
+     "label": "Product Hunt",
+     "url": "https://www.producthunt.com/@manuarora"
+    },
+    {
+     "label": "Launch",
+     "url": "https://www.producthunt.com/products/acebuilder"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/manuarora700"
+    },
+    {
+     "label": "Website",
+     "url": "https://www.manuarora.in"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 67,
+    "coverage": 1.0,
+    "weight": 1.3
+   },
+   {
+    "name": "Trajectory",
+    "value": 27,
+    "coverage": 1.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Provenance",
+    "value": 55,
+    "coverage": 0.4,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 100,
+    "coverage": 1.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Skills",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.2
+   }
+  ],
+  "projects": [
+   {
+    "id": "src_manuarora_p1",
+    "name": "Acebuilder",
+    "sector": "SaaS",
+    "stage": "Series A",
+    "oneLiner": "Build landing pages with Aceternity UI",
+    "description": "Build landing pages with Aceternity UI Acebuilder is an AI website builder from the team behind Aceternity UI. Instead of generating generic layouts from scratch, it pulls from Aceternity's actual Pro template and component library — you import a full page or a single block, then reshape the copy, layout, and structure by chatting with the agent. Generate images without leaving the chat. Run design \"skills\" on any section to push the agent past generic filler toward sharper layout. Export your code as a zip. You own what you build."
+   }
+  ],
+  "scores": {
+   "founder": 64,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "At risk",
+   "fitTrend": "flat",
+   "confidence": 0.88,
+   "band": [
+    59.7,
+    68.3
+   ]
+  },
+  "evidence": [
+   {
+    "text": "VC Brain pipeline Founder Score 64.0 (90% band 60–68), confidence 0.88.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/manuarora700",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Capability: read repo manuarora700/manuaroradotin — https://github.com/manuarora700/manuaroradotin",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/manuarora700",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Trajectory: 1 public push events in the last ~90 days — https://github.com/manuarora700",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/manuarora700",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "140 upvotes on the latest Product Hunt launch (2026-07-18).",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/acebuilder",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "9 community comments on the launch.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.producthunt.com/products/acebuilder",
+    "sourceLabel": "Product Hunt"
+   },
+   {
+    "text": "Public GitHub profile.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/manuarora700",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "Live product website.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.manuarora.in",
+    "sourceLabel": "Website"
+   },
+   {
+    "text": "Product description: Acebuilder is an AI website builder from the team behind Aceternity UI. Instead of generating generic layouts from scrat",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.producthunt.com/products/acebuilder",
+    "sourceLabel": "Product Hunt"
+   }
+  ]
+ },
+ {
+  "id": "acad_haoyu_zhao",
+  "name": "Haoyu Zhao",
+  "email": "haoyu_zhao@vcbrain.example",
+  "location": "Amsterdam",
+  "completeness": 70,
+  "bio": "Haoyu is a researcher building in Deep Tech — first-author of \"RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "CS.RO"
+  ],
+  "contact": {
+   "email": "haoyu_zhao@vcbrain.example",
+   "website": "https://github.com/alibaba-damo-academy/RynnWorld-4D",
+   "linkedin": "https://www.linkedin.com/in/haoyu-zhao"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2607.06559v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/alibaba-damo-academy/RynnWorld-4D"
+    }
+   ],
+   "industry": "cs.RO"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 72,
+    "coverage": 0.5,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 100,
+    "coverage": 1.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 58,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 30,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 100,
+    "coverage": 1.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_haoyu_zhao_p1",
+    "name": "RynnWorld-4D",
+    "sector": "Deep Tech",
+    "stage": "Pre-seed",
+    "oneLiner": "RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation",
+    "description": "Academic work: RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation. Open-source implementation at https://github.com/alibaba-damo-academy/RynnWorld-4D. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 74,
+   "founderTrend": "up",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.73,
+   "band": [
+    64.7,
+    83.3
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.06559v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 58/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.06559v1",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Code released with the paper.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/alibaba-damo-academy/RynnWorld-4D",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "Repo traction: 63 stars, 3 forks.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/alibaba-damo-academy/RynnWorld-4D",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "30 papers in the last 12 months.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.06559v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.06559v1",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_yushi_huang",
+  "name": "Yushi Huang",
+  "email": "yushi_huang@vcbrain.example",
+  "location": "San Francisco",
+  "completeness": 70,
+  "bio": "Yushi is a researcher building in AI/ML — first-author of \"MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "CS.CV",
+   "CS.LG"
+  ],
+  "contact": {
+   "email": "yushi_huang@vcbrain.example",
+   "website": "https://github.com/Harahan/MeanFlowNFT",
+   "linkedin": "https://www.linkedin.com/in/yushi-huang"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2607.15273v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/Harahan/MeanFlowNFT"
+    }
+   ],
+   "industry": "cs.CV; cs.LG"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 67,
+    "coverage": 0.5,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 78,
+    "coverage": 1.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 48,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 25,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 70,
+    "coverage": 1.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_yushi_huang_p1",
+    "name": "MeanFlowNFT",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators",
+    "description": "Academic work: MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators. Open-source implementation at https://github.com/Harahan/MeanFlowNFT. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 72,
+   "founderTrend": "up",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.73,
+   "band": [
+    62.6,
+    81.3
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.15273v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 48/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.15273v1",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Code released with the paper.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/Harahan/MeanFlowNFT",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "Repo traction: 35 stars, 0 forks.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/Harahan/MeanFlowNFT",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "16 papers in the last 12 months.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.15273v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.15273v1",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_sangmin_lee",
+  "name": "Sangmin Lee",
+  "email": "sangmin_lee@vcbrain.example",
+  "location": "Lisbon",
+  "completeness": 70,
+  "bio": "Sangmin is a researcher building in AI/ML — first-author of \"UR-BERT: Scaling Text Encoders for Massively Multilingual TTS Through Universal Romanization and Spe\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "CS.CL",
+   "CS.SD"
+  ],
+  "contact": {
+   "email": "sangmin_lee@vcbrain.example",
+   "website": "https://github.com/sanghyang00/ur-bert",
+   "linkedin": "https://www.linkedin.com/in/sangmin-lee"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2606.11681v2"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/sanghyang00/ur-bert"
+    }
+   ],
+   "industry": "cs.CL; cs.SD"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 61,
+    "coverage": 0.5,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 78,
+    "coverage": 1.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 48,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 20,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 19,
+    "coverage": 0.9,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_sangmin_lee_p1",
+    "name": "ur-bert",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "UR-BERT: Scaling Text Encoders for Massively Multilingual TTS Through Universal Romanization and Speech Tok…",
+    "description": "Academic work: UR-BERT: Scaling Text Encoders for Massively Multilingual TTS Through Universal Romanization and Speech Token Prediction. Open-source implementation at https://github.com/sanghyang00/ur-bert. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 69,
+   "founderTrend": "up",
+   "market": "Bear",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.73,
+   "band": [
+    59.3,
+    78.7
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: UR-BERT: Scaling Text Encoders for Massively Multilingual TTS Through Universal Romanization and Speech Token ",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.11681v2",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 48/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.11681v2",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Code released with the paper.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/sanghyang00/ur-bert",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "Repo traction: 8 stars, 1 forks.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/sanghyang00/ur-bert",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "16 papers in the last 12 months.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.11681v2",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.11681v2",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_jinghao_zhang",
+  "name": "Jinghao Zhang",
+  "email": "jinghao_zhang@vcbrain.example",
+  "location": "Nairobi",
+  "completeness": 70,
+  "bio": "Jinghao is a researcher building in AI/ML — first-author of \"Not only where, But when: Temporal Scheduling for RLVR\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "CS.LG"
+  ],
+  "contact": {
+   "email": "jinghao_zhang@vcbrain.example",
+   "website": "https://github.com/Jinghaoleven/RLVR-Schedule",
+   "linkedin": "https://www.linkedin.com/in/jinghao-zhang"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2605.25381v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/Jinghaoleven/RLVR-Schedule"
+    }
+   ],
+   "industry": "cs.LG"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 60,
+    "coverage": 0.5,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 87,
+    "coverage": 1.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 58,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 20,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 2,
+    "coverage": 0.1,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_jinghao_zhang_p1",
+    "name": "RLVR-Schedule",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Not only where, But when: Temporal Scheduling for RLVR",
+    "description": "Academic work: Not only where, But when: Temporal Scheduling for RLVR. Open-source implementation at https://github.com/Jinghaoleven/RLVR-Schedule. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 66,
+   "founderTrend": "up",
+   "market": "Bear",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.62,
+   "band": [
+    52.8,
+    79.2
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Not only where, But when: Temporal Scheduling for RLVR",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.25381v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 58/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.25381v1",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Code released with the paper.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/Jinghaoleven/RLVR-Schedule",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "Repo traction: 1 stars, 0 forks.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/Jinghaoleven/RLVR-Schedule",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "19 papers in the last 12 months.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.25381v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.25381v1",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_al_zadid_sultan_bin_habib",
+  "name": "Al Zadid Sultan Bin Habib",
+  "email": "al_zadid_sultan_bin_habib@vcbrain.example",
+  "location": "Nairobi",
+  "completeness": 70,
+  "bio": "Al is a researcher building in AI/ML — first-author of \"GOTabPFN: From Feature Ordering to Compact Tokenization for Tabular Foundation Models on High-Dimens\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "CS.LG",
+   "CS.AI"
+  ],
+  "contact": {
+   "email": "al_zadid_sultan_bin_habib@vcbrain.example",
+   "website": "https://github.com/zadid6pretam/GOTabPFN",
+   "linkedin": "https://www.linkedin.com/in/al-zadid-sultan-bin-habib"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2606.05441v2"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/zadid6pretam/GOTabPFN"
+    }
+   ],
+   "industry": "cs.LG; cs.AI; stat.ML"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 61,
+    "coverage": 0.5,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 42,
+    "coverage": 0.62,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 54,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 25,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 16,
+    "coverage": 0.8,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_al_zadid_sultan_bin_habib_p1",
+    "name": "GOTabPFN",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "GOTabPFN: From Feature Ordering to Compact Tokenization for Tabular Foundation Models on High-Dimensional Data",
+    "description": "Academic work: GOTabPFN: From Feature Ordering to Compact Tokenization for Tabular Foundation Models on High-Dimensional Data. Open-source implementation at https://github.com/zadid6pretam/GOTabPFN. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 65,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.69,
+   "band": [
+    54.0,
+    76.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: GOTabPFN: From Feature Ordering to Compact Tokenization for Tabular Foundation Models on High-Dimensional Data",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.05441v2",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 54/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.05441v2",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Code released with the paper.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/zadid6pretam/GOTabPFN",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "Repo traction: 8 stars, 0 forks.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/zadid6pretam/GOTabPFN",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "4 papers in the last 12 months.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.05441v2",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.05441v2",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_varshith_roy_kotla",
+  "name": "Varshith Roy Kotla",
+  "email": "varshith_roy_kotla@vcbrain.example",
+  "location": "Paris",
+  "completeness": 70,
+  "bio": "Varshith is a researcher building in AI/ML — first-author of \"Weighted Conformal Prediction for Lab-to-Track Thermal Transfer in EV Motorsport Powertrains\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "CS.LG"
+  ],
+  "contact": {
+   "email": "varshith_roy_kotla@vcbrain.example",
+   "website": "https://github.com/nearpot/Weighted-Conformal-Thermal-Transfer",
+   "linkedin": "https://www.linkedin.com/in/varshith-roy-kotla"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2607.02722v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/nearpot/Weighted-Conformal-Thermal-Transfer"
+    }
+   ],
+   "industry": "cs.LG"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 60,
+    "coverage": 0.5,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 39,
+    "coverage": 0.5,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 43,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 5,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_varshith_roy_kotla_p1",
+    "name": "Weighted-Conformal-Thermal-Transfer",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Weighted Conformal Prediction for Lab-to-Track Thermal Transfer in EV Motorsport Powertrains",
+    "description": "Academic work: Weighted Conformal Prediction for Lab-to-Track Thermal Transfer in EV Motorsport Powertrains. Open-source implementation at https://github.com/nearpot/Weighted-Conformal-Thermal-Transfer. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 59,
+   "founderTrend": "flat",
+   "market": "Bear",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.58,
+   "band": [
+    44.1,
+    73.8
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Weighted Conformal Prediction for Lab-to-Track Thermal Transfer in EV Motorsport Powertrains",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.02722v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 43/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.02722v1",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Code released with the paper.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/nearpot/Weighted-Conformal-Thermal-Transfer",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "3 papers in the last 12 months.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.02722v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2607.02722v1",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_ayan_pendharkar",
+  "name": "Ayan Pendharkar",
+  "email": "ayan_pendharkar@vcbrain.example",
+  "location": "Lisbon",
+  "completeness": 70,
+  "bio": "Ayan is a researcher building in AI/ML — first-author of \"Predictive Objectives Discard Exogenous Control-Relevant Features: A Controlled Mechanistic Study\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "CS.LG"
+  ],
+  "contact": {
+   "email": "ayan_pendharkar@vcbrain.example",
+   "website": "https://github.com/bushesarebetter/jepa_research_project",
+   "linkedin": "https://www.linkedin.com/in/ayan-pendharkar"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2606.30068v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/bushesarebetter/jepa_research_project"
+    }
+   ],
+   "industry": "cs.LG"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 60,
+    "coverage": 0.5,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 39,
+    "coverage": 0.5,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 21,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 5,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_ayan_pendharkar_p1",
+    "name": "jepa_research_project",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Predictive Objectives Discard Exogenous Control-Relevant Features: A Controlled Mechanistic Study",
+    "description": "Academic work: Predictive Objectives Discard Exogenous Control-Relevant Features: A Controlled Mechanistic Study. Open-source implementation at https://github.com/bushesarebetter/jepa_research_project. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 59,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.58,
+   "band": [
+    44.1,
+    73.8
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Predictive Objectives Discard Exogenous Control-Relevant Features: A Controlled Mechanistic Study",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.30068v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 21/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.30068v1",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Code released with the paper.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/bushesarebetter/jepa_research_project",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "3 papers in the last 12 months.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.30068v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.30068v1",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_hiranya_garbha_kumar",
+  "name": "Hiranya Garbha Kumar",
+  "email": "hiranya_garbha_kumar@vcbrain.example",
+  "location": "Lagos",
+  "completeness": 70,
+  "bio": "Hiranya is a researcher building in Deep Tech — first-author of \"CAOA -- Completion-Assisted Object-CAD Alignment\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "CS.CV",
+   "CS.AI"
+  ],
+  "contact": {
+   "email": "hiranya_garbha_kumar@vcbrain.example",
+   "website": "https://github.com/MinhasKamal/CAOA",
+   "linkedin": "https://www.linkedin.com/in/hiranya-garbha-kumar"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2606.18429v2"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/MinhasKamal/CAOA"
+    }
+   ],
+   "industry": "cs.CV; cs.AI; cs.LG"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 60,
+    "coverage": 0.5,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 36,
+    "coverage": 0.38,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 52,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 15,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 2,
+    "coverage": 0.1,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_hiranya_garbha_kumar_p1",
+    "name": "CAOA",
+    "sector": "Deep Tech",
+    "stage": "Pre-seed",
+    "oneLiner": "CAOA -- Completion-Assisted Object-CAD Alignment",
+    "description": "Academic work: CAOA -- Completion-Assisted Object-CAD Alignment. Open-source implementation at https://github.com/MinhasKamal/CAOA. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 58,
+   "founderTrend": "flat",
+   "market": "Bear",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.57,
+   "band": [
+    43.1,
+    72.9
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: CAOA -- Completion-Assisted Object-CAD Alignment",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.18429v2",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 52/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.18429v2",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Code released with the paper.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/MinhasKamal/CAOA",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "Repo traction: 1 stars, 0 forks.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/MinhasKamal/CAOA",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "2 papers in the last 12 months.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.18429v2",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2606.18429v2",
+    "sourceLabel": "VC Brain pipeline"
    }
   ]
  },
@@ -1118,630 +2847,6 @@
     "state": "uncorroborated",
     "sourceUrl": "https://www.producthunt.com/products/unabyss",
     "sourceLabel": "Product Hunt"
-   }
-  ]
- },
- {
-  "id": "arxiv_kevin_qinghong_lin",
-  "name": "Kevin Qinghong Lin",
-  "email": "kevin_qinghong_lin@vcbrain.example",
-  "location": "Unknown",
-  "completeness": 67,
-  "bio": "Kevin is a researcher — first-author of \"Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories\". Pre-founding, sourced via arXiv.",
-  "skills": [
-   "Research",
-   "Machine Learning",
-   "Python",
-   "Open source"
-  ],
-  "contact": {
-   "email": "kevin_qinghong_lin@vcbrain.example",
-   "website": "https://github.com/QinghongLin/data2story-skill"
-  },
-  "details": {
-   "source": "arXiv",
-   "links": [
-    {
-     "label": "arXiv",
-     "url": "https://arxiv.org/abs/2606.11176v1"
-    },
-    {
-     "label": "Code",
-     "url": "https://github.com/QinghongLin/data2story-skill"
-    },
-    {
-     "label": "GitHub",
-     "url": "https://github.com/QinghongLin"
-    }
-   ]
-  },
-  "dimensions": [
-   {
-    "name": "Capability",
-    "value": 70,
-    "coverage": 0.4,
-    "weight": 1.3
-   },
-   {
-    "name": "Skills",
-    "value": 55,
-    "coverage": 0.25,
-    "weight": 1.0
-   },
-   {
-    "name": "Trajectory",
-    "value": 100,
-    "coverage": 1.0,
-    "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 68,
-    "coverage": 0.4,
-    "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 40,
-    "coverage": 0.15,
-    "weight": 1.2
-   },
-   {
-    "name": "Provenance",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 0.8
-   },
-   {
-    "name": "Traction",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.0
-   }
-  ],
-  "projects": [
-   {
-    "id": "arxiv_kevin_qinghong_lin_p1",
-    "name": "data2story-skill",
-    "sector": "AI/ML",
-    "stage": "Pre-seed",
-    "oneLiner": "Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories",
-    "description": "Academic work: Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories. Commercialization status unknown — pre-founding signal from the arXiv channel."
-   }
-  ],
-  "scores": {
-   "founder": 78,
-   "founderTrend": "up",
-   "market": "Neutral",
-   "marketTrend": "flat",
-   "fit": "Pivot potential",
-   "fitTrend": "flat",
-   "confidence": 0.58,
-   "band": [
-    63.1,
-    92.3
-   ]
-  },
-  "coldStart": true,
-  "evidence": [
-   {
-    "text": "First-author paper (2026-06-09): Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.11176v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Code released with the paper — openness/execution signal.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/QinghongLin/data2story-skill",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "25 arXiv papers in the last 12 months (author-name search; name collisions possible).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Kevin%20Qinghong%20Lin%22",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Small-team paper: 6 authors.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.11176v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Public GitHub profile (repo owner matches author name).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/QinghongLin",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "Commercialization / company status",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.11176v1",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   },
-   {
-    "text": "Current role / location",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.11176v1",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   }
-  ]
- },
- {
-  "id": "arxiv_max_malyi",
-  "name": "Max Malyi",
-  "email": "max_malyi@vcbrain.example",
-  "location": "Unknown",
-  "completeness": 67,
-  "bio": "Max is a researcher — first-author of \"Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Semantic Extraction of R\". Pre-founding, sourced via arXiv.",
-  "skills": [
-   "Research",
-   "Machine Learning",
-   "Python",
-   "Open source"
-  ],
-  "contact": {
-   "email": "max_malyi@vcbrain.example",
-   "website": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling"
-  },
-  "details": {
-   "source": "arXiv",
-   "links": [
-    {
-     "label": "arXiv",
-     "url": "https://arxiv.org/abs/2605.31281v1"
-    },
-    {
-     "label": "Code",
-     "url": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling"
-    },
-    {
-     "label": "GitHub",
-     "url": "https://github.com/mvmalyi"
-    }
-   ]
-  },
-  "dimensions": [
-   {
-    "name": "Capability",
-    "value": 70,
-    "coverage": 0.4,
-    "weight": 1.3
-   },
-   {
-    "name": "Skills",
-    "value": 55,
-    "coverage": 0.25,
-    "weight": 1.0
-   },
-   {
-    "name": "Trajectory",
-    "value": 80,
-    "coverage": 1.0,
-    "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 85,
-    "coverage": 0.4,
-    "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 40,
-    "coverage": 0.15,
-    "weight": 1.2
-   },
-   {
-    "name": "Provenance",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 0.8
-   },
-   {
-    "name": "Traction",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.0
-   }
-  ],
-  "projects": [
-   {
-    "id": "arxiv_max_malyi_p1",
-    "name": "llm-driven-wind-turbine-maintenance-log-labelling",
-    "sector": "AI/ML",
-    "stage": "Pre-seed",
-    "oneLiner": "Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Semantic Ex…",
-    "description": "Academic work: Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Semantic Extraction of Reliability Intelligence. Commercialization status unknown — pre-founding signal from the arXiv channel."
-   }
-  ],
-  "scores": {
-   "founder": 74,
-   "founderTrend": "up",
-   "market": "Neutral",
-   "marketTrend": "flat",
-   "fit": "Pivot potential",
-   "fitTrend": "flat",
-   "confidence": 0.58,
-   "band": [
-    59.3,
-    88.5
-   ]
-  },
-  "coldStart": true,
-  "evidence": [
-   {
-    "text": "First-author paper (2026-05-29): Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Sema",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Code released with the paper — openness/execution signal.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "4 arXiv papers in the last 12 months (author-name search; name collisions possible).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Max%20Malyi%22",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Small-team paper: 4 authors.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Public GitHub profile (repo owner matches author name).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/mvmalyi",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "Commercialization / company status",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   },
-   {
-    "text": "Current role / location",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   }
-  ]
- },
- {
-  "id": "arxiv_natalie_grace_brigham",
-  "name": "Natalie Grace Brigham",
-  "email": "natalie_grace_brigham@vcbrain.example",
-  "location": "Unknown",
-  "completeness": 67,
-  "bio": "Natalie is a researcher — first-author of \"Janus: a Playground for User-Involved Agentic Permission Management\". Pre-founding, sourced via arXiv.",
-  "skills": [
-   "Research",
-   "Machine Learning",
-   "Python",
-   "Open source"
-  ],
-  "contact": {
-   "email": "natalie_grace_brigham@vcbrain.example",
-   "website": "https://github.com/GraceBrigham/Janus"
-  },
-  "details": {
-   "source": "arXiv",
-   "links": [
-    {
-     "label": "arXiv",
-     "url": "https://arxiv.org/abs/2607.01510v1"
-    },
-    {
-     "label": "Code",
-     "url": "https://github.com/GraceBrigham/Janus"
-    },
-    {
-     "label": "GitHub",
-     "url": "https://github.com/GraceBrigham"
-    }
-   ]
-  },
-  "dimensions": [
-   {
-    "name": "Capability",
-    "value": 70,
-    "coverage": 0.4,
-    "weight": 1.3
-   },
-   {
-    "name": "Skills",
-    "value": 55,
-    "coverage": 0.25,
-    "weight": 1.0
-   },
-   {
-    "name": "Trajectory",
-    "value": 60,
-    "coverage": 0.5,
-    "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 66,
-    "coverage": 0.4,
-    "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 40,
-    "coverage": 0.15,
-    "weight": 1.2
-   },
-   {
-    "name": "Provenance",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 0.8
-   },
-   {
-    "name": "Traction",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.0
-   }
-  ],
-  "projects": [
-   {
-    "id": "arxiv_natalie_grace_brigham_p1",
-    "name": "Janus",
-    "sector": "Cybersecurity",
-    "stage": "Pre-seed",
-    "oneLiner": "Janus: a Playground for User-Involved Agentic Permission Management",
-    "description": "Academic work: Janus: a Playground for User-Involved Agentic Permission Management. Commercialization status unknown — pre-founding signal from the arXiv channel."
-   }
-  ],
-  "scores": {
-   "founder": 62,
-   "founderTrend": "flat",
-   "market": "Neutral",
-   "marketTrend": "flat",
-   "fit": "Pivot potential",
-   "fitTrend": "flat",
-   "confidence": 0.54,
-   "band": [
-    46.0,
-    77.9
-   ]
-  },
-  "coldStart": true,
-  "evidence": [
-   {
-    "text": "First-author paper (2026-07-01): Janus: a Playground for User-Involved Agentic Permission Management",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2607.01510v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Code released with the paper — openness/execution signal.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/GraceBrigham/Janus",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "2 arXiv papers in the last 12 months (author-name search; name collisions possible).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Natalie%20Grace%20Brigham%22",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Small-team paper: 4 authors.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2607.01510v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Public GitHub profile (repo owner matches author name).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/GraceBrigham",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "Commercialization / company status",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2607.01510v1",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   },
-   {
-    "text": "Current role / location",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2607.01510v1",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   }
-  ]
- },
- {
-  "id": "arxiv_ivan_tregear",
-  "name": "Ivan Tregear",
-  "email": "ivan_tregear@vcbrain.example",
-  "location": "Unknown",
-  "completeness": 67,
-  "bio": "Ivan is a researcher — first-author of \"Investigating the Effect of a Series Elastic Actuation Retrofit to Black-Box Actuators\". Pre-founding, sourced via arXiv.",
-  "skills": [
-   "Research",
-   "Machine Learning",
-   "Python",
-   "Open source"
-  ],
-  "contact": {
-   "email": "ivan_tregear@vcbrain.example",
-   "website": "https://github.com/ITregear/SeriesElasticActuation-FYP"
-  },
-  "details": {
-   "source": "arXiv",
-   "links": [
-    {
-     "label": "arXiv",
-     "url": "https://arxiv.org/abs/2605.24127v1"
-    },
-    {
-     "label": "Code",
-     "url": "https://github.com/ITregear/SeriesElasticActuation-FYP"
-    },
-    {
-     "label": "GitHub",
-     "url": "https://github.com/ITregear"
-    }
-   ]
-  },
-  "dimensions": [
-   {
-    "name": "Capability",
-    "value": 70,
-    "coverage": 0.4,
-    "weight": 1.3
-   },
-   {
-    "name": "Skills",
-    "value": 55,
-    "coverage": 0.25,
-    "weight": 1.0
-   },
-   {
-    "name": "Trajectory",
-    "value": 50,
-    "coverage": 0.25,
-    "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 71,
-    "coverage": 0.4,
-    "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 40,
-    "coverage": 0.15,
-    "weight": 1.2
-   },
-   {
-    "name": "Provenance",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 0.8
-   },
-   {
-    "name": "Traction",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.0
-   }
-  ],
-  "projects": [
-   {
-    "id": "arxiv_ivan_tregear_p1",
-    "name": "SeriesElasticActuation-FYP",
-    "sector": "Deep Tech",
-    "stage": "Pre-seed",
-    "oneLiner": "Investigating the Effect of a Series Elastic Actuation Retrofit to Black-Box Actuators",
-    "description": "Academic work: Investigating the Effect of a Series Elastic Actuation Retrofit to Black-Box Actuators. Commercialization status unknown — pre-founding signal from the arXiv channel."
-   }
-  ],
-  "scores": {
-   "founder": 62,
-   "founderTrend": "flat",
-   "market": "Neutral",
-   "marketTrend": "flat",
-   "fit": "Pivot potential",
-   "fitTrend": "flat",
-   "confidence": 0.52,
-   "band": [
-    45.8,
-    79.1
-   ]
-  },
-  "coldStart": true,
-  "evidence": [
-   {
-    "text": "First-author paper (2026-05-22): Investigating the Effect of a Series Elastic Actuation Retrofit to Black-Box Actuators",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2605.24127v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Code released with the paper — openness/execution signal.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/ITregear/SeriesElasticActuation-FYP",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "1 arXiv paper in the last 12 months (author-name search; name collisions possible).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Ivan%20Tregear%22",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Small-team paper: 3 authors.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2605.24127v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Public GitHub profile (repo owner matches author name).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/ITregear",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "Commercialization / company status",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2605.24127v1",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   },
-   {
-    "text": "Current role / location",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2605.24127v1",
-    "sourceLabel": "Unknown",
-    "unknown": true
    }
   ]
  },
@@ -2173,6 +3278,1590 @@
     "state": "corroborated",
     "sourceUrl": "https://github.com/nikhilrado",
     "sourceLabel": "GitHub"
+   }
+  ]
+ },
+ {
+  "id": "acad_tarek_ali",
+  "name": "Tarek Ali",
+  "email": "tarek_ali@vcbrain.example",
+  "location": "Lagos",
+  "completeness": 60,
+  "bio": "Tarek is a researcher building in Cybersecurity (University of Oulu) — first-author of \"HuntGPT: Integrating Machine Learning-Based Anomaly Detection and Explainable AI with Large Language\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "NETWORK SECURITY AND INTRUSION DETECTION"
+  ],
+  "contact": {
+   "email": "tarek_ali@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/tarek-ali"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://doi.org/10.3390/telecom7030073"
+    }
+   ],
+   "industry": "Network Security and Intrusion Detection"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 39,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 40,
+    "coverage": 0.33,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_tarek_ali_p1",
+    "name": "Research: HuntGPT: Integrating Machine Learning-Ba",
+    "sector": "Cybersecurity",
+    "stage": "Pre-seed",
+    "oneLiner": "HuntGPT: Integrating Machine Learning-Based Anomaly Detection and Explainable AI with Large Language Models…",
+    "description": "Academic work: HuntGPT: Integrating Machine Learning-Based Anomaly Detection and Explainable AI with Large Language Models (LLMs). Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 59,
+   "founderTrend": "flat",
+   "market": "Bear",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.49,
+   "band": [
+    41.0,
+    77.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: HuntGPT: Integrating Machine Learning-Based Anomaly Detection and Explainable AI with Large Language Models (L",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.3390/telecom7030073",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 39/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.3390/telecom7030073",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 150 citations, h-index 7.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.3390/telecom7030073",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Affiliation: University of Oulu.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.3390/telecom7030073",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://doi.org/10.3390/telecom7030073",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_funing_ma",
+  "name": "Funing Ma",
+  "email": "funing_ma@vcbrain.example",
+  "location": "Mexico City",
+  "completeness": 60,
+  "bio": "Funing is a researcher building in Climate (Qingdao University of Science and Technology) — first-author of \"Autonomous inverse modeling of complex groundwater systems via a physics-integrated large language m\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "HYDROLOGICAL FORECASTING USING AI"
+  ],
+  "contact": {
+   "email": "funing_ma@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/funing-ma"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://doi.org/10.1016/j.watres.2026.125886"
+    }
+   ],
+   "industry": "Hydrological Forecasting Using AI"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 40,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 50,
+    "coverage": 0.33,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_funing_ma_p1",
+    "name": "Research: Autonomous inverse modeling of complex g",
+    "sector": "Climate",
+    "stage": "Pre-seed",
+    "oneLiner": "Autonomous inverse modeling of complex groundwater systems via a physics-integrated large language model mu…",
+    "description": "Academic work: Autonomous inverse modeling of complex groundwater systems via a physics-integrated large language model multi-agent framework. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 57,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.49,
+   "band": [
+    39.0,
+    75.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Autonomous inverse modeling of complex groundwater systems via a physics-integrated large language model multi",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1016/j.watres.2026.125886",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 40/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1016/j.watres.2026.125886",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 603 citations, h-index 10.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1016/j.watres.2026.125886",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Affiliation: Qingdao University of Science and Technology.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1016/j.watres.2026.125886",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://doi.org/10.1016/j.watres.2026.125886",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_yueen_ma",
+  "name": "Yueen Ma",
+  "email": "yueen_ma@vcbrain.example",
+  "location": "Tokyo",
+  "completeness": 60,
+  "bio": "Yueen is a researcher building in AI/ML (Chinese University of Hong Kong) — first-author of \"A Survey on Vision--Language--Action Models for Embodied AI\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "MULTIMODAL MACHINE LEARNING APPLICATIONS"
+  ],
+  "contact": {
+   "email": "yueen_ma@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/yueen-ma"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://doi.org/10.1109/tnnls.2025.3650584"
+    }
+   ],
+   "industry": "Multimodal Machine Learning Applications"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 6,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 50,
+    "coverage": 0.33,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_yueen_ma_p1",
+    "name": "Research: A Survey on Vision--Language--Action Mod",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "A Survey on Vision--Language--Action Models for Embodied AI",
+    "description": "Academic work: A Survey on Vision--Language--Action Models for Embodied AI. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 56,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.49,
+   "band": [
+    38.0,
+    74.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: A Survey on Vision--Language--Action Models for Embodied AI",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1109/tnnls.2025.3650584",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 6/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1109/tnnls.2025.3650584",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 71 citations, h-index 6.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1109/tnnls.2025.3650584",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Affiliation: Chinese University of Hong Kong.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1109/tnnls.2025.3650584",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://doi.org/10.1109/tnnls.2025.3650584",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_yizheng_huang",
+  "name": "Yizheng Huang",
+  "email": "yizheng_huang@vcbrain.example",
+  "location": "Amsterdam",
+  "completeness": 60,
+  "bio": "Yizheng is a researcher building in AI/ML (York University) — first-author of \"A Survey on Retrieval-Augmented Text Generation for Large Language Models\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "TOPIC MODELING"
+  ],
+  "contact": {
+   "email": "yizheng_huang@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/yizheng-huang"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://doi.org/10.1145/3805774"
+    }
+   ],
+   "industry": "Topic Modeling"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 3,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 35,
+    "coverage": 0.33,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_yizheng_huang_p1",
+    "name": "Research: A Survey on Retrieval-Augmented Text Gen",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "A Survey on Retrieval-Augmented Text Generation for Large Language Models",
+    "description": "Academic work: A Survey on Retrieval-Augmented Text Generation for Large Language Models. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 55,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.49,
+   "band": [
+    37.0,
+    73.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: A Survey on Retrieval-Augmented Text Generation for Large Language Models",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1145/3805774",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 3/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1145/3805774",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 66 citations, h-index 3.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1145/3805774",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Affiliation: York University.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1145/3805774",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://doi.org/10.1145/3805774",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_yang_liu",
+  "name": "Yang Liu",
+  "email": "yang_liu@vcbrain.example",
+  "location": "London",
+  "completeness": 60,
+  "bio": "Yang is a researcher building in AI/ML (Argonne National Laboratory) — first-author of \"Automating data-driven modeling and analysis for engineering applications using large language model\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "MODELING, SIMULATION, AND OPTIMIZATION"
+  ],
+  "contact": {
+   "email": "yang_liu@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/yang-liu"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://doi.org/10.1016/j.knosys.2026.115989"
+    }
+   ],
+   "industry": "Modeling, Simulation, and Optimization"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 40,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 45,
+    "coverage": 0.33,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_yang_liu_p1",
+    "name": "Research: Automating data-driven modeling and anal",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Automating data-driven modeling and analysis for engineering applications using large language model agents",
+    "description": "Academic work: Automating data-driven modeling and analysis for engineering applications using large language model agents. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 54,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.49,
+   "band": [
+    36.0,
+    72.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Automating data-driven modeling and analysis for engineering applications using large language model agents",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1016/j.knosys.2026.115989",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 40/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1016/j.knosys.2026.115989",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 1596 citations, h-index 20.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1016/j.knosys.2026.115989",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Affiliation: Argonne National Laboratory.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1016/j.knosys.2026.115989",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://doi.org/10.1016/j.knosys.2026.115989",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_freddy_jackson_brown",
+  "name": "Freddy Jackson Brown",
+  "email": "freddy_jackson_brown@vcbrain.example",
+  "location": "Lagos",
+  "completeness": 60,
+  "bio": "Freddy is a researcher building in Healthtech (University of Warwick) — first-author of \"Validation of the safety, empathy and utility of a large language model conversation agent for paren\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "AUTISM SPECTRUM DISORDER RESEARCH"
+  ],
+  "contact": {
+   "email": "freddy_jackson_brown@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/freddy-jackson-brown"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://doi.org/10.1038/s41598-026-44254-5"
+    }
+   ],
+   "industry": "Autism Spectrum Disorder Research"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 40,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 50,
+    "coverage": 0.33,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_freddy_jackson_brown_p1",
+    "name": "Research: Validation of the safety, empathy and ut",
+    "sector": "Healthtech",
+    "stage": "Pre-seed",
+    "oneLiner": "Validation of the safety, empathy and utility of a large language model conversation agent for parents of a…",
+    "description": "Academic work: Validation of the safety, empathy and utility of a large language model conversation agent for parents of autistic and neurodivergent children. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 54,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.49,
+   "band": [
+    36.0,
+    72.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Validation of the safety, empathy and utility of a large language model conversation agent for parents of auti",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41598-026-44254-5",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 40/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41598-026-44254-5",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 230 citations, h-index 9.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41598-026-44254-5",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Affiliation: University of Warwick.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41598-026-44254-5",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41598-026-44254-5",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_hyunwoo_kim",
+  "name": "Hyunwoo Kim",
+  "email": "hyunwoo_kim@vcbrain.example",
+  "location": "Paris",
+  "completeness": 60,
+  "bio": "Hyunwoo is a researcher building in AI/ML (Ulsan National Institute of Science and Technology) — first-author of \"From non-agentic large language models to multi-agent systems in emergency medicine: a scoping revie\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "TOPIC MODELING"
+  ],
+  "contact": {
+   "email": "hyunwoo_kim@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/hyunwoo-kim"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://doi.org/10.15441/ceem.26.136"
+    }
+   ],
+   "industry": "Topic Modeling"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 8,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 45,
+    "coverage": 0.33,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_hyunwoo_kim_p1",
+    "name": "Research: From non-agentic large language models t",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "From non-agentic large language models to multi-agent systems in emergency medicine: a scoping review",
+    "description": "Academic work: From non-agentic large language models to multi-agent systems in emergency medicine: a scoping review. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 54,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.49,
+   "band": [
+    36.0,
+    72.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: From non-agentic large language models to multi-agent systems in emergency medicine: a scoping review",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.15441/ceem.26.136",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 8/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.15441/ceem.26.136",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 2487 citations, h-index 21.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.15441/ceem.26.136",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Affiliation: Ulsan National Institute of Science and Technology.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.15441/ceem.26.136",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://doi.org/10.15441/ceem.26.136",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_h_lan",
+  "name": "H Lan",
+  "email": "h_lan@vcbrain.example",
+  "location": "Paris",
+  "completeness": 60,
+  "bio": "H is a researcher building in AI/ML (Fiberhome Technology Group (China)) — first-author of \"Public opinion dissemination simulation based on large language model multi-agent systems\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "OPINION DYNAMICS AND SOCIAL INFLUENCE"
+  ],
+  "contact": {
+   "email": "h_lan@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/h-lan"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://doi.org/10.1038/s41598-026-44206-z"
+    }
+   ],
+   "industry": "Opinion Dynamics and Social Influence"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 9,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 45,
+    "coverage": 0.33,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_h_lan_p1",
+    "name": "Research: Public opinion dissemination simulation ",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Public opinion dissemination simulation based on large language model multi-agent systems",
+    "description": "Academic work: Public opinion dissemination simulation based on large language model multi-agent systems. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 49,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.49,
+   "band": [
+    31.0,
+    67.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Public opinion dissemination simulation based on large language model multi-agent systems",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41598-026-44206-z",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 9/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41598-026-44206-z",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 32 citations, h-index 1.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41598-026-44206-z",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Affiliation: Fiberhome Technology Group (China).",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41598-026-44206-z",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41598-026-44206-z",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_jingkang_liang",
+  "name": "Jingkang Liang",
+  "email": "jingkang_liang@vcbrain.example",
+  "location": "Lagos",
+  "completeness": 60,
+  "bio": "Jingkang is a researcher building in AI/ML (Technical University of Denmark) — first-author of \"Large language model agent for user-friendly chemical process simulations\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "MACHINE LEARNING IN MATERIALS SCIENCE"
+  ],
+  "contact": {
+   "email": "jingkang_liang@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/jingkang-liang"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://doi.org/10.1016/j.dche.2026.100312"
+    }
+   ],
+   "industry": "Machine Learning in Materials Science"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 24,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 40,
+    "coverage": 0.33,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_jingkang_liang_p1",
+    "name": "Research: Large language model agent for user-frie",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Large language model agent for user-friendly chemical process simulations",
+    "description": "Academic work: Large language model agent for user-friendly chemical process simulations. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 47,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.49,
+   "band": [
+    29.0,
+    65.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Large language model agent for user-friendly chemical process simulations",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1016/j.dche.2026.100312",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 24/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1016/j.dche.2026.100312",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 16 citations, h-index 2.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1016/j.dche.2026.100312",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Affiliation: Technical University of Denmark.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1016/j.dche.2026.100312",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://doi.org/10.1016/j.dche.2026.100312",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_samuel_rothfarb",
+  "name": "Samuel Rothfarb",
+  "email": "samuel_rothfarb@vcbrain.example",
+  "location": "Mexico City",
+  "completeness": 60,
+  "bio": "Samuel is a researcher building in AI/ML (Los Alamos National Laboratory) — first-author of \"Hierarchical Multi-agent Large Language Model Reasoning for Autonomous Heterogeneous Catalyst Discov\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "MACHINE LEARNING IN MATERIALS SCIENCE"
+  ],
+  "contact": {
+   "email": "samuel_rothfarb@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/samuel-rothfarb"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://doi.org/10.1038/s41524-026-02139-1"
+    }
+   ],
+   "industry": "Machine Learning in Materials Science"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 23,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 55,
+    "coverage": 0.33,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_samuel_rothfarb_p1",
+    "name": "Research: Hierarchical Multi-agent Large Language ",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Hierarchical Multi-agent Large Language Model Reasoning for Autonomous Heterogeneous Catalyst Discovery",
+    "description": "Academic work: Hierarchical Multi-agent Large Language Model Reasoning for Autonomous Heterogeneous Catalyst Discovery. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 46,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.49,
+   "band": [
+    28.1,
+    64.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Hierarchical Multi-agent Large Language Model Reasoning for Autonomous Heterogeneous Catalyst Discovery",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41524-026-02139-1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 23/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41524-026-02139-1",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 2 citations, h-index 1.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41524-026-02139-1",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Affiliation: Los Alamos National Laboratory.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41524-026-02139-1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41524-026-02139-1",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_shicheng_xu",
+  "name": "Shicheng Xu",
+  "email": "shicheng_xu@vcbrain.example",
+  "location": "San Francisco",
+  "completeness": 60,
+  "bio": "Shicheng is a researcher building in Healthtech (Chinese Academy of Sciences) — first-author of \"DxDirector: an agentic large language model driving the full-process clinical diagnosis\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "ARTIFICIAL INTELLIGENCE IN HEALTHCARE AND EDUCATION"
+  ],
+  "contact": {
+   "email": "shicheng_xu@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/shicheng-xu"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://doi.org/10.1038/s41467-026-71928-5"
+    }
+   ],
+   "industry": "Artificial Intelligence in Healthcare and Education"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 34,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 55,
+    "coverage": 0.33,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_shicheng_xu_p1",
+    "name": "Research: DxDirector: an agentic large language mo",
+    "sector": "Healthtech",
+    "stage": "Pre-seed",
+    "oneLiner": "DxDirector: an agentic large language model driving the full-process clinical diagnosis",
+    "description": "Academic work: DxDirector: an agentic large language model driving the full-process clinical diagnosis. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 46,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.49,
+   "band": [
+    28.0,
+    64.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: DxDirector: an agentic large language model driving the full-process clinical diagnosis",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41467-026-71928-5",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 34/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41467-026-71928-5",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 37 citations, h-index 2.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41467-026-71928-5",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Affiliation: Chinese Academy of Sciences.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41467-026-71928-5",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41467-026-71928-5",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_insaf_kraidia",
+  "name": "Insaf Kraidia",
+  "email": "insaf_kraidia@vcbrain.example",
+  "location": "London",
+  "completeness": 60,
+  "bio": "Insaf is a researcher building in AI/ML (Al-Ahliyya Amman University) — first-author of \"When collaboration fails: persuasion driven adversarial influence in multi agent large language mode\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "TOPIC MODELING"
+  ],
+  "contact": {
+   "email": "insaf_kraidia@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/insaf-kraidia"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://doi.org/10.1038/s41598-026-42705-7"
+    }
+   ],
+   "industry": "Topic Modeling"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 1,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 50,
+    "coverage": 0.33,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_insaf_kraidia_p1",
+    "name": "Research: When collaboration fails: persuasion dri",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "When collaboration fails: persuasion driven adversarial influence in multi agent large language model debate",
+    "description": "Academic work: When collaboration fails: persuasion driven adversarial influence in multi agent large language model debate. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 45,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.49,
+   "band": [
+    27.0,
+    63.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: When collaboration fails: persuasion driven adversarial influence in multi agent large language model debate",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41598-026-42705-7",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 1/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41598-026-42705-7",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 1 citations, h-index 1.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41598-026-42705-7",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Affiliation: Al-Ahliyya Amman University.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41598-026-42705-7",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://doi.org/10.1038/s41598-026-42705-7",
+    "sourceLabel": "VC Brain pipeline"
    }
   ]
  },
@@ -3037,1166 +5726,6 @@
   ]
  },
  {
-  "id": "arxiv_sangmin_lee",
-  "name": "Sangmin Lee",
-  "email": "sangmin_lee@vcbrain.example",
-  "location": "Unknown",
-  "completeness": 50,
-  "bio": "Sangmin is a researcher — first-author of \"UR-BERT: Scaling Text Encoders for Massively Multilingual TTS Through Universal Romanization and Speech Token Prediction\". Pre-founding, sourced via arXiv.",
-  "skills": [
-   "Research",
-   "Machine Learning",
-   "Python",
-   "Open source"
-  ],
-  "contact": {
-   "email": "sangmin_lee@vcbrain.example",
-   "website": "https://github.com/sanghyang00/ur-bert"
-  },
-  "details": {
-   "source": "arXiv",
-   "links": [
-    {
-     "label": "arXiv",
-     "url": "https://arxiv.org/abs/2606.11681v2"
-    },
-    {
-     "label": "Code",
-     "url": "https://github.com/sanghyang00/ur-bert"
-    }
-   ]
-  },
-  "dimensions": [
-   {
-    "name": "Capability",
-    "value": 70,
-    "coverage": 0.4,
-    "weight": 1.3
-   },
-   {
-    "name": "Skills",
-    "value": 55,
-    "coverage": 0.25,
-    "weight": 1.0
-   },
-   {
-    "name": "Trajectory",
-    "value": 100,
-    "coverage": 1.0,
-    "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 80,
-    "coverage": 0.4,
-    "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 40,
-    "coverage": 0.15,
-    "weight": 1.2
-   },
-   {
-    "name": "Provenance",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 0.8
-   },
-   {
-    "name": "Traction",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.0
-   }
-  ],
-  "projects": [
-   {
-    "id": "arxiv_sangmin_lee_p1",
-    "name": "ur-bert",
-    "sector": "AI/ML",
-    "stage": "Pre-seed",
-    "oneLiner": "UR-BERT: Scaling Text Encoders for Massively Multilingual TTS Through Universal Romanization and Speech Tok…",
-    "description": "Academic work: UR-BERT: Scaling Text Encoders for Massively Multilingual TTS Through Universal Romanization and Speech Token Prediction. Commercialization status unknown — pre-founding signal from the arXiv channel."
-   }
-  ],
-  "scores": {
-   "founder": 81,
-   "founderTrend": "up",
-   "market": "Neutral",
-   "marketTrend": "flat",
-   "fit": "Pivot potential",
-   "fitTrend": "flat",
-   "confidence": 0.58,
-   "band": [
-    65.9,
-    95.1
-   ]
-  },
-  "coldStart": true,
-  "evidence": [
-   {
-    "text": "First-author paper (2026-06-10): UR-BERT: Scaling Text Encoders for Massively Multilingual TTS Through Universal Romanization and Spe",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.11681v2",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Code released with the paper — openness/execution signal.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/sanghyang00/ur-bert",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "16 arXiv papers in the last 12 months (author-name search; name collisions possible).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Sangmin%20Lee%22",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Small-team paper: 4 authors.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.11681v2",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Commercialization / company status",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.11681v2",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   },
-   {
-    "text": "Current role / location",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.11681v2",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   }
-  ]
- },
- {
-  "id": "arxiv_yushi_huang",
-  "name": "Yushi Huang",
-  "email": "yushi_huang@vcbrain.example",
-  "location": "Unknown",
-  "completeness": 50,
-  "bio": "Yushi is a researcher — first-author of \"MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators\". Pre-founding, sourced via arXiv.",
-  "skills": [
-   "Research",
-   "Machine Learning",
-   "Python",
-   "Open source"
-  ],
-  "contact": {
-   "email": "yushi_huang@vcbrain.example",
-   "website": "https://github.com/Harahan/MeanFlowNFT"
-  },
-  "details": {
-   "source": "arXiv",
-   "links": [
-    {
-     "label": "arXiv",
-     "url": "https://arxiv.org/abs/2607.15273v1"
-    },
-    {
-     "label": "Code",
-     "url": "https://github.com/Harahan/MeanFlowNFT"
-    }
-   ]
-  },
-  "dimensions": [
-   {
-    "name": "Capability",
-    "value": 70,
-    "coverage": 0.4,
-    "weight": 1.3
-   },
-   {
-    "name": "Skills",
-    "value": 55,
-    "coverage": 0.25,
-    "weight": 1.0
-   },
-   {
-    "name": "Trajectory",
-    "value": 100,
-    "coverage": 1.0,
-    "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 67,
-    "coverage": 0.4,
-    "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 40,
-    "coverage": 0.15,
-    "weight": 1.2
-   },
-   {
-    "name": "Provenance",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 0.8
-   },
-   {
-    "name": "Traction",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.0
-   }
-  ],
-  "projects": [
-   {
-    "id": "arxiv_yushi_huang_p1",
-    "name": "MeanFlowNFT",
-    "sector": "AI/ML",
-    "stage": "Pre-seed",
-    "oneLiner": "MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators",
-    "description": "Academic work: MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators. Commercialization status unknown — pre-founding signal from the arXiv channel."
-   }
-  ],
-  "scores": {
-   "founder": 77,
-   "founderTrend": "up",
-   "market": "Neutral",
-   "marketTrend": "flat",
-   "fit": "Pivot potential",
-   "fitTrend": "flat",
-   "confidence": 0.58,
-   "band": [
-    62.9,
-    92.1
-   ]
-  },
-  "coldStart": true,
-  "evidence": [
-   {
-    "text": "First-author paper (2026-07-16): MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2607.15273v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Code released with the paper — openness/execution signal.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/Harahan/MeanFlowNFT",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "16 arXiv papers in the last 12 months (author-name search; name collisions possible).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Yushi%20Huang%22",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Small-team paper: 5 authors.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2607.15273v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Commercialization / company status",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2607.15273v1",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   },
-   {
-    "text": "Current role / location",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2607.15273v1",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   }
-  ]
- },
- {
-  "id": "arxiv_haoyu_zhao",
-  "name": "Haoyu Zhao",
-  "email": "haoyu_zhao@vcbrain.example",
-  "location": "Unknown",
-  "completeness": 50,
-  "bio": "Haoyu is a researcher — first-author of \"RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation\". Pre-founding, sourced via arXiv.",
-  "skills": [
-   "Research",
-   "Machine Learning",
-   "Python",
-   "Open source"
-  ],
-  "contact": {
-   "email": "haoyu_zhao@vcbrain.example",
-   "website": "https://github.com/alibaba-damo-academy/RynnWorld-4D"
-  },
-  "details": {
-   "source": "arXiv",
-   "links": [
-    {
-     "label": "arXiv",
-     "url": "https://arxiv.org/abs/2607.06559v1"
-    },
-    {
-     "label": "Code",
-     "url": "https://github.com/alibaba-damo-academy/RynnWorld-4D"
-    }
-   ]
-  },
-  "dimensions": [
-   {
-    "name": "Capability",
-    "value": 70,
-    "coverage": 0.4,
-    "weight": 1.3
-   },
-   {
-    "name": "Skills",
-    "value": 55,
-    "coverage": 0.25,
-    "weight": 1.0
-   },
-   {
-    "name": "Trajectory",
-    "value": 100,
-    "coverage": 1.0,
-    "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 65,
-    "coverage": 0.4,
-    "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 40,
-    "coverage": 0.15,
-    "weight": 1.2
-   },
-   {
-    "name": "Provenance",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 0.8
-   },
-   {
-    "name": "Traction",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.0
-   }
-  ],
-  "projects": [
-   {
-    "id": "arxiv_haoyu_zhao_p1",
-    "name": "RynnWorld-4D",
-    "sector": "Deep Tech",
-    "stage": "Pre-seed",
-    "oneLiner": "RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation",
-    "description": "Academic work: RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation. Commercialization status unknown — pre-founding signal from the arXiv channel."
-   }
-  ],
-  "scores": {
-   "founder": 77,
-   "founderTrend": "up",
-   "market": "Neutral",
-   "marketTrend": "flat",
-   "fit": "Pivot potential",
-   "fitTrend": "flat",
-   "confidence": 0.58,
-   "band": [
-    62.4,
-    91.6
-   ]
-  },
-  "coldStart": true,
-  "evidence": [
-   {
-    "text": "First-author paper (2026-07-07): RynnWorld-4D: 4D Embodied World Models for Robotic Manipulation",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2607.06559v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Code released with the paper — openness/execution signal.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/alibaba-damo-academy/RynnWorld-4D",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "30 arXiv papers in the last 12 months (author-name search; name collisions possible).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Haoyu%20Zhao%22",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Small-team paper: 6 authors.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2607.06559v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Commercialization / company status",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2607.06559v1",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   },
-   {
-    "text": "Current role / location",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2607.06559v1",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   }
-  ]
- },
- {
-  "id": "arxiv_jinghao_zhang",
-  "name": "Jinghao Zhang",
-  "email": "jinghao_zhang@vcbrain.example",
-  "location": "Unknown",
-  "completeness": 50,
-  "bio": "Jinghao is a researcher — first-author of \"Not only where, But when: Temporal Scheduling for RLVR\". Pre-founding, sourced via arXiv.",
-  "skills": [
-   "Research",
-   "Machine Learning",
-   "Python",
-   "Open source"
-  ],
-  "contact": {
-   "email": "jinghao_zhang@vcbrain.example",
-   "website": "https://github.com/Jinghaoleven/RLVR-Schedule"
-  },
-  "details": {
-   "source": "arXiv",
-   "links": [
-    {
-     "label": "arXiv",
-     "url": "https://arxiv.org/abs/2605.25381v1"
-    },
-    {
-     "label": "Code",
-     "url": "https://github.com/Jinghaoleven/RLVR-Schedule"
-    }
-   ]
-  },
-  "dimensions": [
-   {
-    "name": "Capability",
-    "value": 70,
-    "coverage": 0.4,
-    "weight": 1.3
-   },
-   {
-    "name": "Skills",
-    "value": 55,
-    "coverage": 0.25,
-    "weight": 1.0
-   },
-   {
-    "name": "Trajectory",
-    "value": 100,
-    "coverage": 1.0,
-    "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 63,
-    "coverage": 0.4,
-    "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 40,
-    "coverage": 0.15,
-    "weight": 1.2
-   },
-   {
-    "name": "Provenance",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 0.8
-   },
-   {
-    "name": "Traction",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.0
-   }
-  ],
-  "projects": [
-   {
-    "id": "arxiv_jinghao_zhang_p1",
-    "name": "RLVR-Schedule",
-    "sector": "AI/ML",
-    "stage": "Pre-seed",
-    "oneLiner": "Not only where, But when: Temporal Scheduling for RLVR",
-    "description": "Academic work: Not only where, But when: Temporal Scheduling for RLVR. Commercialization status unknown — pre-founding signal from the arXiv channel."
-   }
-  ],
-  "scores": {
-   "founder": 77,
-   "founderTrend": "up",
-   "market": "Neutral",
-   "marketTrend": "flat",
-   "fit": "Pivot potential",
-   "fitTrend": "flat",
-   "confidence": 0.58,
-   "band": [
-    61.9,
-    91.1
-   ]
-  },
-  "coldStart": true,
-  "evidence": [
-   {
-    "text": "First-author paper (2026-05-25): Not only where, But when: Temporal Scheduling for RLVR",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2605.25381v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Code released with the paper — openness/execution signal.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/Jinghaoleven/RLVR-Schedule",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "19 arXiv papers in the last 12 months (author-name search; name collisions possible).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Jinghao%20Zhang%22",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Small-team paper: 4 authors.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2605.25381v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Commercialization / company status",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2605.25381v1",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   },
-   {
-    "text": "Current role / location",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2605.25381v1",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   }
-  ]
- },
- {
-  "id": "arxiv_al_zadid_sultan_bin_habib",
-  "name": "Al Zadid Sultan Bin Habib",
-  "email": "al_zadid_sultan_bin_habib@vcbrain.example",
-  "location": "Unknown",
-  "completeness": 50,
-  "bio": "Al is a researcher — first-author of \"GOTabPFN: From Feature Ordering to Compact Tokenization for Tabular Foundation Models on High-Dimensional Data\". Pre-founding, sourced via arXiv.",
-  "skills": [
-   "Research",
-   "Machine Learning",
-   "Python",
-   "Open source"
-  ],
-  "contact": {
-   "email": "al_zadid_sultan_bin_habib@vcbrain.example",
-   "website": "https://github.com/zadid6pretam/GOTabPFN"
-  },
-  "details": {
-   "source": "arXiv",
-   "links": [
-    {
-     "label": "arXiv",
-     "url": "https://arxiv.org/abs/2606.05441v2"
-    },
-    {
-     "label": "Code",
-     "url": "https://github.com/zadid6pretam/GOTabPFN"
-    }
-   ]
-  },
-  "dimensions": [
-   {
-    "name": "Capability",
-    "value": 70,
-    "coverage": 0.4,
-    "weight": 1.3
-   },
-   {
-    "name": "Skills",
-    "value": 55,
-    "coverage": 0.25,
-    "weight": 1.0
-   },
-   {
-    "name": "Trajectory",
-    "value": 80,
-    "coverage": 1.0,
-    "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 77,
-    "coverage": 0.4,
-    "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 40,
-    "coverage": 0.15,
-    "weight": 1.2
-   },
-   {
-    "name": "Provenance",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 0.8
-   },
-   {
-    "name": "Traction",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.0
-   }
-  ],
-  "projects": [
-   {
-    "id": "arxiv_al_zadid_sultan_bin_habib_p1",
-    "name": "GOTabPFN",
-    "sector": "AI/ML",
-    "stage": "Pre-seed",
-    "oneLiner": "GOTabPFN: From Feature Ordering to Compact Tokenization for Tabular Foundation Models on High-Dimensional Data",
-    "description": "Academic work: GOTabPFN: From Feature Ordering to Compact Tokenization for Tabular Foundation Models on High-Dimensional Data. Commercialization status unknown — pre-founding signal from the arXiv channel."
-   }
-  ],
-  "scores": {
-   "founder": 72,
-   "founderTrend": "up",
-   "market": "Neutral",
-   "marketTrend": "flat",
-   "fit": "Pivot potential",
-   "fitTrend": "flat",
-   "confidence": 0.58,
-   "band": [
-    57.4,
-    86.6
-   ]
-  },
-  "coldStart": true,
-  "evidence": [
-   {
-    "text": "First-author paper (2026-06-03): GOTabPFN: From Feature Ordering to Compact Tokenization for Tabular Foundation Models on High-Dimens",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.05441v2",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Code released with the paper — openness/execution signal.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/zadid6pretam/GOTabPFN",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "4 arXiv papers in the last 12 months (author-name search; name collisions possible).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Al%20Zadid%20Sultan%20Bin%20Habib%22",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Small-team paper: 5 authors.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.05441v2",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Commercialization / company status",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.05441v2",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   },
-   {
-    "text": "Current role / location",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.05441v2",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   }
-  ]
- },
- {
-  "id": "arxiv_varshith_roy_kotla",
-  "name": "Varshith Roy Kotla",
-  "email": "varshith_roy_kotla@vcbrain.example",
-  "location": "Unknown",
-  "completeness": 50,
-  "bio": "Varshith is a researcher — first-author of \"Weighted Conformal Prediction for Lab-to-Track Thermal Transfer in EV Motorsport Powertrains\". Pre-founding, sourced via arXiv.",
-  "skills": [
-   "Research",
-   "Machine Learning",
-   "Python",
-   "Open source"
-  ],
-  "contact": {
-   "email": "varshith_roy_kotla@vcbrain.example",
-   "website": "https://github.com/nearpot/Weighted-Conformal-Thermal-Transfer"
-  },
-  "details": {
-   "source": "arXiv",
-   "links": [
-    {
-     "label": "arXiv",
-     "url": "https://arxiv.org/abs/2607.02722v1"
-    },
-    {
-     "label": "Code",
-     "url": "https://github.com/nearpot/Weighted-Conformal-Thermal-Transfer"
-    }
-   ]
-  },
-  "dimensions": [
-   {
-    "name": "Capability",
-    "value": 70,
-    "coverage": 0.4,
-    "weight": 1.3
-   },
-   {
-    "name": "Skills",
-    "value": 55,
-    "coverage": 0.25,
-    "weight": 1.0
-   },
-   {
-    "name": "Trajectory",
-    "value": 70,
-    "coverage": 0.75,
-    "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 73,
-    "coverage": 0.4,
-    "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 40,
-    "coverage": 0.15,
-    "weight": 1.2
-   },
-   {
-    "name": "Provenance",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 0.8
-   },
-   {
-    "name": "Traction",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.0
-   }
-  ],
-  "projects": [
-   {
-    "id": "arxiv_varshith_roy_kotla_p1",
-    "name": "Weighted-Conformal-Thermal-Transfer",
-    "sector": "AI/ML",
-    "stage": "Pre-seed",
-    "oneLiner": "Weighted Conformal Prediction for Lab-to-Track Thermal Transfer in EV Motorsport Powertrains",
-    "description": "Academic work: Weighted Conformal Prediction for Lab-to-Track Thermal Transfer in EV Motorsport Powertrains. Commercialization status unknown — pre-founding signal from the arXiv channel."
-   }
-  ],
-  "scores": {
-   "founder": 67,
-   "founderTrend": "up",
-   "market": "Neutral",
-   "marketTrend": "flat",
-   "fit": "Pivot potential",
-   "fitTrend": "flat",
-   "confidence": 0.56,
-   "band": [
-    51.5,
-    82.1
-   ]
-  },
-  "coldStart": true,
-  "evidence": [
-   {
-    "text": "First-author paper (2026-07-02): Weighted Conformal Prediction for Lab-to-Track Thermal Transfer in EV Motorsport Powertrains",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2607.02722v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Code released with the paper — openness/execution signal.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/nearpot/Weighted-Conformal-Thermal-Transfer",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "3 arXiv papers in the last 12 months (author-name search; name collisions possible).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Varshith%20Roy%20Kotla%22",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Small-team paper: 1 author.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2607.02722v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Commercialization / company status",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2607.02722v1",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   },
-   {
-    "text": "Current role / location",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2607.02722v1",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   }
-  ]
- },
- {
-  "id": "arxiv_ayan_pendharkar",
-  "name": "Ayan Pendharkar",
-  "email": "ayan_pendharkar@vcbrain.example",
-  "location": "Unknown",
-  "completeness": 50,
-  "bio": "Ayan is a researcher — first-author of \"Predictive Objectives Discard Exogenous Control-Relevant Features: A Controlled Mechanistic Study\". Pre-founding, sourced via arXiv.",
-  "skills": [
-   "Research",
-   "Machine Learning",
-   "Python",
-   "Open source"
-  ],
-  "contact": {
-   "email": "ayan_pendharkar@vcbrain.example",
-   "website": "https://github.com/bushesarebetter/jepa_research_project"
-  },
-  "details": {
-   "source": "arXiv",
-   "links": [
-    {
-     "label": "arXiv",
-     "url": "https://arxiv.org/abs/2606.30068v1"
-    },
-    {
-     "label": "Code",
-     "url": "https://github.com/bushesarebetter/jepa_research_project"
-    }
-   ]
-  },
-  "dimensions": [
-   {
-    "name": "Capability",
-    "value": 70,
-    "coverage": 0.4,
-    "weight": 1.3
-   },
-   {
-    "name": "Skills",
-    "value": 55,
-    "coverage": 0.25,
-    "weight": 1.0
-   },
-   {
-    "name": "Trajectory",
-    "value": 70,
-    "coverage": 0.75,
-    "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 74,
-    "coverage": 0.4,
-    "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 40,
-    "coverage": 0.15,
-    "weight": 1.2
-   },
-   {
-    "name": "Provenance",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 0.8
-   },
-   {
-    "name": "Traction",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.0
-   }
-  ],
-  "projects": [
-   {
-    "id": "arxiv_ayan_pendharkar_p1",
-    "name": "jepa_research_project",
-    "sector": "AI/ML",
-    "stage": "Pre-seed",
-    "oneLiner": "Predictive Objectives Discard Exogenous Control-Relevant Features: A Controlled Mechanistic Study",
-    "description": "Academic work: Predictive Objectives Discard Exogenous Control-Relevant Features: A Controlled Mechanistic Study. Commercialization status unknown — pre-founding signal from the arXiv channel."
-   }
-  ],
-  "scores": {
-   "founder": 67,
-   "founderTrend": "up",
-   "market": "Neutral",
-   "marketTrend": "flat",
-   "fit": "Pivot potential",
-   "fitTrend": "flat",
-   "confidence": 0.56,
-   "band": [
-    51.8,
-    82.4
-   ]
-  },
-  "coldStart": true,
-  "evidence": [
-   {
-    "text": "First-author paper (2026-06-29): Predictive Objectives Discard Exogenous Control-Relevant Features: A Controlled Mechanistic Study",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.30068v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Code released with the paper — openness/execution signal.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/bushesarebetter/jepa_research_project",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "3 arXiv papers in the last 12 months (author-name search; name collisions possible).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Ayan%20Pendharkar%22",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Small-team paper: 1 author.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.30068v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Commercialization / company status",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.30068v1",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   },
-   {
-    "text": "Current role / location",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.30068v1",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   }
-  ]
- },
- {
-  "id": "arxiv_hiranya_garbha_kumar",
-  "name": "Hiranya Garbha Kumar",
-  "email": "hiranya_garbha_kumar@vcbrain.example",
-  "location": "Unknown",
-  "completeness": 50,
-  "bio": "Hiranya is a researcher — first-author of \"CAOA -- Completion-Assisted Object-CAD Alignment\". Pre-founding, sourced via arXiv.",
-  "skills": [
-   "Research",
-   "Machine Learning",
-   "Python",
-   "Open source"
-  ],
-  "contact": {
-   "email": "hiranya_garbha_kumar@vcbrain.example",
-   "website": "https://github.com/MinhasKamal/CAOA"
-  },
-  "details": {
-   "source": "arXiv",
-   "links": [
-    {
-     "label": "arXiv",
-     "url": "https://arxiv.org/abs/2606.18429v2"
-    },
-    {
-     "label": "Code",
-     "url": "https://github.com/MinhasKamal/CAOA"
-    }
-   ]
-  },
-  "dimensions": [
-   {
-    "name": "Capability",
-    "value": 70,
-    "coverage": 0.4,
-    "weight": 1.3
-   },
-   {
-    "name": "Skills",
-    "value": 55,
-    "coverage": 0.25,
-    "weight": 1.0
-   },
-   {
-    "name": "Trajectory",
-    "value": 60,
-    "coverage": 0.5,
-    "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 62,
-    "coverage": 0.4,
-    "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 40,
-    "coverage": 0.15,
-    "weight": 1.2
-   },
-   {
-    "name": "Provenance",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 0.8
-   },
-   {
-    "name": "Traction",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.0
-   }
-  ],
-  "projects": [
-   {
-    "id": "arxiv_hiranya_garbha_kumar_p1",
-    "name": "CAOA",
-    "sector": "AI/ML",
-    "stage": "Pre-seed",
-    "oneLiner": "CAOA -- Completion-Assisted Object-CAD Alignment",
-    "description": "Academic work: CAOA -- Completion-Assisted Object-CAD Alignment. Commercialization status unknown — pre-founding signal from the arXiv channel."
-   }
-  ],
-  "scores": {
-   "founder": 61,
-   "founderTrend": "flat",
-   "market": "Neutral",
-   "marketTrend": "flat",
-   "fit": "Pivot potential",
-   "fitTrend": "flat",
-   "confidence": 0.54,
-   "band": [
-    44.8,
-    76.7
-   ]
-  },
-  "coldStart": true,
-  "evidence": [
-   {
-    "text": "First-author paper (2026-06-16): CAOA -- Completion-Assisted Object-CAD Alignment",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.18429v2",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Code released with the paper — openness/execution signal.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/MinhasKamal/CAOA",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "2 arXiv papers in the last 12 months (author-name search; name collisions possible).",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "http://export.arxiv.org/api/query?search_query=au%3A%22Hiranya%20Garbha%20Kumar%22",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Small-team paper: 3 authors.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.18429v2",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Commercialization / company status",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.18429v2",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   },
-   {
-    "text": "Current role / location",
-    "trust": "Low",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2606.18429v2",
-    "sourceLabel": "Unknown",
-    "unknown": true
-   }
-  ]
- },
- {
   "id": "src_byalexai",
   "name": "Aleksandar Blazhev",
   "email": "byalexai@vcbrain.example",
@@ -4435,6 +5964,256 @@
   ]
  },
  {
+  "id": "acad_qi_he",
+  "name": "Qi He",
+  "email": "qi_he@vcbrain.example",
+  "location": "London",
+  "completeness": 40,
+  "bio": "Qi is a researcher building in AI/ML — first-author of \"A Unified Metric Architecture for AI Infrastructure: A Cross-Layer Taxonomy Integrating Performance,\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "COMPUTER SCIENCE"
+  ],
+  "contact": {
+   "email": "qi_he@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/qi-he"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://www.semanticscholar.org/paper/60d5044750fe3d0a101d66be07160147256bed7d"
+    }
+   ],
+   "industry": "Computer Science"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 35,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 10,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_qi_he_p1",
+    "name": "Research: A Unified Metric Architecture for AI Inf",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "A Unified Metric Architecture for AI Infrastructure: A Cross-Layer Taxonomy Integrating Performance, Effici…",
+    "description": "Academic work: A Unified Metric Architecture for AI Infrastructure: A Cross-Layer Taxonomy Integrating Performance, Efficiency, and Cost. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 45,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.43,
+   "band": [
+    25.0,
+    65.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: A Unified Metric Architecture for AI Infrastructure: A Cross-Layer Taxonomy Integrating Performance, Efficienc",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/60d5044750fe3d0a101d66be07160147256bed7d",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 35/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/60d5044750fe3d0a101d66be07160147256bed7d",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 0 citations, h-index 3.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/60d5044750fe3d0a101d66be07160147256bed7d",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/60d5044750fe3d0a101d66be07160147256bed7d",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_sergio_cruzes",
+  "name": "Sergio Cruzes",
+  "email": "sergio_cruzes@vcbrain.example",
+  "location": "Lisbon",
+  "completeness": 40,
+  "bio": "Sergio is a researcher building in AI/ML — first-author of \"AI Infrastructure Sovereignty\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "COMPUTER SCIENCE"
+  ],
+  "contact": {
+   "email": "sergio_cruzes@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/sergio-cruzes"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://www.semanticscholar.org/paper/703cec4e709c3f10a0a4ab253611f8dfc99acf77"
+    }
+   ],
+   "industry": "Computer Science"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 3,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 5,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_sergio_cruzes_p1",
+    "name": "Research: AI Infrastructure Sovereignty",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "AI Infrastructure Sovereignty",
+    "description": "Academic work: AI Infrastructure Sovereignty. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 44,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.43,
+   "band": [
+    23.9,
+    64.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: AI Infrastructure Sovereignty",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/703cec4e709c3f10a0a4ab253611f8dfc99acf77",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 3/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/703cec4e709c3f10a0a4ab253611f8dfc99acf77",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 0 citations, h-index 3.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/703cec4e709c3f10a0a4ab253611f8dfc99acf77",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/703cec4e709c3f10a0a4ab253611f8dfc99acf77",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
   "id": "src_fatima_ashraf",
   "name": "Fatima Ashraf",
   "email": "fatima_ashraf@vcbrain.example",
@@ -4663,6 +6442,1215 @@
     "state": "corroborated",
     "sourceUrl": "https://luma.com/user/usr-KJZs89BHF40ySdJ",
     "sourceLabel": "Luma"
+   }
+  ]
+ },
+ {
+  "id": "acad_sudipta_chowdhury",
+  "name": "Sudipta Chowdhury",
+  "email": "sudipta_chowdhury@vcbrain.example",
+  "location": "Paris",
+  "completeness": 30,
+  "bio": "Sudipta is a researcher building in AI/ML — first-author of \"Structural Ethical Infeasibility in AI-Enabled Infrastructure Systems: A Constraint-Based Diagnostic\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning"
+  ],
+  "contact": {
+   "email": "sudipta_chowdhury@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/sudipta-chowdhury"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://www.semanticscholar.org/paper/8c8452414769a425556a1dd45645ca4b211d9939"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 6,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 15,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_sudipta_chowdhury_p1",
+    "name": "Research: Structural Ethical Infeasibility in AI-E",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Structural Ethical Infeasibility in AI-Enabled Infrastructure Systems: A Constraint-Based Diagnostic Framework",
+    "description": "Academic work: Structural Ethical Infeasibility in AI-Enabled Infrastructure Systems: A Constraint-Based Diagnostic Framework. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 47,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.43,
+   "band": [
+    26.9,
+    67.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Structural Ethical Infeasibility in AI-Enabled Infrastructure Systems: A Constraint-Based Diagnostic Framework",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/8c8452414769a425556a1dd45645ca4b211d9939",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 6/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/8c8452414769a425556a1dd45645ca4b211d9939",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 0 citations, h-index 6.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/8c8452414769a425556a1dd45645ca4b211d9939",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/8c8452414769a425556a1dd45645ca4b211d9939",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_f_a_alijoyo",
+  "name": "F. A. Alijoyo",
+  "email": "f_a_alijoyo@vcbrain.example",
+  "location": "Lisbon",
+  "completeness": 30,
+  "bio": "F. is a researcher building in Climate — first-author of \"AI-Powered Framework for Strengthening Climate Resilience in Urban Infrastructure Systems\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning"
+  ],
+  "contact": {
+   "email": "f_a_alijoyo@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/f-a-alijoyo"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://www.semanticscholar.org/paper/cea7de920a42cf2e6298c8af49f77723e333231b"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 38,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 30,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_f_a_alijoyo_p1",
+    "name": "Research: AI-Powered Framework for Strengthening C",
+    "sector": "Climate",
+    "stage": "Pre-seed",
+    "oneLiner": "AI-Powered Framework for Strengthening Climate Resilience in Urban Infrastructure Systems",
+    "description": "Academic work: AI-Powered Framework for Strengthening Climate Resilience in Urban Infrastructure Systems. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 47,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.43,
+   "band": [
+    27.0,
+    67.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: AI-Powered Framework for Strengthening Climate Resilience in Urban Infrastructure Systems",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/cea7de920a42cf2e6298c8af49f77723e333231b",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 38/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/cea7de920a42cf2e6298c8af49f77723e333231b",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 0 citations, h-index 6.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/cea7de920a42cf2e6298c8af49f77723e333231b",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/cea7de920a42cf2e6298c8af49f77723e333231b",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_rajesh_paul",
+  "name": "Rajesh Paul",
+  "email": "rajesh_paul@vcbrain.example",
+  "location": "Nairobi",
+  "completeness": 30,
+  "bio": "Rajesh is a researcher building in AI/ML — first-author of \"Implementation and Real-World Evaluation of an AI-Based Decision Support Model for Data-Driven Busin\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning"
+  ],
+  "contact": {
+   "email": "rajesh_paul@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/rajesh-paul"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://www.semanticscholar.org/paper/b4efcb8e2535bb429f32d26e7f28753642e652fc"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 27,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 5,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_rajesh_paul_p1",
+    "name": "Research: Implementation and Real-World Evaluation",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Implementation and Real-World Evaluation of an AI-Based Decision Support Model for Data-Driven Business and…",
+    "description": "Academic work: Implementation and Real-World Evaluation of an AI-Based Decision Support Model for Data-Driven Business and Infrastructure Systems. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 46,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.43,
+   "band": [
+    26.0,
+    66.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Implementation and Real-World Evaluation of an AI-Based Decision Support Model for Data-Driven Business and In",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/b4efcb8e2535bb429f32d26e7f28753642e652fc",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 27/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/b4efcb8e2535bb429f32d26e7f28753642e652fc",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 0 citations, h-index 5.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/b4efcb8e2535bb429f32d26e7f28753642e652fc",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/b4efcb8e2535bb429f32d26e7f28753642e652fc",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_uman_ahmed_mohammed",
+  "name": "Uman Ahmed Mohammed",
+  "email": "uman_ahmed_mohammed@vcbrain.example",
+  "location": "Mexico City",
+  "completeness": 30,
+  "bio": "Uman is a researcher building in AI/ML — first-author of \"Enterprise Cloud AI Infrastructure for Agent-Centric Column-Aware Prompt Optimization for Data Tasks\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning"
+  ],
+  "contact": {
+   "email": "uman_ahmed_mohammed@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/uman-ahmed-mohammed"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://www.semanticscholar.org/paper/99eae810fe8d98bab2b1685d0358fc8d12592c6c"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 36,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 5,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_uman_ahmed_mohammed_p1",
+    "name": "Research: Enterprise Cloud AI Infrastructure for A",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Enterprise Cloud AI Infrastructure for Agent-Centric Column-Aware Prompt Optimization for Data Tasks with LLMs",
+    "description": "Academic work: Enterprise Cloud AI Infrastructure for Agent-Centric Column-Aware Prompt Optimization for Data Tasks with LLMs. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 45,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.43,
+   "band": [
+    25.0,
+    65.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Enterprise Cloud AI Infrastructure for Agent-Centric Column-Aware Prompt Optimization for Data Tasks with LLMs",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/99eae810fe8d98bab2b1685d0358fc8d12592c6c",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 36/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/99eae810fe8d98bab2b1685d0358fc8d12592c6c",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 0 citations, h-index 4.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/99eae810fe8d98bab2b1685d0358fc8d12592c6c",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/99eae810fe8d98bab2b1685d0358fc8d12592c6c",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_victor_frimpong",
+  "name": "Victor Frimpong",
+  "email": "victor_frimpong@vcbrain.example",
+  "location": "San Francisco",
+  "completeness": 30,
+  "bio": "Victor is a researcher building in AI/ML — first-author of \"The Geopolitical Repricing of AI Infrastructure: Energy, Risk, and Strategic Allocation\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning"
+  ],
+  "contact": {
+   "email": "victor_frimpong@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/victor-frimpong"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://www.semanticscholar.org/paper/b27b878b394de890b0aa94aaf969e4adcdfa4647"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 4,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 10,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_victor_frimpong_p1",
+    "name": "Research: The Geopolitical Repricing of AI Infrast",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "The Geopolitical Repricing of AI Infrastructure: Energy, Risk, and Strategic Allocation",
+    "description": "Academic work: The Geopolitical Repricing of AI Infrastructure: Energy, Risk, and Strategic Allocation. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 45,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.43,
+   "band": [
+    25.0,
+    65.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: The Geopolitical Repricing of AI Infrastructure: Energy, Risk, and Strategic Allocation",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/b27b878b394de890b0aa94aaf969e4adcdfa4647",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 4/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/b27b878b394de890b0aa94aaf969e4adcdfa4647",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 0 citations, h-index 4.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/b27b878b394de890b0aa94aaf969e4adcdfa4647",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/b27b878b394de890b0aa94aaf969e4adcdfa4647",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_r_adepu",
+  "name": "R. Adepu",
+  "email": "r_adepu@vcbrain.example",
+  "location": "Paris",
+  "completeness": 30,
+  "bio": "R. is a researcher building in AI/ML — first-author of \"Cognitive Infrastructure Systems: Integrating AI, LLMs, and Cloud for Next-Generation Enterprise Pla\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning"
+  ],
+  "contact": {
+   "email": "r_adepu@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/r-adepu"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://www.semanticscholar.org/paper/ff8019737788ee665db9291f739d784952f3a283"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 33,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 5,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_r_adepu_p1",
+    "name": "Research: Cognitive Infrastructure Systems: Integr",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Cognitive Infrastructure Systems: Integrating AI, LLMs, and Cloud for Next-Generation Enterprise Platforms",
+    "description": "Academic work: Cognitive Infrastructure Systems: Integrating AI, LLMs, and Cloud for Next-Generation Enterprise Platforms. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 42,
+   "founderTrend": "flat",
+   "market": "Neutral",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.43,
+   "band": [
+    22.0,
+    62.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Cognitive Infrastructure Systems: Integrating AI, LLMs, and Cloud for Next-Generation Enterprise Platforms",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/ff8019737788ee665db9291f739d784952f3a283",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 33/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/ff8019737788ee665db9291f739d784952f3a283",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 0 citations, h-index 1.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/ff8019737788ee665db9291f739d784952f3a283",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/ff8019737788ee665db9291f739d784952f3a283",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_paulo_carvao",
+  "name": "Paulo Carvao",
+  "email": "paulo_carvao@vcbrain.example",
+  "location": "Paris",
+  "completeness": 30,
+  "bio": "Paulo is a researcher building in AI/ML — first-author of \"The AI Infrastructure Triad in Regional Governance: How Regions Balance Progress, Sustainability, an\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning"
+  ],
+  "contact": {
+   "email": "paulo_carvao@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/paulo-carvao"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://www.semanticscholar.org/paper/e276dc3ffd08262c5909d679af2a8a8e1bf7430e"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 1,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 10,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_paulo_carvao_p1",
+    "name": "Research: The AI Infrastructure Triad in Regional ",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "The AI Infrastructure Triad in Regional Governance: How Regions Balance Progress, Sustainability, and Equity",
+    "description": "Academic work: The AI Infrastructure Triad in Regional Governance: How Regions Balance Progress, Sustainability, and Equity. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 42,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.43,
+   "band": [
+    22.0,
+    62.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: The AI Infrastructure Triad in Regional Governance: How Regions Balance Progress, Sustainability, and Equity",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/e276dc3ffd08262c5909d679af2a8a8e1bf7430e",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 1/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/e276dc3ffd08262c5909d679af2a8a8e1bf7430e",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Author impact: 0 citations, h-index 1.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/e276dc3ffd08262c5909d679af2a8a8e1bf7430e",
+    "sourceLabel": "Semantic Scholar"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/e276dc3ffd08262c5909d679af2a8a8e1bf7430e",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_vipindas_aravindakshan",
+  "name": "Vipindas Aravindakshan",
+  "email": "vipindas_aravindakshan@vcbrain.example",
+  "location": "Lagos",
+  "completeness": 30,
+  "bio": "Vipindas is a researcher building in AI/ML — first-author of \"Architectural Considerations for AI Infrastructure at the OT-IT Convergence in Critical Infrastructu\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning"
+  ],
+  "contact": {
+   "email": "vipindas_aravindakshan@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/vipindas-aravindakshan"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://www.semanticscholar.org/paper/16e42e215dceed00c0bc5c3995a698d913a5cb65"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 48,
+    "coverage": 0.2,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 10,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_vipindas_aravindakshan_p1",
+    "name": "Research: Architectural Considerations for AI Infr",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Architectural Considerations for AI Infrastructure at the OT-IT Convergence in Critical Infrastructure",
+    "description": "Academic work: Architectural Considerations for AI Infrastructure at the OT-IT Convergence in Critical Infrastructure. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 41,
+   "founderTrend": "flat",
+   "market": "Bear",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.4,
+   "band": [
+    19.9,
+    62.1
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Architectural Considerations for AI Infrastructure at the OT-IT Convergence in Critical Infrastructure",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/16e42e215dceed00c0bc5c3995a698d913a5cb65",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-potential assessment pending.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/16e42e215dceed00c0bc5c3995a698d913a5cb65",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/16e42e215dceed00c0bc5c3995a698d913a5cb65",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_misbah_zulfiqar",
+  "name": "Misbah Zulfiqar",
+  "email": "misbah_zulfiqar@vcbrain.example",
+  "location": "Lisbon",
+  "completeness": 30,
+  "bio": "Misbah is a researcher building in AI/ML — first-author of \"Conceptualising local AI infrastructure using small language models (SLMs) for primary education\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning"
+  ],
+  "contact": {
+   "email": "misbah_zulfiqar@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/misbah-zulfiqar"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://www.semanticscholar.org/paper/8d2fdb85c9febec69e49eaef91eef49c019d4932"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 22,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 10,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_misbah_zulfiqar_p1",
+    "name": "Research: Conceptualising local AI infrastructure ",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "Conceptualising local AI infrastructure using small language models (SLMs) for primary education",
+    "description": "Academic work: Conceptualising local AI infrastructure using small language models (SLMs) for primary education. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 41,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.43,
+   "band": [
+    21.0,
+    61.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: Conceptualising local AI infrastructure using small language models (SLMs) for primary education",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/8d2fdb85c9febec69e49eaef91eef49c019d4932",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 22/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/8d2fdb85c9febec69e49eaef91eef49c019d4932",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/8d2fdb85c9febec69e49eaef91eef49c019d4932",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
+  "id": "acad_jessica_sciammarelli",
+  "name": "Jessica Sciammarelli",
+  "email": "jessica_sciammarelli@vcbrain.example",
+  "location": "New York",
+  "completeness": 30,
+  "bio": "Jessica is a researcher building in AI/ML — first-author of \"DECENTRALIZED AI INFRASTRUCTURE: INTEGRATING BLOCKCHAIN WITH MLOPS AND DATA GOVERNANCE\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning"
+  ],
+  "contact": {
+   "email": "jessica_sciammarelli@vcbrain.example",
+   "linkedin": "https://www.linkedin.com/in/jessica-sciammarelli"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://www.semanticscholar.org/paper/81cad4ad4bc6858bc33ae1b5a6604f5ac2460bf5"
+    }
+   ]
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 40,
+    "coverage": 0.15,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 30,
+    "coverage": 0.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 32,
+    "coverage": 0.6,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 65,
+    "coverage": 0.4,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 5,
+    "coverage": 0.1,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_jessica_sciammarelli_p1",
+    "name": "Research: DECENTRALIZED AI INFRASTRUCTURE: INTEGRA",
+    "sector": "AI/ML",
+    "stage": "Pre-seed",
+    "oneLiner": "DECENTRALIZED AI INFRASTRUCTURE: INTEGRATING BLOCKCHAIN WITH MLOPS AND DATA GOVERNANCE",
+    "description": "Academic work: DECENTRALIZED AI INFRASTRUCTURE: INTEGRATING BLOCKCHAIN WITH MLOPS AND DATA GOVERNANCE. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 41,
+   "founderTrend": "flat",
+   "market": "Bullish",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.43,
+   "band": [
+    21.0,
+    61.0
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "First-author paper: DECENTRALIZED AI INFRASTRUCTURE: INTEGRATING BLOCKCHAIN WITH MLOPS AND DATA GOVERNANCE",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/81cad4ad4bc6858bc33ae1b5a6604f5ac2460bf5",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 32/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/81cad4ad4bc6858bc33ae1b5a6604f5ac2460bf5",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Founder-intent signal: false.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://www.semanticscholar.org/paper/81cad4ad4bc6858bc33ae1b5a6604f5ac2460bf5",
+    "sourceLabel": "VC Brain pipeline"
    }
   ]
  },

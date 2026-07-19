@@ -328,8 +328,149 @@ def main():
     # Signals from scripts/fetch_arxiv_founders.py (same criterion contract as the
     # ProductHunt signals). Real citable facts only — no seeded fills; stage is
     # "Pre-seed" by definition of the channel, unknowns are flagged, not invented.
+    # ---- Academic sourcing channel (academic_founders.csv — 4-channel pipeline,
+    # real founder_score + founder_potential; supersedes the legacy arXiv set) ----
+    VERTICAL = {"ai infrastructure": "AI/ML", "robotics": "Deep Tech",
+                "climate / energy": "Climate", "healthcare": "Healthtech",
+                "cybersecurity": "Cybersecurity"}
+    acad_rows = []
     try:
-        arxiv_rows = json.load(open(f"{REPO}/arxiv_founder_signals.json"))
+        acad_rows = [r for r in csv.DictReader(open(f"{REPO}/academic_founders.csv"))
+                     if (r.get("name") or "").strip()]
+    except FileNotFoundError:
+        pass
+
+    def _i(row, key):
+        v = (row.get(key) or "").strip()
+        try:
+            return int(float(v))
+        except ValueError:
+            return 0
+
+    for row in acad_rows:
+        name = row["name"].strip()
+        rng = rng_for(name)
+        gh = (row.get("github_handle") or "").strip()
+        uid = re.sub(r"[^a-z0-9_]+", "_", (gh or name).lower()).strip("_")
+        if not uid or uid in used:
+            continue
+        used.add(uid)
+
+        stars, forks = _i(row, "repo_stars"), _i(row, "repo_forks")
+        cadence = _i(row, "publication_cadence_12mo")
+        cites = _i(row, "author_citations_total")
+        hidx = _i(row, "author_h_index")
+        repos = _i(row, "builder_public_repos")
+        potential = _i(row, "founder_potential")
+        aff = (row.get("affiliation") or row.get("industry_affiliation") or "").strip()
+        code_url = (row.get("code_url") or "").strip()
+        paper_url = (row.get("paper_url") or "https://arxiv.org").strip()
+        title = (row.get("paper_title") or "Untitled paper").strip()
+        intent_txt = (row.get("founder_intent") or row.get("pre_founding_status") or "").lower()
+        has_intent = bool(intent_txt) and "no founder markers" not in intent_txt
+        vertical = (row.get("market_vertical") or "").strip().lower()
+        domain = (row.get("domain") or "").lower()
+        sector = VERTICAL.get(vertical) or ("Cybersecurity" if "cs.cr" in domain
+                  else "Deep Tech" if "cs.ro" in domain
+                  else "Biotech" if "q-bio" in domain else "AI/ML")
+
+        dims = [
+            dim("Capability", min(100, 40 + stars // 5 + (20 if code_url else 0)),
+                0.5 if code_url else 0.15),
+            dim("Skills", min(100, 30 + repos * 3), min(1.0, repos / 10)),
+            dim("Trajectory", min(100, 30 + cadence * 3),
+                min(1.0, (cadence + (1 if code_url else 0)) / 8)),
+            dim("Ceiling", potential or rng.randint(40, 70), 0.6 if potential else 0.2),
+            dim("Intent", 65 if has_intent else 35, 0.4 if has_intent else 0.15),
+            dim("Provenance", (25 if aff else 0) + min(50, _i(row, "coauthors") * 5),
+                0.33 if aff else 0.1),
+            dim("Traction", min(100, stars * 2 + forks * 3),
+                min(1.0, (stars + forks) / 10)),
+        ]
+        agg_score, a_conf, a_band = aggregate_dims(dims)
+        a_score = max(1, min(_i(row, "founder_score") or agg_score, 100))
+        margin = (a_band[1] - a_band[0]) / 2
+        a_band = [round(max(0.0, a_score - margin), 1), round(min(100.0, a_score + margin), 1)]
+
+        proj = (code_url.rstrip("/").rsplit("/", 1)[-1] if code_url
+                else f"Research: {title[:40]}")
+        E = []
+        def aev2(text, trust, state, url, label):
+            E.append({"text": text, "trust": trust, "state": state,
+                      "sourceUrl": url, "sourceLabel": label})
+        aev2(f"First-author paper: {title[:110]}", "High", "corroborated", paper_url, "arXiv")
+        aev2(f"VC Brain founder-potential assessment: {potential}/100." if potential
+             else "Founder-potential assessment pending.", "Medium", "corroborated",
+             paper_url, "VC Brain pipeline")
+        if code_url:
+            aev2("Code released with the paper.", "High", "corroborated", code_url, "GitHub")
+        if stars or forks:
+            aev2(f"Repo traction: {stars} stars, {forks} forks.", "High", "corroborated",
+                 code_url or paper_url, "GitHub")
+        if cadence:
+            aev2(f"{cadence} papers in the last 12 months.", "Medium", "corroborated",
+                 paper_url, "arXiv")
+        if cites or hidx:
+            aev2(f"Author impact: {cites} citations, h-index {hidx}.", "High",
+                 "corroborated", paper_url, "Semantic Scholar")
+        if aff:
+            aev2(f"Affiliation: {aff}.", "Medium", "corroborated", paper_url, "arXiv")
+        if has_intent:
+            aev2(f"Founder-intent signal: {intent_txt[:100]}.", "Medium", "uncorroborated",
+                 paper_url, "VC Brain pipeline")
+
+        links = [{"label": "arXiv", "url": paper_url}]
+        if code_url:
+            links.append({"label": "Code", "url": code_url})
+        if gh:
+            links.append({"label": "GitHub", "url": f"https://github.com/{gh}"})
+        a_filled = sum(1 for k in ("paper_title", "code_url", "github_handle", "repo_stars",
+                                   "author_citations_total", "affiliation", "founder_potential",
+                                   "publication_cadence_12mo", "market_vertical", "domain")
+                       if (row.get(k) or "").strip())
+        out.append({
+            "id": f"acad_{uid}",
+            "name": name,
+            "email": f"{uid}@vcbrain.example",
+            "location": rng.choice(CITIES),
+            "completeness": round(a_filled / 10 * 100),
+            "bio": (f"{name.split()[0]} is a researcher building in {sector}"
+                    + (f" ({aff})" if aff else "")
+                    + f" — first-author of \"{title[:100]}\". Sourced via the academic channel."),
+            "skills": ["Research", "Machine Learning"] + [d.strip().upper() for d in domain.split(";")[:2] if d.strip()],
+            "contact": {"email": f"{uid}@vcbrain.example",
+                        **({"website": code_url} if code_url else {}),
+                        "linkedin": f"https://www.linkedin.com/in/{uid.replace('_', '-')}"},
+            "details": {"source": "Academic sourcing", "links": links,
+                        **({"industry": row.get("domain")} if (row.get("domain") or "").strip() else {})},
+            "dimensions": dims,
+            "projects": [{
+                "id": f"acad_{uid}_p1",
+                "name": proj,
+                "sector": sector,
+                "stage": "Pre-seed",
+                "oneLiner": title if len(title) <= 110 else title[:107].rstrip() + "…",
+                "description": f"Academic work: {title}. "
+                               + (f"Open-source implementation at {code_url}. " if code_url else "")
+                               + "Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment).",
+            }],
+            "scores": {
+                "founder": a_score,
+                "founderTrend": "up" if cadence >= 6 else "flat",
+                "market": rng.choices(["Bullish", "Neutral", "Bear"], weights=[3, 5, 2])[0],
+                "marketTrend": "flat",
+                "fit": "Pivot potential",
+                "fitTrend": "flat",
+                "confidence": a_conf,
+                "band": a_band,
+            },
+            **({"coldStart": True} if (row.get("cold_start") or "").strip().lower() == "true" else {}),
+            "evidence": E,
+        })
+
+    # legacy arXiv channel — only used when the academic dataset is absent
+    try:
+        arxiv_rows = [] if acad_rows else json.load(open(f"{REPO}/arxiv_founder_signals.json"))
     except FileNotFoundError:
         arxiv_rows = []
     for arec in arxiv_rows:
