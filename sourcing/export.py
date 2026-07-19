@@ -17,6 +17,7 @@ import json
 import os
 import sys
 
+from . import identity
 from . import memory
 from . import memo as memo_mod
 from . import reference_class as rc_mod
@@ -76,8 +77,8 @@ def _tags(fs, screen, fit):
     return tags
 
 
-def build_founder_view(record, thesis, source_track="outbound"):
-    fs = FounderScore.from_record(record)
+def build_founder_view(fs, thesis):
+    source_track = "+".join(fs.attributes.get("sources", [])) or "outbound"
     signals = memory.latest_signals(fs.handle)
     screen = screening.screen_founder(fs, fs.attributes, persist=False)
     fit = thesis_mod.evaluate(thesis, fs)
@@ -134,7 +135,8 @@ def build_founder_view(record, thesis, source_track="outbound"):
 def build_dataset(thesis=None):
     thesis = thesis or thesis_mod.load_default()
     latest, counts = memory.latest_by_entity()
-    founders = [build_founder_view(rec, thesis) for rec in latest.values()]
+    people = identity.resolve_and_merge(latest)          # cross-source dedup → one entity per founder
+    founders = [build_founder_view(fs, thesis) for fs in people]
     # Funnel order = thesis fit desc, then founder score desc.
     founders.sort(key=lambda v: (v["thesis_fit"]["fit_score"], v["founder_score"]["value"]), reverse=True)
 
@@ -156,6 +158,7 @@ def build_dataset(thesis=None):
         },
         "summary": {
             "total_founders": len(founders),
+            "resolved_from_entities": len(latest),   # pre-dedup entity count (cross-source merge)
             "scoring_runs": sum(counts.values()),
             "by_verdict": _tally(["thesis_fit", "verdict"]),
             "by_sector": _tally(["sector"]),

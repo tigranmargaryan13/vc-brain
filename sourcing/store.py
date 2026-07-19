@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import sys
 
+from . import identity
 from . import memory
 from . import thesis as thesis_mod
 from .founder_score import FounderScore
@@ -59,24 +60,26 @@ def show_thesis_funnel(thesis_path=None):
     if not latest:
         print("Memory store is empty — run `python -m sourcing.score <handle>` first.")
         return
+    people = identity.resolve_and_merge(latest)   # cross-source dedup
     rows = []
-    for rec in latest.values():
-        fit = thesis_mod.evaluate(thesis, FounderScore.from_record(rec))
-        rows.append((rec, fit))
+    for fs in people:
+        fit = thesis_mod.evaluate(thesis, fs)
+        rows.append((fs, fit))
     # Rank by thesis fit, then verdict — this is the fund-specific funnel.
     order = {"ADVANCE": 0, "REVIEW": 1, "PASS": 2}
     rows.sort(key=lambda rf: (order.get(rf[1].verdict, 3), -rf[1].fit_score))
 
     print(f"\n  FUNNEL THROUGH THESIS — {thesis.name}")
-    print(f"  (risk: {thesis.risk_appetite}, bar {thesis.bar():.0f} | "
-          f"sectors: {', '.join(thesis.sectors) or 'any'} | geos: {', '.join(thesis.geographies) or 'any'})")
-    print("  " + "─" * 70)
-    print(f"  {'founder':<20}{'verdict':>9}{'fit':>6}{'score':>7}  matched / flags")
-    print("  " + "─" * 70)
-    for rec, fit in rows:
+    print(f"  ({len(people)} founders from {len(latest)} entities after cross-source dedup | "
+          f"risk: {thesis.risk_appetite}, bar {thesis.bar():.0f})")
+    print("  " + "─" * 72)
+    print(f"  {'founder':<20}{'verdict':>9}{'fit':>6}{'score':>7}  source / matched / flags")
+    print("  " + "─" * 72)
+    for fs, fit in rows:
+        src = "+".join(fs.attributes.get("sources", [])) or "?"
         note = "; ".join(fit.matched[:1] + fit.flags[:1]) or "—"
-        print(f"  @{rec['entity']:<19}{fit.verdict:>9}{fit.fit_score:>6.0f}"
-              f"{rec['score']:>7.1f}  {note[:34]}")
+        print(f"  @{fs.handle:<19}{fit.verdict:>9}{fit.fit_score:>6.0f}"
+              f"{fs.score:>7.1f}  [{src}] {note[:26]}")
     print()
 
 
