@@ -6,12 +6,13 @@ import { ScoreTriad, ClaimLine } from "@/components/scores";
 
 function verdictStyles(v: Memo["verdict"]) {
   switch (v) {
-    case "Strong yes": return "border-emerald-500/50 bg-emerald-500/10 text-emerald-300";
-    case "Conditional yes": return "border-brand/50 bg-gradient-brand/15 text-foreground";
-    case "Watch": return "border-amber-500/50 bg-amber-500/10 text-amber-300";
-    case "Pass": return "border-rose-500/50 bg-rose-500/10 text-rose-300";
+    case "Strong yes": return "border-emerald-600/40 bg-emerald-50 text-emerald-800";
+    case "Conditional yes": return "border-brand/50 bg-brand/10 text-brand";
+    case "Watch": return "border-amber-600/40 bg-amber-50 text-amber-800";
+    case "Pass": return "border-rose-600/40 bg-rose-50 text-rose-800";
   }
 }
+
 
 function Section({ section }: { section: MemoSection }) {
   const [open, setOpen] = useState(true);

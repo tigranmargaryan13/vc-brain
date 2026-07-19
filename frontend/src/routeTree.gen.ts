@@ -15,6 +15,7 @@ import { Route as AuthenticatedRouteImport } from './routes/_authenticated'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AuthenticatedThesisRouteImport } from './routes/_authenticated.thesis'
 import { Route as AuthenticatedSettingsRouteImport } from './routes/_authenticated.settings'
+import { Route as AuthenticatedProfileRouteImport } from './routes/_authenticated.profile'
 import { Route as AuthenticatedHuntRouteImport } from './routes/_authenticated.hunt'
 import { Route as AuthenticatedDashboardRouteImport } from './routes/_authenticated.dashboard'
 import { Route as AuthenticatedCriteriaRouteImport } from './routes/_authenticated.criteria'
@@ -49,6 +50,11 @@ const AuthenticatedThesisRoute = AuthenticatedThesisRouteImport.update({
 const AuthenticatedSettingsRoute = AuthenticatedSettingsRouteImport.update({
   id: '/settings',
   path: '/settings',
+  getParentRoute: () => AuthenticatedRoute,
+} as any)
+const AuthenticatedProfileRoute = AuthenticatedProfileRouteImport.update({
+  id: '/profile',
+  path: '/profile',
   getParentRoute: () => AuthenticatedRoute,
 } as any)
 const AuthenticatedHuntRoute = AuthenticatedHuntRouteImport.update({
@@ -91,6 +97,7 @@ export interface FileRoutesByFullPath {
   '/criteria': typeof AuthenticatedCriteriaRoute
   '/dashboard': typeof AuthenticatedDashboardRoute
   '/hunt': typeof AuthenticatedHuntRoute
+  '/profile': typeof AuthenticatedProfileRoute
   '/settings': typeof AuthenticatedSettingsRoute
   '/thesis': typeof AuthenticatedThesisRoute
   '/companies/$id': typeof AuthenticatedCompaniesIdRoute
@@ -104,6 +111,7 @@ export interface FileRoutesByTo {
   '/criteria': typeof AuthenticatedCriteriaRoute
   '/dashboard': typeof AuthenticatedDashboardRoute
   '/hunt': typeof AuthenticatedHuntRoute
+  '/profile': typeof AuthenticatedProfileRoute
   '/settings': typeof AuthenticatedSettingsRoute
   '/thesis': typeof AuthenticatedThesisRoute
   '/companies/$id': typeof AuthenticatedCompaniesIdRoute
@@ -119,6 +127,7 @@ export interface FileRoutesById {
   '/_authenticated/criteria': typeof AuthenticatedCriteriaRoute
   '/_authenticated/dashboard': typeof AuthenticatedDashboardRoute
   '/_authenticated/hunt': typeof AuthenticatedHuntRoute
+  '/_authenticated/profile': typeof AuthenticatedProfileRoute
   '/_authenticated/settings': typeof AuthenticatedSettingsRoute
   '/_authenticated/thesis': typeof AuthenticatedThesisRoute
   '/_authenticated/companies/$id': typeof AuthenticatedCompaniesIdRoute
@@ -134,6 +143,7 @@ export interface FileRouteTypes {
     | '/criteria'
     | '/dashboard'
     | '/hunt'
+    | '/profile'
     | '/settings'
     | '/thesis'
     | '/companies/$id'
@@ -147,6 +157,7 @@ export interface FileRouteTypes {
     | '/criteria'
     | '/dashboard'
     | '/hunt'
+    | '/profile'
     | '/settings'
     | '/thesis'
     | '/companies/$id'
@@ -161,6 +172,7 @@ export interface FileRouteTypes {
     | '/_authenticated/criteria'
     | '/_authenticated/dashboard'
     | '/_authenticated/hunt'
+    | '/_authenticated/profile'
     | '/_authenticated/settings'
     | '/_authenticated/thesis'
     | '/_authenticated/companies/$id'
@@ -216,6 +228,13 @@ declare module '@tanstack/react-router' {
       path: '/settings'
       fullPath: '/settings'
       preLoaderRoute: typeof AuthenticatedSettingsRouteImport
+      parentRoute: typeof AuthenticatedRoute
+    }
+    '/_authenticated/profile': {
+      id: '/_authenticated/profile'
+      path: '/profile'
+      fullPath: '/profile'
+      preLoaderRoute: typeof AuthenticatedProfileRouteImport
       parentRoute: typeof AuthenticatedRoute
     }
     '/_authenticated/hunt': {
@@ -282,6 +301,7 @@ interface AuthenticatedRouteChildren {
   AuthenticatedCriteriaRoute: typeof AuthenticatedCriteriaRoute
   AuthenticatedDashboardRoute: typeof AuthenticatedDashboardRoute
   AuthenticatedHuntRoute: typeof AuthenticatedHuntRoute
+  AuthenticatedProfileRoute: typeof AuthenticatedProfileRoute
   AuthenticatedSettingsRoute: typeof AuthenticatedSettingsRoute
   AuthenticatedThesisRoute: typeof AuthenticatedThesisRoute
   AuthenticatedFounderIdRoute: typeof AuthenticatedFounderIdRoute
@@ -292,6 +312,7 @@ const AuthenticatedRouteChildren: AuthenticatedRouteChildren = {
   AuthenticatedCriteriaRoute: AuthenticatedCriteriaRoute,
   AuthenticatedDashboardRoute: AuthenticatedDashboardRoute,
   AuthenticatedHuntRoute: AuthenticatedHuntRoute,
+  AuthenticatedProfileRoute: AuthenticatedProfileRoute,
   AuthenticatedSettingsRoute: AuthenticatedSettingsRoute,
   AuthenticatedThesisRoute: AuthenticatedThesisRoute,
   AuthenticatedFounderIdRoute: AuthenticatedFounderIdRoute,

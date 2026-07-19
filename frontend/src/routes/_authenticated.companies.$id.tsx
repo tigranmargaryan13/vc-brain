@@ -3,8 +3,10 @@ import { useEffect, useState } from "react";
 import { AppShell } from "@/components/app-shell";
 import { getCompany, updateCompany, type Company } from "@/lib/api";
 import { CompanyForm } from "@/components/company-form";
+import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
+
 
 export const Route = createFileRoute("/_authenticated/companies/$id")({
   component: CompanyDetail,
@@ -30,10 +32,17 @@ function CompanyDetail() {
 
   return (
     <AppShell title={c.name}>
-      <div className="mb-4">
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
         <button onClick={() => navigate({ to: "/companies" })} className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-brand">
           <ArrowLeft className="h-3.5 w-3.5" /> Back to companies
         </button>
+        {c.deckUrl ? (
+          <Button asChild size="sm" variant="outline" className="border-brand/40 text-brand hover:bg-brand/5">
+            <a href={c.deckUrl} target="_blank" rel="noreferrer">
+              <ExternalLink className="mr-1.5 h-3.5 w-3.5" /> Open deck
+            </a>
+          </Button>
+        ) : null}
       </div>
       <div className="rounded-2xl border border-border/60 bg-surface/60 p-6 backdrop-blur">
         <CompanyForm initial={c} onSubmit={onSave} submitLabel="Save changes" submitting={saving} />

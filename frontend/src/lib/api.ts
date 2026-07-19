@@ -64,6 +64,7 @@ export type Company = {
   location?: string;
   oneLiner?: string;
   notes?: string;
+  deckUrl?: string;
   createdAt: string;
 };
 
@@ -156,6 +157,135 @@ function currentSession(): Session | null {
 function scopedKey(base: string, session: Session | null) {
   if (!session) return base;
   return `${base}:${session.email}:${session.persona}`;
+}
+
+// ---------- Sourced dataset (fetched from GitHub) ----------
+const SOURCED_URL = "https://raw.githubusercontent.com/tigranmargaryan13/vc-brain/ui/data/ui/sourced_founders.json";
+let sourcedCache: FounderProfile[] | null = null;
+async function loadSourced(): Promise<FounderProfile[]> {
+  if (sourcedCache) return sourcedCache;
+  try {
+    const r = await fetch(SOURCED_URL);
+    if (!r.ok) return [];
+    const d = await r.json();
+    if (!Array.isArray(d)) return [];
+    sourcedCache = d.filter((f: FounderProfile) => f && f.id && f.name && Array.isArray(f.projects) && f.scores && Array.isArray(f.evidence));
+    return sourcedCache;
+  } catch {
+    return [];
+  }
+}
+const KNOWN_SECTORS = ["AI/ML", "Fintech", "Climate", "Healthtech", "Dev Tools", "Consumer", "Deep Tech", "Biotech", "Cybersecurity", "SaaS"];
+
+function mapIndustryToSector(industry: string | undefined, other?: string): string {
+  const v = (industry === "Other" ? other : industry)?.trim();
+  if (!v) return "SaaS";
+  const hit = KNOWN_SECTORS.find((s) => s.toLowerCase() === v.toLowerCase());
+  return hit ?? v;
+}
+
+export function localApplicantProfiles(): FounderProfile[] {
+  if (typeof window === "undefined") return [];
+  const companies = readJSON<Company[]>(COMPANIES_KEY, []);
+  if (!companies.length) return [];
+  const users = readUsers();
+  const out: FounderProfile[] = [];
+  for (const c of companies) {
+    const owner = users[userKey(c.ownerEmail, "founder")];
+    const displayName = owner?.displayName || c.ownerEmail.split("@")[0];
+    const location = c.location || owner?.location || "Unknown";
+    const sector = mapIndustryToSector(c.industry, c.otherIndustry);
+    const descText = (c.oneLiner || "") + (c.notes ? `\n\n${c.notes}` : "");
+    const descLen = descText.length;
+
+    // Dimensions per SCORING.md
+    const dims: { name: string; value: number; coverage: number; weight: number }[] = [
+      { name: "Capability", value: 0, coverage: 0, weight: 1.3 },
+      { name: "Skills", value: 0, coverage: 0, weight: 1.0 },
+      { name: "Trajectory", value: 0, coverage: 0, weight: 1.0 },
+      { name: "Ceiling", value: 40 + Math.min(40, descLen / 10), coverage: 0.3, weight: 1.5 },
+      { name: "Intent", value: 85, coverage: 0.7, weight: 1.2 },
+      { name: "Provenance", value: 0, coverage: 0, weight: 0.8 },
+      { name: "Traction", value: 0, coverage: 0, weight: 1.0 },
+    ];
+    let num = 0, den = 0;
+    for (const d of dims) {
+      num += d.value * d.coverage * d.weight;
+      den += d.coverage * d.weight;
+    }
+    const score = den > 0 ? num / den : 0;
+    const avgCov = dims.reduce((s, d) => s + d.coverage, 0) / dims.length;
+    const countCov = dims.filter((d) => d.coverage > 0.15).length;
+    const confidence = Math.max(0.10, Math.min(0.95, 0.25 + 0.55 * avgCov + 0.04 * countCov));
+    const spread = (1 - confidence) * 35;
+    const band: [number, number] = [
+      Math.max(0, Math.round(score - spread)),
+      Math.min(100, Math.round(score + spread)),
+    ];
+
+    const evidence: FounderProfile["evidence"] = [
+      { text: "Applied in-app with a pitch deck.", trust: "High", state: "corroborated", sourceUrl: "#", sourceLabel: "Application" },
+    ];
+    if (c.website) {
+      evidence.push({ text: `Website: ${c.website}`, trust: "Medium", state: "uncorroborated", sourceUrl: c.website, sourceLabel: "Founder-provided" });
+    }
+    if (c.oneLiner) {
+      evidence.push({ text: c.oneLiner, trust: "Medium", state: "uncorroborated", sourceUrl: "#", sourceLabel: "Founder-provided" });
+    }
+
+    const deckAttached = !!(c.deckUrl || c.pitchDeckName);
+
+    const project: Project = {
+      id: `p_${c.id}`,
+      name: c.name,
+      sector,
+      stage: "Pre-seed",
+      oneLiner: c.oneLiner || "",
+      description: descText || undefined,
+    };
+
+    const links: { label: string; url: string }[] = [];
+    if (c.website) links.push({ label: "Website", url: c.website });
+
+    out.push({
+      id: `local_${c.id}`,
+      name: displayName,
+      email: c.ownerEmail,
+      location,
+      projects: [project],
+      scores: {
+        founder: Math.round(score),
+        founderTrend: "flat",
+        market: "Neutral",
+        marketTrend: "flat",
+        fit: "Survives as-is",
+        fitTrend: "flat",
+        confidence,
+        band,
+      },
+      coldStart: true,
+      evidence,
+      bio: owner?.bio,
+      contact: { email: c.ownerEmail, website: c.website },
+      dimensions: dims,
+      details: {
+        source: "In-app application",
+        links: links.length ? links : undefined,
+      },
+      track: "inbound",
+      deck: deckAttached
+        ? {
+            pdfUrl: c.deckUrl,
+            notes: c.pitchDeckName ? `Uploaded: ${c.pitchDeckName}` : undefined,
+          }
+        : undefined,
+    });
+  }
+  return out;
+}
+
+async function allFounders(): Promise<FounderProfile[]> {
+  return [...MOCK_FOUNDERS, ...(await loadSourced()), ...localApplicantProfiles()];
 }
 
 // ---------- Auth ----------
@@ -283,15 +413,6 @@ export async function updateNotificationPrefs(next: NotificationPrefs): Promise<
 }
 
 // ---------- Investor: founders / hunt ----------
-// --- real backend (FastAPI over the sourcing pipeline); falls back to mock if offline ---
-const API_URL = (import.meta as any).env?.VITE_API_URL || "http://localhost:8000";
-
-async function apiGet<T>(path: string): Promise<T> {
-  const res = await fetch(`${API_URL}${path}`);
-  if (!res.ok) throw new Error(`API ${res.status}`);
-  return (await res.json()) as T;
-}
-
 export async function searchFounders(params: {
   q?: string;
   sector?: string;
@@ -299,12 +420,7 @@ export async function searchFounders(params: {
   location?: string;
   savedOnly?: boolean;
 }): Promise<FounderProfile[]> {
-  let list: FounderProfile[];
-  try {
-    list = await apiGet<FounderProfile[]>("/api/founders?limit=200");
-  } catch {
-    list = MOCK_FOUNDERS.slice(); // backend offline -> mock fallback
-  }
+  let list = (await allFounders()).slice();
   const q = params.q?.trim().toLowerCase();
   if (q) {
     list = list.filter(
@@ -332,11 +448,8 @@ export async function searchFounders(params: {
 }
 
 export async function getFounder(id: string): Promise<FounderProfile | null> {
-  try {
-    return await apiGet<FounderProfile>(`/api/founders/${encodeURIComponent(id)}`);
-  } catch {
-    return delay(MOCK_FOUNDERS.find((f) => f.id === id) ?? null); // offline / not found -> mock
-  }
+  const list = await allFounders();
+  return delay(list.find((f) => f.id === id) ?? null);
 }
 
 export async function listSaved(): Promise<string[]> {
@@ -358,18 +471,15 @@ export async function unsaveProject(founderId: string): Promise<string[]> {
 }
 
 export async function generateMemo(founderId: string, projectId: string): Promise<Memo> {
-  // Real memo from the backend (already produced by the scoring pipeline).
-  try {
-    const bf = await apiGet<FounderProfile>(`/api/founders/${encodeURIComponent(founderId)}`);
-    const memo = bf.memoFor?.[projectId] ?? Object.values(bf.memoFor ?? {})[0];
-    if (memo) return delay(memo, 300);
-  } catch {
-    /* backend offline -> mock fallback below */
-  }
-  const f = MOCK_FOUNDERS.find((x) => x.id === founderId);
+  const list = await allFounders();
+  const f = list.find((x) => x.id === founderId);
   if (!f) throw new Error("Founder not found.");
   const p = f.projects.find((x) => x.id === projectId) ?? f.projects[0];
+  const cacheKey = scopedKey(`${MEMOS_KEY}:${founderId}:${p.id}`, currentSession());
+  const cached = readJSON<Memo | null>(cacheKey, null);
+  if (cached) return delay(cached, 400);
   const memo = f.memoFor?.[p.id] ?? buildTemplateMemo(f, p);
+  writeJSON(cacheKey, memo);
   return delay(memo, 900);
 }
 
@@ -506,6 +616,81 @@ export async function listInvitationsForInvestor(): Promise<Invitation[]> {
   return delay(readJSON<Invitation[]>(INVITES_KEY, []).filter((i) => i.investorEmail === s.email));
 }
 
+export async function countInvitationsForFounder(founderId: string): Promise<number> {
+  const all = readJSON<Invitation[]>(INVITES_KEY, []);
+  return delay(all.filter((i) => i.founderId === founderId).length);
+}
+
+// ---------- Matching ----------
+export type MatchReason = { kind: "sector" | "stage" | "geography" | "keyword" | "founder"; label: string };
+export type MatchResult = { score: number; reasons: MatchReason[] };
+
+function tokenize(s: string): string[] {
+  return (s || "")
+    .toLowerCase()
+    .split(/[^a-z0-9]+/)
+    .filter((t) => t.length >= 3);
+}
+
+export function matchScore(
+  founder: FounderProfile,
+  thesis: Thesis,
+  interests: string[] = [],
+): MatchResult {
+  const reasons: MatchReason[] = [];
+  let score = 0;
+
+  const sectorHit = founder.projects.find((p) => thesis.sectors.includes(p.sector));
+  if (sectorHit) { score += 40; reasons.push({ kind: "sector", label: `Sector: ${sectorHit.sector}` }); }
+
+  const stageHit = founder.projects.find((p) => p.stage === thesis.stage);
+  if (stageHit) { score += 20; reasons.push({ kind: "stage", label: `Stage: ${stageHit.stage}` }); }
+
+  const geo = thesis.geography?.trim().toLowerCase();
+  if (geo && founder.location?.toLowerCase().includes(geo)) {
+    score += 10;
+    reasons.push({ kind: "geography", label: `Geo: ${founder.location}` });
+  }
+
+  const kwTokens = new Set<string>();
+  [...thesis.sectors, ...interests].forEach((s) => tokenize(s).forEach((t) => kwTokens.add(t)));
+  const haystack = [
+    ...founder.projects.map((p) => `${p.description ?? ""} ${p.oneLiner}`),
+    ...(founder.skills ?? []),
+  ].join(" ").toLowerCase();
+  let kwPts = 0;
+  const kwSeen: string[] = [];
+  for (const t of kwTokens) {
+    if (kwPts >= 15) break;
+    if (haystack.includes(t)) { kwPts += 3; kwSeen.push(t); }
+  }
+  if (kwPts > 0) {
+    score += Math.min(15, kwPts);
+    reasons.push({ kind: "keyword", label: `Keyword: ${kwSeen.slice(0, 2).join(", ")}` });
+  }
+
+  const fpts = 15 * (founder.scores.founder / 100);
+  score += fpts;
+  reasons.push({ kind: "founder", label: `Founder ${founder.scores.founder}` });
+
+  return { score: Math.round(score), reasons };
+}
+
+export async function hasThesis(): Promise<boolean> {
+  const s = currentSession();
+  return readJSON<Thesis | null>(scopedKey(THESIS_KEY, s), null) !== null;
+}
+
+export async function listMatchedFounders(): Promise<{ founder: FounderProfile; match: MatchResult }[]> {
+  const [list, thesis, user] = await Promise.all([allFounders(), getThesis(), getCurrentUser()]);
+  const interests = user?.onboarding?.interests ?? [];
+  return list
+    .map((f) => ({ founder: f, match: matchScore(f, thesis, interests) }))
+    .filter((x) => x.match.score >= 45)
+    .sort((a, b) => b.match.score - a.match.score);
+}
+
+
 export async function respondToInvitation(id: string, action: "accept" | "decline"): Promise<Invitation> {
   const all = readJSON<Invitation[]>(INVITES_KEY, []);
   const idx = all.findIndex((i) => i.id === id);
@@ -552,7 +737,7 @@ export async function listNotifications(): Promise<Notification[]> {
     // Two seeded best-match alerts referencing mock founders
     const thesis = await getThesis();
     const sectorLabel = thesis.sectors[0] ?? "AI/ML";
-    const seeds = MOCK_FOUNDERS.slice(0, 2);
+    const seeds = (await allFounders()).slice(0, 2);
     for (const f of seeds) {
       const nid = `n_match_${f.id}`;
       out.push({
@@ -586,3 +771,177 @@ export async function markAllNotificationsRead(): Promise<void> {
 
 // Re-export types consumers need
 export type { FounderProfile, Project, Memo, Investment, CriteriaGroup } from "./mock-data";
+
+// ---------- Natural-language query parser ----------
+export type TraitKind =
+  | "technical" | "serial" | "traction" | "noVc"
+  | "accelerator" | "coldStart" | "researcher" | "inbound";
+
+export type ParsedConstraint =
+  | { kind: "sector"; value: string; source: string }
+  | { kind: "location"; value: string; source: string }
+  | { kind: "stage"; value: string; source: string }
+  | { kind: "scoreMin"; value: number; source: string }
+  | { kind: "trait"; trait: TraitKind; source: string; exclude?: boolean; bestEffort?: boolean }
+  | { kind: "keyword"; value: string };
+
+export type ParsedQuery = { raw: string; constraints: ParsedConstraint[] };
+
+const SECTOR_SYNONYMS: { patterns: RegExp[]; value: string }[] = [
+  { value: "AI/ML", patterns: [/\bai\s*infra(structure)?\b/, /\bartificial intelligence\b/, /\bai\/ml\b/, /\bai\b/, /\bml\b/, /\bmachine learning\b/, /\bllm[s]?\b/, /\bagents?\b/] },
+  { value: "Dev Tools", patterns: [/\bdev\s*tools?\b/, /\bdevtools?\b/, /\bdeveloper tools?\b/] },
+  { value: "Fintech", patterns: [/\bfintech\b/, /\bpayments?\b/, /\bbanking\b/] },
+  { value: "Climate", patterns: [/\bclimate\b/, /\benergy\b/, /\bcleantech\b/] },
+  { value: "Healthtech", patterns: [/\bhealth(tech)?\b/, /\bmedtech\b/, /\bmedical\b/] },
+  { value: "Cybersecurity", patterns: [/\bcyber(security)?\b/, /\bsecurity\b/, /\binfosec\b/] },
+  { value: "Deep Tech", patterns: [/\brobotics?\b/, /\bhardware\b/, /\bdeep\s*tech\b/] },
+  { value: "Biotech", patterns: [/\bbio(tech)?\b/] },
+  { value: "SaaS", patterns: [/\bsaas\b/, /\bb2b\b/] },
+  { value: "Consumer", patterns: [/\bconsumer\b/, /\bsocial\b/, /\bb2c\b/] },
+];
+
+const PARSER_LOCATIONS = ["Berlin", "London", "Paris", "Amsterdam", "Lisbon", "San Francisco", "New York", "Tokyo", "Nairobi", "Lagos", "Mexico City", "Toronto", "Los Angeles", "Vancouver", "Remote"];
+
+const STAGE_SYNONYMS: { patterns: RegExp[]; value: string }[] = [
+  { value: "Pre-seed", patterns: [/\bpre[-\s]?seed\b/] },
+  { value: "Series A", patterns: [/\bseries\s*a\b/] },
+  { value: "Series B", patterns: [/\bseries\s*b\b/] },
+  { value: "Seed", patterns: [/\bseed\b/] },
+];
+
+const TECHNICAL_SKILL_RE = /\b(engineer|developer|python|typescript|javascript|react|node|ml|ai|llm|backend|frontend|full.?stack|rust|golang|go|kubernetes|docker|scala|c\+\+|cto|technical|infra|systems)\b/i;
+
+function fragmentToConstraint(frag: string): ParsedConstraint[] {
+  const f = frag.trim();
+  if (!f) return [];
+  const lo = f.toLowerCase();
+  const out: ParsedConstraint[] = [];
+
+  const scoreM = lo.match(/score\s*(?:>=|>|above|over|at least|min(?:imum)?)\s*(\d{1,3})/);
+  if (scoreM) return [{ kind: "scoreMin", value: Math.min(100, parseInt(scoreM[1], 10)), source: f }];
+  if (/\b(strong|top|great|elite)\s+founder\b/.test(lo) || /\bhigh score\b/.test(lo)) {
+    out.push({ kind: "scoreMin", value: 70, source: f });
+  }
+
+  for (const s of STAGE_SYNONYMS) if (s.patterns.some((p) => p.test(lo))) { out.push({ kind: "stage", value: s.value, source: f }); break; }
+  for (const loc of PARSER_LOCATIONS) if (new RegExp(`\\b${loc.toLowerCase()}\\b`).test(lo)) { out.push({ kind: "location", value: loc, source: f }); break; }
+  for (const s of SECTOR_SYNONYMS) if (s.patterns.some((p) => p.test(lo))) { out.push({ kind: "sector", value: s.value, source: f }); break; }
+
+  if (/\btechnical founder\b|\bengineer\b|\bbuilder\b/.test(lo)) out.push({ kind: "trait", trait: "technical", source: f });
+  if (/\b(serial|repeat)\s+founder\b/.test(lo)) out.push({ kind: "trait", trait: "serial", source: f });
+  if (/\btraction\b|\brevenue\b|\bcustomers?\b/.test(lo)) out.push({ kind: "trait", trait: "traction", source: f });
+  if (/\b(no|without|zero)\s+(prior\s+)?(vc|venture)(\s*(backing|funding|money))?\b|\bunfunded\b|\bbootstrap(ped)?\b/.test(lo))
+    out.push({ kind: "trait", trait: "noVc", source: f, exclude: true, bestEffort: true });
+  if (/\btop[-\s]?tier\s+accelerator\b|\byc\b|\by[-\s]?combinator\b|\baccelerator\b|\bincubat/.test(lo))
+    out.push({ kind: "trait", trait: "accelerator", source: f });
+  if (/\bcold[-\s]?start\b|\bunder the radar\b/.test(lo)) out.push({ kind: "trait", trait: "coldStart", source: f });
+  if (/\bresearcher\b|\bacademic\b|\bphd\b|\barxiv\b/.test(lo)) out.push({ kind: "trait", trait: "researcher", source: f });
+  if (/\binbound\b|\bapplied\b|\bapplication\b/.test(lo)) out.push({ kind: "trait", trait: "inbound", source: f });
+
+  if (out.length === 0) {
+    const cleaned = f.replace(/["]/g, "").trim();
+    if (cleaned.length >= 2) out.push({ kind: "keyword", value: cleaned });
+  }
+  return out;
+}
+
+export function parseQuery(q: string): ParsedQuery {
+  const raw = (q ?? "").trim();
+  if (!raw) return { raw, constraints: [] };
+  const frags = raw.split(/,|;|\s+\band\b\s+|\s+\bwith\b\s+|\s*\+\s*/i).map((s) => s.trim()).filter(Boolean);
+  const all: ParsedConstraint[] = [];
+  for (const frag of frags) all.push(...fragmentToConstraint(frag));
+  const seen = new Set<string>();
+  const out: ParsedConstraint[] = [];
+  for (const c of all) {
+    const key =
+      c.kind === "trait" ? `trait:${c.trait}` :
+      c.kind === "keyword" ? `kw:${c.value.toLowerCase()}` :
+      `${c.kind}:${String((c as { value: unknown }).value).toLowerCase()}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(c);
+  }
+  return { raw, constraints: out };
+}
+
+function founderHaystack(f: FounderProfile): string {
+  return [
+    f.name,
+    f.bio ?? "",
+    (f.skills ?? []).join(" "),
+    f.projects.map((p) => `${p.name} ${p.oneLiner} ${p.description ?? ""}`).join(" "),
+    f.evidence.map((e) => `${e.text} ${e.sourceLabel}`).join(" "),
+    f.details?.source ?? "",
+    f.details?.industry ?? "",
+  ].join(" ").toLowerCase();
+}
+
+function hasTechnicalSignal(f: FounderProfile): boolean {
+  if ((f.skills ?? []).some((s) => TECHNICAL_SKILL_RE.test(s))) return true;
+  const cap = f.dimensions?.find((d) => /capabil/i.test(d.name));
+  if (cap && cap.value >= 60) return true;
+  return false;
+}
+
+function hasTractionSignal(f: FounderProfile, hay: string): boolean {
+  const dim = f.dimensions?.find((d) => /traction/i.test(d.name));
+  if (dim && dim.coverage > 0.2) return true;
+  if (/\b(traction|revenue|customers?|paying|arr|mrr)\b/.test(hay)) return true;
+  if ((f.details?.upvotes ?? 0) >= 50) return true;
+  return false;
+}
+
+export function applyParsedQuery(founders: FounderProfile[], parsed: ParsedQuery): FounderProfile[] {
+  if (!parsed.constraints.length) return founders;
+  const sectors = parsed.constraints.flatMap((c) => c.kind === "sector" ? [c.value] : []);
+  const stages = parsed.constraints.flatMap((c) => c.kind === "stage" ? [c.value] : []);
+  const locations = parsed.constraints.flatMap((c) => c.kind === "location" ? [c.value] : []);
+  const scoreMins = parsed.constraints.flatMap((c) => c.kind === "scoreMin" ? [c.value] : []);
+  const traits = parsed.constraints.flatMap((c) => c.kind === "trait" ? [c] : []);
+  const keywords = parsed.constraints.flatMap((c) => c.kind === "keyword" ? [c.value.toLowerCase()] : []);
+
+  return founders.filter((f) => {
+    const hay = founderHaystack(f);
+    if (sectors.length && !f.projects.some((p) => sectors.includes(p.sector))) return false;
+    if (stages.length && !f.projects.some((p) => stages.includes(p.stage))) return false;
+    if (locations.length && !locations.some((loc) => (f.location ?? "").toLowerCase().includes(loc.toLowerCase()))) return false;
+    if (scoreMins.length && f.scores.founder < Math.max(...scoreMins)) return false;
+    for (const t of traits) {
+      const has = (() => {
+        switch (t.trait) {
+          case "technical": return hasTechnicalSignal(f);
+          case "serial": return /\b(serial|repeat|multiple\s+(launches|startups)|shipped\s+multiple|prior\s+(launches|startups))\b/.test(hay);
+          case "traction": return hasTractionSignal(f, hay);
+          case "noVc": return /\b(raised|funding|funded|investors?|seed round|series [a-c]|venture)\b/.test(hay);
+          case "accelerator": return /\b(accelerator|y[-\s]?combinator|yc|incubat|techstars)\b/.test(hay);
+          case "coldStart": return !!f.coldStart;
+          case "researcher": return (f.details?.source === "Academic sourcing") || (f.details?.source === "arXiv") || /\b(arxiv|researcher|academic|phd)\b/.test(hay);
+          case "inbound": return (f.track ?? "outbound") === "inbound";
+        }
+      })();
+      if (t.exclude ? has : !has) return false;
+    }
+    for (const kw of keywords) if (!hay.includes(kw)) return false;
+    return true;
+  });
+}
+
+export function constraintLabel(c: ParsedConstraint): string {
+  switch (c.kind) {
+    case "sector": return `Sector: ${c.value}`;
+    case "location": return `Location: ${c.value}`;
+    case "stage": return `Stage: ${c.value}`;
+    case "scoreMin": return `Founder ≥ ${c.value}`;
+    case "keyword": return `keyword: "${c.value}"`;
+    case "trait": {
+      const names: Record<TraitKind, string> = {
+        technical: "technical founder", serial: "serial founder", traction: "traction",
+        noVc: "VC-backed", accelerator: "accelerator", coldStart: "cold start",
+        researcher: "researcher", inbound: "inbound",
+      };
+      const base = c.exclude ? `Exclude: ${names[c.trait]}` : `Trait: ${names[c.trait]}`;
+      return c.bestEffort ? `${base} (best-effort)` : base;
+    }
+  }
+}

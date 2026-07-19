@@ -125,7 +125,7 @@ function Landing() {
                   className="group relative rounded-xl border border-border/60 bg-surface-elevated/60 p-5 backdrop-blur transition hover:border-brand/50 hover:shadow-glow"
                 >
                   <div className="mb-3 flex items-center justify-between">
-                    <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-brand/20 ring-1 ring-brand/40">
+                    <span className="grid h-9 w-9 place-items-center rounded-lg bg-brand/10 ring-1 ring-brand/40">
                       <Icon className="h-4 w-4 text-brand" />
                     </span>
                     <span className="font-mono text-xs text-muted-foreground">
@@ -158,7 +158,7 @@ function Landing() {
                 key={v.title}
                 className="group relative overflow-hidden rounded-2xl border border-border/60 bg-surface/60 p-6 backdrop-blur transition hover:border-brand/40"
               >
-                <div className="mb-4 grid h-10 w-10 place-items-center rounded-lg bg-gradient-brand/20 ring-1 ring-brand/40">
+                <div className="mb-4 grid h-10 w-10 place-items-center rounded-lg bg-brand/10 ring-1 ring-brand/40">
                   <Icon className="h-5 w-5 text-brand" />
                 </div>
                 <h3 className="mb-2 text-lg font-semibold">{v.title}</h3>

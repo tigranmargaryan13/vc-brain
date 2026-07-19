@@ -21,6 +21,7 @@ export type CompanyFormValue = {
   location?: string;
   oneLiner?: string;
   notes?: string;
+  deckUrl?: string;
 };
 
 export function CompanyForm({
@@ -44,6 +45,7 @@ export function CompanyForm({
   const [location, setLocation] = useState(initial?.location ?? "");
   const [oneLiner, setOneLiner] = useState(initial?.oneLiner ?? "");
   const [notes, setNotes] = useState(initial?.notes ?? "");
+  const [deckUrl, setDeckUrl] = useState(initial?.deckUrl ?? "");
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -56,6 +58,7 @@ export function CompanyForm({
       setLocation(initial.location ?? "");
       setOneLiner(initial.oneLiner ?? "");
       setNotes(initial.notes ?? "");
+      setDeckUrl(initial.deckUrl ?? "");
     }
   }, [initial]);
 
@@ -76,6 +79,7 @@ export function CompanyForm({
       location: location.trim() || undefined,
       oneLiner: oneLiner.trim() || undefined,
       notes: notes.trim() || undefined,
+      deckUrl: deckUrl.trim() || undefined,
     });
   }
 
@@ -153,9 +157,15 @@ export function CompanyForm({
       </div>
 
       <div className="space-y-2">
+        <Label htmlFor="cdeckurl">Deck URL <span className="text-xs text-muted-foreground">(optional — link to a hosted deck)</span></Label>
+        <Input id="cdeckurl" type="url" value={deckUrl} onChange={(e) => setDeckUrl(e.target.value)} placeholder="https://docsend.com/…" />
+      </div>
+
+      <div className="space-y-2">
         <Label htmlFor="cnotes">Notes</Label>
         <Textarea id="cnotes" value={notes} onChange={(e) => setNotes(e.target.value)} rows={3} placeholder="Traction, team, why now — anything else." />
       </div>
+
 
       {error ? (
         <div className="rounded-md border border-destructive/40 bg-destructive/10 px-3 py-2 text-sm text-destructive-foreground">{error}</div>

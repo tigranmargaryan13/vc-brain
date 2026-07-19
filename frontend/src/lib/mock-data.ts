@@ -22,6 +22,14 @@ export type Project = {
   sector: string;
   stage: string;
   oneLiner: string;
+  description?: string;
+};
+
+export type ScoreDimension = {
+  name: string;
+  value: number;    // 0..100
+  coverage: number; // 0..1
+  weight: number;   // 0..1 or 0..100
 };
 
 export type FounderProfile = {
@@ -37,12 +45,33 @@ export type FounderProfile = {
     marketTrend: Trend;
     fit: FitRating;
     fitTrend: Trend;
+    confidence?: number;         // 0..1
+    band?: [number, number];     // uncertainty band around founder
   };
   coldStart?: boolean;
   hasContradiction?: boolean;
   evidence: EvidenceItem[];
   memoFor?: Record<string, Memo>; // by project id
+  completeness?: number; // 0..100
+  bio?: string;
+  skills?: string[];
+  contact?: { email?: string; linkedin?: string; website?: string };
+  dimensions?: ScoreDimension[];
+  details?: {
+    source?: string;
+    launched?: string;
+    upvotes?: number;
+    comments?: number;
+    hnPoints?: number;
+    domainAgeDays?: number;
+    freshDomain?: boolean;
+    industry?: string;
+    links?: { label: string; url: string }[];
+  };
+  track?: "inbound" | "outbound";
+  deck?: { pdfUrl?: string; embedUrl?: string; notes?: string };
 };
+
 
 export type MemoSection = {
   id: string;

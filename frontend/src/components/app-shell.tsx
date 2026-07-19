@@ -1,7 +1,7 @@
 import { Link, useNavigate, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState, type ReactNode } from "react";
 import {
-  Brain, Bell, LayoutDashboard, Compass, Target, Building2, LineChart, Menu, X, LogOut, Settings, User as UserIcon,
+  Brain, Bell, LayoutDashboard, Compass, Target, Building2, LineChart, Menu, X, LogOut, Settings, User as UserIcon, UserCircle,
 } from "lucide-react";
 import {
   getCurrentUser, logOut, listNotifications, markNotificationRead, markAllNotificationsRead,
@@ -25,7 +25,9 @@ const FOUNDER_NAV: NavItem[] = [
   { to: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { to: "/companies", label: "My Companies", icon: Building2 },
   { to: "/criteria", label: "Fundraising Criteria", icon: LineChart },
+  { to: "/profile", label: "My Profile", icon: UserCircle },
 ];
+
 
 export function AppShell({ title, children }: { title: string; children: ReactNode }) {
   const navigate = useNavigate();
@@ -50,17 +52,17 @@ export function AppShell({ title, children }: { title: string; children: ReactNo
   const nav = user.persona === "investor" ? INVESTOR_NAV : FOUNDER_NAV;
 
   return (
-    <div className="min-h-screen bg-hero text-foreground">
+    <div className="min-h-screen bg-background text-foreground">
       {/* Sidebar */}
       <aside
         className={cn(
-          "fixed inset-y-0 left-0 z-40 flex w-64 flex-col border-r border-border/60 bg-background/80 backdrop-blur-xl transition-transform lg:translate-x-0",
+          "fixed inset-y-0 left-0 z-40 flex w-64 flex-col border-r border-border bg-surface transition-transform lg:translate-x-0",
           openMobile ? "translate-x-0" : "-translate-x-full lg:translate-x-0",
         )}
       >
         <div className="flex h-16 items-center justify-between px-5">
           <Link to="/" className="flex items-center gap-2">
-            <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-brand shadow-glow">
+            <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand">
               <Brain className="h-4 w-4 text-primary-foreground" />
             </span>
             <span className="font-display text-lg font-semibold tracking-tight">VC Brain</span>
@@ -80,8 +82,8 @@ export function AppShell({ title, children }: { title: string; children: ReactNo
                 className={cn(
                   "flex items-center gap-3 rounded-lg px-3 py-2 text-sm transition",
                   active
-                    ? "bg-gradient-brand/15 text-foreground shadow-glow"
-                    : "text-muted-foreground hover:bg-surface-elevated/60 hover:text-foreground",
+                    ? "bg-brand/10 text-brand font-medium"
+                    : "text-muted-foreground hover:bg-muted hover:text-foreground",
                 )}
               >
                 <Icon className="h-4 w-4" />
@@ -90,6 +92,7 @@ export function AppShell({ title, children }: { title: string; children: ReactNo
             );
           })}
         </nav>
+
         <div className="border-t border-border/60 p-3">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -199,8 +202,9 @@ function NotificationBell({ persona }: { persona: "investor" | "founder" }) {
                 key={n.id}
                 className={cn(
                   "border-b border-border/40 px-4 py-3 text-sm transition",
-                  !n.read ? "bg-gradient-brand/5" : "",
+                  !n.read ? "bg-brand/5" : "",
                 )}
+
               >
                 <button className="w-full text-left" onClick={() => onOpen(n)}>
                   <div className="flex items-start gap-2">
