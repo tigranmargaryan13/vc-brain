@@ -1,0 +1,96 @@
+{
+  "note": "Statistically-grounded founder personas. Superset of reference_class.json: same `features`+`members` shape so sourcing/reference_class.py:match() still runs unchanged. Each member carries extra fields (thesis, stat, benchmark, lifts, sourcing, caveat) a richer matcher can read. NEW feature keys need one clause each in reference_class.py:extract_features to become detectable — marked `detectable:false` until then. Similarity is a SOFT PRIOR, never a gate. See vc_brain_founder_personas.md for the evidence table + citations.",
+  "features": [
+    {"key": "technical",              "label": "Technical builder",                 "detectable": true},
+    {"key": "systems_builder",        "label": "Systems / low-level builder",       "detectable": true},
+    {"key": "ai_ml_domain",           "label": "AI/ML domain",                      "detectable": true},
+    {"key": "prolific_builder",       "label": "Prolific OSS output",               "detectable": true},
+    {"key": "high_cadence",           "label": "High shipping cadence",             "detectable": true},
+    {"key": "earned_attention",       "label": "Organic earned attention",          "detectable": true},
+    {"key": "polyglot",               "label": "Polyglot (4+ languages)",           "detectable": true},
+
+    {"key": "domain_tenure",          "label": "3+ yrs in target domain",           "detectable": false, "stat": "E4: ~2x base rate (0.22-0.24% vs 0.11%)"},
+    {"key": "founder_factory_alum",   "label": "Ex founder-factory employer",       "detectable": false, "bias": true, "stat": "E7; E9: elite employer only 34% -> weak signal"},
+    {"key": "departure_intent",       "label": "Departed, no new role (stealth)",   "detectable": false, "stat": "cold-start edge: intent before the title"},
+    {"key": "prior_founder",          "label": "Founded a company before",          "detectable": false, "positive_only": true, "stat": "E6: ~49% of unicorn founders"},
+    {"key": "prior_exit",             "label": "Prior exit (acq/IPO)",              "detectable": false, "stat": "E3: 30% next-venture success vs 18%"},
+    {"key": "prior_failed",           "label": "Prior failed startup",              "detectable": false, "positive_only": true, "stat": "E3: 20% > first-timer 18% -> scars count"},
+    {"key": "early_operator",         "label": "Employee #1-50 at a co that scaled","detectable": false, "bias": true, "stat": "founder-factory diaspora effect"},
+    {"key": "has_publications",       "label": "Citable research output",           "detectable": false, "stat": "E7: DeepMind/OpenAI are #1-2 factories; E16 STEM 49-70%"},
+    {"key": "frontier_lab",           "label": "Frontier-lab affiliation",          "detectable": false, "bias": true},
+    {"key": "model_release",          "label": "Released model/dataset w/ uptake",  "detectable": false},
+    {"key": "high_cap_low_provenance","label": "High capability, under-networked",  "detectable": false, "stat": "E13: only 21% of underdog founders raised top-10 VC -> mispriced"},
+    {"key": "non_hub_geo",            "label": "Outside a startup hub",             "detectable": false, "bias": true, "stat": "E11: 70% of unicorns have underdog founders"}
+  ],
+  "personas": [
+    {
+      "id": "P1", "archetype": "The Domain Defector",
+      "thesis": "8-14 yrs deep in one domain, now leaving to build in it (founder-market fit).",
+      "features": ["domain_tenure", "founder_factory_alum", "departure_intent"],
+      "stat": "E4 (~2x), E5 (+45%), E8 (13.7 yrs), E7",
+      "benchmark": ">=3 yrs (sweet spot 8-14) in TARGET sector; last employer in founder-factory list = bonus",
+      "lifts": ["founder_axis:founder_market_fit", "thesis_match:sector"],
+      "sourcing": ["linkedin_departures", "domain_essays"],
+      "failure_mode": "domain expert != builder; require a capability co-signal"
+    },
+    {
+      "id": "P2", "archetype": "The Comeback Operator",
+      "thesis": "Founded before (exit OR failure) and is starting again.",
+      "features": ["prior_founder", "prior_exit", "prior_failed"],
+      "stat": "E3 (30% / 18% / 20%), E6 (~half founded before)",
+      "benchmark": ">=1 prior founding; prior exit=strong; prior FAILURE = positive, never penalized",
+      "lifts": ["founder_score:persistent_track_record"],
+      "sourcing": ["crunchbase_priors", "ex_founder_titles"],
+      "failure_mode": "persistence is partly market-timing luck (Gompers); don't over-credit one prior win"
+    },
+    {
+      "id": "P3", "archetype": "The Early Rocket-Ship Operator",
+      "thesis": "Employee #1-50 at a company that worked; departing with no new role.",
+      "features": ["early_operator", "departure_intent", "founder_factory_alum"],
+      "stat": "E7, E9 (elite employer only 34% -> signal not gate)",
+      "benchmark": "joined at headcount <50 / pre-Series-B, company later scaled",
+      "lifts": ["founder_axis:early_operator", "founder_score:provenance"],
+      "sourcing": ["diaspora_tracker", "open_to_work"],
+      "failure_mode": "MOST network-gated persona -> cap weight; never let it out-vote capability"
+    },
+    {
+      "id": "P4", "archetype": "The Prolific Builder",
+      "thesis": "Ships constantly, earns organic attention, no pedigree required. (Live today.)",
+      "features": ["technical", "prolific_builder", "high_cadence", "earned_attention", "polyglot"],
+      "stat": "cold-start edge; E16 (CS/STEM)",
+      "benchmark": ">=8 repos, >=20 pushes/90d, >=100 organic stars, >=4 langs (live in extract_features)",
+      "lifts": ["founder_axis:capability", "founder_score:trajectory", "founder_score:traction"],
+      "sourcing": ["github", "hacker_news", "product_hunt"],
+      "failure_mode": "GitHub-only view misses non-code builders; absence = unknown, not zero"
+    },
+    {
+      "id": "P5", "archetype": "The Deep-Tech Researcher",
+      "thesis": "Researcher/PhD with citable output, now commercializing it.",
+      "features": ["technical", "ai_ml_domain", "has_publications", "frontier_lab", "model_release"],
+      "stat": "E7 (DeepMind/OpenAI #1-2), E16 (STEM 49-70%)",
+      "benchmark": ">=1 substantive publication OR released model w/ organic uptake",
+      "lifts": ["founder_axis:capability", "idea_vs_market:defensibility"],
+      "sourcing": ["arxiv", "huggingface", "github_research_orgs"],
+      "failure_mode": "citations != shipping; weight down with zero product motion"
+    },
+    {
+      "id": "P6", "archetype": "The Under-Networked Contrarian",
+      "thesis": "High demonstrated capability, low network coverage, outside the hubs. THE ALPHA.",
+      "features": ["high_cap_low_provenance", "non_hub_geo", "technical", "prolific_builder"],
+      "stat": "E10 (classic archetype 11%), E11 (70% underdog), E12 (62% immigrant), E13 (21% raised top-10 VC -> mispriced)",
+      "benchmark": "Capability >= P4 thresholds AND provenance coverage < 0.2 -> flag high-cap/under-networked (POSITIVE)",
+      "lifts": ["confidence_band:widen_up", "route:outbound"],
+      "sourcing": ["outbound", "non_english_footprint", "underserved_geo_scan"],
+      "failure_mode": "TRAP: must fire ON capability, never demographics alone, or it is proxy-discrimination"
+    }
+  ],
+  "members": [
+    {"archetype": "The Domain Defector",             "features": ["domain_tenure", "founder_factory_alum", "departure_intent"]},
+    {"archetype": "The Comeback Operator",           "features": ["prior_founder", "prior_exit", "prior_failed"]},
+    {"archetype": "The Early Rocket-Ship Operator",  "features": ["early_operator", "departure_intent", "founder_factory_alum"]},
+    {"archetype": "The Prolific Builder",            "features": ["technical", "prolific_builder", "high_cadence", "earned_attention", "polyglot"]},
+    {"archetype": "The Deep-Tech Researcher",        "features": ["technical", "ai_ml_domain", "has_publications", "frontier_lab", "model_release"]},
+    {"archetype": "The Under-Networked Contrarian",  "features": ["high_cap_low_provenance", "non_hub_geo", "technical", "prolific_builder"]}
+  ],
+  "caveat": "Winners-only + illustrative. Similarity is a SOFT PRIOR, never a filter. A real base rate needs the denominator (who had these features and did NOT succeed). Trigger modifier 'Catalyst' (layoff/Open-to-Work) amplifies P1/P3/P6 when paired with building activity; it is a state, not a persona."
+}
