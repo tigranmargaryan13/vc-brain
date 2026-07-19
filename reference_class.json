@@ -1,0 +1,30 @@
+{
+  "note": "Illustrative archetype seed. Deliberately built on demonstrated BUILDING behavior — not schools, employers, or pedigree — so matching rewards capability, not credentials. Replace with a curated, DIVERSE real reference class before relying on it; keep the survivorship-bias caveat.",
+  "features": [
+    {"key": "technical",        "label": "Technical builder"},
+    {"key": "systems_builder",  "label": "Systems / low-level builder"},
+    {"key": "ai_ml_domain",     "label": "AI/ML domain"},
+    {"key": "prolific_builder", "label": "Prolific OSS output"},
+    {"key": "high_cadence",     "label": "High shipping cadence"},
+    {"key": "earned_attention", "label": "Organic earned attention"},
+    {"key": "polyglot",         "label": "Polyglot (4+ languages)"}
+  ],
+  "members": [
+    {"archetype": "Systems-infra founder (ex-OSS maintainer)", "features": ["technical", "systems_builder", "prolific_builder", "high_cadence", "earned_attention"]},
+    {"archetype": "AI researcher turned founder",              "features": ["technical", "ai_ml_domain", "prolific_builder", "earned_attention"]},
+    {"archetype": "Indie dev-tools builder who scaled",        "features": ["technical", "prolific_builder", "high_cadence", "polyglot"]},
+    {"archetype": "ML infra engineer (edge/inference)",        "features": ["technical", "systems_builder", "ai_ml_domain", "high_cadence"]},
+    {"archetype": "Prolific polyglot hacker",                  "features": ["technical", "prolific_builder", "polyglot", "high_cadence"]},
+    {"archetype": "Deep-tech / compiler founder",              "features": ["technical", "systems_builder", "earned_attention"]},
+    {"archetype": "Applied-AI product builder",               "features": ["technical", "ai_ml_domain", "high_cadence"]},
+    {"archetype": "Data-infra founder",                        "features": ["technical", "systems_builder", "prolific_builder"]},
+    {"archetype": "Quiet high-cadence shipper",                "features": ["technical", "high_cadence"]},
+    {"archetype": "Research-heavy AI founder",                 "features": ["technical", "ai_ml_domain", "polyglot"]},
+    {"archetype": "Full-stack indie founder",                  "features": ["technical", "high_cadence", "polyglot"]},
+    {"archetype": "Open-source library author",                "features": ["technical", "prolific_builder", "earned_attention", "polyglot"]},
+    {"archetype": "Security / low-level founder",              "features": ["technical", "systems_builder", "earned_attention", "high_cadence"]},
+    {"archetype": "Early-signal AI infra builder",             "features": ["technical", "ai_ml_domain", "systems_builder", "prolific_builder", "high_cadence"]},
+    {"archetype": "Domain-expert technical founder",           "features": ["technical", "high_cadence"]},
+    {"archetype": "Cross-disciplinary builder",                "features": ["technical", "polyglot", "ai_ml_domain"]}
+  ]
+}

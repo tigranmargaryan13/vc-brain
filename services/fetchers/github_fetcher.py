@@ -1,47 +1,37 @@
-import os, re, requests, time
+"""GitHub fetcher — ingestion-layer adapter.
+
+Consolidated: the single GitHub HTTP client lives in `sourcing.github_collector`
+(stdlib urllib, GITHUB_TOKEN-aware, also does the deep read for scoring). This
+module is the thin ingestion adapter that turns a username into flat repo
+signals for the raw-signals store, so there is exactly ONE GitHub client.
+"""
+import os
+import sys
 from datetime import datetime
-from dotenv import load_dotenv
 
-load_dotenv()
+# Make the `sourcing` package importable regardless of how this is launched
+# (smoke_test puts services/fetchers on sys.path but not the repo root).
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
-HEADERS = {"Accept": "application/vnd.github.v3+json"}
-if GITHUB_TOKEN:
-    HEADERS["Authorization"] = f"token {GITHUB_TOKEN}"
+from sourcing.github_collector import public_repos  # noqa: E402  (single GitHub client)
 
-def fetch_repos_by_username(username):
-    url = f"https://api.github.com/users/{username}/repos?per_page=100"
-    resp = requests.get(url, headers=HEADERS)
-    resp.raise_for_status()
-    return resp.json()
-
-def fetch_commit_count(owner, repo):
-    url = f"https://api.github.com/repos/{owner}/{repo}/commits?per_page=1"
-    resp = requests.get(url, headers=HEADERS)
-    if resp.status_code == 200:
-        # with per_page=1 the last page number in the Link header == total commits
-        link = resp.headers.get("Link", "")
-        m = re.search(r'page=(\d+)>; rel="last"', link)
-        if m:
-            return int(m.group(1))
-        return len(resp.json())
-    return 0
 
 def github_signals_for_username(username):
-    repos = fetch_repos_by_username(username)
-    signals = []
-    for r in repos:
-        signals.append({
+    repos = public_repos(username)
+    signals = [
+        {
             "repo": r["name"],
             "full_name": r["full_name"],
             "stars": r["stargazers_count"],
             "forks": r["forks_count"],
             "language": r.get("language"),
             "updated_at": r["updated_at"],
-            "html_url": r["html_url"]
-        })
+            "html_url": r["html_url"],
+        }
+        for r in repos
+    ]
     return {"username": username, "fetched_at": datetime.utcnow().isoformat(), "repos": signals}
 
-# Example usage: write to raw_signals table (psycopg2 or SQLAlchemy)
+
 if __name__ == "__main__":
     print(github_signals_for_username("octocat"))

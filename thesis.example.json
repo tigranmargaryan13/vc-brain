@@ -1,0 +1,9 @@
+{
+  "name": "Example Fund — pre-seed AI infra & dev tools (EU-leaning)",
+  "sectors": ["AI infra", "developer tools", "systems"],
+  "geographies": ["Europe", "London", "Berlin", "Amsterdam", "Paris", "Stockholm", "Remote"],
+  "stages": ["pre-seed", "seed"],
+  "check_size_usd": [100000, 100000],
+  "ownership_target_pct": 7,
+  "risk_appetite": "balanced"
+}
