@@ -2689,6 +2689,169 @@
   "founder_score": 49
  },
  {
+  "name": "Sudipta Chowdhury",
+  "channels": [
+   "semantic_scholar"
+  ],
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper (Semantic Scholar search, 2026)",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/8c8452414769a425556a1dd45645ca4b211d9939",
+    "evidence": [
+     "Structural Ethical Infeasibility in AI-Enabled Infrastructure Systems: A Constraint-Based Diagnostic Framework"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 3,
+    "citation": "https://www.semanticscholar.org/paper/8c8452414769a425556a1dd45645ca4b211d9939",
+    "evidence": [
+     "Md Abdul Quddus",
+     "Ammar Alzarrad"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Semantic Scholar citations for the seed paper (influential: 0)",
+    "value": 0,
+    "citation": "https://www.semanticscholar.org/paper/8c8452414769a425556a1dd45645ca4b211d9939",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (Semantic Scholar) — sustained earned attention",
+    "value": 6,
+    "citation": "https://www.semanticscholar.org/author/2105636711",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime paper count (Semantic Scholar)",
+    "value": 23,
+    "citation": "https://www.semanticscholar.org/author/2105636711",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   }
+  },
+  "founder_meta": {
+   "name": "Sudipta Chowdhury",
+   "s2_url": "https://www.semanticscholar.org/author/2105636711"
+  },
+  "paper": {
+   "title": "Structural Ethical Infeasibility in AI-Enabled Infrastructure Systems: A Constraint-Based Diagnostic Framework",
+   "url": "https://www.semanticscholar.org/paper/8c8452414769a425556a1dd45645ca4b211d9939",
+   "published": "2026-06-20",
+   "arxiv_id": null,
+   "fields": null
+  },
+  "repo": null,
+  "founder_score": 47
+ },
+ {
+  "name": "F. A. Alijoyo",
+  "channels": [
+   "semantic_scholar"
+  ],
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper (Semantic Scholar search, 2026)",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/cea7de920a42cf2e6298c8af49f77723e333231b",
+    "evidence": [
+     "AI-Powered Framework for Strengthening Climate Resilience in Urban Infrastructure Systems"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 6,
+    "citation": "https://www.semanticscholar.org/paper/cea7de920a42cf2e6298c8af49f77723e333231b",
+    "evidence": [
+     "N. Bhasin",
+     "Bobonazarov Abdurasul",
+     "Shamim Ahmad Khan"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Semantic Scholar citations for the seed paper (influential: 0)",
+    "value": 0,
+    "citation": "https://www.semanticscholar.org/paper/cea7de920a42cf2e6298c8af49f77723e333231b",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (Semantic Scholar) — sustained earned attention",
+    "value": 6,
+    "citation": "https://www.semanticscholar.org/author/2088862538",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime paper count (Semantic Scholar)",
+    "value": 31,
+    "citation": "https://www.semanticscholar.org/author/2088862538",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   }
+  },
+  "founder_meta": {
+   "name": "F. A. Alijoyo",
+   "s2_url": "https://www.semanticscholar.org/author/2088862538"
+  },
+  "paper": {
+   "title": "AI-Powered Framework for Strengthening Climate Resilience in Urban Infrastructure Systems",
+   "url": "https://www.semanticscholar.org/paper/cea7de920a42cf2e6298c8af49f77723e333231b",
+   "published": "2026-03-02",
+   "arxiv_id": null,
+   "fields": null
+  },
+  "repo": null,
+  "founder_score": 47
+ },
+ {
   "name": "Jingkang Liang",
   "channels": [
    "openalex"
@@ -2801,6 +2964,84 @@
   },
   "repo": null,
   "founder_score": 47
+ },
+ {
+  "name": "Rajesh Paul",
+  "channels": [
+   "semantic_scholar"
+  ],
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper (Semantic Scholar search, 2026)",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/b4efcb8e2535bb429f32d26e7f28753642e652fc",
+    "evidence": [
+     "Implementation and Real-World Evaluation of an AI-Based Decision Support Model for Data-Driven Business and Infrastructure Systems"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/b4efcb8e2535bb429f32d26e7f28753642e652fc",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Semantic Scholar citations for the seed paper (influential: 0)",
+    "value": 0,
+    "citation": "https://www.semanticscholar.org/paper/b4efcb8e2535bb429f32d26e7f28753642e652fc",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (Semantic Scholar) — sustained earned attention",
+    "value": 5,
+    "citation": "https://www.semanticscholar.org/author/2363237877",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime paper count (Semantic Scholar)",
+    "value": 9,
+    "citation": "https://www.semanticscholar.org/author/2363237877",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   }
+  },
+  "founder_meta": {
+   "name": "Rajesh Paul",
+   "s2_url": "https://www.semanticscholar.org/author/2363237877"
+  },
+  "paper": {
+   "title": "Implementation and Real-World Evaluation of an AI-Based Decision Support Model for Data-Driven Business and Infrastructure Systems",
+   "url": "https://www.semanticscholar.org/paper/b4efcb8e2535bb429f32d26e7f28753642e652fc",
+   "published": "2026-01-01",
+   "arxiv_id": null,
+   "fields": null
+  },
+  "repo": null,
+  "founder_score": 46
  },
  {
   "name": "Samuel Rothfarb",
@@ -3033,6 +3274,246 @@
   "founder_score": 46
  },
  {
+  "name": "Uman Ahmed Mohammed",
+  "channels": [
+   "semantic_scholar"
+  ],
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper (Semantic Scholar search, 2026)",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/99eae810fe8d98bab2b1685d0358fc8d12592c6c",
+    "evidence": [
+     "Enterprise Cloud AI Infrastructure for Agent-Centric Column-Aware Prompt Optimization for Data Tasks with LLMs"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/99eae810fe8d98bab2b1685d0358fc8d12592c6c",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Semantic Scholar citations for the seed paper (influential: 0)",
+    "value": 0,
+    "citation": "https://www.semanticscholar.org/paper/99eae810fe8d98bab2b1685d0358fc8d12592c6c",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (Semantic Scholar) — sustained earned attention",
+    "value": 4,
+    "citation": "https://www.semanticscholar.org/author/2401893159",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime paper count (Semantic Scholar)",
+    "value": 5,
+    "citation": "https://www.semanticscholar.org/author/2401893159",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   }
+  },
+  "founder_meta": {
+   "name": "Uman Ahmed Mohammed",
+   "s2_url": "https://www.semanticscholar.org/author/2401893159"
+  },
+  "paper": {
+   "title": "Enterprise Cloud AI Infrastructure for Agent-Centric Column-Aware Prompt Optimization for Data Tasks with LLMs",
+   "url": "https://www.semanticscholar.org/paper/99eae810fe8d98bab2b1685d0358fc8d12592c6c",
+   "published": "2026-05-01",
+   "arxiv_id": null,
+   "fields": null
+  },
+  "repo": null,
+  "founder_score": 45
+ },
+ {
+  "name": "Qi He",
+  "channels": [
+   "semantic_scholar"
+  ],
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper (Semantic Scholar search, 2026)",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/60d5044750fe3d0a101d66be07160147256bed7d",
+    "evidence": [
+     "A Unified Metric Architecture for AI Infrastructure: A Cross-Layer Taxonomy Integrating Performance, Efficiency, and Cost"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 2,
+    "citation": "https://www.semanticscholar.org/paper/60d5044750fe3d0a101d66be07160147256bed7d",
+    "evidence": [
+     "Wenjie Zuo"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Semantic Scholar citations for the seed paper (influential: 0)",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/60d5044750fe3d0a101d66be07160147256bed7d",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (Semantic Scholar) — sustained earned attention",
+    "value": 3,
+    "citation": "https://www.semanticscholar.org/author/2400494668",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime paper count (Semantic Scholar)",
+    "value": 5,
+    "citation": "https://www.semanticscholar.org/author/2400494668",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   }
+  },
+  "founder_meta": {
+   "name": "Qi He",
+   "s2_url": "https://www.semanticscholar.org/author/2400494668"
+  },
+  "paper": {
+   "title": "A Unified Metric Architecture for AI Infrastructure: A Cross-Layer Taxonomy Integrating Performance, Efficiency, and Cost",
+   "url": "https://www.semanticscholar.org/paper/60d5044750fe3d0a101d66be07160147256bed7d",
+   "published": "2026-05-01",
+   "arxiv_id": null,
+   "fields": [
+    "Computer Science"
+   ]
+  },
+  "repo": null,
+  "founder_score": 45
+ },
+ {
+  "name": "Victor Frimpong",
+  "channels": [
+   "semantic_scholar"
+  ],
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper (Semantic Scholar search, 2026)",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/b27b878b394de890b0aa94aaf969e4adcdfa4647",
+    "evidence": [
+     "The Geopolitical Repricing of AI Infrastructure: Energy, Risk, and Strategic Allocation"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 2,
+    "citation": "https://www.semanticscholar.org/paper/b27b878b394de890b0aa94aaf969e4adcdfa4647",
+    "evidence": [
+     "Ortopah Kojo Botchey"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Semantic Scholar citations for the seed paper (influential: 0)",
+    "value": 0,
+    "citation": "https://www.semanticscholar.org/paper/b27b878b394de890b0aa94aaf969e4adcdfa4647",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (Semantic Scholar) — sustained earned attention",
+    "value": 4,
+    "citation": "https://www.semanticscholar.org/author/2332276626",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime paper count (Semantic Scholar)",
+    "value": 28,
+    "citation": "https://www.semanticscholar.org/author/2332276626",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   }
+  },
+  "founder_meta": {
+   "name": "Victor Frimpong",
+   "s2_url": "https://www.semanticscholar.org/author/2332276626"
+  },
+  "paper": {
+   "title": "The Geopolitical Repricing of AI Infrastructure: Energy, Risk, and Strategic Allocation",
+   "url": "https://www.semanticscholar.org/paper/b27b878b394de890b0aa94aaf969e4adcdfa4647",
+   "published": "2026-07-09",
+   "arxiv_id": null,
+   "fields": null
+  },
+  "repo": null,
+  "founder_score": 45
+ },
+ {
   "name": "Insaf Kraidia",
   "channels": [
    "openalex"
@@ -3146,5 +3627,481 @@
   },
   "repo": null,
   "founder_score": 45
+ },
+ {
+  "name": "Sergio Cruzes",
+  "channels": [
+   "semantic_scholar"
+  ],
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper (Semantic Scholar search, 2026)",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/703cec4e709c3f10a0a4ab253611f8dfc99acf77",
+    "evidence": [
+     "AI Infrastructure Sovereignty"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/703cec4e709c3f10a0a4ab253611f8dfc99acf77",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Semantic Scholar citations for the seed paper (influential: 0)",
+    "value": 0,
+    "citation": "https://www.semanticscholar.org/paper/703cec4e709c3f10a0a4ab253611f8dfc99acf77",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (Semantic Scholar) — sustained earned attention",
+    "value": 3,
+    "citation": "https://www.semanticscholar.org/author/2277133471",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime paper count (Semantic Scholar)",
+    "value": 8,
+    "citation": "https://www.semanticscholar.org/author/2277133471",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   }
+  },
+  "founder_meta": {
+   "name": "Sergio Cruzes",
+   "s2_url": "https://www.semanticscholar.org/author/2277133471"
+  },
+  "paper": {
+   "title": "AI Infrastructure Sovereignty",
+   "url": "https://www.semanticscholar.org/paper/703cec4e709c3f10a0a4ab253611f8dfc99acf77",
+   "published": "2026-02-11",
+   "arxiv_id": "2602.10900",
+   "fields": [
+    "Computer Science"
+   ]
+  },
+  "repo": null,
+  "founder_score": 44
+ },
+ {
+  "name": "R. Adepu",
+  "channels": [
+   "semantic_scholar"
+  ],
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper (Semantic Scholar search, 2026)",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/ff8019737788ee665db9291f739d784952f3a283",
+    "evidence": [
+     "Cognitive Infrastructure Systems: Integrating AI, LLMs, and Cloud for Next-Generation Enterprise Platforms"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/ff8019737788ee665db9291f739d784952f3a283",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Semantic Scholar citations for the seed paper (influential: 0)",
+    "value": 0,
+    "citation": "https://www.semanticscholar.org/paper/ff8019737788ee665db9291f739d784952f3a283",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (Semantic Scholar) — sustained earned attention",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/author/2090479454",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime paper count (Semantic Scholar)",
+    "value": 21,
+    "citation": "https://www.semanticscholar.org/author/2090479454",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   }
+  },
+  "founder_meta": {
+   "name": "R. Adepu",
+   "s2_url": "https://www.semanticscholar.org/author/2090479454"
+  },
+  "paper": {
+   "title": "Cognitive Infrastructure Systems: Integrating AI, LLMs, and Cloud for Next-Generation Enterprise Platforms",
+   "url": "https://www.semanticscholar.org/paper/ff8019737788ee665db9291f739d784952f3a283",
+   "published": "2026-02-28",
+   "arxiv_id": null,
+   "fields": null
+  },
+  "repo": null,
+  "founder_score": 42
+ },
+ {
+  "name": "Paulo Carvao",
+  "channels": [
+   "semantic_scholar"
+  ],
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper (Semantic Scholar search, 2026)",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/e276dc3ffd08262c5909d679af2a8a8e1bf7430e",
+    "evidence": [
+     "The AI Infrastructure Triad in Regional Governance: How Regions Balance Progress, Sustainability, and Equity"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 2,
+    "citation": "https://www.semanticscholar.org/paper/e276dc3ffd08262c5909d679af2a8a8e1bf7430e",
+    "evidence": [
+     "T. Kanade"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Semantic Scholar citations for the seed paper (influential: 0)",
+    "value": 0,
+    "citation": "https://www.semanticscholar.org/paper/e276dc3ffd08262c5909d679af2a8a8e1bf7430e",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (Semantic Scholar) — sustained earned attention",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/author/2311697333",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime paper count (Semantic Scholar)",
+    "value": 5,
+    "citation": "https://www.semanticscholar.org/author/2311697333",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   }
+  },
+  "founder_meta": {
+   "name": "Paulo Carvao",
+   "s2_url": "https://www.semanticscholar.org/author/2311697333"
+  },
+  "paper": {
+   "title": "The AI Infrastructure Triad in Regional Governance: How Regions Balance Progress, Sustainability, and Equity",
+   "url": "https://www.semanticscholar.org/paper/e276dc3ffd08262c5909d679af2a8a8e1bf7430e",
+   "published": "2026-05-23",
+   "arxiv_id": null,
+   "fields": null
+  },
+  "repo": null,
+  "founder_score": 42
+ },
+ {
+  "name": "Vipindas Aravindakshan",
+  "channels": [
+   "semantic_scholar"
+  ],
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper (Semantic Scholar search, 2026)",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/16e42e215dceed00c0bc5c3995a698d913a5cb65",
+    "evidence": [
+     "Architectural Considerations for AI Infrastructure at the OT-IT Convergence in Critical Infrastructure"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 2,
+    "citation": "https://www.semanticscholar.org/paper/16e42e215dceed00c0bc5c3995a698d913a5cb65",
+    "evidence": [
+     "A. Syed"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Semantic Scholar citations for the seed paper (influential: 0)",
+    "value": 0,
+    "citation": "https://www.semanticscholar.org/paper/16e42e215dceed00c0bc5c3995a698d913a5cb65",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (Semantic Scholar) — sustained earned attention",
+    "value": 0,
+    "citation": "https://www.semanticscholar.org/author/2433148773",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime paper count (Semantic Scholar)",
+    "value": 4,
+    "citation": "https://www.semanticscholar.org/author/2433148773",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   }
+  },
+  "founder_meta": {
+   "name": "Vipindas Aravindakshan",
+   "s2_url": "https://www.semanticscholar.org/author/2433148773"
+  },
+  "paper": {
+   "title": "Architectural Considerations for AI Infrastructure at the OT-IT Convergence in Critical Infrastructure",
+   "url": "https://www.semanticscholar.org/paper/16e42e215dceed00c0bc5c3995a698d913a5cb65",
+   "published": "2026-04-16",
+   "arxiv_id": null,
+   "fields": null
+  },
+  "repo": null,
+  "founder_score": 41
+ },
+ {
+  "name": "Misbah Zulfiqar",
+  "channels": [
+   "semantic_scholar"
+  ],
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper (Semantic Scholar search, 2026)",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/8d2fdb85c9febec69e49eaef91eef49c019d4932",
+    "evidence": [
+     "Conceptualising local AI infrastructure using small language models (SLMs) for primary education"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 2,
+    "citation": "https://www.semanticscholar.org/paper/8d2fdb85c9febec69e49eaef91eef49c019d4932",
+    "evidence": [
+     "Umair Iqbal"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Semantic Scholar citations for the seed paper (influential: 0)",
+    "value": 0,
+    "citation": "https://www.semanticscholar.org/paper/8d2fdb85c9febec69e49eaef91eef49c019d4932",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (Semantic Scholar) — sustained earned attention",
+    "value": 0,
+    "citation": "https://www.semanticscholar.org/author/2446768775",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime paper count (Semantic Scholar)",
+    "value": 4,
+    "citation": "https://www.semanticscholar.org/author/2446768775",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   }
+  },
+  "founder_meta": {
+   "name": "Misbah Zulfiqar",
+   "s2_url": "https://www.semanticscholar.org/author/2446768775"
+  },
+  "paper": {
+   "title": "Conceptualising local AI infrastructure using small language models (SLMs) for primary education",
+   "url": "https://www.semanticscholar.org/paper/8d2fdb85c9febec69e49eaef91eef49c019d4932",
+   "published": "2026-07-03",
+   "arxiv_id": null,
+   "fields": null
+  },
+  "repo": null,
+  "founder_score": 41
+ },
+ {
+  "name": "Jessica Sciammarelli",
+  "channels": [
+   "semantic_scholar"
+  ],
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI paper (Semantic Scholar search, 2026)",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/81cad4ad4bc6858bc33ae1b5a6604f5ac2460bf5",
+    "evidence": [
+     "DECENTRALIZED AI INFRASTRUCTURE: INTEGRATING BLOCKCHAIN WITH MLOPS AND DATA GOVERNANCE"
+    ],
+    "channel": "semantic_scholar"
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/81cad4ad4bc6858bc33ae1b5a6604f5ac2460bf5",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Semantic Scholar citations for the seed paper (influential: 0)",
+    "value": 0,
+    "citation": "https://www.semanticscholar.org/paper/81cad4ad4bc6858bc33ae1b5a6604f5ac2460bf5",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (Semantic Scholar) — sustained earned attention",
+    "value": 0,
+    "citation": "https://www.semanticscholar.org/author/2400582498",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime paper count (Semantic Scholar)",
+    "value": 6,
+    "citation": "https://www.semanticscholar.org/author/2400582498",
+    "evidence": null,
+    "channel": "semantic_scholar"
+   }
+  },
+  "founder_meta": {
+   "name": "Jessica Sciammarelli",
+   "s2_url": "https://www.semanticscholar.org/author/2400582498"
+  },
+  "paper": {
+   "title": "DECENTRALIZED AI INFRASTRUCTURE: INTEGRATING BLOCKCHAIN WITH MLOPS AND DATA GOVERNANCE",
+   "url": "https://www.semanticscholar.org/paper/81cad4ad4bc6858bc33ae1b5a6604f5ac2460bf5",
+   "published": "2026-03-25",
+   "arxiv_id": null,
+   "fields": null
+  },
+  "repo": null,
+  "founder_score": 41
  }
 ]
