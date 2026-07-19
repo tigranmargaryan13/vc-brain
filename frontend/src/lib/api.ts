@@ -160,7 +160,7 @@ function scopedKey(base: string, session: Session | null) {
 }
 
 // ---------- Sourced dataset (fetched from GitHub) ----------
-const SOURCED_URL = "https://raw.githubusercontent.com/tigranmargaryan13/vc-brain/ui/data/ui/sourced_founders.json";
+const SOURCED_URL = "https://raw.githubusercontent.com/tigranmargaryan13/vc-brain/main/data/ui/sourced_founders.json";
 let sourcedCache: FounderProfile[] | null = null;
 async function loadSourced(): Promise<FounderProfile[]> {
   if (sourcedCache) return sourcedCache;
