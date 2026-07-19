@@ -23,6 +23,35 @@ _SYSTEMS_LANGS = {"c", "c++", "rust", "go", "zig", "cuda", "assembly", "asm"}
 _AIML = {"ml", "llm", "ai", "inference", "neural", "pytorch", "tensorflow",
          "model", "embedding", "transformer", "genai"}
 
+# Track-record & intent keyword signals (matched against public bio/repo text and,
+# for inbound applicants, their one-liner/notes). These are DEMONSTRATED HISTORY or
+# STATED INTENT — never employer/school pedigree. Soft priors, so light false
+# positives are tolerable; the survivorship caveat is always printed.
+_PRIOR_FOUNDER = ("founder", "co-founder", "cofounder", "founded ", "ex-founder",
+                  "serial entrepreneur", "previously founded", "2x founder", "3x founder")
+_PRIOR_EXIT = ("acquired by", "was acquired", "acquisition by", "exited", "ipo",
+               "went public", "sold my", "sold the company", "sold to ")
+_PRIOR_FAILED = ("failed startup", "shut down", "wound down", "shuttered",
+                 "startup that didn't", "company didn't work", "previous startup that")
+_RESEARCH = ("arxiv", "co-authored", "google scholar", "phd", "ph.d", "neurips",
+             "icml", "iclr", "cvpr", "research scientist", "published a paper")
+_MODEL_RELEASE = ("huggingface", "hugging face", "pretrained", "fine-tuned",
+                  "open-sourced", "released a model", "model checkpoint", "model weights")
+_DEPARTURE = ("stealth", "leaving to build", "left my job", "building something new",
+              "in stealth", "open to work", "recently departed")
+
+# Major startup hubs — presence OUTSIDE them is a POSITIVE underdog signal here
+# (never a penalty; geography is a fund mandate, not a quality judgement).
+_HUBS = ("san francisco", "sf bay", "bay area", "palo alto", "mountain view",
+         "menlo park", "new york", "nyc", "brooklyn", "boston", "cambridge, ma",
+         "seattle", "los angeles", "london", "berlin", "paris", "tel aviv",
+         "beijing", "shanghai", "bangalore", "bengaluru", "singapore")
+
+# Pedigree/employer features present in personas.seed.json that we DELIBERATELY do
+# not detect — inferring them would rebuild the network/credential gate this project
+# rejects (see module docstring). Listed so the omission is explicit, not an oversight.
+PEDIGREE_EXCLUDED = ("founder_factory_alum", "early_operator", "frontier_lab")
+
 CAVEAT = ("Survivorship-bias caveat: this class is winners-only and illustrative. "
           "Similarity is a SOFT PRIOR, never a filter — a real base rate needs the "
           "denominator (who had these features and did NOT succeed).")
@@ -39,17 +68,41 @@ class RefMatch:
 
 
 def load(path=None):
+    """Load the reference class. Defaults to the evidence-backed personas
+    (personas.seed.json), falling back to the illustrative reference_class.json."""
     root = os.path.dirname(os.path.dirname(__file__))
-    path = path or os.path.join(root, "reference_class.json")
+    if path is None:
+        for name in ("personas.seed.json", "reference_class.json"):
+            cand = os.path.join(root, name)
+            if os.path.exists(cand):
+                path = cand
+                break
     with open(path, encoding="utf-8") as f:
         return json.load(f)
 
 
+def _text_has(text, needles):
+    return any(n in text for n in needles)
+
+
 def extract_features(attrs):
+    """Map a candidate's public attributes to reference-class feature keys.
+
+    Every feature here is DEMONSTRATED BUILDING, TRACK RECORD, or STATED INTENT —
+    detectable from public signal without any school/employer/pedigree input. The
+    three pedigree features in personas.seed.json (see PEDIGREE_EXCLUDED) are
+    intentionally never produced, so matching can't rebuild the network gate.
+    """
     langs = {l.lower() for l in attrs.get("languages", [])}
-    text = attrs.get("profile_text", "")
-    tokens = set(re.findall(r"[a-z0-9+#.]+", text.lower()))
+    app = attrs.get("application") or {}
+    text = " ".join([
+        attrs.get("profile_text", "") or "",
+        str(app.get("one_liner", "")), str(app.get("notes", "")), str(app.get("company", "")),
+    ]).lower()
+    tokens = set(re.findall(r"[a-z0-9+#.]+", text))
     f = set()
+
+    # ---- demonstrated building (source-agnostic) ----
     if langs:
         f.add("technical")
     if _SYSTEMS_LANGS & langs:
@@ -60,10 +113,43 @@ def extract_features(attrs):
         f.add("prolific_builder")
     if attrs.get("recent_push_events", 0) >= 20:
         f.add("high_cadence")
-    if attrs.get("stars", 0) >= 100:
+    if attrs.get("stars", 0) >= 100 or attrs.get("native_upvotes_career", 0) >= 300:
         f.add("earned_attention")
     if len(langs) >= 4:
         f.add("polyglot")
+
+    # ---- track record & intent (fair: history / intent, NOT pedigree) ----
+    tenure_days = max(attrs.get("account_age_days", 0) or 0, attrs.get("native_tenure_days", 0) or 0)
+    if tenure_days >= 3 * 365:
+        f.add("domain_tenure")
+    if _text_has(text, _PRIOR_FOUNDER):
+        f.add("prior_founder")
+    if _text_has(text, _PRIOR_EXIT):
+        f.add("prior_exit")
+    if _text_has(text, _PRIOR_FAILED):
+        f.add("prior_failed")
+    if _text_has(text, _RESEARCH):
+        f.add("has_publications")
+    if _text_has(text, _MODEL_RELEASE):
+        f.add("model_release")
+    stage = ((attrs.get("inferred_stage", "") or "") + " " + str(app.get("stage", ""))).lower()
+    if attrs.get("source_track") == "inbound" and (
+            _text_has(stage, ("idea", "stealth", "pre-seed")) or _text_has(text, _DEPARTURE)):
+        f.add("departure_intent")
+
+    # ---- THE ALPHA: high capability + low network coverage. Fires ON demonstrated
+    # capability, never on demographics — the mispriced under-networked builder. ----
+    strong_building = bool({"prolific_builder", "earned_attention", "high_cadence"} & f)
+    low_provenance = (attrs.get("followers", 0) or 0) < 50
+    if strong_building and low_provenance:
+        f.add("high_cap_low_provenance")
+
+    # ---- geography as a POSITIVE underdog signal (never a gate; on its own it can't
+    # carry an archetype — the winner personas pair it with capability features). ----
+    loc = (attrs.get("location", "") or "").lower()
+    if loc and not _text_has(loc, _HUBS):
+        f.add("non_hub_geo")
+
     return f
 
 

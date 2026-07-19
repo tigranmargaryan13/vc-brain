@@ -13,7 +13,10 @@ import re
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 
+from sourcing import inbound
+from sourcing import query as query_mod
 from sourcing.export import build_dataset
 
 app = FastAPI(title="VC Brain API")
@@ -29,13 +32,25 @@ _FIT = {"survives": "Survives as-is", "pivot-capable": "Pivot potential",
 _VERDICT = {"ADVANCE": "Strong yes", "REVIEW": "Conditional yes", "PASS": "Pass"}
 _TRUST = {"High": "High", "Med": "Medium", "Low": "Low"}
 
-_cache = {"data": None}
+_cache = {"data": None, "people": None}
 
 
 def _dataset():
     if _cache["data"] is None:
         _cache["data"] = build_dataset()
     return _cache["data"]
+
+
+def _people():
+    """Scored FounderScore objects (for thesis-level NL query re-evaluation)."""
+    if _cache["people"] is None:
+        _cache["people"] = query_mod.load_people()
+    return _cache["people"]
+
+
+def _invalidate():
+    _cache["data"] = None
+    _cache["people"] = None
 
 
 def _label(url):
@@ -157,5 +172,87 @@ def thesis():
 
 @app.post("/api/refresh")
 def refresh():
-    _cache["data"] = None
+    _invalidate()
     return {"refreshed": True, "founders": len(_dataset()["founders"])}
+
+
+class Query(BaseModel):
+    q: str = ""
+    limit: int = 25
+    include_near_misses: bool = False
+
+
+@app.post("/api/query")
+def nl_query(body: Query):
+    """Multi-Attribute Reasoning — one natural-language compound query in one pass.
+
+    e.g. "technical founder, Berlin, AI infra, no prior VC backing". The sentence
+    is parsed into the SAME Thesis filters the engine already matches on, then
+    every founder in Memory is re-evaluated through that ad-hoc thesis and ranked.
+    Each result carries WHY it matched (and what couldn't be verified) so the
+    reasoning is traceable. Returns founders in the usual FounderProfile shape.
+    """
+    text = (body.q or "").strip()
+    if not text:
+        raise HTTPException(status_code=400, detail="need a query ('q')")
+
+    result = query_mod.resolve(text, _people())
+    matches = result["matches"]
+    passed = [m for m in matches if m.passed]
+    shown = matches if body.include_near_misses else passed
+
+    by_handle = {f["handle"]: f for f in _dataset()["founders"]}
+    results = []
+    for m in shown[: max(1, body.limit)]:
+        fv = by_handle.get(m.handle)
+        if not fv:
+            continue
+        prof = _profile(fv)
+        prof["match"] = query_mod.match_to_dict(m)
+        results.append(prof)
+
+    return {
+        "query": text,
+        "parsed": query_mod.spec_to_dict(result["spec"]),
+        "scanned": len(matches),
+        "matched": len(passed),
+        "results": results,
+    }
+
+
+class Application(BaseModel):
+    """An inbound founder application (from the onboarding form)."""
+    name: str = ""
+    company: str = ""
+    one_liner: str = ""
+    website: str = ""
+    location: str = ""
+    github: str = ""
+    twitter: str = ""
+    linkedin: str = ""
+    industry: str = ""
+    stage: str = ""
+    notes: str = ""
+
+
+@app.post("/api/apply")
+def apply(a: Application):
+    """Inbound founder self-submits -> scored through the SAME pipeline -> in the funnel.
+
+    If a GitHub handle is given we deep-read their public code; otherwise we score
+    the self-reported form (thin -> wide confidence band). Returns the founder's
+    profile in the identical FounderProfile shape the UI uses everywhere else.
+    """
+    app_dict = a.dict()
+    if not (app_dict.get("name") or app_dict.get("company")):
+        raise HTTPException(status_code=400, detail="need at least a name or company")
+
+    fs = inbound.score_application(app_dict)   # scores + persists (source_track=inbound)
+    _invalidate()                               # invalidate so the funnel re-includes them
+
+    target = fs.handle
+    name = (fs.name or "").lower()
+    for f in _dataset()["founders"]:
+        if f["handle"] == target or (name and f["name"].lower() == name):
+            return _profile(f)
+    raise HTTPException(status_code=500, detail="scored but not found in rebuilt funnel")

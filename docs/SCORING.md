@@ -101,6 +101,54 @@ Each axis carries a trend vs. its previous score in Memory (`data/screens.jsonl`
 
 ---
 
+## Layer 3 — Outcome Prior (reference-class matching *with a denominator*)
+
+`reference_class.py` scores **similarity** to winner archetypes — the class is
+`personas.seed.json`, six evidence-backed founder personas (Domain Defector,
+Comeback Operator, Prolific Builder, Deep-Tech Researcher, Under-Networked
+Contrarian, …), each defined by public features. `extract_features` detects 16 of
+them from demonstrated building, track record, and stated intent; three
+pedigree/employer features in the seed (`founder_factory_alum`, `early_operator`,
+`frontier_lab`, listed in `PEDIGREE_EXCLUDED`) are **deliberately never detected**,
+so matching cannot rebuild the network/credential gate. Similarity is useful, but
+it is not prediction, and comparing only to winners rebuilds the survivorship-bias
+gate the project exists to break. `outcome_prior.py` adds the missing
+**denominator** and turns it into a base-rate signal.
+
+**Two cohorts, both feature-extracted the same way** (GitHub collector → attrs →
+`reference_class.extract_features`), fit by `scripts/build_outcome_model.py`:
+- **winners** — a curated set of proven founders (`data/outcome_cohort.json`)
+- **comparison** — a baseline of typical active builders + real ProductHunt-sourced candidates (outcome *unlabeled* — the population a winner must be distinguished from)
+
+**Per-feature likelihood ratio, combined with naive Bayes:**
+```
+LR(f)          = P(f | winner) / P(f | comparison)          # Laplace-smoothed; >1 predicts
+posterior_odds = prior_odds · Π LR(f present) · Π LR̄(f absent)
+P(resembles)   = posterior_odds / (1 + posterior_odds)
+band           = P ± 1/√(min_support)                        # widens when the sample is thin
+```
+
+Output (`OutcomePrior`): a 0–100 score + band + confidence, the **base rate** for
+context, and the **top ± feature drivers** with their lift — surfaced in the
+decision packet (`analyze.py`) and the frontend contract (`export.py`).
+
+**Why the denominator matters (real result on the seed cohorts):** against a
+baseline of elite OSS developers, `technical` (1.05), `earned attention` (0.97),
+`polyglot` (0.97) and even `prolific OSS` (0.90) collapse to **noise** — only
+`high shipping cadence` (1.40) and `systems-building` (1.20) show real lift. A
+similarity-to-winners model scores all of them as gold; the base-rate model shows
+which actually separate proven founders from the crowd.
+
+**Guarantees:** soft prior, never a gate · features are demonstrated-building only,
+so lift can't encode a pedigree gate · every LR is visible (fairness audit — drop a
+bias proxy and show the number that justified it) · label is *"resembles a proven
+founder,"* not ground-truth success · **refit on real outcomes as Memory accrues
+them** (the flywheel).
+
+Rebuild the model: `python scripts/build_outcome_model.py` → `data/outcome_model.json`.
+
+---
+
 ## Backends: LLM-optional, keyless-safe
 
 `capability.py`, `ambition.py`, and `idea.py` share one contract (`llm.py`):

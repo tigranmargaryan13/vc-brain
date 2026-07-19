@@ -186,6 +186,19 @@ export async function completeSignUp(params: {
   users[key] = user;
   writeUsers(users);
   writeJSON(SESSION_KEY, { email, persona: params.persona });
+  // Inbound bridge: a founder who supplied company details at signup enters the funnel.
+  const ob = params.onboarding;
+  if (params.persona === "founder" && ob.companyName) {
+    void submitApplication({
+      name: user.displayName,
+      company: ob.companyName,
+      one_liner: ob.oneLiner,
+      website: ob.website,
+      location: ob.location,
+      industry: ob.industry === "Other" ? ob.otherIndustry || "" : ob.industry,
+      notes: ob.notes,
+    });
+  }
   // Note is informational only — do not throw. Consumers can ignore.
   void noteOther;
   return delay(stripPw(user));
@@ -290,6 +303,36 @@ async function apiGet<T>(path: string): Promise<T> {
   const res = await fetch(`${API_URL}${path}`);
   if (!res.ok) throw new Error(`API ${res.status}`);
   return (await res.json()) as T;
+}
+
+// A founder application, as the pipeline's POST /api/apply expects it.
+export type Application = {
+  name?: string;
+  company?: string;
+  one_liner?: string;
+  website?: string;
+  location?: string;
+  github?: string;
+  industry?: string;
+  stage?: string;
+  notes?: string;
+};
+
+// Inbound bridge: push a founder's own application INTO the scoring pipeline, so
+// they enter the same funnel as outbound-discovered founders (source_track=inbound).
+// Best-effort and never throws — if the backend is offline the local flow is unaffected.
+export async function submitApplication(app: Application): Promise<FounderProfile | null> {
+  try {
+    const res = await fetch(`${API_URL}/api/apply`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(app),
+    });
+    if (!res.ok) return null;
+    return (await res.json()) as FounderProfile;
+  } catch {
+    return null; // backend offline -> stays a local-only account
+  }
 }
 
 export async function searchFounders(params: {
@@ -433,6 +476,17 @@ export async function addCompany(input: Omit<Company, "id" | "ownerEmail" | "cre
   };
   all.push(c);
   writeJSON(COMPANIES_KEY, all);
+  // Inbound bridge: a founder registering their startup enters the scoring funnel.
+  const applicant = readUsers()[userKey(s.email, "founder")];
+  void submitApplication({
+    name: applicant?.displayName || s.email.split("@")[0],
+    company: c.name,
+    one_liner: c.oneLiner,
+    website: c.website,
+    location: c.location,
+    industry: c.industry === "Other" ? c.otherIndustry || "" : c.industry,
+    notes: c.notes,
+  });
   return delay(c);
 }
 export async function updateCompany(id: string, patch: Partial<Omit<Company, "id" | "ownerEmail" | "createdAt">>): Promise<Company> {

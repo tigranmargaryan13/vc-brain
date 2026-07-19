@@ -12,6 +12,7 @@ import sys
 
 from . import memo as memo_mod
 from . import memory
+from . import outcome_prior as op_mod
 from . import reference_class as rc_mod
 from . import screening
 from . import thesis as thesis_mod
@@ -31,7 +32,25 @@ def _axis_line(a):
 _VERIFIED = {True: "✓", False: "✗", None: "?"}
 
 
-def render(fs, screen, fit, memo, thesis, rc, source_track="outbound", application_status="screened"):
+def _outcome_lines(op):
+    """Render the Outcome Prior block (base-rate lift). Empty if no model is built."""
+    if not op:
+        return ["  OUTCOME PRIOR  (not available — run `python scripts/build_outcome_model.py`)", ""]
+    L = ["  OUTCOME PRIOR  (base-rate lift vs a real denominator — soft, never a gate)"]
+    L.append(f"    Resembles a proven founder: {op.score:.0f}/100   "
+             f"(band {op.band[0]:.0f}-{op.band[1]:.0f}, conf {op.confidence:.0%})")
+    L.append(f"    Base rate in cohort: {op.base_rate:.0f}/100  ·  "
+             f"fit on {op.n_winners} proven vs {op.n_comparison} baseline builders")
+    for d in op.drivers[:3]:
+        sign = "▲" if d["contribution"] >= 0 else "▼"
+        state = "has" if d["present"] else "lacks"
+        L.append(f"      {sign} {state} {d['label']} (lift {d['lift']:.2f})")
+    L.append(f"    ⚠ {op.caveat}")
+    L.append("")
+    return L
+
+
+def render(fs, screen, fit, memo, thesis, rc, source_track="outbound", application_status="screened", op=None):
     L = []
     L.append("")
     L.append(f"  ═══ DECISION PACKET — {fs.name} (@{fs.handle}) ═══")
@@ -52,6 +71,7 @@ def render(fs, screen, fit, memo, thesis, rc, source_track="outbound", applicati
     L.append(f"    Matched on: {', '.join(rc.matched_features) or 'no features'}")
     L.append(f"    ⚠ {rc.caveat}")
     L.append("")
+    L.extend(_outcome_lines(op))
     L.append(f"  THESIS: {thesis.name}")
     L.append(f"    {fit.verdict}  —  thesis fit {fit.fit_score:.0f}/100  "
              f"(risk: {thesis.risk_appetite}, bar {thesis.bar():.0f})")
@@ -120,9 +140,10 @@ def main(argv=None):
     fit = thesis_mod.evaluate(thesis, fs)
     memo = memo_mod.build(fs, screen, signals, fit)
     rc = rc_mod.match(fs.attributes)
-    source_track = "outbound"  # all current candidates are GitHub-discovered; inbound applications will set this to "inbound"
+    op = op_mod.try_predict(fs.attributes)               # base-rate lift (None if model not built)
+    source_track = fs.attributes.get("source_track", "outbound")  # inbound applications carry "inbound"
 
-    print(render(fs, screen, fit, memo, thesis, rc, source_track))
+    print(render(fs, screen, fit, memo, thesis, rc, source_track, op=op))
     return 0
 
 

@@ -1,5 +1,5 @@
 {
-  "note": "Statistically-grounded founder personas. Superset of reference_class.json: same `features`+`members` shape so sourcing/reference_class.py:match() still runs unchanged. Each member carries extra fields (thesis, stat, benchmark, lifts, sourcing, caveat) a richer matcher can read. NEW feature keys need one clause each in reference_class.py:extract_features to become detectable — marked `detectable:false` until then. Similarity is a SOFT PRIOR, never a gate. See vc_brain_founder_personas.md for the evidence table + citations.",
+  "note": "Statistically-grounded founder personas — the DEFAULT reference class loaded by sourcing/reference_class.py:load(). Same `features`+`members` shape so match() runs unchanged; members carry extra fields (thesis, stat, benchmark, lifts, sourcing) a richer matcher can read. 9 of the 12 richer feature keys are wired into extract_features (`detectable:true`). The 3 marked `detectable:false` are pedigree/employer signals (founder_factory_alum, early_operator, frontier_lab) DELIBERATELY left undetected so matching can't rebuild the network/credential gate — see reference_class.py PEDIGREE_EXCLUDED. Similarity is a SOFT PRIOR, never a gate. See vc_brain_founder_personas.md for the evidence table + citations.",
   "features": [
     {"key": "technical",              "label": "Technical builder",                 "detectable": true},
     {"key": "systems_builder",        "label": "Systems / low-level builder",       "detectable": true},
@@ -9,18 +9,18 @@
     {"key": "earned_attention",       "label": "Organic earned attention",          "detectable": true},
     {"key": "polyglot",               "label": "Polyglot (4+ languages)",           "detectable": true},
 
-    {"key": "domain_tenure",          "label": "3+ yrs in target domain",           "detectable": false, "stat": "E4: ~2x base rate (0.22-0.24% vs 0.11%)"},
-    {"key": "founder_factory_alum",   "label": "Ex founder-factory employer",       "detectable": false, "bias": true, "stat": "E7; E9: elite employer only 34% -> weak signal"},
-    {"key": "departure_intent",       "label": "Departed, no new role (stealth)",   "detectable": false, "stat": "cold-start edge: intent before the title"},
-    {"key": "prior_founder",          "label": "Founded a company before",          "detectable": false, "positive_only": true, "stat": "E6: ~49% of unicorn founders"},
-    {"key": "prior_exit",             "label": "Prior exit (acq/IPO)",              "detectable": false, "stat": "E3: 30% next-venture success vs 18%"},
-    {"key": "prior_failed",           "label": "Prior failed startup",              "detectable": false, "positive_only": true, "stat": "E3: 20% > first-timer 18% -> scars count"},
-    {"key": "early_operator",         "label": "Employee #1-50 at a co that scaled","detectable": false, "bias": true, "stat": "founder-factory diaspora effect"},
-    {"key": "has_publications",       "label": "Citable research output",           "detectable": false, "stat": "E7: DeepMind/OpenAI are #1-2 factories; E16 STEM 49-70%"},
-    {"key": "frontier_lab",           "label": "Frontier-lab affiliation",          "detectable": false, "bias": true},
-    {"key": "model_release",          "label": "Released model/dataset w/ uptake",  "detectable": false},
-    {"key": "high_cap_low_provenance","label": "High capability, under-networked",  "detectable": false, "stat": "E13: only 21% of underdog founders raised top-10 VC -> mispriced"},
-    {"key": "non_hub_geo",            "label": "Outside a startup hub",             "detectable": false, "bias": true, "stat": "E11: 70% of unicorns have underdog founders"}
+    {"key": "domain_tenure",          "label": "3+ yrs in target domain",           "detectable": true,  "stat": "E4: ~2x base rate (0.22-0.24% vs 0.11%)"},
+    {"key": "founder_factory_alum",   "label": "Ex founder-factory employer",       "detectable": false, "bias": true, "excluded": "pedigree/employer — intentionally not detected (would rebuild the network gate)", "stat": "E7; E9: elite employer only 34% -> weak signal"},
+    {"key": "departure_intent",       "label": "Departed, no new role (stealth)",   "detectable": true,  "stat": "cold-start edge: intent before the title"},
+    {"key": "prior_founder",          "label": "Founded a company before",          "detectable": true,  "positive_only": true, "stat": "E6: ~49% of unicorn founders"},
+    {"key": "prior_exit",             "label": "Prior exit (acq/IPO)",              "detectable": true,  "stat": "E3: 30% next-venture success vs 18%"},
+    {"key": "prior_failed",           "label": "Prior failed startup",              "detectable": true,  "positive_only": true, "stat": "E3: 20% > first-timer 18% -> scars count"},
+    {"key": "early_operator",         "label": "Employee #1-50 at a co that scaled","detectable": false, "bias": true, "excluded": "pedigree/employer — intentionally not detected (would rebuild the network gate)", "stat": "founder-factory diaspora effect"},
+    {"key": "has_publications",       "label": "Citable research output",           "detectable": true,  "stat": "E7: DeepMind/OpenAI are #1-2 factories; E16 STEM 49-70%"},
+    {"key": "frontier_lab",           "label": "Frontier-lab affiliation",          "detectable": false, "bias": true, "excluded": "pedigree/employer — intentionally not detected (would rebuild the network gate)"},
+    {"key": "model_release",          "label": "Released model/dataset w/ uptake",  "detectable": true},
+    {"key": "high_cap_low_provenance","label": "High capability, under-networked",  "detectable": true,  "stat": "E13: only 21% of underdog founders raised top-10 VC -> mispriced"},
+    {"key": "non_hub_geo",            "label": "Outside a startup hub",             "detectable": true,  "bias": true, "note": "positive-only underdog signal; never a penalty, can't carry an archetype alone", "stat": "E11: 70% of unicorns have underdog founders"}
   ],
   "personas": [
     {
