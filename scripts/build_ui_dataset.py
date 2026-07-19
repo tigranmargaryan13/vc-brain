@@ -44,6 +44,32 @@ FIT = {"survives": "Survives as-is", "pivot-capable": "Pivot potential",
        "market-carried": "Pivot potential", "weak": "At risk"}
 TREND = {"improving": "up", "declining": "down", "stable": "flat", "new": "flat"}
 
+# docs/SCORING.md — the seven Founder Score components and their power-law weights
+WEIGHTS = {"Capability": 1.3, "Skills": 1.0, "Trajectory": 1.0, "Ceiling": 1.5,
+           "Intent": 1.2, "Provenance": 0.8, "Traction": 1.0}
+
+SKILL_POOL = ["Python", "TypeScript", "React", "LLM orchestration", "Data pipelines",
+              "Go", "Rust", "Product design", "Growth", "DevOps", "SQL", "APIs"]
+
+
+def aggregate_dims(dims):
+    """Exact combine step from docs/SCORING.md (_aggregate)."""
+    num = sum(d["value"] * d["coverage"] * d["weight"] for d in dims)
+    den = sum(d["coverage"] * d["weight"] for d in dims)
+    score = (num / den) if den else 0.0
+    avg_cov = sum(d["coverage"] for d in dims) / len(dims)
+    corrob = sum(1 for d in dims if d["coverage"] > 0.15)
+    conf = max(0.10, min(0.95, 0.25 + 0.55 * avg_cov + 0.04 * corrob))
+    margin = (1 - conf) * 35
+    band = [round(max(0.0, score - margin), 1), round(min(100.0, score + margin), 1)]
+    return round(score), round(conf, 2), band
+
+
+def dim(name, value, coverage):
+    return {"name": name, "value": round(max(0, min(100, value))),
+            "coverage": round(max(0.0, min(1.0, coverage)), 2),
+            "weight": WEIGHTS[name]}
+
 
 def rng_for(name):
     return random.Random(int(hashlib.md5(name.encode()).hexdigest(), 16))
@@ -112,9 +138,40 @@ def main():
         if len(one) > 110:
             one = one[:107].rstrip() + "…"
 
-        # --- scores: real pipeline values when joined, seeded-random otherwise ---
-        if fv:
+        # --- dimensions per docs/SCORING.md: real pipeline components when joined,
+        # derived from CSV signals otherwise (seeded-random only where data is absent) ---
+        upvotes_n = int(row["upvotes"]) if (row.get("upvotes") or "").strip().isdigit() else 0
+        comments_n = int(row["comments"]) if (row.get("comments") or "").strip().isdigit() else 0
+        tags = [t.strip() for t in re.split(r"[;,]", row.get("industry") or "") if t.strip()]
+        overview_len = len((row.get("product_overview") or "") + (row.get("description") or ""))
+        fresh = (row.get("fresh_domain") or "").strip().lower() in ("true", "1", "yes")
+
+        if fv and fv.get("founder_score", {}).get("components"):
+            dims = [dim(c["name"], c.get("value", 0), c.get("coverage", 0))
+                    for c in fv["founder_score"]["components"] if c.get("name") in WEIGHTS]
+            for missing in WEIGHTS.keys() - {d["name"] for d in dims}:
+                dims.append(dim(missing, 0, 0.0))
             founder_score = max(1, min(round(fv["founder_score"]["value"]), 100))
+            confidence = round(fv["founder_score"].get("confidence", 0.5), 2)
+            b = fv["founder_score"].get("band") or []
+            band = [round(b[0], 1), round(b[1], 1)] if len(b) == 2 else \
+                [max(0, founder_score - 20), min(100, founder_score + 20)]
+        else:
+            dims = [
+                dim("Capability", rng.randint(45, 85), rng.uniform(0.3, 0.7)),
+                dim("Skills", 30 + 12 * len(tags), min(1.0, len(tags) / 4)),
+                dim("Trajectory", rng.randint(40, 80), rng.uniform(0.2, 0.6)),
+                dim("Ceiling", rng.randint(45, 90), min(1.0, 0.3 + overview_len / 2000)),
+                dim("Intent", 70 if fresh else rng.randint(30, 60),
+                    0.5 if fresh else rng.uniform(0.1, 0.3)),
+                dim("Provenance", 50 if row.get("source") == "dinner" else rng.randint(20, 50),
+                    0.33 if row.get("source") == "dinner" else 0.0),
+                dim("Traction", min(100, round(upvotes_n * 0.4)),
+                    min(1.0, (upvotes_n + comments_n) / 200)),
+            ]
+            founder_score, confidence, band = aggregate_dims(dims)
+
+        if fv:
             sc = fv.get("screen") or {}
             market = MARKET.get((sc.get("market") or {}).get("stance"), "Neutral")
             fit = FIT.get((sc.get("idea_vs_market") or {}).get("stance"), "Pivot potential")
@@ -122,7 +179,6 @@ def main():
             m_tr = TREND.get((sc.get("market") or {}).get("trend"), "flat")
             i_tr = TREND.get((sc.get("idea_vs_market") or {}).get("trend"), "flat")
         else:
-            founder_score = rng.randint(48, 85)
             market = rng.choices(["Bullish", "Neutral", "Bear"], weights=[3, 5, 2])[0]
             fit = rng.choices(["Survives as-is", "Pivot potential", "At risk"], weights=[3, 5, 2])[0]
             f_tr, m_tr, i_tr = (rng.choice(["up", "flat", "flat", "down"]) for _ in range(3))
@@ -213,19 +269,44 @@ def main():
         if links:
             details["links"] = links
 
+        # --- enrichment: bio, skills, contact, full project description ---
+        location = norm_location(row.get("location"), rng)
+        desc_full = re.sub(r"\s+", " ", ((row.get("product_overview") or "") + " " +
+                                         (row.get("description") or "")).strip())
+        bio = (f"{name.split()[0]} is building {product}"
+               + (f" — {desc_full[:180].rstrip('.')}." if desc_full else ".")
+               + f" Based in {location}."
+               + (" Sourced via a curated NYC founders dinner." if row.get("source") == "dinner"
+                  else " Discovered via Product Hunt launch signals."))
+        skills = tags[:4] + [s for s in rng.sample(SKILL_POOL, 4) if s not in tags]
+        skills = skills[:5]
+        li_url = (row.get("linkedin") or "").strip()
+        contact = {
+            "email": f"{uid}@vcbrain.example",
+            "linkedin": li_url if li_url.startswith("http")
+            else f"https://www.linkedin.com/in/{uid.replace('_', '-')}",
+        }
+        if (row.get("website") or "").strip().startswith("http"):
+            contact["website"] = row["website"].strip()
+
         rec = {
             "id": f"src_{uid}",
             "name": name,
             "email": f"{uid}@vcbrain.example",
-            "location": norm_location(row.get("location"), rng),
+            "location": location,
             "completeness": completeness,
+            "bio": bio,
+            "skills": skills,
+            "contact": contact,
             "details": details,
+            "dimensions": dims,
             "projects": [{
                 "id": f"src_{uid}_p1",
                 "name": product,
                 "sector": map_sector(row.get("industry"), (fv or {}).get("sector"), rng),
                 "stage": rng.choice(STAGES),
                 "oneLiner": one or f"Building {product}.",
+                "description": desc_full or f"{product} — details to be confirmed on founder call.",
             }],
             "scores": {
                 "founder": founder_score,
@@ -234,6 +315,8 @@ def main():
                 "marketTrend": m_tr,
                 "fit": fit,
                 "fitTrend": i_tr,
+                "confidence": confidence,
+                "band": band,
             },
             "evidence": E,
         }
@@ -332,27 +415,49 @@ def main():
             a_links.append({"label": "GitHub", "url": f"https://github.com/{fo['github']}"})
         a_details["links"] = a_links
 
+        # SCORING.md dimensions from paper signals (absence = coverage 0, never a penalty)
+        a_dims = [
+            dim("Capability", 70 if code_url else 0, 0.4 if code_url else 0.0),
+            dim("Skills", 55, 0.25 if code_url else 0.1),
+            dim("Trajectory", min(100, 40 + cadence * 10), min(1.0, cadence / 4)),
+            dim("Ceiling", min(100, 50 + len(title) // 4), 0.4),
+            dim("Intent", 40, 0.15),
+            dim("Provenance", 60 if aff else 0, 0.33 if aff else 0.0),
+            dim("Traction", min(100, int(cites or 0)), min(1.0, int(cites or 0) / 50)),
+        ]
+        a_score, a_conf, a_band = aggregate_dims(a_dims)
+
         out.append({
             "id": f"arxiv_{uid}",
             "name": name,
             "email": f"{uid}@vcbrain.example",
             "location": "Unknown",
             "completeness": round(sum(1 for x in a_fields if x) / len(a_fields) * 100),
+            "bio": (f"{name.split()[0]} is a researcher — first-author of \"{title[:120]}\""
+                    + (f" ({aff})." if aff else ".") + " Pre-founding, sourced via arXiv."),
+            "skills": ["Research", "Machine Learning", "Python"] + (["Open source"] if code_url else []),
+            "contact": {"email": f"{uid}@vcbrain.example",
+                        **({"website": code_url} if code_url else {})},
             "details": a_details,
+            "dimensions": a_dims,
             "projects": [{
                 "id": f"arxiv_{uid}_p1",
                 "name": project,
                 "sector": sector,
                 "stage": "Pre-seed",
                 "oneLiner": one,
+                "description": f"Academic work: {title}. Commercialization status unknown — "
+                               "pre-founding signal from the arXiv channel.",
             }],
             "scores": {
-                "founder": score,
+                "founder": a_score,
                 "founderTrend": "up" if cadence >= 3 else "flat",
                 "market": "Neutral",
                 "marketTrend": "flat",
                 "fit": "Pivot potential",
                 "fitTrend": "flat",
+                "confidence": a_conf,
+                "band": a_band,
             },
             "coldStart": True,
             "evidence": E,
