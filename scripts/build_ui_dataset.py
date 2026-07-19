@@ -351,6 +351,7 @@ def main():
         name = row["name"].strip()
         rng = rng_for(name)
         gh = (row.get("github_handle") or "").strip()
+        fv = by_handle.get(gh.lower()) if gh else None  # real pipeline join
         uid = re.sub(r"[^a-z0-9_]+", "_", (gh or name).lower()).strip("_")
         if not uid or uid in used:
             continue
@@ -374,23 +375,35 @@ def main():
                   else "Deep Tech" if "cs.ro" in domain
                   else "Biotech" if "q-bio" in domain else "AI/ML")
 
-        dims = [
-            dim("Capability", min(100, 40 + stars // 5 + (20 if code_url else 0)),
-                0.5 if code_url else 0.15),
-            dim("Skills", min(100, 30 + repos * 3), min(1.0, repos / 10)),
-            dim("Trajectory", min(100, 30 + cadence * 3),
-                min(1.0, (cadence + (1 if code_url else 0)) / 8)),
-            dim("Ceiling", potential or rng.randint(40, 70), 0.6 if potential else 0.2),
-            dim("Intent", 65 if has_intent else 35, 0.4 if has_intent else 0.15),
-            dim("Provenance", (25 if aff else 0) + min(50, _i(row, "coauthors") * 5),
-                0.33 if aff else 0.1),
-            dim("Traction", min(100, stars * 2 + forks * 3),
-                min(1.0, (stars + forks) / 10)),
-        ]
-        agg_score, a_conf, a_band = aggregate_dims(dims)
-        a_score = max(1, min(_i(row, "founder_score") or agg_score, 100))
-        margin = (a_band[1] - a_band[0]) / 2
-        a_band = [round(max(0.0, a_score - margin), 1), round(min(100.0, a_score + margin), 1)]
+        if fv and fv.get("founder_score", {}).get("components"):
+            # real pipeline scoring (sourcing/ SCORING.md engine) — same as PH rows
+            dims = [dim(c["name"], c.get("value", 0), c.get("coverage", 0))
+                    for c in fv["founder_score"]["components"] if c.get("name") in WEIGHTS]
+            for missing in WEIGHTS.keys() - {d["name"] for d in dims}:
+                dims.append(dim(missing, 0, 0.0))
+            a_score = max(1, min(round(fv["founder_score"]["value"]), 100))
+            a_conf = round(fv["founder_score"].get("confidence", 0.5), 2)
+            b = fv["founder_score"].get("band") or []
+            a_band = [round(b[0], 1), round(b[1], 1)] if len(b) == 2 else \
+                [max(0, a_score - 20), min(100, a_score + 20)]
+        else:
+            dims = [
+                dim("Capability", min(100, 40 + stars // 5 + (20 if code_url else 0)),
+                    0.5 if code_url else 0.15),
+                dim("Skills", min(100, 30 + repos * 3), min(1.0, repos / 10)),
+                dim("Trajectory", min(100, 30 + cadence * 3),
+                    min(1.0, (cadence + (1 if code_url else 0)) / 8)),
+                dim("Ceiling", potential or rng.randint(40, 70), 0.6 if potential else 0.2),
+                dim("Intent", 65 if has_intent else 35, 0.4 if has_intent else 0.15),
+                dim("Provenance", (25 if aff else 0) + min(50, _i(row, "coauthors") * 5),
+                    0.33 if aff else 0.1),
+                dim("Traction", min(100, stars * 2 + forks * 3),
+                    min(1.0, (stars + forks) / 10)),
+            ]
+            agg_score, a_conf, a_band = aggregate_dims(dims)
+            a_score = max(1, min(_i(row, "founder_score") or agg_score, 100))
+            margin = (a_band[1] - a_band[0]) / 2
+            a_band = [round(max(0.0, a_score - margin), 1), round(min(100.0, a_score + margin), 1)]
 
         proj = (code_url.rstrip("/").rsplit("/", 1)[-1] if code_url
                 else f"Research: {title[:40]}")
@@ -398,6 +411,14 @@ def main():
         def aev2(text, trust, state, url, label):
             E.append({"text": text, "trust": trust, "state": state,
                       "sourceUrl": url, "sourceLabel": label})
+        if fv:
+            bnd = fv["founder_score"].get("band") or []
+            band_s = f" (90% band {bnd[0]:.0f}–{bnd[1]:.0f})" if len(bnd) == 2 else ""
+            aev2(f"VC Brain pipeline read their GitHub code: Founder Score "
+                 f"{fv['founder_score']['value']:.1f}{band_s}, confidence "
+                 f"{fv['founder_score'].get('confidence', 0):.2f}.",
+                 "High", "corroborated",
+                 fv.get("profile_url") or f"https://github.com/{gh}", "VC Brain pipeline")
         aev2(f"First-author paper: {title[:110]}", "High", "corroborated", paper_url, "arXiv")
         aev2(f"VC Brain founder-potential assessment: {potential}/100." if potential
              else "Founder-potential assessment pending.", "Medium", "corroborated",

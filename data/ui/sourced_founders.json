@@ -71,6 +71,12 @@
     "weight": 0.8
    },
    {
+    "name": "Intent",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.2
+   },
+   {
     "name": "Skills",
     "value": 0,
     "coverage": 0.0,
@@ -81,12 +87,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.2
    }
   ],
   "projects": [
@@ -246,6 +246,12 @@
     "weight": 0.8
    },
    {
+    "name": "Intent",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.2
+   },
+   {
     "name": "Skills",
     "value": 0,
     "coverage": 0.0,
@@ -256,12 +262,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.2
    }
   ],
   "projects": [
@@ -385,38 +385,38 @@
   "dimensions": [
    {
     "name": "Capability",
-    "value": 89,
-    "coverage": 0.5,
+    "value": 42,
+    "coverage": 1.0,
     "weight": 1.3
    },
    {
     "name": "Skills",
-    "value": 100,
+    "value": 78,
     "coverage": 1.0,
     "weight": 1.0
    },
    {
     "name": "Trajectory",
-    "value": 100,
+    "value": 77,
     "coverage": 1.0,
     "weight": 1.0
    },
    {
     "name": "Ceiling",
-    "value": 38,
+    "value": 43,
     "coverage": 0.6,
     "weight": 1.5
    },
    {
     "name": "Intent",
-    "value": 65,
-    "coverage": 0.4,
+    "value": 35,
+    "coverage": 0.5,
     "weight": 1.2
    },
    {
     "name": "Provenance",
-    "value": 30,
-    "coverage": 0.1,
+    "value": 25,
+    "coverage": 0.33,
     "weight": 0.8
    },
    {
@@ -437,20 +437,27 @@
    }
   ],
   "scores": {
-   "founder": 78,
+   "founder": 62,
    "founderTrend": "up",
    "market": "Bear",
    "marketTrend": "flat",
    "fit": "Pivot potential",
    "fitTrend": "flat",
-   "confidence": 0.85,
+   "confidence": 0.95,
    "band": [
-    72.8,
-    83.2
+    60.2,
+    63.7
    ]
   },
   "coldStart": true,
   "evidence": [
+   {
+    "text": "VC Brain pipeline read their GitHub code: Founder Score 62.0 (90% band 60–64), confidence 0.95.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/QinghongLin",
+    "sourceLabel": "VC Brain pipeline"
+   },
    {
     "text": "First-author paper: Data Journalist Agent: Transforming Data into Verifiable Multimodal Stories",
     "trust": "High",
@@ -496,154 +503,6 @@
   ]
  },
  {
-  "id": "acad_mvmalyi",
-  "name": "Max Malyi",
-  "email": "mvmalyi@vcbrain.example",
-  "location": "Mexico City",
-  "completeness": 80,
-  "bio": "Max is a researcher building in Climate — first-author of \"Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Sema\". Sourced via the academic channel.",
-  "skills": [
-   "Research",
-   "Machine Learning",
-   "CS.CL"
-  ],
-  "contact": {
-   "email": "mvmalyi@vcbrain.example",
-   "website": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling",
-   "linkedin": "https://www.linkedin.com/in/mvmalyi"
-  },
-  "details": {
-   "source": "Academic sourcing",
-   "links": [
-    {
-     "label": "arXiv",
-     "url": "https://arxiv.org/abs/2605.31281v1"
-    },
-    {
-     "label": "Code",
-     "url": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling"
-    },
-    {
-     "label": "GitHub",
-     "url": "https://github.com/mvmalyi"
-    }
-   ],
-   "industry": "cs.CL"
-  },
-  "dimensions": [
-   {
-    "name": "Capability",
-    "value": 60,
-    "coverage": 0.5,
-    "weight": 1.3
-   },
-   {
-    "name": "Skills",
-    "value": 48,
-    "coverage": 0.6,
-    "weight": 1.0
-   },
-   {
-    "name": "Trajectory",
-    "value": 42,
-    "coverage": 0.62,
-    "weight": 1.0
-   },
-   {
-    "name": "Ceiling",
-    "value": 69,
-    "coverage": 0.6,
-    "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 65,
-    "coverage": 0.4,
-    "weight": 1.2
-   },
-   {
-    "name": "Provenance",
-    "value": 20,
-    "coverage": 0.1,
-    "weight": 0.8
-   },
-   {
-    "name": "Traction",
-    "value": 2,
-    "coverage": 0.1,
-    "weight": 1.0
-   }
-  ],
-  "projects": [
-   {
-    "id": "acad_mvmalyi_p1",
-    "name": "llm-driven-wind-turbine-maintenance-log-labelling",
-    "sector": "Climate",
-    "stage": "Pre-seed",
-    "oneLiner": "Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Semantic Ex…",
-    "description": "Academic work: Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Semantic Extraction of Reliability Intelligence. Open-source implementation at https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
-   }
-  ],
-  "scores": {
-   "founder": 65,
-   "founderTrend": "flat",
-   "market": "Bear",
-   "marketTrend": "flat",
-   "fit": "Pivot potential",
-   "fitTrend": "flat",
-   "confidence": 0.68,
-   "band": [
-    53.8,
-    76.2
-   ]
-  },
-  "coldStart": true,
-  "evidence": [
-   {
-    "text": "First-author paper: Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Semantic Extra",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "VC Brain founder-potential assessment: 69/100.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
-    "sourceLabel": "VC Brain pipeline"
-   },
-   {
-    "text": "Code released with the paper.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "Repo traction: 1 stars, 0 forks.",
-    "trust": "High",
-    "state": "corroborated",
-    "sourceUrl": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling",
-    "sourceLabel": "GitHub"
-   },
-   {
-    "text": "4 papers in the last 12 months.",
-    "trust": "Medium",
-    "state": "corroborated",
-    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
-    "sourceLabel": "arXiv"
-   },
-   {
-    "text": "Founder-intent signal: true.",
-    "trust": "Medium",
-    "state": "uncorroborated",
-    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
-    "sourceLabel": "VC Brain pipeline"
-   }
-  ]
- },
- {
   "id": "acad_gracebrigham",
   "name": "Natalie Grace Brigham",
   "email": "gracebrigham@vcbrain.example",
@@ -682,38 +541,38 @@
   "dimensions": [
    {
     "name": "Capability",
-    "value": 60,
-    "coverage": 0.5,
+    "value": 68,
+    "coverage": 1.0,
     "weight": 1.3
    },
    {
     "name": "Skills",
-    "value": 42,
-    "coverage": 0.4,
+    "value": 100,
+    "coverage": 1.0,
     "weight": 1.0
    },
    {
     "name": "Trajectory",
-    "value": 36,
-    "coverage": 0.38,
+    "value": 22,
+    "coverage": 0.67,
     "weight": 1.0
    },
    {
     "name": "Ceiling",
-    "value": 54,
-    "coverage": 0.6,
+    "value": 43,
+    "coverage": 1.0,
     "weight": 1.5
    },
    {
     "name": "Intent",
-    "value": 65,
-    "coverage": 0.4,
+    "value": 0,
+    "coverage": 0.0,
     "weight": 1.2
    },
    {
     "name": "Provenance",
-    "value": 20,
-    "coverage": 0.1,
+    "value": 0,
+    "coverage": 0.0,
     "weight": 0.8
    },
    {
@@ -734,20 +593,27 @@
    }
   ],
   "scores": {
-   "founder": 61,
+   "founder": 59,
    "founderTrend": "flat",
    "market": "Bullish",
    "marketTrend": "flat",
    "fit": "Pivot potential",
    "fitTrend": "flat",
-   "confidence": 0.64,
+   "confidence": 0.71,
    "band": [
-    48.5,
-    73.5
+    48.3,
+    68.9
    ]
   },
   "coldStart": true,
   "evidence": [
+   {
+    "text": "VC Brain pipeline read their GitHub code: Founder Score 58.6 (90% band 48–69), confidence 0.71.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/GraceBrigham",
+    "sourceLabel": "VC Brain pipeline"
+   },
    {
     "text": "First-author paper: Janus: a Playground for User-Involved Agentic Permission Management",
     "trust": "High",
@@ -793,6 +659,161 @@
   ]
  },
  {
+  "id": "acad_mvmalyi",
+  "name": "Max Malyi",
+  "email": "mvmalyi@vcbrain.example",
+  "location": "Mexico City",
+  "completeness": 80,
+  "bio": "Max is a researcher building in Climate — first-author of \"Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Sema\". Sourced via the academic channel.",
+  "skills": [
+   "Research",
+   "Machine Learning",
+   "CS.CL"
+  ],
+  "contact": {
+   "email": "mvmalyi@vcbrain.example",
+   "website": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling",
+   "linkedin": "https://www.linkedin.com/in/mvmalyi"
+  },
+  "details": {
+   "source": "Academic sourcing",
+   "links": [
+    {
+     "label": "arXiv",
+     "url": "https://arxiv.org/abs/2605.31281v1"
+    },
+    {
+     "label": "Code",
+     "url": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling"
+    },
+    {
+     "label": "GitHub",
+     "url": "https://github.com/mvmalyi"
+    }
+   ],
+   "industry": "cs.CL"
+  },
+  "dimensions": [
+   {
+    "name": "Capability",
+    "value": 44,
+    "coverage": 1.0,
+    "weight": 1.3
+   },
+   {
+    "name": "Skills",
+    "value": 78,
+    "coverage": 1.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Trajectory",
+    "value": 58,
+    "coverage": 1.0,
+    "weight": 1.0
+   },
+   {
+    "name": "Ceiling",
+    "value": 55,
+    "coverage": 1.0,
+    "weight": 1.5
+   },
+   {
+    "name": "Intent",
+    "value": 35,
+    "coverage": 0.5,
+    "weight": 1.2
+   },
+   {
+    "name": "Provenance",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 0.8
+   },
+   {
+    "name": "Traction",
+    "value": 63,
+    "coverage": 1.0,
+    "weight": 1.0
+   }
+  ],
+  "projects": [
+   {
+    "id": "acad_mvmalyi_p1",
+    "name": "llm-driven-wind-turbine-maintenance-log-labelling",
+    "sector": "Climate",
+    "stage": "Pre-seed",
+    "oneLiner": "Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Semantic Ex…",
+    "description": "Academic work: Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Semantic Extraction of Reliability Intelligence. Open-source implementation at https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling. Pre-founding — sourced by the academic pipeline (arXiv + GitHub + potential assessment)."
+   }
+  ],
+  "scores": {
+   "founder": 56,
+   "founderTrend": "flat",
+   "market": "Bear",
+   "marketTrend": "flat",
+   "fit": "Pivot potential",
+   "fitTrend": "flat",
+   "confidence": 0.92,
+   "band": [
+    53.5,
+    58.9
+   ]
+  },
+  "coldStart": true,
+  "evidence": [
+   {
+    "text": "VC Brain pipeline read their GitHub code: Founder Score 56.2 (90% band 54–59), confidence 0.92.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/mvmalyi",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "First-author paper: Wind Turbine Maintenance Log Labelling Framework: LLM-Driven Data Correction and Enrichment via Semantic Extra",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "VC Brain founder-potential assessment: 69/100.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
+    "sourceLabel": "VC Brain pipeline"
+   },
+   {
+    "text": "Code released with the paper.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "Repo traction: 1 stars, 0 forks.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling",
+    "sourceLabel": "GitHub"
+   },
+   {
+    "text": "4 papers in the last 12 months.",
+    "trust": "Medium",
+    "state": "corroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
+    "sourceLabel": "arXiv"
+   },
+   {
+    "text": "Founder-intent signal: true.",
+    "trust": "Medium",
+    "state": "uncorroborated",
+    "sourceUrl": "https://arxiv.org/abs/2605.31281v1",
+    "sourceLabel": "VC Brain pipeline"
+   }
+  ]
+ },
+ {
   "id": "acad_itregear",
   "name": "Ivan Tregear",
   "email": "itregear@vcbrain.example",
@@ -830,44 +851,44 @@
   "dimensions": [
    {
     "name": "Capability",
-    "value": 60,
-    "coverage": 0.5,
+    "value": 62,
+    "coverage": 1.0,
     "weight": 1.3
    },
    {
     "name": "Skills",
-    "value": 93,
+    "value": 100,
     "coverage": 1.0,
     "weight": 1.0
    },
    {
     "name": "Trajectory",
-    "value": 33,
-    "coverage": 0.25,
+    "value": 8,
+    "coverage": 1.0,
     "weight": 1.0
    },
    {
     "name": "Ceiling",
-    "value": 49,
-    "coverage": 0.6,
+    "value": 47,
+    "coverage": 0.57,
     "weight": 1.5
    },
    {
     "name": "Intent",
-    "value": 65,
-    "coverage": 0.4,
+    "value": 0,
+    "coverage": 0.0,
     "weight": 1.2
    },
    {
     "name": "Provenance",
-    "value": 15,
-    "coverage": 0.1,
+    "value": 0,
+    "coverage": 0.0,
     "weight": 0.8
    },
    {
     "name": "Traction",
-    "value": 0,
-    "coverage": 0.0,
+    "value": 12,
+    "coverage": 0.6,
     "weight": 1.0
    }
   ],
@@ -882,20 +903,27 @@
    }
   ],
   "scores": {
-   "founder": 54,
+   "founder": 50,
    "founderTrend": "flat",
    "market": "Neutral",
    "marketTrend": "flat",
    "fit": "Pivot potential",
    "fitTrend": "flat",
-   "confidence": 0.67,
+   "confidence": 0.78,
    "band": [
-    42.6,
-    65.4
+    41.9,
+    57.4
    ]
   },
   "coldStart": true,
   "evidence": [
+   {
+    "text": "VC Brain pipeline read their GitHub code: Founder Score 49.6 (90% band 42–57), confidence 0.78.",
+    "trust": "High",
+    "state": "corroborated",
+    "sourceUrl": "https://github.com/ITregear",
+    "sourceLabel": "VC Brain pipeline"
+   },
    {
     "text": "First-author paper: Investigating the Effect of a Series Elastic Actuation Retrofit to Black-Box Actuators",
     "trust": "High",
@@ -996,6 +1024,12 @@
     "weight": 0.8
    },
    {
+    "name": "Intent",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.2
+   },
+   {
     "name": "Skills",
     "value": 0,
     "coverage": 0.0,
@@ -1006,12 +1040,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.2
    }
   ],
   "projects": [
@@ -1312,6 +1340,12 @@
     "weight": 1.0
    },
    {
+    "name": "Intent",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.2
+   },
+   {
     "name": "Skills",
     "value": 0,
     "coverage": 0.0,
@@ -1322,12 +1356,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.2
    }
   ],
   "projects": [
@@ -2616,6 +2644,12 @@
     "weight": 0.8
    },
    {
+    "name": "Intent",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.2
+   },
+   {
     "name": "Skills",
     "value": 0,
     "coverage": 0.0,
@@ -2626,12 +2660,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.2
    }
   ],
   "projects": [
@@ -2764,6 +2792,12 @@
     "weight": 0.8
    },
    {
+    "name": "Intent",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.2
+   },
+   {
     "name": "Skills",
     "value": 0,
     "coverage": 0.0,
@@ -2774,12 +2808,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.2
    }
   ],
   "projects": [
@@ -2916,6 +2944,12 @@
     "weight": 0.8
    },
    {
+    "name": "Intent",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.2
+   },
+   {
     "name": "Skills",
     "value": 0,
     "coverage": 0.0,
@@ -2926,12 +2960,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.2
    }
   ],
   "projects": [
@@ -4930,6 +4958,12 @@
     "weight": 0.8
    },
    {
+    "name": "Intent",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.2
+   },
+   {
     "name": "Skills",
     "value": 0,
     "coverage": 0.0,
@@ -4940,12 +4974,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.2
    }
   ],
   "projects": [
@@ -5084,6 +5112,12 @@
     "weight": 0.8
    },
    {
+    "name": "Intent",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.2
+   },
+   {
     "name": "Skills",
     "value": 0,
     "coverage": 0.0,
@@ -5094,12 +5128,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.2
    }
   ],
   "projects": [
@@ -5492,6 +5520,12 @@
     "weight": 0.8
    },
    {
+    "name": "Intent",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.2
+   },
+   {
     "name": "Skills",
     "value": 0,
     "coverage": 0.0,
@@ -5502,12 +5536,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.2
    }
   ],
   "projects": [
@@ -5639,6 +5667,12 @@
     "weight": 0.8
    },
    {
+    "name": "Intent",
+    "value": 0,
+    "coverage": 0.0,
+    "weight": 1.2
+   },
+   {
     "name": "Skills",
     "value": 0,
     "coverage": 0.0,
@@ -5649,12 +5683,6 @@
     "value": 0,
     "coverage": 0.0,
     "weight": 1.5
-   },
-   {
-    "name": "Intent",
-    "value": 0,
-    "coverage": 0.0,
-    "weight": 1.2
    }
   ],
   "projects": [
