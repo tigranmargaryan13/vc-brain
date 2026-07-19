@@ -1,0 +1,726 @@
+[
+ {
+  "channel": "github",
+  "founder": {
+   "name": "Yushi Huang",
+   "github": null
+  },
+  "repo": {
+   "url": "https://github.com/Harahan/MeanFlowNFT",
+   "owner": "Harahan",
+   "name": "MeanFlowNFT",
+   "language": "Python",
+   "pushed_at": "2026-07-18T10:19:18Z",
+   "created_at": "2026-07-14T09:33:23Z"
+  },
+  "signals": {
+   "repo_stars": {
+    "criterion": "repo_stars",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "GitHub stars on the paper's code repo — earned attention",
+    "value": 35,
+    "citation": "https://github.com/Harahan/MeanFlowNFT",
+    "evidence": null
+   },
+   "repo_forks": {
+    "criterion": "repo_forks",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Forks on the paper's code repo — community reuse",
+    "value": 0,
+    "citation": "https://github.com/Harahan/MeanFlowNFT",
+    "evidence": null
+   },
+   "repo_contributors": {
+    "criterion": "repo_contributors",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Contributor count — collaboration signal",
+    "value": 1,
+    "citation": "https://github.com/Harahan/MeanFlowNFT/graphs/contributors",
+    "evidence": null
+   },
+   "repo_recent_activity": {
+    "criterion": "repo_recent_activity",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Days since last push — active maintenance / shipping cadence",
+    "value": 0,
+    "citation": "https://github.com/Harahan/MeanFlowNFT",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "github",
+  "founder": {
+   "name": "Haoyu Zhao",
+   "github": null
+  },
+  "repo": {
+   "url": "https://github.com/alibaba-damo-academy/RynnWorld-4D",
+   "owner": "alibaba-damo-academy",
+   "name": "RynnWorld-4D",
+   "language": "Python",
+   "pushed_at": "2026-07-16T13:21:16Z",
+   "created_at": "2026-07-02T13:05:22Z"
+  },
+  "signals": {
+   "repo_stars": {
+    "criterion": "repo_stars",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "GitHub stars on the paper's code repo — earned attention",
+    "value": 63,
+    "citation": "https://github.com/alibaba-damo-academy/RynnWorld-4D",
+    "evidence": null
+   },
+   "repo_forks": {
+    "criterion": "repo_forks",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Forks on the paper's code repo — community reuse",
+    "value": 3,
+    "citation": "https://github.com/alibaba-damo-academy/RynnWorld-4D",
+    "evidence": null
+   },
+   "repo_contributors": {
+    "criterion": "repo_contributors",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Contributor count — collaboration signal",
+    "value": 4,
+    "citation": "https://github.com/alibaba-damo-academy/RynnWorld-4D/graphs/contributors",
+    "evidence": null
+   },
+   "repo_recent_activity": {
+    "criterion": "repo_recent_activity",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Days since last push — active maintenance / shipping cadence",
+    "value": 2,
+    "citation": "https://github.com/alibaba-damo-academy/RynnWorld-4D",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "github",
+  "founder": {
+   "name": "Varshith Roy Kotla",
+   "github": null
+  },
+  "repo": {
+   "url": "https://github.com/nearpot/Weighted-Conformal-Thermal-Transfer",
+   "owner": "nearpot",
+   "name": "Weighted-Conformal-Thermal-Transfer",
+   "language": "Python",
+   "pushed_at": "2026-07-02T19:04:16Z",
+   "created_at": "2026-07-02T19:00:56Z"
+  },
+  "signals": {
+   "repo_stars": {
+    "criterion": "repo_stars",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "GitHub stars on the paper's code repo — earned attention",
+    "value": 0,
+    "citation": "https://github.com/nearpot/Weighted-Conformal-Thermal-Transfer",
+    "evidence": null
+   },
+   "repo_forks": {
+    "criterion": "repo_forks",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Forks on the paper's code repo — community reuse",
+    "value": 0,
+    "citation": "https://github.com/nearpot/Weighted-Conformal-Thermal-Transfer",
+    "evidence": null
+   },
+   "repo_contributors": {
+    "criterion": "repo_contributors",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Contributor count — collaboration signal",
+    "value": 1,
+    "citation": "https://github.com/nearpot/Weighted-Conformal-Thermal-Transfer/graphs/contributors",
+    "evidence": null
+   },
+   "repo_recent_activity": {
+    "criterion": "repo_recent_activity",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Days since last push — active maintenance / shipping cadence",
+    "value": 16,
+    "citation": "https://github.com/nearpot/Weighted-Conformal-Thermal-Transfer",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "github",
+  "founder": {
+   "name": "Natalie Grace Brigham",
+   "github": "GraceBrigham"
+  },
+  "repo": {
+   "url": "https://github.com/GraceBrigham/Janus",
+   "owner": "GraceBrigham",
+   "name": "Janus",
+   "language": "Python",
+   "pushed_at": "2026-07-01T20:32:44Z",
+   "created_at": "2026-07-01T20:07:55Z"
+  },
+  "signals": {
+   "repo_stars": {
+    "criterion": "repo_stars",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "GitHub stars on the paper's code repo — earned attention",
+    "value": 1,
+    "citation": "https://github.com/GraceBrigham/Janus",
+    "evidence": null
+   },
+   "repo_forks": {
+    "criterion": "repo_forks",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Forks on the paper's code repo — community reuse",
+    "value": 0,
+    "citation": "https://github.com/GraceBrigham/Janus",
+    "evidence": null
+   },
+   "repo_contributors": {
+    "criterion": "repo_contributors",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Contributor count — collaboration signal",
+    "value": 1,
+    "citation": "https://github.com/GraceBrigham/Janus/graphs/contributors",
+    "evidence": null
+   },
+   "repo_recent_activity": {
+    "criterion": "repo_recent_activity",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Days since last push — active maintenance / shipping cadence",
+    "value": 17,
+    "citation": "https://github.com/GraceBrigham/Janus",
+    "evidence": null
+   },
+   "builder_handle_verified": {
+    "criterion": "builder_handle_verified",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Repo owner matches the paper author — direct builder evidence",
+    "value": true,
+    "citation": "https://github.com/GraceBrigham",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "github",
+  "founder": {
+   "name": "Ayan Pendharkar",
+   "github": null
+  },
+  "repo": {
+   "url": "https://github.com/bushesarebetter/jepa_research_project",
+   "owner": "bushesarebetter",
+   "name": "jepa_research_project",
+   "language": "Python",
+   "pushed_at": "2026-06-29T09:48:12Z",
+   "created_at": "2026-06-26T06:29:54Z"
+  },
+  "signals": {
+   "repo_stars": {
+    "criterion": "repo_stars",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "GitHub stars on the paper's code repo — earned attention",
+    "value": 0,
+    "citation": "https://github.com/bushesarebetter/jepa_research_project",
+    "evidence": null
+   },
+   "repo_forks": {
+    "criterion": "repo_forks",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Forks on the paper's code repo — community reuse",
+    "value": 0,
+    "citation": "https://github.com/bushesarebetter/jepa_research_project",
+    "evidence": null
+   },
+   "repo_contributors": {
+    "criterion": "repo_contributors",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Contributor count — collaboration signal",
+    "value": 1,
+    "citation": "https://github.com/bushesarebetter/jepa_research_project/graphs/contributors",
+    "evidence": null
+   },
+   "repo_recent_activity": {
+    "criterion": "repo_recent_activity",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Days since last push — active maintenance / shipping cadence",
+    "value": 20,
+    "citation": "https://github.com/bushesarebetter/jepa_research_project",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "github",
+  "founder": {
+   "name": "Hiranya Garbha Kumar",
+   "github": null
+  },
+  "repo": {
+   "url": "https://github.com/MinhasKamal/CAOA",
+   "owner": "MinhasKamal",
+   "name": "CAOA",
+   "language": "Python",
+   "pushed_at": "2026-06-29T17:51:05Z",
+   "created_at": "2026-01-29T00:52:18Z"
+  },
+  "signals": {
+   "repo_stars": {
+    "criterion": "repo_stars",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "GitHub stars on the paper's code repo — earned attention",
+    "value": 1,
+    "citation": "https://github.com/MinhasKamal/CAOA",
+    "evidence": null
+   },
+   "repo_forks": {
+    "criterion": "repo_forks",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Forks on the paper's code repo — community reuse",
+    "value": 0,
+    "citation": "https://github.com/MinhasKamal/CAOA",
+    "evidence": null
+   },
+   "repo_contributors": {
+    "criterion": "repo_contributors",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Contributor count — collaboration signal",
+    "value": 2,
+    "citation": "https://github.com/MinhasKamal/CAOA/graphs/contributors",
+    "evidence": null
+   },
+   "repo_recent_activity": {
+    "criterion": "repo_recent_activity",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Days since last push — active maintenance / shipping cadence",
+    "value": 19,
+    "citation": "https://github.com/MinhasKamal/CAOA",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "github",
+  "founder": {
+   "name": "Sangmin Lee",
+   "github": null
+  },
+  "repo": {
+   "url": "https://github.com/sanghyang00/ur-bert",
+   "owner": "sanghyang00",
+   "name": "ur-bert",
+   "language": "Python",
+   "pushed_at": "2026-06-17T09:59:54Z",
+   "created_at": "2026-06-08T04:23:17Z"
+  },
+  "signals": {
+   "repo_stars": {
+    "criterion": "repo_stars",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "GitHub stars on the paper's code repo — earned attention",
+    "value": 8,
+    "citation": "https://github.com/sanghyang00/ur-bert",
+    "evidence": null
+   },
+   "repo_forks": {
+    "criterion": "repo_forks",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Forks on the paper's code repo — community reuse",
+    "value": 1,
+    "citation": "https://github.com/sanghyang00/ur-bert",
+    "evidence": null
+   },
+   "repo_contributors": {
+    "criterion": "repo_contributors",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Contributor count — collaboration signal",
+    "value": 1,
+    "citation": "https://github.com/sanghyang00/ur-bert/graphs/contributors",
+    "evidence": null
+   },
+   "repo_recent_activity": {
+    "criterion": "repo_recent_activity",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Days since last push — active maintenance / shipping cadence",
+    "value": 32,
+    "citation": "https://github.com/sanghyang00/ur-bert",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "github",
+  "founder": {
+   "name": "Kevin Qinghong Lin",
+   "github": "QinghongLin"
+  },
+  "repo": {
+   "url": "https://github.com/QinghongLin/data2story-skill",
+   "owner": "QinghongLin",
+   "name": "data2story-skill",
+   "language": "Python",
+   "pushed_at": "2026-07-05T13:40:54Z",
+   "created_at": "2026-05-23T15:04:56Z"
+  },
+  "signals": {
+   "repo_stars": {
+    "criterion": "repo_stars",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "GitHub stars on the paper's code repo — earned attention",
+    "value": 145,
+    "citation": "https://github.com/QinghongLin/data2story-skill",
+    "evidence": null
+   },
+   "repo_forks": {
+    "criterion": "repo_forks",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Forks on the paper's code repo — community reuse",
+    "value": 19,
+    "citation": "https://github.com/QinghongLin/data2story-skill",
+    "evidence": null
+   },
+   "repo_contributors": {
+    "criterion": "repo_contributors",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Contributor count — collaboration signal",
+    "value": 2,
+    "citation": "https://github.com/QinghongLin/data2story-skill/graphs/contributors",
+    "evidence": null
+   },
+   "repo_recent_activity": {
+    "criterion": "repo_recent_activity",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Days since last push — active maintenance / shipping cadence",
+    "value": 13,
+    "citation": "https://github.com/QinghongLin/data2story-skill",
+    "evidence": null
+   },
+   "builder_handle_verified": {
+    "criterion": "builder_handle_verified",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Repo owner matches the paper author — direct builder evidence",
+    "value": true,
+    "citation": "https://github.com/QinghongLin",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "github",
+  "founder": {
+   "name": "Al Zadid Sultan Bin Habib",
+   "github": null
+  },
+  "repo": {
+   "url": "https://github.com/zadid6pretam/GOTabPFN",
+   "owner": "zadid6pretam",
+   "name": "GOTabPFN",
+   "language": "Jupyter Notebook",
+   "pushed_at": "2026-07-14T17:50:40Z",
+   "created_at": "2026-05-01T06:52:16Z"
+  },
+  "signals": {
+   "repo_stars": {
+    "criterion": "repo_stars",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "GitHub stars on the paper's code repo — earned attention",
+    "value": 8,
+    "citation": "https://github.com/zadid6pretam/GOTabPFN",
+    "evidence": null
+   },
+   "repo_forks": {
+    "criterion": "repo_forks",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Forks on the paper's code repo — community reuse",
+    "value": 0,
+    "citation": "https://github.com/zadid6pretam/GOTabPFN",
+    "evidence": null
+   },
+   "repo_contributors": {
+    "criterion": "repo_contributors",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Contributor count — collaboration signal",
+    "value": 1,
+    "citation": "https://github.com/zadid6pretam/GOTabPFN/graphs/contributors",
+    "evidence": null
+   },
+   "repo_recent_activity": {
+    "criterion": "repo_recent_activity",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Days since last push — active maintenance / shipping cadence",
+    "value": 4,
+    "citation": "https://github.com/zadid6pretam/GOTabPFN",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "github",
+  "founder": {
+   "name": "Max Malyi",
+   "github": "mvmalyi"
+  },
+  "repo": {
+   "url": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling",
+   "owner": "mvmalyi",
+   "name": "llm-driven-wind-turbine-maintenance-log-labelling",
+   "language": "Python",
+   "pushed_at": "2026-06-15T18:43:07Z",
+   "created_at": "2026-05-13T18:18:44Z"
+  },
+  "signals": {
+   "repo_stars": {
+    "criterion": "repo_stars",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "GitHub stars on the paper's code repo — earned attention",
+    "value": 1,
+    "citation": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling",
+    "evidence": null
+   },
+   "repo_forks": {
+    "criterion": "repo_forks",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Forks on the paper's code repo — community reuse",
+    "value": 0,
+    "citation": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling",
+    "evidence": null
+   },
+   "repo_contributors": {
+    "criterion": "repo_contributors",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Contributor count — collaboration signal",
+    "value": 1,
+    "citation": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling/graphs/contributors",
+    "evidence": null
+   },
+   "repo_recent_activity": {
+    "criterion": "repo_recent_activity",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Days since last push — active maintenance / shipping cadence",
+    "value": 33,
+    "citation": "https://github.com/mvmalyi/llm-driven-wind-turbine-maintenance-log-labelling",
+    "evidence": null
+   },
+   "builder_handle_verified": {
+    "criterion": "builder_handle_verified",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Repo owner matches the paper author — direct builder evidence",
+    "value": true,
+    "citation": "https://github.com/mvmalyi",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "github",
+  "founder": {
+   "name": "Jinghao Zhang",
+   "github": null
+  },
+  "repo": {
+   "url": "https://github.com/Jinghaoleven/RLVR-Schedule",
+   "owner": "Jinghaoleven",
+   "name": "RLVR-Schedule",
+   "language": "Python",
+   "pushed_at": "2026-06-15T06:52:14Z",
+   "created_at": "2026-05-20T08:22:23Z"
+  },
+  "signals": {
+   "repo_stars": {
+    "criterion": "repo_stars",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "GitHub stars on the paper's code repo — earned attention",
+    "value": 1,
+    "citation": "https://github.com/Jinghaoleven/RLVR-Schedule",
+    "evidence": null
+   },
+   "repo_forks": {
+    "criterion": "repo_forks",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Forks on the paper's code repo — community reuse",
+    "value": 0,
+    "citation": "https://github.com/Jinghaoleven/RLVR-Schedule",
+    "evidence": null
+   },
+   "repo_contributors": {
+    "criterion": "repo_contributors",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Contributor count — collaboration signal",
+    "value": 553,
+    "citation": "https://github.com/Jinghaoleven/RLVR-Schedule/graphs/contributors",
+    "evidence": null
+   },
+   "repo_recent_activity": {
+    "criterion": "repo_recent_activity",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Days since last push — active maintenance / shipping cadence",
+    "value": 34,
+    "citation": "https://github.com/Jinghaoleven/RLVR-Schedule",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "github",
+  "founder": {
+   "name": "Ivan Tregear",
+   "github": "ITregear"
+  },
+  "repo": {
+   "url": "https://github.com/ITregear/SeriesElasticActuation-FYP",
+   "owner": "ITregear",
+   "name": "SeriesElasticActuation-FYP",
+   "language": "Python",
+   "pushed_at": "2023-06-01T17:31:31Z",
+   "created_at": "2023-06-01T17:22:37Z"
+  },
+  "signals": {
+   "repo_stars": {
+    "criterion": "repo_stars",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "GitHub stars on the paper's code repo — earned attention",
+    "value": 0,
+    "citation": "https://github.com/ITregear/SeriesElasticActuation-FYP",
+    "evidence": null
+   },
+   "repo_forks": {
+    "criterion": "repo_forks",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Forks on the paper's code repo — community reuse",
+    "value": 0,
+    "citation": "https://github.com/ITregear/SeriesElasticActuation-FYP",
+    "evidence": null
+   },
+   "repo_contributors": {
+    "criterion": "repo_contributors",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Contributor count — collaboration signal",
+    "value": 1,
+    "citation": "https://github.com/ITregear/SeriesElasticActuation-FYP/graphs/contributors",
+    "evidence": null
+   },
+   "repo_recent_activity": {
+    "criterion": "repo_recent_activity",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Days since last push — active maintenance / shipping cadence",
+    "value": 1143,
+    "citation": "https://github.com/ITregear/SeriesElasticActuation-FYP",
+    "evidence": null
+   },
+   "builder_handle_verified": {
+    "criterion": "builder_handle_verified",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Repo owner matches the paper author — direct builder evidence",
+    "value": true,
+    "citation": "https://github.com/ITregear",
+    "evidence": null
+   }
+  }
+ }
+]
