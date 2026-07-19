@@ -3,7 +3,8 @@
   "name": "Kevin Qinghong Lin",
   "channels": [
    "arxiv",
-   "github"
+   "github",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -128,6 +129,66 @@
     "citation": "https://github.com/QinghongLin",
     "evidence": null,
     "channel": "github"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Focus on data journalism lacks industrial applicability.)",
+    "value": 0.0,
+    "citation": "https://arxiv.org/abs/2606.11176v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://arxiv.org/abs/2606.11176v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "builder_breadth": {
+    "criterion": "builder_breadth",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "GitHub profile-level building activity (public repos, followers)",
+    "value": {
+     "public_repos": 27,
+     "followers": 192
+    },
+    "citation": "https://github.com/QinghongLin",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "pre-founding (no founder markers in profile)",
+    "citation": "https://arxiv.org/abs/2606.11176v1",
+    "evidence": [
+     "agent & multimodal | \r\npostdoc @torrvision | visiting @zou-group | phd @showlab | ex-@microsoft @facebookresearch @tence"
+    ],
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 38,
+    "citation": "https://arxiv.org/abs/2606.11176v1",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -162,7 +223,8 @@
   "name": "Haoyu Zhao",
   "channels": [
    "arxiv",
-   "github"
+   "github",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -284,6 +346,50 @@
     "citation": "https://github.com/alibaba-damo-academy/RynnWorld-4D",
     "evidence": null,
     "channel": "github"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Addresses robotic manipulation in dynamic environments.)",
+    "value": 1.0,
+    "citation": "https://arxiv.org/abs/2607.06559v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "robotics",
+    "citation": "https://arxiv.org/abs/2607.06559v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://arxiv.org/abs/2607.06559v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 58,
+    "citation": "https://arxiv.org/abs/2607.06559v1",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -314,7 +420,8 @@
   "name": "Yushi Huang",
   "channels": [
    "arxiv",
-   "github"
+   "github",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -426,6 +533,50 @@
     "citation": "https://github.com/Harahan/MeanFlowNFT",
     "evidence": null,
     "channel": "github"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Enhances reinforcement learning for generator optimization.)",
+    "value": 1.0,
+    "citation": "https://arxiv.org/abs/2607.15273v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://arxiv.org/abs/2607.15273v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://arxiv.org/abs/2607.15273v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 48,
+    "citation": "https://arxiv.org/abs/2607.15273v1",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -457,7 +608,8 @@
   "name": "Sangmin Lee",
   "channels": [
    "arxiv",
-   "github"
+   "github",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -580,6 +732,50 @@
     "citation": "https://github.com/sanghyang00/ur-bert",
     "evidence": null,
     "channel": "github"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Improves multilingual TTS scalability for diverse applications.)",
+    "value": 1.0,
+    "citation": "https://arxiv.org/abs/2606.11681v2",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://arxiv.org/abs/2606.11681v2",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://arxiv.org/abs/2606.11681v2",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 48,
+    "citation": "https://arxiv.org/abs/2606.11681v2",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -611,7 +807,8 @@
   "name": "Jinghao Zhang",
   "channels": [
    "arxiv",
-   "github"
+   "github",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -722,6 +919,50 @@
     "citation": "https://github.com/Jinghaoleven/RLVR-Schedule",
     "evidence": null,
     "channel": "github"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Optimizes scheduling in RLVR, applicable in AI platforms.)",
+    "value": 1.0,
+    "citation": "https://arxiv.org/abs/2605.25381v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "AI infrastructure",
+    "citation": "https://arxiv.org/abs/2605.25381v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://arxiv.org/abs/2605.25381v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 58,
+    "citation": "https://arxiv.org/abs/2605.25381v1",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -752,7 +993,8 @@
   "name": "Al Zadid Sultan Bin Habib",
   "channels": [
    "arxiv",
-   "github"
+   "github",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -865,6 +1107,50 @@
     "citation": "https://github.com/zadid6pretam/GOTabPFN",
     "evidence": null,
     "channel": "github"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Enhances tokenization for high-dimensional data applications.)",
+    "value": 1.0,
+    "citation": "https://arxiv.org/abs/2606.05441v2",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "AI infrastructure",
+    "citation": "https://arxiv.org/abs/2606.05441v2",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://arxiv.org/abs/2606.05441v2",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 54,
+    "citation": "https://arxiv.org/abs/2606.05441v2",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -897,7 +1183,8 @@
   "name": "Max Malyi",
   "channels": [
    "arxiv",
-   "github"
+   "github",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -1019,6 +1306,79 @@
     "citation": "https://github.com/mvmalyi",
     "evidence": null,
     "channel": "github"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Improves wind turbine maintenance through data enrichment.)",
+    "value": 1.0,
+    "citation": "https://arxiv.org/abs/2605.31281v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "climate / energy",
+    "citation": "https://arxiv.org/abs/2605.31281v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "builder_breadth": {
+    "criterion": "builder_breadth",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "GitHub profile-level building activity (public repos, followers)",
+    "value": {
+     "public_repos": 6,
+     "followers": 3
+    },
+    "citation": "https://github.com/mvmalyi",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_intent": {
+    "criterion": "founder_intent",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Bio/profile intent tells (building / stealth / open to work)",
+    "value": true,
+    "citation": "https://github.com/mvmalyi",
+    "evidence": [
+     "Engineering PhD Researcher working on wind turbine reliability, lifetime extension strategies, and control optimisation."
+    ],
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "pre-founding (no founder markers in profile)",
+    "citation": "https://arxiv.org/abs/2605.31281v1",
+    "evidence": [
+     "Engineering PhD Researcher working on wind turbine reliability, lifetime extension strategies, and control optimisation."
+    ],
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 69,
+    "citation": "https://arxiv.org/abs/2605.31281v1",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -1050,7 +1410,8 @@
   "name": "Natalie Grace Brigham",
   "channels": [
    "arxiv",
-   "github"
+   "github",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -1173,6 +1534,66 @@
     "citation": "https://github.com/GraceBrigham",
     "evidence": null,
     "channel": "github"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Addresses permission management for user-agent interaction.)",
+    "value": 1.0,
+    "citation": "https://arxiv.org/abs/2607.01510v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "healthcare",
+    "citation": "https://arxiv.org/abs/2607.01510v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "builder_breadth": {
+    "criterion": "builder_breadth",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "GitHub profile-level building activity (public repos, followers)",
+    "value": {
+     "public_repos": 4,
+     "followers": 1
+    },
+    "citation": "https://github.com/GraceBrigham",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "pre-founding (no founder markers in profile)",
+    "citation": "https://arxiv.org/abs/2607.01510v1",
+    "evidence": [
+     "SWE @ Microsoft "
+    ],
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 54,
+    "citation": "https://arxiv.org/abs/2607.01510v1",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -1205,7 +1626,8 @@
   "name": "Varshith Roy Kotla",
   "channels": [
    "arxiv",
-   "github"
+   "github",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -1312,6 +1734,50 @@
     "citation": "https://github.com/nearpot/Weighted-Conformal-Thermal-Transfer",
     "evidence": null,
     "channel": "github"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Important for EV powertrain optimization in motorsport.)",
+    "value": 1.0,
+    "citation": "https://arxiv.org/abs/2607.02722v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://arxiv.org/abs/2607.02722v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://arxiv.org/abs/2607.02722v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 43,
+    "citation": "https://arxiv.org/abs/2607.02722v1",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -1342,7 +1808,8 @@
   "name": "Ayan Pendharkar",
   "channels": [
    "arxiv",
-   "github"
+   "github",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -1449,6 +1916,50 @@
     "citation": "https://github.com/bushesarebetter/jepa_research_project",
     "evidence": null,
     "channel": "github"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Focus appears to be theoretical without clear application.)",
+    "value": 0.0,
+    "citation": "https://arxiv.org/abs/2606.30068v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://arxiv.org/abs/2606.30068v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://arxiv.org/abs/2606.30068v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 21,
+    "citation": "https://arxiv.org/abs/2606.30068v1",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -1478,7 +1989,8 @@
  {
   "name": "Tarek Ali",
   "channels": [
-   "openalex"
+   "openalex",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -1573,6 +2085,50 @@
     "citation": "https://doi.org/10.3390/telecom7030073",
     "evidence": null,
     "channel": "openalex"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Integrates anomaly detection with explainability for security.)",
+    "value": 1.0,
+    "citation": "https://doi.org/10.3390/telecom7030073",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "cybersecurity",
+    "citation": "https://doi.org/10.3390/telecom7030073",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://doi.org/10.3390/telecom7030073",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 39,
+    "citation": "https://doi.org/10.3390/telecom7030073",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -1593,7 +2149,8 @@
   "name": "Hiranya Garbha Kumar",
   "channels": [
    "arxiv",
-   "github"
+   "github",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -1716,6 +2273,50 @@
     "citation": "https://github.com/MinhasKamal/CAOA",
     "evidence": null,
     "channel": "github"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Improves CAD alignment through intelligent systems.)",
+    "value": 1.0,
+    "citation": "https://arxiv.org/abs/2606.18429v2",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "robotics",
+    "citation": "https://arxiv.org/abs/2606.18429v2",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://arxiv.org/abs/2606.18429v2",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 52,
+    "citation": "https://arxiv.org/abs/2606.18429v2",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -1747,7 +2348,8 @@
  {
   "name": "Funing Ma",
   "channels": [
-   "openalex"
+   "openalex",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -1832,6 +2434,50 @@
     "citation": "https://doi.org/10.1016/j.watres.2026.125886",
     "evidence": null,
     "channel": "openalex"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Models groundwater systems for environmental applications.)",
+    "value": 1.0,
+    "citation": "https://doi.org/10.1016/j.watres.2026.125886",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "climate / energy",
+    "citation": "https://doi.org/10.1016/j.watres.2026.125886",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://doi.org/10.1016/j.watres.2026.125886",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 40,
+    "citation": "https://doi.org/10.1016/j.watres.2026.125886",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -1851,7 +2497,8 @@
  {
   "name": "Yueen Ma",
   "channels": [
-   "openalex"
+   "openalex",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -1947,6 +2594,50 @@
     "citation": "https://doi.org/10.1109/tnnls.2025.3650584",
     "evidence": null,
     "channel": "openalex"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Survey nature lacks direct commercial application.)",
+    "value": 0.0,
+    "citation": "https://doi.org/10.1109/tnnls.2025.3650584",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://doi.org/10.1109/tnnls.2025.3650584",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://doi.org/10.1109/tnnls.2025.3650584",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 6,
+    "citation": "https://doi.org/10.1109/tnnls.2025.3650584",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -1966,7 +2657,8 @@
  {
   "name": "Yizheng Huang",
   "channels": [
-   "openalex"
+   "openalex",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -2060,6 +2752,50 @@
     "citation": "https://doi.org/10.1145/3805774",
     "evidence": null,
     "channel": "openalex"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Survey does not propose practical applications.)",
+    "value": 0.0,
+    "citation": "https://doi.org/10.1145/3805774",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://doi.org/10.1145/3805774",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://doi.org/10.1145/3805774",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 3,
+    "citation": "https://doi.org/10.1145/3805774",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -2080,7 +2816,8 @@
   "name": "Ivan Tregear",
   "channels": [
    "arxiv",
-   "github"
+   "github",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -2201,6 +2938,66 @@
     "citation": "https://github.com/ITregear",
     "evidence": null,
     "channel": "github"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Enhances actuator performance for robotics applications.)",
+    "value": 1.0,
+    "citation": "https://arxiv.org/abs/2605.24127v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "robotics",
+    "citation": "https://arxiv.org/abs/2605.24127v1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "builder_breadth": {
+    "criterion": "builder_breadth",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "GitHub profile-level building activity (public repos, followers)",
+    "value": {
+     "public_repos": 21,
+     "followers": 10
+    },
+    "citation": "https://github.com/ITregear",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "founder markers found in profile",
+    "citation": "https://arxiv.org/abs/2605.24127v1",
+    "evidence": [
+     "Robotics and Founding Engineer at KAIKAKU. KAIKAKU"
+    ],
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 49,
+    "citation": "https://arxiv.org/abs/2605.24127v1",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -2231,7 +3028,8 @@
  {
   "name": "Yang Liu",
   "channels": [
-   "openalex"
+   "openalex",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -2327,6 +3125,50 @@
     "citation": "https://doi.org/10.1016/j.knosys.2026.115989",
     "evidence": null,
     "channel": "openalex"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Speeds up engineering analysis through automation.)",
+    "value": 1.0,
+    "citation": "https://doi.org/10.1016/j.knosys.2026.115989",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "AI infrastructure",
+    "citation": "https://doi.org/10.1016/j.knosys.2026.115989",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://doi.org/10.1016/j.knosys.2026.115989",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 40,
+    "citation": "https://doi.org/10.1016/j.knosys.2026.115989",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -2346,7 +3188,8 @@
  {
   "name": "Freddy Jackson Brown",
   "channels": [
-   "openalex"
+   "openalex",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -2442,6 +3285,50 @@
     "citation": "https://doi.org/10.1038/s41598-026-44254-5",
     "evidence": null,
     "channel": "openalex"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Addresses needs of neurodivergent children via AI.)",
+    "value": 1.0,
+    "citation": "https://doi.org/10.1038/s41598-026-44254-5",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "healthcare",
+    "citation": "https://doi.org/10.1038/s41598-026-44254-5",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://doi.org/10.1038/s41598-026-44254-5",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 40,
+    "citation": "https://doi.org/10.1038/s41598-026-44254-5",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -2461,7 +3348,8 @@
  {
   "name": "Hyunwoo Kim",
   "channels": [
-   "openalex"
+   "openalex",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -2557,6 +3445,50 @@
     "citation": "https://doi.org/10.15441/ceem.26.136",
     "evidence": null,
     "channel": "openalex"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Review lacks practical application focus.)",
+    "value": 0.0,
+    "citation": "https://doi.org/10.15441/ceem.26.136",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://doi.org/10.15441/ceem.26.136",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://doi.org/10.15441/ceem.26.136",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 8,
+    "citation": "https://doi.org/10.15441/ceem.26.136",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -2576,7 +3508,8 @@
  {
   "name": "H Lan",
   "channels": [
-   "openalex"
+   "openalex",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -2672,6 +3605,50 @@
     "citation": "https://doi.org/10.1038/s41598-026-44206-z",
     "evidence": null,
     "channel": "openalex"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Theoretical simulation without practical application.)",
+    "value": 0.0,
+    "citation": "https://doi.org/10.1038/s41598-026-44206-z",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://doi.org/10.1038/s41598-026-44206-z",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://doi.org/10.1038/s41598-026-44206-z",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 9,
+    "citation": "https://doi.org/10.1038/s41598-026-44206-z",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -2691,7 +3668,8 @@
  {
   "name": "Sudipta Chowdhury",
   "channels": [
-   "semantic_scholar"
+   "semantic_scholar",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -2753,6 +3731,50 @@
     "citation": "https://www.semanticscholar.org/author/2105636711",
     "evidence": null,
     "channel": "semantic_scholar"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Theoretical framework, limited direct industrial relevance.)",
+    "value": 0.0,
+    "citation": "https://www.semanticscholar.org/paper/8c8452414769a425556a1dd45645ca4b211d9939",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://www.semanticscholar.org/paper/8c8452414769a425556a1dd45645ca4b211d9939",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://www.semanticscholar.org/paper/8c8452414769a425556a1dd45645ca4b211d9939",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 6,
+    "citation": "https://www.semanticscholar.org/paper/8c8452414769a425556a1dd45645ca4b211d9939",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -2772,7 +3794,8 @@
  {
   "name": "F. A. Alijoyo",
   "channels": [
-   "semantic_scholar"
+   "semantic_scholar",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -2835,6 +3858,50 @@
     "citation": "https://www.semanticscholar.org/author/2088862538",
     "evidence": null,
     "channel": "semantic_scholar"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Builds resilience for urban infrastructure addressing climate.)",
+    "value": 1.0,
+    "citation": "https://www.semanticscholar.org/paper/cea7de920a42cf2e6298c8af49f77723e333231b",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "climate / energy",
+    "citation": "https://www.semanticscholar.org/paper/cea7de920a42cf2e6298c8af49f77723e333231b",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://www.semanticscholar.org/paper/cea7de920a42cf2e6298c8af49f77723e333231b",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 38,
+    "citation": "https://www.semanticscholar.org/paper/cea7de920a42cf2e6298c8af49f77723e333231b",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -2854,7 +3921,8 @@
  {
   "name": "Jingkang Liang",
   "channels": [
-   "openalex"
+   "openalex",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -2949,6 +4017,50 @@
     "citation": "https://doi.org/10.1016/j.dche.2026.100312",
     "evidence": null,
     "channel": "openalex"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Facilitates chemical process simulations for multiple sectors.)",
+    "value": 1.0,
+    "citation": "https://doi.org/10.1016/j.dche.2026.100312",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://doi.org/10.1016/j.dche.2026.100312",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://doi.org/10.1016/j.dche.2026.100312",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 24,
+    "citation": "https://doi.org/10.1016/j.dche.2026.100312",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -2968,7 +4080,8 @@
  {
   "name": "Rajesh Paul",
   "channels": [
-   "semantic_scholar"
+   "semantic_scholar",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -3027,6 +4140,50 @@
     "citation": "https://www.semanticscholar.org/author/2363237877",
     "evidence": null,
     "channel": "semantic_scholar"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Real-world decision support model for infrastructure.)",
+    "value": 1.0,
+    "citation": "https://www.semanticscholar.org/paper/b4efcb8e2535bb429f32d26e7f28753642e652fc",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://www.semanticscholar.org/paper/b4efcb8e2535bb429f32d26e7f28753642e652fc",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://www.semanticscholar.org/paper/b4efcb8e2535bb429f32d26e7f28753642e652fc",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 27,
+    "citation": "https://www.semanticscholar.org/paper/b4efcb8e2535bb429f32d26e7f28753642e652fc",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -3046,7 +4203,8 @@
  {
   "name": "Samuel Rothfarb",
   "channels": [
-   "openalex"
+   "openalex",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -3142,6 +4300,50 @@
     "citation": "https://doi.org/10.1038/s41524-026-02139-1",
     "evidence": null,
     "channel": "openalex"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Catalyst discovery aids materials science applications.)",
+    "value": 1.0,
+    "citation": "https://doi.org/10.1038/s41524-026-02139-1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://doi.org/10.1038/s41524-026-02139-1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://doi.org/10.1038/s41524-026-02139-1",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 23,
+    "citation": "https://doi.org/10.1038/s41524-026-02139-1",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -3161,7 +4363,8 @@
  {
   "name": "Shicheng Xu",
   "channels": [
-   "openalex"
+   "openalex",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -3257,6 +4460,50 @@
     "citation": "https://doi.org/10.1038/s41467-026-71928-5",
     "evidence": null,
     "channel": "openalex"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Enhances clinical diagnosis with AI-driven solutions.)",
+    "value": 1.0,
+    "citation": "https://doi.org/10.1038/s41467-026-71928-5",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "healthcare",
+    "citation": "https://doi.org/10.1038/s41467-026-71928-5",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://doi.org/10.1038/s41467-026-71928-5",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 34,
+    "citation": "https://doi.org/10.1038/s41467-026-71928-5",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -3276,7 +4523,8 @@
  {
   "name": "Uman Ahmed Mohammed",
   "channels": [
-   "semantic_scholar"
+   "semantic_scholar",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -3335,6 +4583,50 @@
     "citation": "https://www.semanticscholar.org/author/2401893159",
     "evidence": null,
     "channel": "semantic_scholar"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Optimizes cloud AI tasks with LLM adherence.)",
+    "value": 1.0,
+    "citation": "https://www.semanticscholar.org/paper/99eae810fe8d98bab2b1685d0358fc8d12592c6c",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "AI infrastructure",
+    "citation": "https://www.semanticscholar.org/paper/99eae810fe8d98bab2b1685d0358fc8d12592c6c",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://www.semanticscholar.org/paper/99eae810fe8d98bab2b1685d0358fc8d12592c6c",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 36,
+    "citation": "https://www.semanticscholar.org/paper/99eae810fe8d98bab2b1685d0358fc8d12592c6c",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -3354,7 +4646,8 @@
  {
   "name": "Qi He",
   "channels": [
-   "semantic_scholar"
+   "semantic_scholar",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -3415,6 +4708,50 @@
     "citation": "https://www.semanticscholar.org/author/2400494668",
     "evidence": null,
     "channel": "semantic_scholar"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Develops metric architecture for efficient AI systems.)",
+    "value": 1.0,
+    "citation": "https://www.semanticscholar.org/paper/60d5044750fe3d0a101d66be07160147256bed7d",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "AI infrastructure",
+    "citation": "https://www.semanticscholar.org/paper/60d5044750fe3d0a101d66be07160147256bed7d",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://www.semanticscholar.org/paper/60d5044750fe3d0a101d66be07160147256bed7d",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 35,
+    "citation": "https://www.semanticscholar.org/paper/60d5044750fe3d0a101d66be07160147256bed7d",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -3436,7 +4773,8 @@
  {
   "name": "Victor Frimpong",
   "channels": [
-   "semantic_scholar"
+   "semantic_scholar",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -3497,6 +4835,50 @@
     "citation": "https://www.semanticscholar.org/author/2332276626",
     "evidence": null,
     "channel": "semantic_scholar"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Discusses theoretical aspects without clear application.)",
+    "value": 0.0,
+    "citation": "https://www.semanticscholar.org/paper/b27b878b394de890b0aa94aaf969e4adcdfa4647",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://www.semanticscholar.org/paper/b27b878b394de890b0aa94aaf969e4adcdfa4647",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://www.semanticscholar.org/paper/b27b878b394de890b0aa94aaf969e4adcdfa4647",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 4,
+    "citation": "https://www.semanticscholar.org/paper/b27b878b394de890b0aa94aaf969e4adcdfa4647",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -3516,7 +4898,8 @@
  {
   "name": "Insaf Kraidia",
   "channels": [
-   "openalex"
+   "openalex",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -3612,6 +4995,50 @@
     "citation": "https://doi.org/10.1038/s41598-026-42705-7",
     "evidence": null,
     "channel": "openalex"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Focus on debate lacks practical application.)",
+    "value": 0.0,
+    "citation": "https://doi.org/10.1038/s41598-026-42705-7",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://doi.org/10.1038/s41598-026-42705-7",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://doi.org/10.1038/s41598-026-42705-7",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 1,
+    "citation": "https://doi.org/10.1038/s41598-026-42705-7",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -3631,7 +5058,8 @@
  {
   "name": "Sergio Cruzes",
   "channels": [
-   "semantic_scholar"
+   "semantic_scholar",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -3690,6 +5118,50 @@
     "citation": "https://www.semanticscholar.org/author/2277133471",
     "evidence": null,
     "channel": "semantic_scholar"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Theoretical without linking to specific applications.)",
+    "value": 0.0,
+    "citation": "https://www.semanticscholar.org/paper/703cec4e709c3f10a0a4ab253611f8dfc99acf77",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://www.semanticscholar.org/paper/703cec4e709c3f10a0a4ab253611f8dfc99acf77",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://www.semanticscholar.org/paper/703cec4e709c3f10a0a4ab253611f8dfc99acf77",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 3,
+    "citation": "https://www.semanticscholar.org/paper/703cec4e709c3f10a0a4ab253611f8dfc99acf77",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -3711,7 +5183,8 @@
  {
   "name": "R. Adepu",
   "channels": [
-   "semantic_scholar"
+   "semantic_scholar",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -3770,6 +5243,50 @@
     "citation": "https://www.semanticscholar.org/author/2090479454",
     "evidence": null,
     "channel": "semantic_scholar"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Combines AI, LLMs, and Cloud for enterprises.)",
+    "value": 1.0,
+    "citation": "https://www.semanticscholar.org/paper/ff8019737788ee665db9291f739d784952f3a283",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "AI infrastructure",
+    "citation": "https://www.semanticscholar.org/paper/ff8019737788ee665db9291f739d784952f3a283",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://www.semanticscholar.org/paper/ff8019737788ee665db9291f739d784952f3a283",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 33,
+    "citation": "https://www.semanticscholar.org/paper/ff8019737788ee665db9291f739d784952f3a283",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -3789,7 +5306,8 @@
  {
   "name": "Paulo Carvao",
   "channels": [
-   "semantic_scholar"
+   "semantic_scholar",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -3850,6 +5368,50 @@
     "citation": "https://www.semanticscholar.org/author/2311697333",
     "evidence": null,
     "channel": "semantic_scholar"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Mostly conceptual and lacks practical application.)",
+    "value": 0.0,
+    "citation": "https://www.semanticscholar.org/paper/e276dc3ffd08262c5909d679af2a8a8e1bf7430e",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://www.semanticscholar.org/paper/e276dc3ffd08262c5909d679af2a8a8e1bf7430e",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://www.semanticscholar.org/paper/e276dc3ffd08262c5909d679af2a8a8e1bf7430e",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 1,
+    "citation": "https://www.semanticscholar.org/paper/e276dc3ffd08262c5909d679af2a8a8e1bf7430e",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -3869,7 +5431,8 @@
  {
   "name": "Vipindas Aravindakshan",
   "channels": [
-   "semantic_scholar"
+   "semantic_scholar",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -3930,6 +5493,50 @@
     "citation": "https://www.semanticscholar.org/author/2433148773",
     "evidence": null,
     "channel": "semantic_scholar"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Theoretical considerations without direct application.)",
+    "value": 0.0,
+    "citation": "https://www.semanticscholar.org/paper/16e42e215dceed00c0bc5c3995a698d913a5cb65",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://www.semanticscholar.org/paper/16e42e215dceed00c0bc5c3995a698d913a5cb65",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://www.semanticscholar.org/paper/16e42e215dceed00c0bc5c3995a698d913a5cb65",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 0,
+    "citation": "https://www.semanticscholar.org/paper/16e42e215dceed00c0bc5c3995a698d913a5cb65",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -3949,7 +5556,8 @@
  {
   "name": "Misbah Zulfiqar",
   "channels": [
-   "semantic_scholar"
+   "semantic_scholar",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -4010,6 +5618,50 @@
     "citation": "https://www.semanticscholar.org/author/2446768775",
     "evidence": null,
     "channel": "semantic_scholar"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Aids primary education through local AI infrastructure.)",
+    "value": 1.0,
+    "citation": "https://www.semanticscholar.org/paper/8d2fdb85c9febec69e49eaef91eef49c019d4932",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "other",
+    "citation": "https://www.semanticscholar.org/paper/8d2fdb85c9febec69e49eaef91eef49c019d4932",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://www.semanticscholar.org/paper/8d2fdb85c9febec69e49eaef91eef49c019d4932",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 22,
+    "citation": "https://www.semanticscholar.org/paper/8d2fdb85c9febec69e49eaef91eef49c019d4932",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {
@@ -4029,7 +5681,8 @@
  {
   "name": "Jessica Sciammarelli",
   "channels": [
-   "semantic_scholar"
+   "semantic_scholar",
+   "potential_assessment"
   ],
   "signals": {
    "technical_output_paper": {
@@ -4088,6 +5741,50 @@
     "citation": "https://www.semanticscholar.org/author/2400582498",
     "evidence": null,
     "channel": "semantic_scholar"
+   },
+   "applied_research": {
+    "criterion": "applied_research",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "LLM-classified applied-ness of the research (Integrates blockchain for decentralized AI governance.)",
+    "value": 1.0,
+    "citation": "https://www.semanticscholar.org/paper/81cad4ad4bc6858bc33ae1b5a6604f5ac2460bf5",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "market_vertical": {
+    "criterion": "market_vertical",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Commercialization vertical the research maps to (LLM-classified)",
+    "value": "AI infrastructure",
+    "citation": "https://www.semanticscholar.org/paper/81cad4ad4bc6858bc33ae1b5a6604f5ac2460bf5",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "pre_founding_status": {
+    "criterion": "pre_founding_status",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Negative-space check: GitHub bio founder markers + ProductHunt roster cross-check. 'unknown' stays unknown — never a penalty.",
+    "value": "unknown (no verifiable public profile)",
+    "citation": "https://www.semanticscholar.org/paper/81cad4ad4bc6858bc33ae1b5a6604f5ac2460bf5",
+    "evidence": null,
+    "channel": "potential_assessment"
+   },
+   "founder_potential_score": {
+    "criterion": "founder_potential_score",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Positive-only composite: applied research x vertical x execution x builder behavior x intent. Cold-start rule: unknowns add nothing.",
+    "value": 32,
+    "citation": "https://www.semanticscholar.org/paper/81cad4ad4bc6858bc33ae1b5a6604f5ac2460bf5",
+    "evidence": null,
+    "channel": "potential_assessment"
    }
   },
   "founder_meta": {

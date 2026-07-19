@@ -32,13 +32,19 @@ CHANNELS = [
      "fetch_semanticscholar_founders.py"),
     ("openalex", "openalex_founder_signals.json", "fetch_openalex_founders.py"),
     ("github", "github_founder_signals.json", "fetch_github_founders.py"),
+    # runs AFTER the first merge (assesses merged records); folded in on re-merge
+    ("potential_assessment", "potential_founder_signals.json",
+     "assess_founder_potential.py"),
 ]
 CSV_OUT = os.path.join(REPO, "academic_founders.csv")
 JSON_OUT = os.path.join(REPO, "academic_founder_signals.json")
 
-COLUMNS = ["name", "channels", "founder_score", "cold_start", "domain",
+COLUMNS = ["name", "channels", "founder_score", "founder_potential",
+           "pre_founding_status", "applied_research", "market_vertical",
+           "cold_start", "domain",
            "paper_title", "paper_url", "published", "code_url", "github_handle",
            "repo_stars", "repo_forks", "repo_contributors", "repo_last_push_days",
+           "builder_public_repos", "builder_followers", "founder_intent",
            "publication_cadence_12mo", "seed_paper_citations", "author_h_index",
            "author_works_total", "author_citations_total", "affiliation",
            "industry_affiliation", "coauthors", "open_source_release",
@@ -128,10 +134,18 @@ def to_row(f):
             seen.add(u)
             urls.append(u)
     days = sig_value(f, "repo_recent_activity")
+    bb = sig_value(f, "builder_breadth") or {}
     return {
         "name": f["name"],
         "channels": "|".join(f["channels"]),
         "founder_score": f["founder_score"],
+        "founder_potential": sig_value(f, "founder_potential_score"),
+        "pre_founding_status": sig_value(f, "pre_founding_status") or "",
+        "applied_research": sig_value(f, "applied_research"),
+        "market_vertical": sig_value(f, "market_vertical") or "",
+        "builder_public_repos": bb.get("public_repos"),
+        "builder_followers": bb.get("followers"),
+        "founder_intent": bool(sig_value(f, "founder_intent")),
         "cold_start": True,  # channel definition: pre-founding, no company detected
         "domain": "; ".join(str(c) for c in cats[:3] if c),
         "paper_title": pa.get("title") or "",
@@ -157,17 +171,11 @@ def to_row(f):
     }
 
 
-def main():
-    if "--fetch" in sys.argv:
-        for channel, _, script in CHANNELS:
-            print(f"=== fetching {channel} ===")
-            subprocess.run([sys.executable, os.path.join(REPO, "scripts", script)],
-                           cwd=REPO)
+def build():
     founders = merge()
     for f in founders:
         f["founder_score"] = score(f)
     founders.sort(key=lambda f: -f["founder_score"])
-
     with open(JSON_OUT, "w") as fh:
         json.dump(founders, fh, indent=1, ensure_ascii=False)
     with open(CSV_OUT, "w", newline="") as fh:
@@ -175,12 +183,32 @@ def main():
         w.writeheader()
         for f in founders:
             w.writerow(to_row(f))
+    return founders
+
+
+def main():
+    fetch = "--fetch" in sys.argv
+    assess_script = os.path.join(REPO, "scripts", "assess_founder_potential.py")
+    if fetch:
+        for channel, _, script in CHANNELS:
+            if channel == "potential_assessment":
+                continue  # needs the merged output; runs after the first build
+            print(f"=== fetching {channel} ===")
+            subprocess.run([sys.executable, os.path.join(REPO, "scripts", script)],
+                           cwd=REPO)
+    founders = build()
+    if fetch or not os.path.exists(os.path.join(REPO, "potential_founder_signals.json")):
+        print("=== assessing founder potential ===")
+        subprocess.run([sys.executable, assess_script], cwd=REPO)
+        founders = build()  # fold the assessment signals into the outputs
 
     multi = sum(1 for f in founders if len(f["channels"]) > 1)
     print(f"\nfounders: {len(founders)} | multi-channel: {multi}")
     print(f"scores: {founders[-1]['founder_score']}–{founders[0]['founder_score']}")
     for f in founders[:5]:
-        print(f"  {f['founder_score']}  {f['name']}  [{', '.join(f['channels'])}]")
+        pot = sig_value(f, "founder_potential_score")
+        print(f"  {f['founder_score']} (potential {pot})  {f['name']}  "
+              f"[{', '.join(f['channels'])}]")
     print(f"\nwrote {CSV_OUT}\nwrote {JSON_OUT}")
 
 
