@@ -9,7 +9,7 @@ python -m sourcing.export [output.json] [--thesis thesis.json]
 ```
 
 Pure local transform over the Memory store — no GitHub/LLM calls, safe to
-regenerate anytime. Re-run `python -m sourcing.pipeline --producthunt` (or
+regenerate anytime. Re-run `python -m sourcing.bridge --producthunt` (or
 `analyze <handle>`) first to add/refresh founders, then re-export.
 
 ## Top-level shape

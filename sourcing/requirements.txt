@@ -1,0 +1,4 @@
+requests>=2.31
+# pandas is only needed if you run luma.ipynb (the notebook version of the
+# Luma retriever). The .py retrievers use the standard library + requests.
+pandas>=2.0

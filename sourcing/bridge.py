@@ -5,8 +5,8 @@ signals (from the fetchers), dedups them into unique people with the services
 resolver, then runs each resolved GitHub identity through the intelligence
 pipeline (score → screen → thesis → memo, via the Memory store).
 
-    python -m sourcing.pipeline <github_handle> [<github_handle> ...]
-    python -m sourcing.pipeline --producthunt [path.csv]   # load discovered founders from a dataset
+    python -m sourcing.bridge <github_handle> [<github_handle> ...]
+    python -m sourcing.bridge --producthunt [path.csv]   # load discovered founders from a dataset
 
 Only THIS module bridges to services/, so it needs the services deps
 (`pip install -r requirements.txt`); the rest of `sourcing/` stays stdlib-only.
@@ -48,7 +48,7 @@ def run(candidates):
 def main(argv=None):
     argv = argv if argv is not None else sys.argv[1:]
     if not argv:
-        print("usage: python -m sourcing.pipeline <github_handle> ... | --producthunt [path.csv]",
+        print("usage: python -m sourcing.bridge <github_handle> ... | --producthunt [path.csv]",
               file=sys.stderr)
         return 2
 

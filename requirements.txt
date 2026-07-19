@@ -4,3 +4,5 @@ pyyaml
 psycopg2-binary
 python-dotenv
 openai
+fastapi
+uvicorn

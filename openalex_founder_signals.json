@@ -1,0 +1,1212 @@
+[
+ {
+  "channel": "openalex",
+  "founder": {
+   "name": "Jingkang Liang",
+   "openalex_url": "https://openalex.org/A5046245467",
+   "affiliation": "Technical University of Denmark"
+  },
+  "paper": {
+   "title": "Large language model agent for user-friendly chemical process simulations",
+   "url": "https://doi.org/10.1016/j.dche.2026.100312",
+   "published": "2026-05-14",
+   "topic": "Machine Learning in Materials Science"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI work (OpenAlex search, recent)",
+    "value": 1,
+    "citation": "https://doi.org/10.1016/j.dche.2026.100312",
+    "evidence": [
+     "Large language model agent for user-friendly chemical process simulations"
+    ]
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 3,
+    "citation": "https://doi.org/10.1016/j.dche.2026.100312",
+    "evidence": [
+     "Niklas Groll",
+     "Gürkan Sin"
+    ]
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "OpenAlex citations for the seed work",
+    "value": 2,
+    "citation": "https://doi.org/10.1016/j.dche.2026.100312",
+    "evidence": null
+   },
+   "open_access_release": {
+    "criterion": "open_access_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Work published open-access — openness signal",
+    "value": true,
+    "citation": "https://doi.org/10.1016/j.dche.2026.100312",
+    "evidence": null
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (OpenAlex) — sustained earned attention",
+    "value": 2,
+    "citation": "https://openalex.org/A5046245467",
+    "evidence": null
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime works count (OpenAlex)",
+    "value": 8,
+    "citation": "https://openalex.org/A5046245467",
+    "evidence": null
+   },
+   "author_citations_total": {
+    "criterion": "author_citations_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime citations (OpenAlex)",
+    "value": 16,
+    "citation": "https://openalex.org/A5046245467",
+    "evidence": null
+   },
+   "institution": {
+    "criterion": "institution",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author institution on the work",
+    "value": "Technical University of Denmark",
+    "citation": "https://doi.org/10.1016/j.dche.2026.100312",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "openalex",
+  "founder": {
+   "name": "Yang Liu",
+   "openalex_url": "https://openalex.org/A5050374263",
+   "affiliation": "Argonne National Laboratory"
+  },
+  "paper": {
+   "title": "Automating data-driven modeling and analysis for engineering applications using large language model agents",
+   "url": "https://doi.org/10.1016/j.knosys.2026.115989",
+   "published": "2026-04-13",
+   "topic": "Modeling, Simulation, and Optimization"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI work (OpenAlex search, recent)",
+    "value": 1,
+    "citation": "https://doi.org/10.1016/j.knosys.2026.115989",
+    "evidence": [
+     "Automating data-driven modeling and analysis for engineering applications using large language model agents"
+    ]
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 4,
+    "citation": "https://doi.org/10.1016/j.knosys.2026.115989",
+    "evidence": [
+     "Zaid Abulawi",
+     "Abhiram Garimidi",
+     "Doyeong Lim"
+    ]
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "OpenAlex citations for the seed work",
+    "value": 1,
+    "citation": "https://doi.org/10.1016/j.knosys.2026.115989",
+    "evidence": null
+   },
+   "open_access_release": {
+    "criterion": "open_access_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Work published open-access — openness signal",
+    "value": true,
+    "citation": "https://doi.org/10.1016/j.knosys.2026.115989",
+    "evidence": null
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (OpenAlex) — sustained earned attention",
+    "value": 20,
+    "citation": "https://openalex.org/A5050374263",
+    "evidence": null
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime works count (OpenAlex)",
+    "value": 119,
+    "citation": "https://openalex.org/A5050374263",
+    "evidence": null
+   },
+   "author_citations_total": {
+    "criterion": "author_citations_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime citations (OpenAlex)",
+    "value": 1596,
+    "citation": "https://openalex.org/A5050374263",
+    "evidence": null
+   },
+   "institution": {
+    "criterion": "institution",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author institution on the work",
+    "value": "Argonne National Laboratory",
+    "citation": "https://doi.org/10.1016/j.knosys.2026.115989",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "openalex",
+  "founder": {
+   "name": "Funing Ma",
+   "openalex_url": "https://openalex.org/A5088590320",
+   "affiliation": "Qingdao University of Science and Technology"
+  },
+  "paper": {
+   "title": "Autonomous inverse modeling of complex groundwater systems via a physics-integrated large language model multi-agent framework",
+   "url": "https://doi.org/10.1016/j.watres.2026.125886",
+   "published": "2026-04-05",
+   "topic": "Hydrological Forecasting Using AI"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI work (OpenAlex search, recent)",
+    "value": 1,
+    "citation": "https://doi.org/10.1016/j.watres.2026.125886",
+    "evidence": [
+     "Autonomous inverse modeling of complex groundwater systems via a physics-integrated large language model multi-agent framework"
+    ]
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 5,
+    "citation": "https://doi.org/10.1016/j.watres.2026.125886",
+    "evidence": [
+     "Junjun Chen",
+     "Zhenxue Dai",
+     "Fangfei Cai"
+    ]
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "OpenAlex citations for the seed work",
+    "value": 11,
+    "citation": "https://doi.org/10.1016/j.watres.2026.125886",
+    "evidence": null
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (OpenAlex) — sustained earned attention",
+    "value": 10,
+    "citation": "https://openalex.org/A5088590320",
+    "evidence": null
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime works count (OpenAlex)",
+    "value": 23,
+    "citation": "https://openalex.org/A5088590320",
+    "evidence": null
+   },
+   "author_citations_total": {
+    "criterion": "author_citations_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime citations (OpenAlex)",
+    "value": 603,
+    "citation": "https://openalex.org/A5088590320",
+    "evidence": null
+   },
+   "institution": {
+    "criterion": "institution",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author institution on the work",
+    "value": "Qingdao University of Science and Technology",
+    "citation": "https://doi.org/10.1016/j.watres.2026.125886",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "openalex",
+  "founder": {
+   "name": "Samuel Rothfarb",
+   "openalex_url": "https://openalex.org/A5136981107",
+   "affiliation": "Los Alamos National Laboratory"
+  },
+  "paper": {
+   "title": "Hierarchical Multi-agent Large Language Model Reasoning for Autonomous Heterogeneous Catalyst Discovery",
+   "url": "https://doi.org/10.1038/s41524-026-02139-1",
+   "published": "2026-05-25",
+   "topic": "Machine Learning in Materials Science"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI work (OpenAlex search, recent)",
+    "value": 1,
+    "citation": "https://doi.org/10.1038/s41524-026-02139-1",
+    "evidence": [
+     "Hierarchical Multi-agent Large Language Model Reasoning for Autonomous Heterogeneous Catalyst Discovery"
+    ]
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 6,
+    "citation": "https://doi.org/10.1038/s41524-026-02139-1",
+    "evidence": [
+     "Megan C. Davis",
+     "Ivana Matanović",
+     "Baikun Li"
+    ]
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "OpenAlex citations for the seed work",
+    "value": 2,
+    "citation": "https://doi.org/10.1038/s41524-026-02139-1",
+    "evidence": null
+   },
+   "open_access_release": {
+    "criterion": "open_access_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Work published open-access — openness signal",
+    "value": true,
+    "citation": "https://doi.org/10.1038/s41524-026-02139-1",
+    "evidence": null
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (OpenAlex) — sustained earned attention",
+    "value": 1,
+    "citation": "https://openalex.org/A5136981107",
+    "evidence": null
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime works count (OpenAlex)",
+    "value": 1,
+    "citation": "https://openalex.org/A5136981107",
+    "evidence": null
+   },
+   "author_citations_total": {
+    "criterion": "author_citations_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime citations (OpenAlex)",
+    "value": 2,
+    "citation": "https://openalex.org/A5136981107",
+    "evidence": null
+   },
+   "institution": {
+    "criterion": "institution",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author institution on the work",
+    "value": "Los Alamos National Laboratory",
+    "citation": "https://doi.org/10.1038/s41524-026-02139-1",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "openalex",
+  "founder": {
+   "name": "Tarek Ali",
+   "openalex_url": "https://openalex.org/A5103067352",
+   "affiliation": "University of Oulu"
+  },
+  "paper": {
+   "title": "HuntGPT: Integrating Machine Learning-Based Anomaly Detection and Explainable AI with Large Language Models (LLMs)",
+   "url": "https://doi.org/10.3390/telecom7030073",
+   "published": "2026-06-08",
+   "topic": "Network Security and Intrusion Detection"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI work (OpenAlex search, recent)",
+    "value": 1,
+    "citation": "https://doi.org/10.3390/telecom7030073",
+    "evidence": [
+     "HuntGPT: Integrating Machine Learning-Based Anomaly Detection and Explainable AI with Large Language Models (LLMs)"
+    ]
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 3,
+    "citation": "https://doi.org/10.3390/telecom7030073",
+    "evidence": [
+     "Panos Kostakos",
+     "Saeid Sheikhi"
+    ]
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "OpenAlex citations for the seed work",
+    "value": 40,
+    "citation": "https://doi.org/10.3390/telecom7030073",
+    "evidence": null
+   },
+   "open_access_release": {
+    "criterion": "open_access_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Work published open-access — openness signal",
+    "value": true,
+    "citation": "https://doi.org/10.3390/telecom7030073",
+    "evidence": null
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (OpenAlex) — sustained earned attention",
+    "value": 7,
+    "citation": "https://openalex.org/A5103067352",
+    "evidence": null
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime works count (OpenAlex)",
+    "value": 13,
+    "citation": "https://openalex.org/A5103067352",
+    "evidence": null
+   },
+   "author_citations_total": {
+    "criterion": "author_citations_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime citations (OpenAlex)",
+    "value": 150,
+    "citation": "https://openalex.org/A5103067352",
+    "evidence": null
+   },
+   "institution": {
+    "criterion": "institution",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author institution on the work",
+    "value": "University of Oulu",
+    "citation": "https://doi.org/10.3390/telecom7030073",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "openalex",
+  "founder": {
+   "name": "Freddy Jackson Brown",
+   "openalex_url": "https://openalex.org/A5070484594",
+   "affiliation": "University of Warwick"
+  },
+  "paper": {
+   "title": "Validation of the safety, empathy and utility of a large language model conversation agent for parents of autistic and neurodivergent children",
+   "url": "https://doi.org/10.1038/s41598-026-44254-5",
+   "published": "2026-04-08",
+   "topic": "Autism Spectrum Disorder Research"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI work (OpenAlex search, recent)",
+    "value": 1,
+    "citation": "https://doi.org/10.1038/s41598-026-44254-5",
+    "evidence": [
+     "Validation of the safety, empathy and utility of a large language model conversation agent for parents of autistic and neurodivergent children"
+    ]
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 5,
+    "citation": "https://doi.org/10.1038/s41598-026-44254-5",
+    "evidence": [
+     "Isabelle Stewart Muscat",
+     "Louise Quinn",
+     "Lara Best"
+    ]
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "OpenAlex citations for the seed work",
+    "value": 2,
+    "citation": "https://doi.org/10.1038/s41598-026-44254-5",
+    "evidence": null
+   },
+   "open_access_release": {
+    "criterion": "open_access_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Work published open-access — openness signal",
+    "value": true,
+    "citation": "https://doi.org/10.1038/s41598-026-44254-5",
+    "evidence": null
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (OpenAlex) — sustained earned attention",
+    "value": 9,
+    "citation": "https://openalex.org/A5070484594",
+    "evidence": null
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime works count (OpenAlex)",
+    "value": 39,
+    "citation": "https://openalex.org/A5070484594",
+    "evidence": null
+   },
+   "author_citations_total": {
+    "criterion": "author_citations_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime citations (OpenAlex)",
+    "value": 230,
+    "citation": "https://openalex.org/A5070484594",
+    "evidence": null
+   },
+   "institution": {
+    "criterion": "institution",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author institution on the work",
+    "value": "University of Warwick",
+    "citation": "https://doi.org/10.1038/s41598-026-44254-5",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "openalex",
+  "founder": {
+   "name": "Hyunwoo Kim",
+   "openalex_url": "https://openalex.org/A5100330186",
+   "affiliation": "Ulsan National Institute of Science and Technology"
+  },
+  "paper": {
+   "title": "From non-agentic large language models to multi-agent systems in emergency medicine: a scoping review",
+   "url": "https://doi.org/10.15441/ceem.26.136",
+   "published": "2026-04-08",
+   "topic": "Topic Modeling"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI work (OpenAlex search, recent)",
+    "value": 1,
+    "citation": "https://doi.org/10.15441/ceem.26.136",
+    "evidence": [
+     "From non-agentic large language models to multi-agent systems in emergency medicine: a scoping review"
+    ]
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 4,
+    "citation": "https://doi.org/10.15441/ceem.26.136",
+    "evidence": [
+     "Seunghoon Jo",
+     "Min Hyuk Lim",
+     "Dong Hyun Choi"
+    ]
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "OpenAlex citations for the seed work",
+    "value": 1,
+    "citation": "https://doi.org/10.15441/ceem.26.136",
+    "evidence": null
+   },
+   "open_access_release": {
+    "criterion": "open_access_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Work published open-access — openness signal",
+    "value": true,
+    "citation": "https://doi.org/10.15441/ceem.26.136",
+    "evidence": null
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (OpenAlex) — sustained earned attention",
+    "value": 21,
+    "citation": "https://openalex.org/A5100330186",
+    "evidence": null
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime works count (OpenAlex)",
+    "value": 85,
+    "citation": "https://openalex.org/A5100330186",
+    "evidence": null
+   },
+   "author_citations_total": {
+    "criterion": "author_citations_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime citations (OpenAlex)",
+    "value": 2487,
+    "citation": "https://openalex.org/A5100330186",
+    "evidence": null
+   },
+   "institution": {
+    "criterion": "institution",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author institution on the work",
+    "value": "Ulsan National Institute of Science and Technology",
+    "citation": "https://doi.org/10.15441/ceem.26.136",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "openalex",
+  "founder": {
+   "name": "Shicheng Xu",
+   "openalex_url": "https://openalex.org/A5109064417",
+   "affiliation": "Chinese Academy of Sciences"
+  },
+  "paper": {
+   "title": "DxDirector: an agentic large language model driving the full-process clinical diagnosis",
+   "url": "https://doi.org/10.1038/s41467-026-71928-5",
+   "published": "2026-04-23",
+   "topic": "Artificial Intelligence in Healthcare and Education"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI work (OpenAlex search, recent)",
+    "value": 1,
+    "citation": "https://doi.org/10.1038/s41467-026-71928-5",
+    "evidence": [
+     "DxDirector: an agentic large language model driving the full-process clinical diagnosis"
+    ]
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 6,
+    "citation": "https://doi.org/10.1038/s41467-026-71928-5",
+    "evidence": [
+     "Xin Huang",
+     "Zihao Wei",
+     "Liang Pang"
+    ]
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "OpenAlex citations for the seed work",
+    "value": 1,
+    "citation": "https://doi.org/10.1038/s41467-026-71928-5",
+    "evidence": null
+   },
+   "open_access_release": {
+    "criterion": "open_access_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Work published open-access — openness signal",
+    "value": true,
+    "citation": "https://doi.org/10.1038/s41467-026-71928-5",
+    "evidence": null
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (OpenAlex) — sustained earned attention",
+    "value": 2,
+    "citation": "https://openalex.org/A5109064417",
+    "evidence": null
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime works count (OpenAlex)",
+    "value": 11,
+    "citation": "https://openalex.org/A5109064417",
+    "evidence": null
+   },
+   "author_citations_total": {
+    "criterion": "author_citations_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime citations (OpenAlex)",
+    "value": 37,
+    "citation": "https://openalex.org/A5109064417",
+    "evidence": null
+   },
+   "institution": {
+    "criterion": "institution",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author institution on the work",
+    "value": "Chinese Academy of Sciences",
+    "citation": "https://doi.org/10.1038/s41467-026-71928-5",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "openalex",
+  "founder": {
+   "name": "Yizheng Huang",
+   "openalex_url": "https://openalex.org/A5063849519",
+   "affiliation": "York University"
+  },
+  "paper": {
+   "title": "A Survey on Retrieval-Augmented Text Generation for Large Language Models",
+   "url": "https://doi.org/10.1145/3805774",
+   "published": "2026-04-09",
+   "topic": "Topic Modeling"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI work (OpenAlex search, recent)",
+    "value": 1,
+    "citation": "https://doi.org/10.1145/3805774",
+    "evidence": [
+     "A Survey on Retrieval-Augmented Text Generation for Large Language Models"
+    ]
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 2,
+    "citation": "https://doi.org/10.1145/3805774",
+    "evidence": [
+     "Jimmy Xiangji Huang"
+    ]
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "OpenAlex citations for the seed work",
+    "value": 33,
+    "citation": "https://doi.org/10.1145/3805774",
+    "evidence": null
+   },
+   "open_access_release": {
+    "criterion": "open_access_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Work published open-access — openness signal",
+    "value": true,
+    "citation": "https://doi.org/10.1145/3805774",
+    "evidence": null
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (OpenAlex) — sustained earned attention",
+    "value": 3,
+    "citation": "https://openalex.org/A5063849519",
+    "evidence": null
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime works count (OpenAlex)",
+    "value": 7,
+    "citation": "https://openalex.org/A5063849519",
+    "evidence": null
+   },
+   "author_citations_total": {
+    "criterion": "author_citations_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime citations (OpenAlex)",
+    "value": 66,
+    "citation": "https://openalex.org/A5063849519",
+    "evidence": null
+   },
+   "institution": {
+    "criterion": "institution",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author institution on the work",
+    "value": "York University",
+    "citation": "https://doi.org/10.1145/3805774",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "openalex",
+  "founder": {
+   "name": "Insaf Kraidia",
+   "openalex_url": "https://openalex.org/A5133231031",
+   "affiliation": "Al-Ahliyya Amman University"
+  },
+  "paper": {
+   "title": "When collaboration fails: persuasion driven adversarial influence in multi agent large language model debate",
+   "url": "https://doi.org/10.1038/s41598-026-42705-7",
+   "published": "2026-04-08",
+   "topic": "Topic Modeling"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI work (OpenAlex search, recent)",
+    "value": 1,
+    "citation": "https://doi.org/10.1038/s41598-026-42705-7",
+    "evidence": [
+     "When collaboration fails: persuasion driven adversarial influence in multi agent large language model debate"
+    ]
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 5,
+    "citation": "https://doi.org/10.1038/s41598-026-42705-7",
+    "evidence": [
+     "Iyas Qaddara",
+     "Alhanof Almutairi",
+     "Nada Alzaben"
+    ]
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "OpenAlex citations for the seed work",
+    "value": 1,
+    "citation": "https://doi.org/10.1038/s41598-026-42705-7",
+    "evidence": null
+   },
+   "open_access_release": {
+    "criterion": "open_access_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Work published open-access — openness signal",
+    "value": true,
+    "citation": "https://doi.org/10.1038/s41598-026-42705-7",
+    "evidence": null
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (OpenAlex) — sustained earned attention",
+    "value": 1,
+    "citation": "https://openalex.org/A5133231031",
+    "evidence": null
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime works count (OpenAlex)",
+    "value": 1,
+    "citation": "https://openalex.org/A5133231031",
+    "evidence": null
+   },
+   "author_citations_total": {
+    "criterion": "author_citations_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime citations (OpenAlex)",
+    "value": 1,
+    "citation": "https://openalex.org/A5133231031",
+    "evidence": null
+   },
+   "institution": {
+    "criterion": "institution",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author institution on the work",
+    "value": "Al-Ahliyya Amman University",
+    "citation": "https://doi.org/10.1038/s41598-026-42705-7",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "openalex",
+  "founder": {
+   "name": "H Lan",
+   "openalex_url": "https://openalex.org/A5110288301",
+   "affiliation": "Fiberhome Technology Group (China)"
+  },
+  "paper": {
+   "title": "Public opinion dissemination simulation based on large language model multi-agent systems",
+   "url": "https://doi.org/10.1038/s41598-026-44206-z",
+   "published": "2026-04-04",
+   "topic": "Opinion Dynamics and Social Influence"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI work (OpenAlex search, recent)",
+    "value": 1,
+    "citation": "https://doi.org/10.1038/s41598-026-44206-z",
+    "evidence": [
+     "Public opinion dissemination simulation based on large language model multi-agent systems"
+    ]
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 4,
+    "citation": "https://doi.org/10.1038/s41598-026-44206-z",
+    "evidence": [
+     "Hua Hu",
+     "Peng Cheng Guo",
+     "Qi Huang"
+    ]
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "OpenAlex citations for the seed work",
+    "value": 1,
+    "citation": "https://doi.org/10.1038/s41598-026-44206-z",
+    "evidence": null
+   },
+   "open_access_release": {
+    "criterion": "open_access_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Work published open-access — openness signal",
+    "value": true,
+    "citation": "https://doi.org/10.1038/s41598-026-44206-z",
+    "evidence": null
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (OpenAlex) — sustained earned attention",
+    "value": 1,
+    "citation": "https://openalex.org/A5110288301",
+    "evidence": null
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime works count (OpenAlex)",
+    "value": 2,
+    "citation": "https://openalex.org/A5110288301",
+    "evidence": null
+   },
+   "author_citations_total": {
+    "criterion": "author_citations_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime citations (OpenAlex)",
+    "value": 32,
+    "citation": "https://openalex.org/A5110288301",
+    "evidence": null
+   },
+   "industry_affiliation": {
+    "criterion": "industry_affiliation",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Institution of type 'company' on the work — market proximity",
+    "value": "Fiberhome Technology Group (China)",
+    "citation": "https://doi.org/10.1038/s41598-026-44206-z",
+    "evidence": null
+   }
+  }
+ },
+ {
+  "channel": "openalex",
+  "founder": {
+   "name": "Yueen Ma",
+   "openalex_url": "https://openalex.org/A5070951166",
+   "affiliation": "Chinese University of Hong Kong"
+  },
+  "paper": {
+   "title": "A Survey on Vision--Language--Action Models for Embodied AI",
+   "url": "https://doi.org/10.1109/tnnls.2025.3650584",
+   "published": "2026-04-28",
+   "topic": "Multimodal Machine Learning Applications"
+  },
+  "signals": {
+   "technical_output_paper": {
+    "criterion": "technical_output_paper",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "First-author applied-AI work (OpenAlex search, recent)",
+    "value": 1,
+    "citation": "https://doi.org/10.1109/tnnls.2025.3650584",
+    "evidence": [
+     "A Survey on Vision--Language--Action Models for Embodied AI"
+    ]
+   },
+   "coauthor_network": {
+    "criterion": "coauthor_network",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Co-author count (small team = founder-shaped work)",
+    "value": 5,
+    "citation": "https://doi.org/10.1109/tnnls.2025.3650584",
+    "evidence": [
+     "Zixing Song",
+     "Yuzheng Zhuang",
+     "Jianye Hao"
+    ]
+   },
+   "earned_attention_citations": {
+    "criterion": "earned_attention_citations",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "OpenAlex citations for the seed work",
+    "value": 14,
+    "citation": "https://doi.org/10.1109/tnnls.2025.3650584",
+    "evidence": null
+   },
+   "open_access_release": {
+    "criterion": "open_access_release",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": true,
+    "description": "Work published open-access — openness signal",
+    "value": true,
+    "citation": "https://doi.org/10.1109/tnnls.2025.3650584",
+    "evidence": null
+   },
+   "author_h_index": {
+    "criterion": "author_h_index",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author h-index (OpenAlex) — sustained earned attention",
+    "value": 6,
+    "citation": "https://openalex.org/A5070951166",
+    "evidence": null
+   },
+   "author_output_total": {
+    "criterion": "author_output_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime works count (OpenAlex)",
+    "value": 17,
+    "citation": "https://openalex.org/A5070951166",
+    "evidence": null
+   },
+   "author_citations_total": {
+    "criterion": "author_citations_total",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author lifetime citations (OpenAlex)",
+    "value": 71,
+    "citation": "https://openalex.org/A5070951166",
+    "evidence": null
+   },
+   "institution": {
+    "criterion": "institution",
+    "axis": "Founder",
+    "tier": "T1",
+    "positive_only": false,
+    "description": "Author institution on the work",
+    "value": "Chinese University of Hong Kong",
+    "citation": "https://doi.org/10.1109/tnnls.2025.3650584",
+    "evidence": null
+   }
+  }
+ }
+]
