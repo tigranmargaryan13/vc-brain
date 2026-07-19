@@ -13,7 +13,7 @@ This doc is the contract that keeps them consistent — read it before adding co
   └────────────────────────────┘  seam  │ memory  (append-only JSONL store) │
         raw signals → people            └──────────────────────────────────┘
                      │                                    │
-                     └──────────  sourcing/pipeline.py  ──┘
+                     └──────────  sourcing/bridge.py  ──┘
                         (resolve candidates → score each GitHub identity)
 ```
 
@@ -22,9 +22,9 @@ This doc is the contract that keeps them consistent — read it before adding co
   Uses `requests` / `rapidfuzz` / `python-dotenv`.
 - **Intelligence — `sourcing/`**: the scoring/analysis pipeline. Stdlib-only
   (plus optional `openai`), independently runnable.
-- **Seam — `sourcing/pipeline.py`**: the only module that bridges the two.
+- **Seam — `sourcing/bridge.py`**: the only module that bridges the two.
   `resolve_identity(candidates)` → for each person's GitHub handle →
-  `score_github_handle`. Run: `python -m sourcing.pipeline <handle> ...`
+  `score_github_handle`. Run: `python -m sourcing.bridge <handle> ...`
 
 ## Conventions — how to stay consistent
 

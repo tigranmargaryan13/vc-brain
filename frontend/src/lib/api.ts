@@ -283,6 +283,15 @@ export async function updateNotificationPrefs(next: NotificationPrefs): Promise<
 }
 
 // ---------- Investor: founders / hunt ----------
+// --- real backend (FastAPI over the sourcing pipeline); falls back to mock if offline ---
+const API_URL = (import.meta as any).env?.VITE_API_URL || "http://localhost:8000";
+
+async function apiGet<T>(path: string): Promise<T> {
+  const res = await fetch(`${API_URL}${path}`);
+  if (!res.ok) throw new Error(`API ${res.status}`);
+  return (await res.json()) as T;
+}
+
 export async function searchFounders(params: {
   q?: string;
   sector?: string;
@@ -290,7 +299,12 @@ export async function searchFounders(params: {
   location?: string;
   savedOnly?: boolean;
 }): Promise<FounderProfile[]> {
-  let list = MOCK_FOUNDERS.slice();
+  let list: FounderProfile[];
+  try {
+    list = await apiGet<FounderProfile[]>("/api/founders?limit=200");
+  } catch {
+    list = MOCK_FOUNDERS.slice(); // backend offline -> mock fallback
+  }
   const q = params.q?.trim().toLowerCase();
   if (q) {
     list = list.filter(
@@ -318,7 +332,11 @@ export async function searchFounders(params: {
 }
 
 export async function getFounder(id: string): Promise<FounderProfile | null> {
-  return delay(MOCK_FOUNDERS.find((f) => f.id === id) ?? null);
+  try {
+    return await apiGet<FounderProfile>(`/api/founders/${encodeURIComponent(id)}`);
+  } catch {
+    return delay(MOCK_FOUNDERS.find((f) => f.id === id) ?? null); // offline / not found -> mock
+  }
 }
 
 export async function listSaved(): Promise<string[]> {
@@ -340,14 +358,18 @@ export async function unsaveProject(founderId: string): Promise<string[]> {
 }
 
 export async function generateMemo(founderId: string, projectId: string): Promise<Memo> {
+  // Real memo from the backend (already produced by the scoring pipeline).
+  try {
+    const bf = await apiGet<FounderProfile>(`/api/founders/${encodeURIComponent(founderId)}`);
+    const memo = bf.memoFor?.[projectId] ?? Object.values(bf.memoFor ?? {})[0];
+    if (memo) return delay(memo, 300);
+  } catch {
+    /* backend offline -> mock fallback below */
+  }
   const f = MOCK_FOUNDERS.find((x) => x.id === founderId);
   if (!f) throw new Error("Founder not found.");
   const p = f.projects.find((x) => x.id === projectId) ?? f.projects[0];
-  const cacheKey = scopedKey(`${MEMOS_KEY}:${founderId}:${p.id}`, currentSession());
-  const cached = readJSON<Memo | null>(cacheKey, null);
-  if (cached) return delay(cached, 400);
   const memo = f.memoFor?.[p.id] ?? buildTemplateMemo(f, p);
-  writeJSON(cacheKey, memo);
   return delay(memo, 900);
 }
 
