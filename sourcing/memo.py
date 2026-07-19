@@ -81,20 +81,30 @@ def build(fs, screen, signals, thesis_fit=None):
     account = signals.get("account", {})
     activity = signals.get("activity", {})
 
+    is_github = bool(repo)                                  # GitHub-sourced vs native (ProductHunt/HN)
     repo_stars = repo.get("stars", 0)                       # the one named repo
     total_stars = attrs.get("stars") or repo_stars          # summed across own projects
     total_forks = attrs.get("forks") or repo.get("forks", 0)
     followers = account.get("followers", attrs.get("followers", 0))
+    upvotes = attrs.get("native_upvotes_career", 0)         # native earned-attention
+    launches = attrs.get("native_launches", 0)
+    native_unit = attrs.get("native_unit", "upvotes")       # "ProductHunt upvotes" | "HN points"
+    native_src = (attrs.get("native_source") or "platform").replace("hackernews", "Hacker News").replace("producthunt", "ProductHunt")
     location = attrs.get("location", "")
     sector = screen.sector
     contradictions = []
 
     # --- Company snapshot ---
     snap = Section("Company snapshot")
-    lead = repo.get("full_name") or fs.name
-    snap.claims.append(Claim(
-        f"{fs.name} — {sector} project ({lead}), {_fmt_int(repo_stars)} GitHub stars.",
-        "observed", fs.profile_url))
+    if is_github:
+        lead = repo.get("full_name") or fs.name
+        snap.claims.append(Claim(
+            f"{fs.name} — {sector} project ({lead}), {_fmt_int(repo_stars)} GitHub stars.",
+            "observed", fs.profile_url))
+    else:
+        snap.claims.append(Claim(
+            f"{fs.name} — {sector} founder; {launches} {native_src} launch(es), "
+            f"{_fmt_int(upvotes)} organic {native_unit}.", "observed", fs.profile_url))
     snap.claims.append(Claim(f"Sector (inferred): {sector}.", "inferred"))
     stage_claim = Claim(f"Stage (inferred): {attrs.get('inferred_stage', 'unknown')}.", "inferred")
     snap.claims.append(stage_claim)
@@ -113,7 +123,7 @@ def build(fs, screen, signals, thesis_fit=None):
     if screen.market.stance == "bullish":
         hyp.claims.append(Claim(
             f"Market tailwind: {sector} is rated bullish ({screen.market.rating:.0f}/100).", "inferred"))
-    if screen.idea_vs_market.stance in ("survives", "pivot-capable"):
+    if screen.idea_vs_market.stance in ("survives", "needs-validation"):
         hyp.claims.append(Claim(
             f"Idea-vs-market: {screen.idea_vs_market.stance} — {screen.idea_vs_market.rationale}", "inferred"))
     if not hyp.claims:
@@ -155,13 +165,22 @@ def build(fs, screen, signals, thesis_fit=None):
 
     # --- Traction & KPIs ---
     tr = Section("Traction & KPIs")
-    tr.claims.append(Claim(f"{_fmt_int(total_stars)} stars, {_fmt_int(total_forks)} forks across own projects.", "observed", fs.profile_url))
-    if activity:
+    if is_github:
+        tr.claims.append(Claim(f"{_fmt_int(total_stars)} stars, {_fmt_int(total_forks)} forks across own projects.", "observed", fs.profile_url))
+        if activity:
+            tr.claims.append(Claim(
+                f"{activity.get('recent_push_events_90d', 0)} public push events in the last ~90 days "
+                f"({activity.get('active_repos_90d', 0)} active repos).", "observed", fs.profile_url))
+        if followers:
+            tr.claims.append(Claim(f"{_fmt_int(followers)} GitHub followers.", "observed", fs.profile_url))
+    else:
+        peak = attrs.get("native_upvotes_peak", 0)
         tr.claims.append(Claim(
-            f"{activity.get('recent_push_events_90d', 0)} public push events in the last ~90 days "
-            f"({activity.get('active_repos_90d', 0)} active repos).", "observed", fs.profile_url))
-    if followers:
-        tr.claims.append(Claim(f"{_fmt_int(followers)} GitHub followers.", "observed", fs.profile_url))
+            f"{_fmt_int(upvotes)} organic {native_unit} across {launches} launch(es) (peak {_fmt_int(peak)}).",
+            "observed", fs.profile_url))
+        tr.claims.append(Claim(
+            f"{attrs.get('native_cadence_12mo', 0)} launch(es) in the last 12 months; "
+            f"{attrs.get('native_tenure_days', 0)} days building publicly.", "observed", fs.profile_url))
     tr.gaps += [
         "Revenue / ARR: not disclosed.",
         "Users / DAU / retention: not disclosed.",
@@ -178,7 +197,7 @@ def build(fs, screen, signals, thesis_fit=None):
     # --- Data completeness: distinguish "we don't know" from "confirmed not present" ---
     completeness = {
         "location": "known" if location else "unknown",
-        "traction": "known" if (total_stars or total_forks) else "unknown",
+        "traction": "known" if (total_stars or total_forks or upvotes) else "unknown",
         "network/provenance": "known" if signals.get("orgs") else "unknown",  # GH orgs can be private → unknown
         "problem_statement": "known" if desc else "unknown",
         "test_discipline": ("confirmed-absent" if repo.get("has_tests") is False

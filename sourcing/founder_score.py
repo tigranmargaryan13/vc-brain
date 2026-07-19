@@ -16,9 +16,25 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
+from . import ambition
 from . import capability
 from . import github_collector as gh
 from . import memory
+
+# Power-law weights (brief open-decision #2): not every criterion matters equally
+# for a "next 3 unicorns" fund. Weight tunes a component's PULL on the score; it
+# does NOT touch confidence (that stays a pure function of how much data we have).
+# Upweighted: demonstrated capability, ceiling/potential, and the cold-start intent
+# edge. Downweighted: provenance (network) — leaning on it rebuilds the network gate.
+WEIGHTS = {
+    "Capability": 1.3,
+    "Ceiling": 1.5,
+    "Intent": 1.2,
+    "Skills": 1.0,
+    "Trajectory": 1.0,
+    "Traction": 1.0,
+    "Provenance": 0.8,
+}
 
 
 @dataclass
@@ -28,6 +44,7 @@ class Component:
     coverage: float       # 0-1  (how much data backs this)
     evidence: list = field(default_factory=list)  # ["<signal> — <url>"]
     note: str = ""
+    weight: float = 1.0   # power-law pull on the score (see WEIGHTS); never affects confidence
 
 
 @dataclass
@@ -41,6 +58,7 @@ class FounderScore:
     components: list              # list[Component]
     capability_detail: dict       # raw output from the capability backend
     attributes: dict = field(default_factory=dict)  # location, languages, stage, text — for the Thesis Engine
+    ambition_detail: dict = field(default_factory=dict)  # raw output from the ceiling/ambition backend
 
     def band_str(self):
         return f"{self.band[0]:.0f}-{self.band[1]:.0f}"
@@ -49,7 +67,8 @@ class FounderScore:
     def from_record(cls, rec):
         """Rebuild a FounderScore from a persisted Memory record (data/founder_scores.jsonl)."""
         components = [
-            Component(c["name"], c["value"], c["coverage"], c.get("evidence", []))
+            Component(c["name"], c["value"], c["coverage"], c.get("evidence", []),
+                      c.get("note", ""), c.get("weight", WEIGHTS.get(c["name"], 1.0)))
             for c in rec.get("components", [])
         ]
         band = tuple(rec.get("band", [0.0, 100.0]))
@@ -66,6 +85,7 @@ class FounderScore:
                 "dimensions": rec.get("capability_dimensions", {}),
             },
             attributes=rec.get("attributes", {}),
+            ambition_detail=rec.get("ambition_detail", {}),
         )
 
 
@@ -131,6 +151,91 @@ def _traction(profile):
     return Component("Traction", value, coverage, evidence, note)
 
 
+def _distinct_languages(profile):
+    langs = list(profile.top_repo.languages.keys()) if profile.top_repo else []
+    langs += [r["language"] for r in profile.owned_repos if r.get("language")]
+    seen, out = set(), []
+    for l in langs:
+        if l and l not in seen:
+            seen.add(l)
+            out.append(l)
+    return out
+
+
+def _skills(profile):
+    """Demonstrated skills — read from shipped code, not claimed on a profile.
+
+    Technical breadth only for now (languages actually used); commercial/domain
+    skills are T2 (post-conversion) per the criteria doc, so their absence here
+    just leaves coverage partial rather than penalizing.
+    """
+    langs = _distinct_languages(profile)
+    breadth = len(langs)
+    value = _clamp(30 + 12 * breadth)          # more distinct, shipped languages -> broader demonstrated skill
+    coverage = min(1.0, breadth / 4.0)
+    evidence = [f"technical skills demonstrated in shipped code: {', '.join(langs[:8])}"] if langs else []
+    note = ("technical only; commercial/domain skills validated post-conversion (T2)"
+            if langs else "no demonstrated technical skill yet (unknown, not penalized)")
+    return Component("Skills", value, coverage, evidence, note)
+
+
+# Positive-only intent tells — the cold-start edge (criteria doc §Intent signals).
+# Presence scores UP; absence just leaves coverage low, NEVER subtracts.
+_INTENT_PHRASES = {
+    "stealth/building tell": (
+        "stealth", "building something", "working on something new", "new venture",
+        "0 to 1", "0->1", "coming soon", "currently building", "wip",
+    ),
+    "fresh landing / waitlist": (
+        "waitlist", "early access", "join the beta", "get early access", "sign up for",
+    ),
+    "problem obsession": (
+        "obsessed with", "i keep thinking about", "why is there no", "the problem with",
+    ),
+}
+
+
+def _intent(profile):
+    """Detect 'becoming a founder' behavior before the title exists. `[+only]`."""
+    texts = [profile.bio]
+    if profile.top_repo:
+        texts += [profile.top_repo.description, profile.top_repo.readme[:1500]]
+    for r in profile.owned_repos[:10]:
+        if r.get("description"):
+            texts.append(r["description"])
+    blob = " ".join(t for t in texts if t).lower()
+
+    tells = []
+    for label, phrases in _INTENT_PHRASES.items():
+        hit = next((p for p in phrases if p in blob), None)
+        if hit:
+            tells.append(f"{label} — matched \"{hit}\"")
+    # Structural tells (no text needed): blank bio + active building reads as a
+    # post-departure stealth signal; prolific shipping reads as unmonetized building.
+    if not profile.bio and profile.recent_push_events >= 5:
+        tells.append("blank bio while actively shipping — possible post-departure/stealth")
+    if len(profile.owned_repos) >= 6 and profile.recent_push_events >= 5:
+        tells.append("ships repeatedly with no commercial framing — unmonetized building")
+
+    value = _clamp(35 * len(tells))            # each independent tell adds signal; capped at 100
+    coverage = min(1.0, len(tells) / 2.0)      # 2+ tells = fully covered; 0 tells = 0 (not a penalty)
+    note = "no intent tells surfaced (expected pre-departure; not penalized)" if not tells else ""
+    return Component("Intent", value, coverage, tells, note)
+
+
+def _ceiling(profile):
+    """Ceiling / potential — how big and original the thing they're pointed at is."""
+    detail = ambition.assess(profile)
+    text_len = len(ambition.build_text(profile))
+    if text_len == 0:
+        return Component("Ceiling", 0, 0.0, [], "no public text to judge ambition (unknown)"), detail
+    # Coverage scales with how much of the founder's own writing we had to read.
+    coverage = min(1.0, 0.3 + text_len / 2000.0)
+    evidence = [detail.get("rationale", "")] if detail.get("rationale") else []
+    note = f"backend={detail.get('backend')}"
+    return Component("Ceiling", detail.get("score", 0), coverage, evidence, note), detail
+
+
 def _attributes(profile):
     """Candidate attributes the Thesis Engine reads: geography, tech signals, stage."""
     langs = list(profile.top_repo.languages.keys()) if profile.top_repo else []
@@ -175,14 +280,18 @@ def _attributes(profile):
 
 
 def _aggregate(components):
-    totcov = sum(c.coverage for c in components)
-    if totcov == 0:
+    # Score = coverage- AND weight-weighted mean. Coverage keeps it cold-start safe
+    # (thin data widens the band, never subtracts); weight applies the power-law lens.
+    wcov = sum(c.coverage * c.weight for c in components)
+    if wcov == 0:
         return 0.0, 0.10, (0.0, 100.0)
-    score = sum(c.value * c.coverage for c in components) / totcov
+    score = sum(c.value * c.coverage * c.weight for c in components) / wcov
 
+    # Confidence is a pure function of DATA density — weights must not inflate it.
+    totcov = sum(c.coverage for c in components)
     avg_cov = totcov / len(components)
     corroboration = sum(1 for c in components if c.coverage > 0.15)
-    confidence = min(0.95, max(0.10, 0.25 + 0.55 * avg_cov + 0.05 * corroboration))
+    confidence = min(0.95, max(0.10, 0.25 + 0.55 * avg_cov + 0.04 * corroboration))
 
     # Wide band when data is thin; tight when corroborated across components.
     margin = (1 - confidence) * 35
@@ -199,12 +308,18 @@ def score_github_handle(handle, persist=True):
     profile = gh.collect(handle)
 
     cap_component, cap_detail = _capability(profile)
+    ceiling_component, amb_detail = _ceiling(profile)
     components = [
         cap_component,
+        _skills(profile),
         _trajectory(profile),
+        ceiling_component,
+        _intent(profile),
         _provenance(profile),
         _traction(profile),
     ]
+    for c in components:                       # apply the power-law weights (open-decision #2)
+        c.weight = WEIGHTS.get(c.name, 1.0)
     score, confidence, band = _aggregate(components)
 
     fs = FounderScore(
@@ -217,6 +332,7 @@ def score_github_handle(handle, persist=True):
         components=components,
         capability_detail=cap_detail,
         attributes=_attributes(profile),
+        ambition_detail=amb_detail,
     )
     if persist:
         memory.persist(profile, fs)

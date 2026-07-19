@@ -5,8 +5,10 @@ averaged, so the investor sees the disagreement instead of a blended number:
 
   * Founder        — who they are, traits, track record (our Founder Score).
   * Market         — sizing / competition, rated bullish | neutral | bear.
-  * Idea vs Market — does the idea survive as-is, or is the team strong enough
-                     to pivot?
+  * Idea vs Market — does the idea survive scrutiny AS-IS? Scored on the idea's
+                     OWN evidence (its problem/product description), NOT derived
+                     from the Founder or Market axes — so all three are genuinely
+                     independent and can disagree.
 
 Each axis also carries a TREND (improving | declining | stable | new) computed
 against the previous screen in Memory, and each screen is written back to Memory
@@ -20,6 +22,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
+from . import idea as idea_mod
 from . import memory
 from . import thesis as thesis_mod
 
@@ -42,7 +45,7 @@ _DEFAULT_MARKET = (50, "neutral", "Insufficient signal to size the market — tr
 class Axis:
     name: str
     rating: float          # 0-100
-    stance: str            # Founder: strong/mixed/weak · Market: bullish/neutral/bear · Idea: survives/pivot-capable/weak
+    stance: str            # Founder: strong/mixed/weak · Market: bullish/neutral/bear · Idea: survives/needs-validation/weak
     trend: str             # improving | declining | stable | new
     confidence: float      # 0-1
     rationale: str
@@ -78,10 +81,10 @@ def _founder_axis(fs):
     stance = "strong" if r >= 68 else "mixed" if r >= 50 else "weak"
     ev = [f"{c.name} {c.value:.0f} (coverage {c.coverage:.0%})"
           for c in fs.components if c.coverage > 0]
+    covered = ", ".join(c.name.lower() for c in fs.components if c.coverage > 0) or "no components"
     rationale = (
         f"Founder Score {r:.0f} (band {fs.band[0]:.0f}-{fs.band[1]:.0f}, "
-        f"{fs.confidence:.0%} confidence), coverage-weighted across capability, "
-        f"trajectory, provenance, and traction."
+        f"{fs.confidence:.0%} confidence), coverage- and weight-weighted across {covered}."
     )
     return Axis("Founder", r, stance, "new", fs.confidence, rationale, ev)
 
@@ -99,26 +102,33 @@ def _market_axis(sector, attrs):
     return Axis("Market", rating, stance, "new", conf, rationale, ev)
 
 
-def _idea_axis(founder, market):
-    """The interaction axis: does the idea survive, or can a strong team pivot?"""
-    base = 0.5 * founder.rating + 0.5 * market.rating
-    # A strong founder de-risks a weak market — they can pivot toward a better one.
-    if founder.rating > market.rating and founder.rating >= 68:
-        base += min(15, (founder.rating - market.rating) * 0.3)
-    rating = round(min(100, base), 1)
+def _idea_axis(attrs):
+    """Independent axis: does the idea survive scrutiny AS-IS?
 
-    strong_f = founder.rating >= 68
-    good_m = market.stance == "bullish"
-    if strong_f and good_m:
-        stance, why = "survives", "Strong team into a bullish market — the idea can be pursued as-is."
-    elif strong_f and not good_m:
-        stance, why = "pivot-capable", "Market is not clearly attractive, but the team is strong enough to pivot."
-    elif not strong_f and good_m:
-        stance, why = "market-carried", "Attractive market, but execution risk — founder signal is thin."
+    Scored on the idea's OWN evidence — its problem/product description — not on
+    the Founder or Market ratings. This is what makes the three axes genuinely
+    independent: a strong founder with a weak idea now shows the disagreement.
+    """
+    text = (attrs or {}).get("profile_text", "")
+    if not text:
+        # No description to judge — honest "unknown", NOT a penalty. Absence widens
+        # uncertainty; it is not scored as a weak idea (criteria doc: absence ≠ negative).
+        return Axis("Idea vs. Market", 50.0, "needs-validation", "new", 0.2,
+                    "No public idea/product description — cannot assess as-is; needs direct validation.", [])
+
+    detail = idea_mod.assess(text)
+    rating = float(detail.get("score", 0))
+    if rating >= 65:
+        stance = "survives"
+    elif rating >= 45:
+        stance = "needs-validation"
     else:
-        stance, why = "weak", "Neither the market nor the founder signal is compelling as-is."
-    conf = round(min(founder.confidence, market.confidence) * 0.9, 3)
-    return Axis("Idea vs. Market", rating, stance, "new", conf, why, [])
+        stance = "weak"
+    # Confidence from how much idea text we had to read, capped modest (public text only).
+    conf = round(min(0.7, 0.3 + len(text) / 1500.0), 3)
+    dims = detail.get("dimensions", {})
+    ev = [f"{k}: {v}" for k, v in dims.items()] if dims else []
+    return Axis("Idea vs. Market", rating, stance, "new", conf, detail.get("rationale", ""), ev)
 
 
 def _trend(current, previous_rating):
@@ -161,7 +171,7 @@ def screen_founder(fs, attrs, persist=True):
     sector = _classify_sector(attrs)
     founder = _founder_axis(fs)
     market = _market_axis(sector, attrs)
-    idea = _idea_axis(founder, market)
+    idea = _idea_axis(attrs)               # independent — scored on the idea's own evidence
     screen = Screen(fs.handle, fs.name, sector or "unknown", founder, market, idea)
     _apply_trends(screen)
     if persist:

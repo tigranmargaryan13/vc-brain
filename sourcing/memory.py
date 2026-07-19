@@ -90,11 +90,14 @@ def _score_record(fs):
                 "value": round(c.value, 1),
                 "coverage": round(c.coverage, 3),
                 "evidence": c.evidence,
+                "note": c.note,
+                "weight": c.weight,
             }
             for c in fs.components
         ],
         "capability_backend": fs.capability_detail.get("backend"),
         "capability_dimensions": fs.capability_detail.get("dimensions", {}),
+        "ambition_detail": fs.ambition_detail,
         "attributes": fs.attributes,
         "scored_at": _now(),
     }
@@ -105,6 +108,24 @@ def persist(profile, founder_score):
     signals = _signals_from_profile(profile)
     for s in signals:
         _append(SIGNALS_PATH, s)
+    _append(SCORES_PATH, _score_record(founder_score))
+    return len(signals)
+
+
+def persist_native(founder_score, signals):
+    """Persist a natively-scored founder (no GitHub). `signals` is a list of
+    {signal_type, payload, url} dicts from a non-GitHub source (e.g. ProductHunt)."""
+    ingested = _now()
+    src = (founder_score.capability_detail or {}).get("backend", "native").split(":")[-1]
+    for s in signals:
+        _append(SIGNALS_PATH, {
+            "entity": founder_score.handle,
+            "source_id": s.get("source_id", src),
+            "signal_type": s["signal_type"],
+            "payload": s["payload"],
+            "url": s.get("url", founder_score.profile_url),
+            "ingested_at": ingested,
+        })
     _append(SCORES_PATH, _score_record(founder_score))
     return len(signals)
 
